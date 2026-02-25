@@ -48,6 +48,11 @@
     },
     "languageSwitcher": {
         "en": "EN",
-        "ko": "KO"
+        "ko": "KO",
+        "label": "언어",
+        "switch": {
+            "en": "영어로 전환",
+            "ko": "한국어로 전환"
+        }
     }
 }

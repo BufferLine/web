@@ -40,7 +40,7 @@ export default function DeckLinks() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <nav aria-label={t("title")} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {deckKeys.map((key) => (
           <NextLink href={`/${locale}/deck/${key}`} key={key} passHref>
             <Card
@@ -64,7 +64,7 @@ export default function DeckLinks() {
             </Card>
           </NextLink>
         ))}
-      </div>
+      </nav>
     </Section>
   );
 }

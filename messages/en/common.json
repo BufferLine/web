@@ -48,6 +48,11 @@
     },
     "languageSwitcher": {
         "en": "EN",
-        "ko": "KO"
+        "ko": "KO",
+        "label": "Language",
+        "switch": {
+            "en": "Switch to English",
+            "ko": "Switch to Korean"
+        }
     }
 }

@@ -13,6 +13,8 @@ export default function Logo({ className, size = "md" }: LogoProps) {
         viewBox="0 0 32 32"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-label="BufferLine logo"
         className={cn({
           "w-6 h-6": size === "sm",
           "w-8 h-8": size === "md",

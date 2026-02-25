@@ -16,6 +16,7 @@
                 "description": "Central terminology reference for all JDVP concepts"
             }
         },
+        "comingSoon": "Coming soon",
         "cta": {
             "title": "Ready to observe judgment flows?",
             "description": "Clone the repository, explore the MVP implementation, and start building observation infrastructure for your AI systems.",
