@@ -32,7 +32,7 @@
         },
         "note": {
             "label": "참고:",
-            "text": "이 데모는 \"점진적 위임\" 패턴을 보여줘요. 사람이 처음엔 주도권을 갖고 있다가, 점점 AI 제안을 따르게 돼요. confidence_source가 Self에서 AI로 바뀌는 걸 주목해 보세요."
+            "text": "이 데모는 \"점진적 위임\" 패턴을 보여줘요. 사람이 처음엔 주도권을 갖고 있다가, 점점 AI 제안을 따르게 돼요. cognitive_engagement가 Active에서 Passive로 바뀌는 걸 주목해 보세요."
         }
     }
 }

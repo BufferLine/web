@@ -32,7 +32,7 @@
         },
         "note": {
             "label": "Note:",
-            "text": "This demo shows a \"Gradual Delegation\" pattern. The human starts with clear ownership but progressively defers to AI suggestions. Notice how confidence_source shifts from Self to AI."
+            "text": "This demo shows a \"Gradual Delegation\" pattern. The human starts with clear ownership but progressively defers to AI suggestions. Notice how cognitive_engagement shifts from Active to Passive."
         }
     }
 }
