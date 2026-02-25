@@ -28,26 +28,29 @@ export default function HowItWorks() {
       </div>
 
       {/* Process steps */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      <ol className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 list-none p-0 m-0">
         {stepKeys.map((key) => (
-          <Card key={key} variant="glass" className="relative">
-            <div
-              className={`absolute top-0 left-0 right-0 h-1 rounded-t-xl bg-gradient-to-r ${stepColors[key]}`}
-            />
-            <div className="pt-2">
-              <span
-                className={`text-4xl font-bold bg-gradient-to-r ${stepColors[key]} bg-clip-text text-transparent`}
-              >
-                {t(`steps.${key}.number`)}
-              </span>
-              <h3 className="text-lg font-semibold text-white mt-3 mb-2">
-                {t(`steps.${key}.title`)}
-              </h3>
-              <p className="text-surface-muted text-sm">{t(`steps.${key}.description`)}</p>
-            </div>
-          </Card>
+          <li key={key}>
+            <Card variant="glass" className="relative h-full">
+              <div
+                className={`absolute top-0 left-0 right-0 h-1 rounded-t-xl bg-gradient-to-r ${stepColors[key]}`}
+                aria-hidden="true"
+              />
+              <div className="pt-2">
+                <span
+                  className={`text-4xl font-bold bg-gradient-to-r ${stepColors[key]} bg-clip-text text-transparent`}
+                >
+                  {t(`steps.${key}.number`)}
+                </span>
+                <h3 className="text-lg font-semibold text-white mt-3 mb-2">
+                  {t(`steps.${key}.title`)}
+                </h3>
+                <p className="text-surface-muted text-sm">{t(`steps.${key}.description`)}</p>
+              </div>
+            </Card>
+          </li>
         ))}
-      </div>
+      </ol>
 
       {/* State transition patterns */}
       <div className="bg-surface-elevated/30 rounded-xl p-6 border border-surface-border/50">

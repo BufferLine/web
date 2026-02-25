@@ -7,17 +7,17 @@ const resourceKeys = ["documentation", "tutorial", "glossary"] as const;
 
 const resourceIcons = {
   documentation: (
-    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
     </svg>
   ),
   tutorial: (
-    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
     </svg>
   ),
   glossary: (
-    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
     </svg>
   ),
@@ -43,18 +43,18 @@ export default function GetStarted() {
           <Card
             key={key}
             variant="bordered"
-            hover
-            className="group cursor-pointer"
+            className="group"
           >
-            <a href="#" className="block">
-              <div className="w-10 h-10 rounded-lg bg-accent-jdvp/10 flex items-center justify-center text-accent-jdvp-light mb-4 group-hover:bg-accent-jdvp/20 transition-colors duration-200">
+            <div>
+              <div className="w-10 h-10 rounded-lg bg-accent-jdvp/10 flex items-center justify-center text-accent-jdvp-light mb-4">
                 {resourceIcons[key]}
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-accent-jdvp-light transition-colors duration-200">
+              <h3 className="text-lg font-semibold text-white mb-2">
                 {t(`resources.${key}.title`)}
               </h3>
               <p className="text-surface-muted text-sm">{t(`resources.${key}.description`)}</p>
-            </a>
+              <span className="inline-block mt-3 text-xs text-accent-jdvp-light/60">{t("comingSoon")}</span>
+            </div>
           </Card>
         ))}
       </div>
@@ -75,7 +75,7 @@ export default function GetStarted() {
               rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -86,7 +86,13 @@ export default function GetStarted() {
             </a>
           </Button>
           <Button variant="outline" size="lg">
-            <a href="#">{t("cta.readSpec")}</a>
+            <a
+              href="https://github.com/sangwon0001/bufferline-protocol"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("cta.readSpec")}
+            </a>
           </Button>
         </div>
       </div>

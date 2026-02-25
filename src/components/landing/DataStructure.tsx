@@ -37,8 +37,12 @@ export default function DataStructure() {
 
       {/* Tab switcher */}
       <div className="flex justify-center mb-8">
-        <div className="inline-flex rounded-lg bg-surface-elevated/50 p-1">
+        <div className="inline-flex rounded-lg bg-surface-elevated/50 p-1" role="tablist" aria-label={t("title")}>
           <button
+            role="tab"
+            aria-selected={activeTab === "jsv"}
+            aria-controls="tabpanel-jsv"
+            id="tab-jsv"
             onClick={() => setActiveTab("jsv")}
             className={`px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
               activeTab === "jsv"
@@ -49,6 +53,10 @@ export default function DataStructure() {
             {t("tabs.jsv")}
           </button>
           <button
+            role="tab"
+            aria-selected={activeTab === "dv"}
+            aria-controls="tabpanel-dv"
+            id="tab-dv"
             onClick={() => setActiveTab("dv")}
             className={`px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
               activeTab === "dv"
@@ -63,7 +71,7 @@ export default function DataStructure() {
 
       {/* JSV Content */}
       {activeTab === "jsv" && (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div id="tabpanel-jsv" role="tabpanel" aria-labelledby="tab-jsv" className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Code example */}
           <Card variant="bordered" className="overflow-hidden">
             <div className="bg-surface-card px-4 py-2 border-b border-surface-border flex items-center gap-2">
@@ -155,7 +163,7 @@ export default function DataStructure() {
 
       {/* DV Content */}
       {activeTab === "dv" && (
-        <div className="space-y-8">
+        <div id="tabpanel-dv" role="tabpanel" aria-labelledby="tab-dv" className="space-y-8">
           {/* Polarity convention */}
           <Card variant="bordered" className="bg-accent-jdvp/[0.08] border-accent-jdvp/[0.15]">
             <h3 className="text-lg font-semibold text-accent-jdvp-light mb-4">

@@ -88,11 +88,13 @@ export default function Header() {
 
           <div className="flex items-center gap-3">
             {/* Language Switcher */}
-            <div className="flex items-center rounded-lg bg-surface-elevated/50 p-0.5">
+            <div className="flex items-center rounded-lg bg-surface-elevated/50 p-0.5" role="group" aria-label={tLang("label")}>
               {routing.locales.map((loc) => (
                 <button
                   key={loc}
                   onClick={() => switchLocale(loc)}
+                  aria-label={tLang(`switch.${loc}`)}
+                  aria-current={locale === loc ? "true" : undefined}
                   className={cn(
                     "px-2.5 py-1 text-xs font-medium rounded-md transition-colors duration-200",
                     locale === loc
