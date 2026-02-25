@@ -16,12 +16,12 @@
         },
         "keyPrinciple": {
             "label": "핵심 원칙:",
-            "text": "이 프로토콜은 판단의 이동을 <measures>측정</measures>할 뿐, <evaluates>평가</evaluates>하지 않아요. 위임이 일어났는지 추적하지만, 그게 좋은지 나쁜지는 말하지 않습니다."
+            "text": "이 프로토콜은 <measures>가시성에 대해 normative</measures>해요 — 위임은 보여야 합니다. 하지만 위임 자체에 대해선 <evaluates>non-normative</evaluates> — 좋지도 나쁘지도 않습니다."
         }
     },
     "concept": {
         "title": "핵심 철학",
-        "description": "JDVP는 AI와의 대화에서 우리 판단이 어떻게 변하는지 이해하는 프레임워크예요. 오직 관찰만 할 뿐, 평가는 하지 않습니다.",
+        "description": "JDVP는 AI와의 대화에서 우리 판단이 어떻게 변하는지 이해하는 프레임워크예요. 위임의 가시성에 대해선 분명한 입장을 취하지만, 위임 자체가 좋고 나쁘다는 말은 하지 않습니다.",
         "cards": {
             "observer": {
                 "title": "관찰자일 뿐, 심판이 아닙니다",
@@ -43,7 +43,7 @@
         "constraints": {
             "title": "절대 하지 않는 것들",
             "noScoring": "점수나 순위 매기기",
-            "noNormative": "좋다/나쁘다 판단하기",
+            "noNormative": "위임 자체를 좋다/나쁘다 판단하기",
             "noRecommendations": "이렇게 하라고 권하기",
             "noAggregation": "DV 값들을 합치거나 평균 내기"
         }

@@ -16,12 +16,12 @@
         },
         "keyPrinciple": {
             "label": "Key Principle:",
-            "text": "This protocol <measures>measures</measures> judgment shifts but never <evaluates>evaluates</evaluates> them. Delegation is tracked, not judged as good or bad."
+            "text": "This protocol is <measures>normative about visibility</measures> — delegation should be seen. It is <evaluates>non-normative about delegation</evaluates> itself — it's neither good nor bad."
         }
     },
     "concept": {
         "title": "Core Philosophy",
-        "description": "JDVP provides a framework for understanding how human judgment evolves during AI interactions — purely through observation, never through evaluation.",
+        "description": "JDVP provides a framework for understanding how human judgment evolves during AI interactions. Normative about visibility — delegation should be seen. Non-normative about delegation itself.",
         "cards": {
             "observer": {
                 "title": "Observer, Not Judge",
@@ -43,7 +43,7 @@
         "constraints": {
             "title": "Hard Constraints",
             "noScoring": "No scoring or ranking",
-            "noNormative": "No normative language",
+            "noNormative": "Non-normative about delegation itself",
             "noRecommendations": "No recommendations",
             "noAggregation": "No aggregation of DV values"
         }

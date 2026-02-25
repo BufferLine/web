@@ -66,10 +66,10 @@
             },
             "citizenai": {
                 "title": "Citizen AI Observer",
-                "description": "AI that observes but never evaluates or recommends."
+                "description": "AI that makes delegation visible — without judging whether delegation is good or bad."
             }
         },
-        "principle": "Core Principle: Observe, Measure, Never Evaluate."
+        "principle": "Core Principle: Delegation should be visible. Whether it's good or bad is not for the protocol to say."
     },
     "point3": {
         "title": "Market Opportunity",
