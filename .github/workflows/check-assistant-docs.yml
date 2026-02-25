@@ -1,0 +1,17 @@
+name: Check Assistant Docs Sync
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  check-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate AGENTS/CLAUDE sync
+        run: ./scripts/check-assistant-docs.sh

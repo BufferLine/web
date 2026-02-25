@@ -1,5 +1,7 @@
 # CLAUDE.md
 
+Sync note: Keep all content below this line identical between `AGENTS.md` and `CLAUDE.md` (title line may differ). Update both in the same commit.
+
 ## Project
 BufferLine public web frontend.
 
