@@ -1,0 +1,40 @@
+{
+    "brandHero": {
+        "badge": "Cognitive Infrastructure",
+        "headline": {
+            "line1": "Where does the",
+            "line2": "judgment go?"
+        },
+        "subtitle": "BufferLine builds measurement and governance infrastructure for human-AI judgment delegation.",
+        "description": "Every interaction with AI involves a judgment shift. BufferLine provides the protocol, telemetry, and tools to make these shifts visible and governable.",
+        "cta": {
+            "explore": "Explore JDVP",
+            "github": "GitHub"
+        }
+    },
+    "stack": {
+        "badge": "The Stack",
+        "title": "Three layers of judgment infrastructure",
+        "description": "JDVP measures. PersonaForge models. Meta Governance stabilizes. BufferLine frames it all.",
+        "jdvp": {
+            "status": "Active",
+            "title": "JDVP",
+            "subtitle": "Judgment Delegation Visibility Protocol",
+            "description": "Defines Judgment State Vectors and Delegation Vectors to capture how judgment holder, responsibility awareness, and decision latency shift over time.",
+            "cta": "Explore protocol"
+        },
+        "personaforge": {
+            "status": "Coming Soon",
+            "title": "PersonaForge",
+            "subtitle": "Cognitive pattern extraction",
+            "description": "Turns implicit thinking habits into explicit, inspectable declarations. A self-reflection tool built on JDVP's measurement framework.",
+            "cta": "Learn more"
+        },
+        "metagovernance": {
+            "status": "Future",
+            "title": "Meta Governance",
+            "subtitle": "Systemic stabilization",
+            "description": "Distributed feedback and stabilization layer for judgment governance across organizations and systems."
+        }
+    }
+}

@@ -1,0 +1,118 @@
+{
+    "controls": {
+        "prev": "Previous slide",
+        "next": "Next slide",
+        "keyboard": "to navigate"
+    },
+    "hook": {
+        "line1": "JDVP Architecture & Algorithms",
+        "line2": "A Technical Deep Dive",
+        "question": "For developers, researchers, and architects interested in the protocol's inner workings.",
+        "navigate": "Press → or swipe to continue"
+    },
+    "toc": {
+        "title": "Technical Deck",
+        "point1": {
+            "title": "System Architecture",
+            "subtitle": "Observer → Analyzer → Reporter"
+        },
+        "point2": {
+            "title": "JSV Data Structure",
+            "subtitle": "JSON Schema and field definitions"
+        },
+        "point3": {
+            "title": "JSV Extraction Methods",
+            "subtitle": "Marker / AI / Hybrid approaches"
+        },
+        "point4": {
+            "title": "DV Calculation Logic",
+            "subtitle": "Polarity convention and delta calculation"
+        },
+        "point5": {
+            "title": "Extensibility",
+            "subtitle": "Custom markers and fields"
+        }
+    },
+    "point1": {
+        "title": "System Architecture",
+        "observer": "Hooks into the conversation flow to capture real-time data.",
+        "analyzer": "Processes conversational data against markers to generate JSVs and DVs.",
+        "reporter": "Visualizes results or exports to JSON/Markdown.",
+        "conclusion": "A modular architecture for flexible integration."
+    },
+    "point2": {
+        "title": "JSV Data Structure",
+        "subtitle": "5 core fields to capture judgment state, plus domain-specific extensions"
+    },
+    "point3": {
+        "title": "JSV Extraction Methods",
+        "subtitle": "Three approaches to extract judgment state from conversations.",
+        "methods": {
+            "marker": {
+                "title": "Marker-based",
+                "description": "Pattern matching using YAML-defined linguistic markers. Fast and deterministic.",
+                "pros": "Low latency, no API cost, fully explainable",
+                "cons": "Limited to predefined patterns"
+            },
+            "ai": {
+                "title": "AI Observer",
+                "description": "LLM analyzes conversation context to infer judgment state. More nuanced understanding.",
+                "pros": "Handles complex/ambiguous cases, contextual",
+                "cons": "API cost, latency, potential variance"
+            },
+            "hybrid": {
+                "title": "Hybrid",
+                "description": "Markers for clear signals, AI for ambiguous cases. Best of both worlds.",
+                "pros": "Balanced accuracy, cost, and speed",
+                "cons": "More complex to configure"
+            }
+        },
+        "recommendation": "Recommended: Start with markers, add AI for edge cases."
+    },
+    "point4": {
+        "title": "DV Calculation Logic",
+        "polarity": {
+            "title": "Unified Polarity Convention",
+            "positive": "Movement toward AI delegation",
+            "zero": "No change",
+            "negative": "Movement toward human retention"
+        },
+        "formula": {
+            "title": "Delta Calculation",
+            "note": "State changes in each JSV field are quantified into a vector representation."
+        }
+    },
+    "point5": {
+        "title": "Extensibility",
+        "markers": {
+            "title": "Custom Markers",
+            "description": "Organizations can define their own markers in YAML to capture domain-specific language."
+        },
+        "fields": {
+            "title": "Custom DV Fields",
+            "description": "The protocol allows for adding new vector fields to measure specific aspects."
+        },
+        "example": "Examples: Financial (risk_ownership), Education (reasoning_engagement), Healthcare (diagnostic_reliance)"
+    },
+    "summary": {
+        "title": "Let's Evolve the Protocol",
+        "point1": {
+            "label": "The Core:",
+            "text": "A modular architecture and a set of precise algorithms."
+        },
+        "point2": {
+            "label": "The Flexibility:",
+            "text": "Designed to be extensible for various domains."
+        },
+        "point3": {
+            "label": "The Invitation:",
+            "text": "We invite you to contribute to the code and the specification."
+        },
+        "tagline": "Contribute to the standard for AI interaction.",
+        "principle": "",
+        "cta": {
+            "github": "Contribute on GitHub",
+            "home": "Read the Specification"
+        }
+    }
+}

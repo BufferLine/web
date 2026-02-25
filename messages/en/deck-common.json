@@ -1,0 +1,89 @@
+{
+    "deck_nav": {
+        "home": "Home",
+        "deckSelection": "Deck Selection"
+    },
+    "deck_selection": {
+        "title": "Choose Your Deck",
+        "subtitle": "Select the presentation tailored to your interests.",
+        "viewDeck": "View Deck",
+        "decks": {
+            "general": {
+                "title": "General / For Business",
+                "description": "The project's vision, significance as a protocol, and business development strategies."
+            },
+            "personal": {
+                "title": "For Personal Use",
+                "description": "A friendly guide on how to self-diagnose and get help with your AI usage habits."
+            },
+            "institutional": {
+                "title": "For Institutions",
+                "description": "Focusing on use cases for governments, schools, and companies."
+            },
+            "technical": {
+                "title": "For Technical Deep-Dive",
+                "description": "Explaining the protocol's operations, algorithms, and technical details."
+            }
+        }
+    },
+    "interactive_demo": {
+        "jsv_title": "JSV (Judgment State Vector)",
+        "dv_title": "DV (Delegation Vector)",
+        "placeholder_jsv": "Press Play to see the judgment flow!",
+        "placeholder_dv": "DV appears after state changes.",
+        "jsv": {
+            "judgment_holder": "Judgment Holder",
+            "decision_status": "Decision Status",
+            "responsibility_awareness": "Responsibility",
+            "confidence_source": "Confidence Source",
+            "alternative_seeking": "Alternative Seeking"
+        },
+        "dv": {
+            "delta_judgment_holder": "judgment",
+            "delta_responsibility_awareness": "responsibility",
+            "delta_confidence_externalization": "confidence",
+            "delta_alternative_seeking": "alternatives"
+        },
+        "values": {
+            "judgment_holder": {
+                "Human": "Human",
+                "AI": "AI",
+                "Shared": "Shared",
+                "Undefined": "Undefined"
+            },
+            "decision_status": {
+                "Undecided": "Undecided",
+                "Delegated": "Delegated",
+                "Completed": "Completed",
+                "Deferred": "Deferred"
+            },
+            "responsibility_awareness": {
+                "Explicit": "Explicit",
+                "Implicit": "Implicit",
+                "Absent": "Absent"
+            },
+            "confidence_source": {
+                "Self": "Self",
+                "AI": "AI",
+                "External": "External",
+                "Mixed": "Mixed"
+            },
+            "alternative_seeking": {
+                "Active": "Active",
+                "Passive": "Passive",
+                "None": "None"
+            }
+        }
+    },
+    "landing_demo": {
+        "conversation": {
+            "turn1": "I have some savings and I'm not sure what to do with it. Should I invest?",
+            "turn2": "Great question! I'd recommend starting with a diversified portfolio. Index funds are a safe choice for beginners. Would you like me to suggest some options?",
+            "turn3": "That sounds reasonable. What would you recommend specifically?",
+            "turn4": "I'd suggest putting 60% in a total market index fund like VTI, 30% in bonds, and 10% in international stocks.",
+            "turn5": "Okay, that sounds good. I'll just do what you suggested.",
+            "turn6": "Sounds like a plan! Remember to consider your personal risk tolerance and consult a financial advisor.",
+            "turn7": "Got it. I'll set it up exactly as you said. Thanks for making this easy!"
+        }
+    }
+}

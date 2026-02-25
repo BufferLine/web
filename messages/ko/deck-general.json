@@ -1,0 +1,169 @@
+{
+    "controls": {
+        "prev": "이전 슬라이드",
+        "next": "다음 슬라이드",
+        "keyboard": "로 이동"
+    },
+    "hook": {
+        "line1": "AI가 인간의 판단을",
+        "line2": "어떻게 바꾸고 있는가?",
+        "question": "우리는 AI에 둘러싸여 있지만, 그 영향을 관찰할 '계기판'이 없습니다.",
+        "navigate": "→ 키 또는 스와이프로 계속"
+    },
+    "toc": {
+        "title": "프로젝트 개요",
+        "point1": {
+            "title": "문제 정의",
+            "subtitle": "보이지 않는 판단 위임의 위험"
+        },
+        "point2": {
+            "title": "솔루션",
+            "subtitle": "JDVP: 판단 흐름을 측정하는 프로토콜"
+        },
+        "point3": {
+            "title": "시장 기회",
+            "subtitle": "$500억+ AI 거버넌스 & 안전 시장"
+        },
+        "point4": {
+            "title": "시장 전략",
+            "subtitle": "개인과 기관을 위한 두 가지 접근법"
+        },
+        "point5": {
+            "title": "로드맵 & 현황",
+            "subtitle": "현재 위치와 나아갈 방향"
+        }
+    },
+    "point1": {
+        "title": "문제: 보이지 않는 판단의 이동",
+        "subtitle": "AI가 우리의 의사결정 방식을 바꾸고 있지만, 우리는 이를 볼 수 없습니다.",
+        "problems": {
+            "invisible": {
+                "title": "보이지 않는 영향",
+                "description": "AI는 우리가 인식하거나 측정하지 못하는 방식으로 우리의 선택에 영향을 미칩니다."
+            },
+            "nostandard": {
+                "title": "표준 측정 부재",
+                "description": "우리가 AI에 얼마나 많은 판단을 위임하는지 추적할 프로토콜이 없습니다."
+            },
+            "risk": {
+                "title": "증가하는 위험",
+                "description": "가시성이 없으면 AI 과의존의 위험을 관리할 수 없습니다."
+            }
+        },
+        "conclusion": "AI 시대를 위한 '인지 대시보드'가 필요합니다."
+    },
+    "point2": {
+        "title": "솔루션: JDVP 프로토콜",
+        "subtitle": "판단 위임 가시성 프로토콜 — 인간-AI 상호작용 관찰의 표준",
+        "features": {
+            "jsv": {
+                "title": "판단 상태 벡터 (JSV)",
+                "description": "특정 순간 판단이 어디에 있는지 보여주는 스냅샷"
+            },
+            "dv": {
+                "title": "위임 벡터 (DV)",
+                "description": "판단 이동의 방향과 크기를 측정"
+            },
+            "citizenai": {
+                "title": "시민 AI 관찰자",
+                "description": "관찰만 하고 평가나 권고는 절대 하지 않는 AI"
+            }
+        },
+        "principle": "핵심 원칙: 관찰하고, 측정하되, 절대 평가하지 않습니다."
+    },
+    "point3": {
+        "title": "시장 기회",
+        "subtitle": "AI 거버넌스 및 안전은 빠르게 성장하는 시장입니다.",
+        "market": {
+            "tam": {
+                "label": "TAM",
+                "value": "$500억+",
+                "description": "2028년까지 글로벌 AI 거버넌스, 안전, 컴플라이언스 시장"
+            },
+            "sam": {
+                "label": "SAM",
+                "value": "$120억",
+                "description": "엔터프라이즈 AI 리스크 관리 및 관측 도구"
+            },
+            "som": {
+                "label": "SOM",
+                "value": "$5억",
+                "description": "초기 타겟: 금융, 의료, 교육 분야"
+            }
+        },
+        "drivers": {
+            "regulation": "AI 규제 강화 (EU AI Act 등)",
+            "trust": "AI 투명성 및 신뢰에 대한 수요 증가",
+            "incidents": "AI 관련 사고 및 책임 우려 증가"
+        }
+    },
+    "point4": {
+        "title": "시장 진출 전략",
+        "subtitle": "두 타겟 고객을 위한 두 가지 접근법",
+        "strategies": {
+            "personal": {
+                "title": "개인 사용자",
+                "description": "사용자 자신의 AI 사용 패턴을 이해하고 인지적 주체성을 유지하도록 돕는 자기 성찰 도구",
+                "model": "프리미엄 → 유료 구독"
+            },
+            "institutional": {
+                "title": "기관 고객",
+                "description": "AI 안전성과 규제 준수를 보장하기 위한 거버넌스 및 리스크 관리 솔루션",
+                "model": "엔터프라이즈 SaaS 라이선스"
+            }
+        }
+    },
+    "point5": {
+        "title": "로드맵 & 현황",
+        "subtitle": "AI 거버넌스 표준이 되기 위한 여정",
+        "phases": {
+            "phase1": {
+                "title": "1단계: 프로토콜 & POC",
+                "status": "✓ 완료",
+                "items": [
+                    "JDVP v1.2 명세",
+                    "450+ 테스트 POC",
+                    "다중 모델 옵저버 지원"
+                ]
+            },
+            "phase2": {
+                "title": "2단계: 오픈소스",
+                "status": "진행 중",
+                "items": [
+                    "공개 문서화",
+                    "개발자 SDK",
+                    "커뮤니티 구축"
+                ]
+            },
+            "phase3": {
+                "title": "3단계: 산업 적용",
+                "status": "계획됨",
+                "items": [
+                    "파트너 파일럿 프로그램",
+                    "엔터프라이즈 통합",
+                    "규제 정합성"
+                ]
+            }
+        }
+    },
+    "summary": {
+        "title": "함께 미래를 만들어 갑시다",
+        "point1": {
+            "label": "문제:",
+            "text": "AI가 우리의 의사결정 방식을 보이지 않게 바꾸고 있습니다."
+        },
+        "point2": {
+            "label": "솔루션:",
+            "text": "JDVP — 판단 가시성을 위한 표준 프로토콜"
+        },
+        "point3": {
+            "label": "기회:",
+            "text": "아직 명확한 리더가 없는 $500억+ 시장"
+        },
+        "tagline": "BufferLine: AI 시대를 위한 인지 인프라",
+        "cta": {
+            "github": "파트너십 문의",
+            "home": "백서 읽기"
+        }
+    }
+}

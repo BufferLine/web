@@ -1,0 +1,144 @@
+{
+    "howItWorks": {
+        "title": "어떻게 작동하나요?",
+        "description": "간단한 관찰 사이클을 따릅니다: 상태 기록 → 대화 관찰 → 다시 상태 기록 → 변화량 측정.",
+        "steps": {
+            "step1": {
+                "number": "01",
+                "title": "시작 상태 기록",
+                "description": "AI와 대화하기 전, 현재 판단 상태를 스냅샷으로 찍어요. 누가 판단하고 있는지, 결정 상태는 어떤지, 얼마나 인식하고 있는지."
+            },
+            "step2": {
+                "number": "02",
+                "title": "대화 관찰",
+                "description": "대화하는 동안 판단 상태 변화를 알려주는 신호들을 찾아요. 말투 패턴, 결정 속도, AI에게 맡기는 정도 같은 것들이요."
+            },
+            "step3": {
+                "number": "03",
+                "title": "끝 상태 기록",
+                "description": "대화가 끝난 후 다시 스냅샷을 찍어요. 처음과 끝을 비교하면 판단이 어디로 흘러갔는지 보여요."
+            },
+            "step4": {
+                "number": "04",
+                "title": "변화 벡터 계산",
+                "description": "위임 벡터(DV)를 계산해요. 양수면 AI 쪽으로, 음수면 내가 더 쥐게 된 거예요."
+            }
+        },
+        "patterns": {
+            "title": "상태 변화 패턴",
+            "gradual": {
+                "name": "점진적 위임",
+                "flow": "나 → 공유 → AI",
+                "signature": "작은 양수들"
+            },
+            "rapid": {
+                "name": "급격한 위임",
+                "flow": "나 → AI (바로)",
+                "signature": "큰 양수 스파이크"
+            },
+            "oscillation": {
+                "name": "왔다갔다",
+                "flow": "나 ↔ AI",
+                "signature": "+/− 번갈아"
+            },
+            "reclamation": {
+                "name": "되찾기",
+                "flow": "AI → 나로 복귀",
+                "signature": "음수 값들"
+            },
+            "collaborative": {
+                "name": "함께 안정",
+                "flow": "공유 (유지)",
+                "signature": "0 근처"
+            }
+        }
+    },
+    "dataStructure": {
+        "title": "데이터 구조",
+        "description": "두 가지 핵심 구조가 있어요: 순간을 찍는 JSV(판단 상태 벡터)와 변화를 재는 DV(위임 벡터).",
+        "tabs": {
+            "jsv": "JSV (상태 벡터)",
+            "dv": "DV (위임 벡터)"
+        },
+        "jsv": {
+            "fields": {
+                "judgment_holder": {
+                    "name": "judgment_holder",
+                    "description": "지금 누가 판단을 쥐고 있나요?",
+                    "type": "\"Human\" | \"AI\" | \"Shared\" | \"Undefined\""
+                },
+                "decision_status": {
+                    "name": "decision_status",
+                    "description": "결정이 어떤 상태인가요?",
+                    "type": "\"Undecided\" | \"Delegated\" | \"Completed\" | \"Deferred\""
+                },
+                "responsibility_awareness": {
+                    "name": "responsibility_awareness",
+                    "description": "책임에 대해 얼마나 인식하고 있나요?",
+                    "type": "\"Explicit\" | \"Implicit\" | \"Absent\""
+                },
+                "confidence_source": {
+                    "name": "confidence_source",
+                    "description": "확신은 어디서 오나요?",
+                    "type": "\"Self\" | \"AI\" | \"External\" | \"Mixed\""
+                },
+                "alternative_seeking": {
+                    "name": "alternative_seeking",
+                    "description": "다른 선택지를 찾고 있나요?",
+                    "type": "\"Active\" | \"Passive\" | \"None\""
+                }
+            }
+        },
+        "dv": {
+            "polarityTitle": "부호 규칙",
+            "polarity": {
+                "positive": {
+                    "symbol": "+",
+                    "direction": "→ AI",
+                    "description": "AI 쪽으로 이동"
+                },
+                "zero": {
+                    "symbol": "0",
+                    "direction": "—",
+                    "description": "변화 없음"
+                },
+                "negative": {
+                    "symbol": "−",
+                    "direction": "→ 나",
+                    "description": "내 쪽으로 이동"
+                }
+            },
+            "fields": {
+                "delta_judgment_holder": {
+                    "name": "delta_judgment_holder",
+                    "positive": "AI가 맡음",
+                    "negative": "내가 쥠"
+                },
+                "delta_responsibility_awareness": {
+                    "name": "delta_responsibility_awareness",
+                    "positive": "덜 인식함",
+                    "negative": "더 인식함"
+                },
+                "delta_decision_latency": {
+                    "name": "delta_decision_latency",
+                    "positive": "더 빨리 수용",
+                    "negative": "더 오래 고민"
+                },
+                "delta_alternative_seeking": {
+                    "name": "delta_alternative_seeking",
+                    "positive": "덜 찾아봄",
+                    "negative": "더 찾아봄"
+                },
+                "delta_confidence_externalization": {
+                    "name": "delta_confidence_externalization",
+                    "positive": "AI 말 믿음",
+                    "negative": "내 판단 믿음"
+                }
+            },
+            "important": {
+                "label": "중요:",
+                "text": "DV 값들은 좌표예요. 절대 더하거나 평균 내면 안 돼요. 각 차원은 각자의 이야기를 해요."
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "howItWorks": {
+        "title": "How It Works",
+        "description": "JDVP follows a simple observation cycle: capture state, observe interaction, capture state again, and measure the delta.",
+        "steps": {
+            "step1": {
+                "number": "01",
+                "title": "Capture Initial State",
+                "description": "Before AI interaction begins, capture the initial Judgment State Vector (JSV) — a snapshot of who holds judgment, decision status, and awareness levels."
+            },
+            "step2": {
+                "number": "02",
+                "title": "Observe Interaction",
+                "description": "During the interaction, identify behavioral markers that indicate judgment state changes — language patterns, decision timing, deference signals."
+            },
+            "step3": {
+                "number": "03",
+                "title": "Capture Final State",
+                "description": "After interaction, capture another JSV snapshot. The comparison between initial and final states reveals the judgment trajectory."
+            },
+            "step4": {
+                "number": "04",
+                "title": "Calculate Delegation Vector",
+                "description": "Compute the Delegation Vector (DV) — direction and magnitude of change. Positive values indicate movement toward AI, negative toward human retention."
+            }
+        },
+        "patterns": {
+            "title": "State Transition Patterns",
+            "gradual": {
+                "name": "Gradual Delegation",
+                "flow": "Human → Shared → AI",
+                "signature": "Small positive values"
+            },
+            "rapid": {
+                "name": "Rapid Delegation",
+                "flow": "Human → AI (direct)",
+                "signature": "Large positive spike"
+            },
+            "oscillation": {
+                "name": "Oscillation",
+                "flow": "Human ↔ AI",
+                "signature": "Alternating +/−"
+            },
+            "reclamation": {
+                "name": "Reclamation",
+                "flow": "AI → Human recovery",
+                "signature": "Negative values"
+            },
+            "collaborative": {
+                "name": "Collaborative Stability",
+                "flow": "Shared (maintained)",
+                "signature": "Near zero"
+            }
+        }
+    },
+    "dataStructure": {
+        "title": "Data Structures",
+        "description": "Two core data structures power JDVP: the Judgment State Vector (JSV) for snapshots, and the Delegation Vector (DV) for measuring change.",
+        "tabs": {
+            "jsv": "JSV (State Vector)",
+            "dv": "DV (Delegation Vector)"
+        },
+        "jsv": {
+            "fields": {
+                "judgment_holder": {
+                    "name": "judgment_holder",
+                    "description": "Who currently holds the judgment authority",
+                    "type": "\"Human\" | \"AI\" | \"Shared\" | \"Undefined\""
+                },
+                "decision_status": {
+                    "name": "decision_status",
+                    "description": "Current state of the decision process",
+                    "type": "\"Undecided\" | \"Delegated\" | \"Completed\" | \"Deferred\""
+                },
+                "responsibility_awareness": {
+                    "name": "responsibility_awareness",
+                    "description": "Level of awareness about responsibility",
+                    "type": "\"Explicit\" | \"Implicit\" | \"Absent\""
+                },
+                "confidence_source": {
+                    "name": "confidence_source",
+                    "description": "Where confidence in decisions originates",
+                    "type": "\"Self\" | \"AI\" | \"External\" | \"Mixed\""
+                },
+                "alternative_seeking": {
+                    "name": "alternative_seeking",
+                    "description": "Degree of exploration for alternatives",
+                    "type": "\"Active\" | \"Passive\" | \"None\""
+                }
+            }
+        },
+        "dv": {
+            "polarityTitle": "Unified Polarity Convention",
+            "polarity": {
+                "positive": {
+                    "symbol": "+",
+                    "direction": "→ AI",
+                    "description": "Movement toward AI delegation"
+                },
+                "zero": {
+                    "symbol": "0",
+                    "direction": "—",
+                    "description": "No change"
+                },
+                "negative": {
+                    "symbol": "−",
+                    "direction": "→ Human",
+                    "description": "Movement toward human retention"
+                }
+            },
+            "fields": {
+                "delta_judgment_holder": {
+                    "name": "delta_judgment_holder",
+                    "positive": "AI assumes",
+                    "negative": "Human retains"
+                },
+                "delta_responsibility_awareness": {
+                    "name": "delta_responsibility_awareness",
+                    "positive": "Awareness decreases",
+                    "negative": "Awareness increases"
+                },
+                "delta_decision_latency": {
+                    "name": "delta_decision_latency",
+                    "positive": "Faster acceptance",
+                    "negative": "More deliberation"
+                },
+                "delta_alternative_seeking": {
+                    "name": "delta_alternative_seeking",
+                    "positive": "Less exploration",
+                    "negative": "More exploration"
+                },
+                "delta_confidence_externalization": {
+                    "name": "delta_confidence_externalization",
+                    "positive": "AI-sourced",
+                    "negative": "Self-sourced"
+                }
+            },
+            "important": {
+                "label": "Important:",
+                "text": "DV values are coordinates, not aggregatable. Never sum, average, or otherwise combine them — each dimension tells its own story."
+            }
+        }
+    }
+}

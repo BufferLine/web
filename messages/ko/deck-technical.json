@@ -1,0 +1,118 @@
+{
+    "controls": {
+        "prev": "이전 슬라이드",
+        "next": "다음 슬라이드",
+        "keyboard": "로 이동"
+    },
+    "hook": {
+        "line1": "JDVP 아키텍처와 알고리즘",
+        "line2": "기술 심층 분석",
+        "question": "프로토콜의 내부 동작에 관심 있는 개발자, 연구원, 아키텍트를 위한 자료입니다.",
+        "navigate": "→ 키 또는 스와이프로 계속"
+    },
+    "toc": {
+        "title": "기술 덱",
+        "point1": {
+            "title": "시스템 아키텍처",
+            "subtitle": "Observer → Analyzer → Reporter"
+        },
+        "point2": {
+            "title": "JSV 데이터 구조",
+            "subtitle": "JSON 스키마 및 필드 정의"
+        },
+        "point3": {
+            "title": "JSV 추출 방식",
+            "subtitle": "마커 / AI / 하이브리드"
+        },
+        "point4": {
+            "title": "DV 계산 로직",
+            "subtitle": "부호 규칙 및 델타 계산"
+        },
+        "point5": {
+            "title": "확장성",
+            "subtitle": "커스텀 마커 및 필드"
+        }
+    },
+    "point1": {
+        "title": "시스템 아키텍처",
+        "observer": "대화 흐름에 연결되어 실시간 데이터를 캡처합니다.",
+        "analyzer": "마커를 기반으로 대화 데이터를 처리하여 JSV와 DV를 생성합니다.",
+        "reporter": "분석 결과를 시각화하거나 JSON/마크다운으로 내보냅니다.",
+        "conclusion": "유연한 통합을 위한 모듈식 아키텍처."
+    },
+    "point2": {
+        "title": "JSV 데이터 구조",
+        "subtitle": "판단 상태를 캡처하는 5개의 핵심 필드와 도메인별 확장"
+    },
+    "point3": {
+        "title": "JSV 추출 방식",
+        "subtitle": "대화에서 판단 상태를 추출하는 세 가지 접근법.",
+        "methods": {
+            "marker": {
+                "title": "마커 기반",
+                "description": "YAML로 정의된 언어 패턴 매칭. 빠르고 결정론적.",
+                "pros": "낮은 지연, API 비용 없음, 완전히 설명 가능",
+                "cons": "사전 정의된 패턴에 제한됨"
+            },
+            "ai": {
+                "title": "AI Observer",
+                "description": "LLM이 대화 맥락을 분석하여 판단 상태를 추론. 더 섬세한 이해 가능.",
+                "pros": "복잡하고 모호한 경우 처리, 맥락 인식",
+                "cons": "API 비용, 지연, 결과 변동 가능"
+            },
+            "hybrid": {
+                "title": "하이브리드",
+                "description": "명확한 신호는 마커, 모호한 경우는 AI. 두 방식의 장점 결합.",
+                "pros": "정확도, 비용, 속도의 균형",
+                "cons": "설정이 더 복잡함"
+            }
+        },
+        "recommendation": "권장: 마커로 시작하고, 엣지 케이스에 AI 추가."
+    },
+    "point4": {
+        "title": "DV 계산 로직",
+        "polarity": {
+            "title": "부호 규칙 (Unified Polarity)",
+            "positive": "AI 쪽으로 이동",
+            "zero": "변화 없음",
+            "negative": "Human 쪽으로 이동"
+        },
+        "formula": {
+            "title": "델타 계산",
+            "note": "각 JSV 필드의 상태 변화를 수치화하여 벡터로 표현합니다."
+        }
+    },
+    "point5": {
+        "title": "확장성",
+        "markers": {
+            "title": "커스텀 마커",
+            "description": "도메인 특화 언어를 포착하기 위해 YAML에 자체 마커를 정의할 수 있습니다."
+        },
+        "fields": {
+            "title": "커스텀 DV 필드",
+            "description": "프로토콜을 확장하여 새로운 벡터 필드를 추가할 수 있습니다."
+        },
+        "example": "예: 금융(risk_ownership), 교육(reasoning_engagement), 의료(diagnostic_reliance)"
+    },
+    "summary": {
+        "title": "함께 프로토콜을 발전시켜 나갑시다",
+        "point1": {
+            "label": "핵심:",
+            "text": "모듈식 아키텍처와 정밀한 알고리즘의 집합."
+        },
+        "point2": {
+            "label": "유연성:",
+            "text": "다양한 도메인에 적용 가능하도록 확장성 있게 설계되었습니다."
+        },
+        "point3": {
+            "label": "초대:",
+            "text": "코드와 사양에 기여하여 프로토콜을 함께 발전시켜나가길 바랍니다."
+        },
+        "tagline": "AI 상호작용 표준에 기여하세요.",
+        "principle": "",
+        "cta": {
+            "github": "GitHub에서 기여하기",
+            "home": "사양 문서 읽기"
+        }
+    }
+}

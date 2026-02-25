@@ -1,0 +1,31 @@
+{
+    "getStarted": {
+        "title": "시작하기",
+        "description": "JDVP는 오픈 프로토콜이에요. 스펙을 둘러보고, 튜토리얼 따라해 보고, 함께 만들어가요.",
+        "resources": {
+            "documentation": {
+                "title": "문서",
+                "description": "프로토콜 스펙과 구현 가이드"
+            },
+            "tutorial": {
+                "title": "튜토리얼",
+                "description": "직접 따라하며 배우는 실습 가이드"
+            },
+            "glossary": {
+                "title": "용어집",
+                "description": "JDVP 개념들 한눈에 보기"
+            }
+        },
+        "cta": {
+            "title": "판단의 흐름을 관찰해 볼까요?",
+            "description": "레포를 클론하고, MVP 구현을 살펴보고, 여러분의 AI 시스템에 관찰 인프라를 구축해 보세요.",
+            "clone": "레포 클론하기",
+            "readSpec": "스펙 읽기"
+        }
+    },
+    "deckLinks": {
+        "badge": "프레젠테이션",
+        "title": "관심 분야별 덱",
+        "description": "BufferLine을 다양한 관점에서 살펴보세요. 일반 소개부터 기술 심층 분석까지, 관심사에 맞는 덱을 선택하세요."
+    }
+}

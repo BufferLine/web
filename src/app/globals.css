@@ -1,0 +1,260 @@
+@import "tailwindcss";
+
+/* ============================================================
+ * Brand Token Bridge — synced from brand.tokens.json
+ * Last sync: 2026-02-23
+ * ============================================================ */
+
+:root {
+  /* --- Surfaces (dark theme) --- */
+  --surface-bg: #020617;
+  --surface-card: #0F172A;
+  --surface-elevated: #1E293B;
+  --surface-fg: #F1F5F9;
+  --surface-muted: #94A3B8;
+  --surface-border: #334155;
+
+  /* --- Neutral scale --- */
+  --neutral-950: #020617;
+  --neutral-900: #0F172A;
+  --neutral-800: #1E293B;
+  --neutral-700: #334155;
+  --neutral-600: #475569;
+  --neutral-500: #64748B;
+  --neutral-400: #94A3B8;
+  --neutral-300: #CBD5E1;
+  --neutral-200: #E2E8F0;
+  --neutral-100: #F1F5F9;
+  --neutral-0: #FFFFFF;
+
+  /* --- Stack accents --- */
+  --accent-bufferline: #6366F1;
+  --accent-bufferline-light: #818CF8;
+  --accent-bufferline-subtle: #A5B4FC;
+  --accent-jdvp: #14B8A6;
+  --accent-jdvp-light: #2DD4BF;         /* teal-400 — lighter variant */
+  --accent-personaforge: #F59E0B;
+  --accent-meta: #EF4444;
+
+  /* --- Semantic JDVP colors --- */
+  --semantic-human: #22C55E;
+  --semantic-ai: #6366F1;
+  --semantic-shared: #06B6D4;
+  --semantic-undefined: #64748B;
+
+  /* --- Shadows --- */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-base: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2);
+  --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.15);
+  --shadow-accent: 0 4px 14px rgba(99, 102, 241, 0.10);
+
+  /* --- Motion --- */
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-slow: 300ms;
+  --duration-slower: 500ms;
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+
+  /* --- Opacity --- */
+  --opacity-glass: 0.05;
+  --opacity-subtle: 0.10;
+  --opacity-muted: 0.30;
+  --opacity-semi: 0.50;
+  --opacity-overlay: 0.80;
+
+  /* --- Derived accent states (interaction) --- */
+  --accent-bufferline-hover: #4F46E5;  /* one step darker — active/hover */
+  --accent-bufferline-active: #4338CA; /* two steps darker — pressed */
+  --accent-jdvp-hover: #0D9488;       /* teal one step darker */
+  --semantic-human-hover: #4ADE80;     /* green-400 — lighter for hover */
+  --accent-personaforge-light: #FBBF24; /* amber-400 — lighter variant */
+  --accent-personaforge-hover: #D97706; /* amber-600 — one step darker */
+
+  /* --- Gradient endpoints --- */
+  --gradient-text-end: #A78BFA;        /* violet-400, brand text gradient */
+
+  /* --- Legacy aliases (backward-compat) --- */
+  --background: var(--surface-bg);
+  --foreground: var(--surface-fg);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* --- Surfaces --- */
+  --color-surface-bg: var(--surface-bg);
+  --color-surface-card: var(--surface-card);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-surface-fg: var(--surface-fg);
+  --color-surface-muted: var(--surface-muted);
+  --color-surface-border: var(--surface-border);
+
+  /* --- Neutral scale --- */
+  --color-neutral-0: var(--neutral-0);
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-300: var(--neutral-300);
+  --color-neutral-400: var(--neutral-400);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-600: var(--neutral-600);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-800: var(--neutral-800);
+  --color-neutral-900: var(--neutral-900);
+  --color-neutral-950: var(--neutral-950);
+
+  /* --- Stack accents --- */
+  --color-accent-bufferline: var(--accent-bufferline);
+  --color-accent-bufferline-light: var(--accent-bufferline-light);
+  --color-accent-bufferline-subtle: var(--accent-bufferline-subtle);
+  --color-accent-bufferline-hover: var(--accent-bufferline-hover);
+  --color-accent-jdvp: var(--accent-jdvp);
+  --color-accent-jdvp-light: var(--accent-jdvp-light);
+  --color-accent-jdvp-hover: var(--accent-jdvp-hover);
+  --color-accent-personaforge: var(--accent-personaforge);
+  --color-accent-personaforge-hover: var(--accent-personaforge-hover);
+  --color-accent-meta: var(--accent-meta);
+
+  /* --- Semantic JDVP --- */
+  --color-semantic-human: var(--semantic-human);
+  --color-semantic-human-hover: var(--semantic-human-hover);
+  --color-semantic-ai: var(--semantic-ai);
+  --color-semantic-shared: var(--semantic-shared);
+  --color-semantic-undefined: var(--semantic-undefined);
+
+  /* --- Accent derived states --- */
+  --color-accent-personaforge-light: var(--accent-personaforge-light);
+
+  /* --- Typography --- */
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-space-grotesk);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+/* Heading typography — brand spec: Space Grotesk for all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-space-grotesk), var(--font-inter), system-ui, sans-serif;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.025em;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-card);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neutral-600);
+}
+
+/* Selection */
+::selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: #fff;
+}
+
+/* Focus outline */
+:focus-visible {
+  outline: 2px solid var(--accent-bufferline);
+  outline-offset: 2px;
+}
+
+/* Code blocks */
+pre {
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+code {
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+/* Gradient text helper — brand spec: #818CF8 → #A78BFA */
+.text-gradient {
+  background: linear-gradient(to right, var(--accent-bufferline-light), var(--gradient-text-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* JDVP gradient text — teal spectrum */
+.text-gradient-jdvp {
+  background: linear-gradient(to right, var(--accent-jdvp-light), var(--accent-jdvp));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* PersonaForge gradient text — amber spectrum */
+.text-gradient-personaforge {
+  background: linear-gradient(to right, var(--accent-personaforge-light), var(--accent-personaforge));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Shadow utilities — synced from brand.tokens.json */
+.shadow-brand-sm {
+  box-shadow: var(--shadow-sm);
+}
+.shadow-brand-base {
+  box-shadow: var(--shadow-base);
+}
+.shadow-brand-lg {
+  box-shadow: var(--shadow-lg);
+}
+.shadow-brand-glow {
+  box-shadow: var(--shadow-glow);
+}
+.shadow-brand-accent {
+  box-shadow: var(--shadow-accent);
+}
+
+/* Glow effect */
+.glow {
+  box-shadow: var(--shadow-glow);
+}
+
+/* Animate */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}

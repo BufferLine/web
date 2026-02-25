@@ -1,0 +1,169 @@
+{
+    "controls": {
+        "prev": "Previous slide",
+        "next": "Next slide",
+        "keyboard": "to navigate"
+    },
+    "hook": {
+        "line1": "How is AI changing",
+        "line2": "human judgment?",
+        "question": "We're surrounded by AI, but lack a 'dashboard' to observe its influence on our decisions.",
+        "navigate": "Press → or swipe to continue"
+    },
+    "toc": {
+        "title": "Project Overview",
+        "point1": {
+            "title": "The Problem",
+            "subtitle": "The invisible risk of judgment delegation."
+        },
+        "point2": {
+            "title": "Our Solution",
+            "subtitle": "JDVP: A protocol to measure judgment flow."
+        },
+        "point3": {
+            "title": "Market Opportunity",
+            "subtitle": "A $50B+ AI governance & safety market."
+        },
+        "point4": {
+            "title": "Go-to-Market",
+            "subtitle": "Two approaches: Personal and Institutional."
+        },
+        "point5": {
+            "title": "Roadmap & Traction",
+            "subtitle": "Where we are and where we're going."
+        }
+    },
+    "point1": {
+        "title": "The Problem: Invisible Judgment Shifts",
+        "subtitle": "AI is changing how we make decisions, but we can't see it.",
+        "problems": {
+            "invisible": {
+                "title": "Invisible Influence",
+                "description": "AI subtly shapes our choices in ways we don't notice or measure."
+            },
+            "nostandard": {
+                "title": "No Standard Measurement",
+                "description": "There's no protocol to track how much judgment we're delegating to AI."
+            },
+            "risk": {
+                "title": "Growing Risk",
+                "description": "Without visibility, we can't manage the risks of over-reliance on AI."
+            }
+        },
+        "conclusion": "We need a 'cognitive dashboard' for the AI age."
+    },
+    "point2": {
+        "title": "Our Solution: JDVP Protocol",
+        "subtitle": "Judgment Delegation Visibility Protocol — The standard for observing human-AI interaction.",
+        "features": {
+            "jsv": {
+                "title": "Judgment State Vector (JSV)",
+                "description": "A snapshot of where judgment resides at any moment."
+            },
+            "dv": {
+                "title": "Delegation Vector (DV)",
+                "description": "Measures the direction and magnitude of judgment shifts."
+            },
+            "citizenai": {
+                "title": "Citizen AI Observer",
+                "description": "AI that observes but never evaluates or recommends."
+            }
+        },
+        "principle": "Core Principle: Observe, Measure, Never Evaluate."
+    },
+    "point3": {
+        "title": "Market Opportunity",
+        "subtitle": "AI governance and safety is a rapidly growing market.",
+        "market": {
+            "tam": {
+                "label": "TAM",
+                "value": "$50B+",
+                "description": "Global AI governance, safety, and compliance market by 2028."
+            },
+            "sam": {
+                "label": "SAM",
+                "value": "$12B",
+                "description": "Enterprise AI risk management and observability tools."
+            },
+            "som": {
+                "label": "SOM",
+                "value": "$500M",
+                "description": "Initial target: Finance, Healthcare, Education sectors."
+            }
+        },
+        "drivers": {
+            "regulation": "Growing AI regulations (EU AI Act, etc.)",
+            "trust": "Rising demand for AI transparency and trust",
+            "incidents": "Increasing AI-related incidents and liability concerns"
+        }
+    },
+    "point4": {
+        "title": "Go-to-Market Strategy",
+        "subtitle": "Two main approaches for two target audiences.",
+        "strategies": {
+            "personal": {
+                "title": "For Individuals",
+                "description": "A self-reflection tool to help users understand their AI usage patterns and maintain cognitive agency.",
+                "model": "Freemium → Premium subscription"
+            },
+            "institutional": {
+                "title": "For Institutions",
+                "description": "A governance and risk management solution to ensure AI safety and regulatory compliance.",
+                "model": "Enterprise SaaS licensing"
+            }
+        }
+    },
+    "point5": {
+        "title": "Roadmap & Traction",
+        "subtitle": "Our journey to becoming the standard for AI governance.",
+        "phases": {
+            "phase1": {
+                "title": "Phase 1: Protocol & POC",
+                "status": "✓ Complete",
+                "items": [
+                    "JDVP v1.2 specification",
+                    "Working POC with 450+ tests",
+                    "Multi-model observer support"
+                ]
+            },
+            "phase2": {
+                "title": "Phase 2: Open Source",
+                "status": "In Progress",
+                "items": [
+                    "Public documentation",
+                    "Developer SDK",
+                    "Community building"
+                ]
+            },
+            "phase3": {
+                "title": "Phase 3: Industry Adoption",
+                "status": "Planned",
+                "items": [
+                    "Pilot programs with partners",
+                    "Enterprise integrations",
+                    "Regulatory alignment"
+                ]
+            }
+        }
+    },
+    "summary": {
+        "title": "Let's Build the Future Together",
+        "point1": {
+            "label": "The Problem:",
+            "text": "AI is invisibly changing how we make decisions."
+        },
+        "point2": {
+            "label": "Our Solution:",
+            "text": "JDVP — the standard protocol for judgment visibility."
+        },
+        "point3": {
+            "label": "The Opportunity:",
+            "text": "A $50B+ market with no clear leader yet."
+        },
+        "tagline": "BufferLine: Cognitive Infrastructure for the AI Age",
+        "cta": {
+            "github": "Contact for Partnership",
+            "home": "Read the Whitepaper"
+        }
+    }
+}

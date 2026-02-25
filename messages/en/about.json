@@ -1,0 +1,59 @@
+{
+    "about": {
+        "badge": "About",
+        "headline": {
+            "line1": "BufferLine Labs",
+            "line2": "Pte. Ltd."
+        },
+        "mission": {
+            "title": "Mission",
+            "description": "BufferLine builds measurement and governance infrastructure for human-AI judgment delegation. We develop the protocols, telemetry, and tools to make judgment shifts visible and governable."
+        },
+        "stack": {
+            "title": "What we build",
+            "description": "Three layers of cognitive infrastructure.",
+            "jdvp": "JDVP — Judgment Delegation Visibility Protocol. Measures where judgment moves during AI interaction.",
+            "personaforge": "PersonaForge — Cognitive declaration engine. Externalizes thinking patterns into inspectable artifacts.",
+            "metagovernance": "Meta Governance — Systemic stabilization layer for judgment governance across organizations. (Future)"
+        },
+        "company": {
+            "title": "Company Information",
+            "name": "BUFFERLINE LABS PTE. LTD.",
+            "uen": "202607068H",
+            "incorporated": "12 February 2026",
+            "type": "Exempt Private Company Limited by Shares",
+            "address": "51 Goldhill Plaza, #07-07, Singapore 308900",
+            "activity": {
+                "primary": "Development of Software and Applications",
+                "secondary": "Information Technology Consultancy"
+            },
+            "labels": {
+                "name": "Company Name",
+                "uen": "UEN",
+                "incorporated": "Incorporated",
+                "type": "Type",
+                "address": "Registered Address",
+                "activities": "Business Activities"
+            }
+        },
+        "founder": {
+            "title": "Founder",
+            "name": "Sangwon (Sean) Seo",
+            "role": "Founder & CEO",
+            "bio": "Blockchain engineer turned cognitive infrastructure builder. Previously Head of Blockchain at Helios and Head of Engineering at Lucidefi.",
+            "education": {
+                "draper": "Draper University — Stellar Founder Residency 2025",
+                "hanyang": "Hanyang University — MS, Blockchain & Cryptocurrency"
+            }
+        },
+        "contact": {
+            "title": "Contact",
+            "email": "info@bufferline.org",
+            "github": "github.com/BufferLine",
+            "labels": {
+                "email": "Email",
+                "github": "GitHub"
+            }
+        }
+    }
+}

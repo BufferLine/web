@@ -1,0 +1,40 @@
+{
+    "brandHero": {
+        "badge": "인지 인프라",
+        "headline": {
+            "line1": "판단은",
+            "line2": "어디로 가는가?"
+        },
+        "subtitle": "BufferLine은 인간-AI 판단 위임을 위한 측정 및 거버넌스 인프라를 구축합니다.",
+        "description": "AI와의 모든 상호작용에는 판단의 이동이 수반됩니다. BufferLine은 이 이동을 가시화하고 통제 가능하게 만드는 프로토콜, 텔레메트리, 도구를 제공합니다.",
+        "cta": {
+            "explore": "JDVP 살펴보기",
+            "github": "GitHub"
+        }
+    },
+    "stack": {
+        "badge": "스택",
+        "title": "판단 인프라의 세 가지 레이어",
+        "description": "JDVP는 측정하고, PersonaForge는 모델링하고, Meta Governance는 안정화합니다. BufferLine이 전체를 프레이밍합니다.",
+        "jdvp": {
+            "status": "활성",
+            "title": "JDVP",
+            "subtitle": "판단 위임 가시성 프로토콜",
+            "description": "판단 상태 벡터와 위임 벡터를 정의하여 판단 보유자, 책임 인식, 의사결정 지연이 시간에 따라 어떻게 변화하는지 포착합니다.",
+            "cta": "프로토콜 살펴보기"
+        },
+        "personaforge": {
+            "status": "준비 중",
+            "title": "PersonaForge",
+            "subtitle": "인지 패턴 추출",
+            "description": "암묵적 사고 습관을 명시적이고 검사 가능한 선언으로 전환합니다. JDVP의 측정 프레임워크 위에 구축된 자기 성찰 도구입니다.",
+            "cta": "자세히 보기"
+        },
+        "metagovernance": {
+            "status": "예정",
+            "title": "Meta Governance",
+            "subtitle": "시스템적 안정화",
+            "description": "조직과 시스템 전반에 걸친 판단 거버넌스를 위한 분산 피드백 및 안정화 레이어입니다."
+        }
+    }
+}

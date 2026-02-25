@@ -1,0 +1,153 @@
+{
+    "controls": {
+        "prev": "Previous slide",
+        "next": "Next slide",
+        "keyboard": "to navigate"
+    },
+    "hook": {
+        "line1": "Are you really making",
+        "line2": "your own choices?",
+        "question": "Have you ever felt 'What would I do without this AI?' Let's check your AI usage habits.",
+        "navigate": "Press → or swipe to continue"
+    },
+    "toc": {
+        "title": "Understanding Your AI Patterns",
+        "point1": {
+            "title": "Everyday Examples",
+            "subtitle": "Moments we unknowingly rely on AI."
+        },
+        "point2": {
+            "title": "The Hidden Cost",
+            "subtitle": "What we lose when we always delegate."
+        },
+        "point3": {
+            "title": "Interactive Demo",
+            "subtitle": "See your judgment flow in real-time."
+        },
+        "point4": {
+            "title": "Your Dashboard",
+            "subtitle": "A personal cognitive awareness tool."
+        },
+        "point5": {
+            "title": "Conscious AI Usage",
+            "subtitle": "Becoming a conscious AI user."
+        }
+    },
+    "point1": {
+        "title": "Moments We Delegate to AI",
+        "subtitle": "AI makes countless small decisions for us every day.",
+        "examples": {
+            "restaurant": {
+                "title": "\"What should I eat?\"",
+                "description": "AI picks your restaurant, cuisine, and even the dish."
+            },
+            "entertainment": {
+                "title": "\"What should I watch?\"",
+                "description": "Algorithm decides your next movie, song, or video."
+            },
+            "communication": {
+                "title": "\"What should I say?\"",
+                "description": "AI drafts your emails, messages, and responses."
+            }
+        },
+        "conclusion": "These small delegations add up. It's time to look at our habits."
+    },
+    "point2": {
+        "title": "The Hidden Cost of Convenience",
+        "subtitle": "What happens when we stop deciding for ourselves?",
+        "costs": {
+            "creativity": {
+                "title": "Reduced Exploration",
+                "description": "When AI always suggests, we stop exploring and discovering."
+            },
+            "confidence": {
+                "title": "Shifted Confidence Source",
+                "description": "We start doubting our own judgment: 'Let me ask AI first.'"
+            },
+            "identity": {
+                "title": "Changed Decision Patterns",
+                "description": "Our choices define us. Who are we when AI chooses for us?"
+            }
+        },
+        "insight": "The goal isn't to stop using AI — it's to use it consciously."
+    },
+    "point3": {
+        "title": "Interactive Demo",
+        "subtitle": "Watch how judgment gradually shifts from you to AI in a natural conversation.",
+        "insight": "Over 7 turns, judgment holder shifted from Human → Shared, and confidence source moved from Self → AI.",
+        "warning": {
+            "title": "Delegation Detected",
+            "message": "Your confidence source has shifted to AI. You're relying on AI for the decision.",
+            "action": "💡 Pause and ask yourself: 'What do I really want?'"
+        },
+        "demo": {
+            "speaker_human": "User",
+            "speaker_ai": "AI",
+            "turn1": "I need to watch something tonight... not sure what though.",
+            "turn2": "What kind of mood are you in? Action, comedy, drama — anything calling to you?",
+            "turn3": "Hmm, something light I think. Comedy? But not too silly.",
+            "turn4": "How about 'Paddington 2' or 'The Grand Budapest Hotel'? Both are witty and heartwarming.",
+            "turn5": "I've heard of both... which one's better? What do you recommend?",
+            "turn6": "Paddington 2 has a 99% on Rotten Tomatoes — one of the highest-rated films ever. It'll definitely lift your mood.",
+            "turn7": "99%? Wow, that's impressive! Okay, I'll go with that. Thanks!"
+        }
+    },
+    "point4": {
+        "title": "Your Personal Dashboard",
+        "subtitle": "BufferLine gives you a window into your cognitive patterns.",
+        "features": {
+            "patterns": {
+                "title": "Pattern Recognition",
+                "description": "See when and how often you delegate decisions to AI."
+            },
+            "trends": {
+                "title": "Trend Tracking",
+                "description": "Monitor your judgment flow over days, weeks, and months."
+            },
+            "insights": {
+                "title": "Personal Insights",
+                "description": "Understand your unique relationship with AI assistance."
+            }
+        },
+        "tagline": "Know yourself better in the AI age."
+    },
+    "point5": {
+        "title": "Conscious AI Usage",
+        "subtitle": "Become a conscious AI user, not just a consumer.",
+        "actions": {
+            "pause": {
+                "title": "Pause Before Asking",
+                "description": "Take a moment to form your own opinion first."
+            },
+            "challenge": {
+                "title": "Challenge AI Suggestions",
+                "description": "Ask 'why?' and consider alternatives."
+            },
+            "reflect": {
+                "title": "Reflect on Patterns",
+                "description": "Review your dashboard and set personal goals."
+            }
+        },
+        "outcome": "Be an 'AI Tamer', not just a user."
+    },
+    "summary": {
+        "title": "Diagnose Your AI Life",
+        "point1": {
+            "label": "The Habit:",
+            "text": "We delegate countless small judgments to AI without realizing."
+        },
+        "point2": {
+            "label": "The Tool:",
+            "text": "BufferLine visualizes your judgment flow and patterns."
+        },
+        "point3": {
+            "label": "The Goal:",
+            "text": "To become a more conscious, confident, and independent thinker."
+        },
+        "tagline": "Find the joy of thinking for yourself again.",
+        "cta": {
+            "github": "Try More Scenarios",
+            "home": "Share with Friends"
+        }
+    }
+}

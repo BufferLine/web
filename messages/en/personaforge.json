@@ -1,0 +1,86 @@
+{
+    "personaforge": {
+        "badge": "Cognitive Declaration Engine",
+        "headline": {
+            "line1": "Your thinking,",
+            "line2": "externalized."
+        },
+        "tagline": "Extract your cognitive patterns into a structured persona. See how you think before you delegate.",
+        "description": "PersonaForge turns implicit thinking habits into explicit, inspectable declarations. It's a self-reflection tool built on JDVP's measurement framework.",
+        "status": {
+            "label": "Status",
+            "value": "Early Development",
+            "note": "v0.4 whitepaper published. Extraction pipeline functional."
+        },
+        "cta": {
+            "github": "View on GitHub",
+            "whitepaper": "Read Whitepaper"
+        },
+        "whatItIs": {
+            "title": "What PersonaForge is",
+            "items": {
+                "toy": "A toy that externalizes your way of thinking into a cognitive declaration",
+                "reflection": "A self-reflection tool, not a profiling product",
+                "declaration": "Persona = Cognitive Declaration, not personality measurement"
+            }
+        },
+        "whatItIsNot": {
+            "title": "What it is not",
+            "items": {
+                "profiling": "Not a commercial profiling product",
+                "psychology": "Not a precision psychology analysis tool",
+                "alignment": "Not an AI alignment control system",
+                "cloning": "Not human duplication"
+            }
+        },
+        "pipeline": {
+            "title": "Toy Pipeline",
+            "description": "Four steps from conversation to versioned cognitive artifact.",
+            "steps": {
+                "extract": {
+                    "number": "01",
+                    "title": "Extract",
+                    "description": "Conversation-based extraction. An LLM drafts your cognitive declaration from dialogue history."
+                },
+                "calibrate": {
+                    "number": "02",
+                    "title": "Calibrate",
+                    "description": "Structured question layer. MBTI-style cognitive preference and judgment-threshold prompts refine the draft."
+                },
+                "deepen": {
+                    "number": "03",
+                    "title": "Deepen",
+                    "description": "LLM interactive deepening. Adaptive follow-ups on contradiction points, delegation thresholds, risk boundaries."
+                },
+                "freeze": {
+                    "number": "04",
+                    "title": "Freeze",
+                    "description": "Lock final declaration into versioned artifacts: declaration.md, agent_system_prompt.txt, metadata.json."
+                }
+            }
+        },
+        "output": {
+            "title": "Output Structure",
+            "description": "Each persona version produces three artifacts.",
+            "declaration": {
+                "title": "declaration.md",
+                "description": "Identity, judgment principles, delegation policy, risk boundaries, update triggers."
+            },
+            "prompt": {
+                "title": "agent_system_prompt.txt",
+                "description": "Reasoning policy for AI agents. Capability belongs to model, policy belongs to persona."
+            },
+            "metadata": {
+                "title": "metadata.json",
+                "description": "Version, source method, confidence scores, optional JDVP extensions."
+            }
+        },
+        "connection": {
+            "title": "Connection to BufferLine",
+            "description": "JDVP measures where judgment moves. PersonaForge captures how you judge. Together, they make delegation patterns visible and governable.",
+            "jdvp": "JDVP measures judgment shifts",
+            "personaforge": "PersonaForge models cognitive patterns",
+            "future": "Future: JDVP telemetry feeds into persona drift tracking"
+        }
+    }
+}

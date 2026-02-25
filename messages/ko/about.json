@@ -1,0 +1,59 @@
+{
+    "about": {
+        "badge": "소개",
+        "headline": {
+            "line1": "BufferLine Labs",
+            "line2": "Pte. Ltd."
+        },
+        "mission": {
+            "title": "미션",
+            "description": "BufferLine은 인간-AI 판단 위임을 위한 측정 및 거버넌스 인프라를 구축합니다. 판단의 이동을 가시화하고 통제 가능하게 만드는 프로토콜, 텔레메트리, 도구를 개발합니다."
+        },
+        "stack": {
+            "title": "우리가 만드는 것",
+            "description": "인지 인프라의 세 가지 레이어.",
+            "jdvp": "JDVP — 판단 위임 가시성 프로토콜. AI 상호작용 중 판단이 어디로 이동하는지 측정합니다.",
+            "personaforge": "PersonaForge — 인지 선언 엔진. 사고 패턴을 검사 가능한 아티팩트로 외부화합니다.",
+            "metagovernance": "Meta Governance — 조직 전반의 판단 거버넌스를 위한 시스템적 안정화 레이어. (예정)"
+        },
+        "company": {
+            "title": "회사 정보",
+            "name": "BUFFERLINE LABS PTE. LTD.",
+            "uen": "202607068H",
+            "incorporated": "2026년 2월 12일",
+            "type": "면제 비공개 주식회사",
+            "address": "51 Goldhill Plaza, #07-07, Singapore 308900",
+            "activity": {
+                "primary": "소프트웨어 및 애플리케이션 개발",
+                "secondary": "정보기술 컨설팅"
+            },
+            "labels": {
+                "name": "회사명",
+                "uen": "법인등록번호",
+                "incorporated": "설립일",
+                "type": "유형",
+                "address": "등록 주소",
+                "activities": "사업 활동"
+            }
+        },
+        "founder": {
+            "title": "창업자",
+            "name": "서상원 (Sean Seo)",
+            "role": "Founder & CEO",
+            "bio": "블록체인 엔지니어에서 인지 인프라 빌더로. Helios Head of Blockchain, Lucidefi Head of Engineering 출신.",
+            "education": {
+                "draper": "Draper University — Stellar Founder Residency 2025",
+                "hanyang": "한양대학교 — 블록체인 및 암호화폐 석사"
+            }
+        },
+        "contact": {
+            "title": "연락처",
+            "email": "info@bufferline.org",
+            "github": "github.com/BufferLine",
+            "labels": {
+                "email": "이메일",
+                "github": "GitHub"
+            }
+        }
+    }
+}

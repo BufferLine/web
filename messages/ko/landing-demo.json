@@ -1,0 +1,38 @@
+{
+    "demo": {
+        "badge": "인터랙티브 데모",
+        "title": "직접 확인해 보세요",
+        "description": "실제 AI 대화에서 판단 상태가 어떻게 변하는지 지켜보세요. 턴을 넘기면서 JSV 변화와 DV 델타를 실시간으로 관찰할 수 있어요.",
+        "conversation": {
+            "title": "대화",
+            "turn": "턴",
+            "human": "사람",
+            "ai": "AI"
+        },
+        "controls": {
+            "play": "재생",
+            "pause": "일시정지",
+            "reset": "처음으로",
+            "back": "이전 턴",
+            "forward": "다음 턴"
+        },
+        "jsv": {
+            "title": "판단 상태 벡터 (JSV)",
+            "observedAt": "관찰 시점: 턴",
+            "humanSide": "← 나",
+            "aiSide": "AI →",
+            "waiting": "대화를 시작하면 JSV 관찰 결과가 나타나요"
+        },
+        "dv": {
+            "title": "위임 벡터 (DV)",
+            "towardAI": "→ AI",
+            "towardHuman": "→ 나",
+            "noChange": "변화 없음",
+            "waiting": "첫 번째 상태 변화 후 DV가 나타나요"
+        },
+        "note": {
+            "label": "참고:",
+            "text": "이 데모는 \"점진적 위임\" 패턴을 보여줘요. 사람이 처음엔 주도권을 갖고 있다가, 점점 AI 제안을 따르게 돼요. confidence_source가 Self에서 AI로 바뀌는 걸 주목해 보세요."
+        }
+    }
+}

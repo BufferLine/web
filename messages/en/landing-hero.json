@@ -1,0 +1,51 @@
+{
+    "hero": {
+        "badge": "Protocol v1.0 Specification",
+        "headline": {
+            "line1": "Where Does Human",
+            "line2": "Judgment Move?"
+        },
+        "subtitle": {
+            "protocol": "Judgment Delegation Visibility Protocol",
+            "description": "— A cognitive infrastructure for observing how human judgment shifts during AI interactions."
+        },
+        "coreQuestion": "\"After interacting with this AI, where did the human judgment move?\"",
+        "cta": {
+            "explore": "Explore the Protocol",
+            "github": "View on GitHub"
+        },
+        "keyPrinciple": {
+            "label": "Key Principle:",
+            "text": "This protocol <measures>measures</measures> judgment shifts but never <evaluates>evaluates</evaluates> them. Delegation is tracked, not judged as good or bad."
+        }
+    },
+    "concept": {
+        "title": "Core Philosophy",
+        "description": "JDVP provides a framework for understanding how human judgment evolves during AI interactions — purely through observation, never through evaluation.",
+        "cards": {
+            "observer": {
+                "title": "Observer, Not Judge",
+                "description": "BufferLine acts as a neutral observation layer. It captures judgment state transitions without labeling them as positive or negative."
+            },
+            "measure": {
+                "title": "Measure, Not Score",
+                "description": "We track the direction and magnitude of judgment shifts using vectors, not scores. There are no risk grades, safety ratings, or ethical rankings."
+            },
+            "buffer": {
+                "title": "Buffer, Not Brake",
+                "description": "The protocol preserves human agency awareness without slowing AI progress. It's infrastructure for visibility, not a speed bump."
+            },
+            "temporal": {
+                "title": "Temporal Focus",
+                "description": "DV trajectories matter more than single snapshots. We observe patterns of change over time, not isolated moments."
+            }
+        },
+        "constraints": {
+            "title": "Hard Constraints",
+            "noScoring": "No scoring or ranking",
+            "noNormative": "No normative language",
+            "noRecommendations": "No recommendations",
+            "noAggregation": "No aggregation of DV values"
+        }
+    }
+}

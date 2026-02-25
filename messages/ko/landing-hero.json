@@ -1,0 +1,51 @@
+{
+    "hero": {
+        "badge": "Protocol v1.0",
+        "headline": {
+            "line1": "내 판단은",
+            "line2": "어디로 흘러가는가?"
+        },
+        "subtitle": {
+            "protocol": "Judgment Delegation Visibility Protocol",
+            "description": "— AI와 대화하면서 우리의 판단이 어떻게 움직이는지 관찰하는 인프라."
+        },
+        "coreQuestion": "\"이 AI와 대화하고 나서, 내 판단은 어디로 갔을까?\"",
+        "cta": {
+            "explore": "프로토콜 둘러보기",
+            "github": "GitHub에서 보기"
+        },
+        "keyPrinciple": {
+            "label": "핵심 원칙:",
+            "text": "이 프로토콜은 판단의 이동을 <measures>측정</measures>할 뿐, <evaluates>평가</evaluates>하지 않아요. 위임이 일어났는지 추적하지만, 그게 좋은지 나쁜지는 말하지 않습니다."
+        }
+    },
+    "concept": {
+        "title": "핵심 철학",
+        "description": "JDVP는 AI와의 대화에서 우리 판단이 어떻게 변하는지 이해하는 프레임워크예요. 오직 관찰만 할 뿐, 평가는 하지 않습니다.",
+        "cards": {
+            "observer": {
+                "title": "관찰자일 뿐, 심판이 아닙니다",
+                "description": "BufferLine은 중립적인 관찰 레이어예요. 판단 상태가 바뀌는 걸 포착하지만, 그게 좋다 나쁘다 말하지 않아요."
+            },
+            "measure": {
+                "title": "측정할 뿐, 점수 매기지 않습니다",
+                "description": "점수가 아닌 벡터로 판단이 어디로, 얼마나 움직였는지 추적해요. 위험 등급도, 안전 점수도, 윤리 순위도 없습니다."
+            },
+            "buffer": {
+                "title": "완충재일 뿐, 브레이크가 아닙니다",
+                "description": "AI의 발전을 늦추지 않으면서도, 우리가 스스로 판단하고 있다는 감각을 지켜줘요. 속도를 줄이는 게 아니라 보이게 만드는 거예요."
+            },
+            "temporal": {
+                "title": "순간이 아닌 흐름을 봅니다",
+                "description": "한 순간의 스냅샷보다 시간에 따른 궤적이 중요해요. 고립된 순간이 아니라, 변화의 패턴을 관찰합니다."
+            }
+        },
+        "constraints": {
+            "title": "절대 하지 않는 것들",
+            "noScoring": "점수나 순위 매기기",
+            "noNormative": "좋다/나쁘다 판단하기",
+            "noRecommendations": "이렇게 하라고 권하기",
+            "noAggregation": "DV 값들을 합치거나 평균 내기"
+        }
+    }
+}

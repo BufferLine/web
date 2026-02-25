@@ -1,0 +1,53 @@
+{
+    "metadata": {
+        "title": "BufferLine | 판단 거버넌스를 위한 인지 인프라",
+        "description": "BufferLine은 인간-AI 판단 위임을 위한 측정 및 거버넌스 인프라를 구축합니다. 판단의 이동을 가시화하는 프로토콜, 텔레메트리, 도구.",
+        "ogTitle": "BufferLine | 판단은 어디로 가는가?",
+        "ogDescription": "인간-AI 판단 위임을 위한 측정 및 거버넌스 인프라."
+    },
+    "header": {
+        "nav": {
+            "stack": "스택",
+            "jdvp": "JDVP",
+            "personaforge": "PersonaForge",
+            "concept": "개념",
+            "howItWorks": "작동 방식",
+            "demo": "데모",
+            "dataStructures": "데이터 구조",
+            "decks": "덱",
+            "about": "소개"
+        },
+        "github": "GitHub",
+        "getStarted": "시작하기"
+    },
+    "footer": {
+        "brand": {
+            "description": "Judgment Delegation Visibility Protocol — AI와 대화할 때 우리 판단이 어디로 흘러가는지 지켜보는 인프라.",
+            "note": "이건 제품이 아니에요. 프로토콜 스펙이자 관찰 프레임워크입니다."
+        },
+        "resources": {
+            "title": "리소스",
+            "documentation": "문서",
+            "specification": "스펙",
+            "tutorial": "튜토리얼",
+            "glossary": "용어집"
+        },
+        "community": {
+            "title": "커뮤니티",
+            "github": "GitHub",
+            "discussions": "토론",
+            "contributing": "기여하기"
+        },
+        "company": {
+            "title": "회사",
+            "about": "소개",
+            "contact": "연락처"
+        },
+        "copyright": "© {year} BufferLine Labs Pte. Ltd.",
+        "tagline": "판단의 이동을 측정해요. 평가는 안 해요."
+    },
+    "languageSwitcher": {
+        "en": "EN",
+        "ko": "KO"
+    }
+}
