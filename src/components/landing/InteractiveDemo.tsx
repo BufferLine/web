@@ -1,6 +1,6 @@
 "use client";
 
-import { Section } from "@/components/ui";
+import { Section, FadeInView } from "@/components/ui";
 import { useTranslations } from "next-intl";
 import SharedInteractiveDemo, {
   ConversationTurn,
@@ -86,27 +86,31 @@ export default function InteractiveDemo() {
   const conversation = createDemoConversation((key) => tConv(key));
 
   return (
-    <Section id="demo" className="bg-gradient-to-b from-surface-card/50 to-neutral-950/50">
-      <div className="text-center mb-12">
-        <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-semantic-human/10 text-semantic-human border border-semantic-human/20 mb-4">
-          {t("badge")}
-        </span>
-      </div>
+    <Section id="demo" className="bg-gradient-to-b from-surface-card/50 to-transparent">
+      <FadeInView>
+        <div className="text-center mb-12">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-semantic-human/10 text-semantic-human border border-semantic-human/20 mb-4">
+            {t("badge")}
+          </span>
+        </div>
+      </FadeInView>
 
-      <SharedInteractiveDemo
-        title={t("title")}
-        subtitle={t("description")}
-        conversation={conversation}
-        speakerLabels={{
-          user: t("conversation.human"),
-          ai: t("conversation.ai"),
-        }}
-        themeColor="green"
-        showDV={true}
-        maxDVFields={2}
-        playInterval={2500}
-        insight={t("note.text")}
-      />
+      <FadeInView delay={150}>
+        <SharedInteractiveDemo
+          title={t("title")}
+          subtitle={t("description")}
+          conversation={conversation}
+          speakerLabels={{
+            user: t("conversation.human"),
+            ai: t("conversation.ai"),
+          }}
+          themeColor="green"
+          showDV={true}
+          maxDVFields={2}
+          playInterval={2500}
+          insight={t("note.text")}
+        />
+      </FadeInView>
     </Section>
   );
 }

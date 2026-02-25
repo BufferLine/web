@@ -8,9 +8,11 @@ import { useState, useEffect } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
   const t = useTranslations("header");
   const tLang = useTranslations("languageSwitcher");
   const locale = useLocale();
@@ -19,7 +21,6 @@ export default function Header() {
 
   const isJdvpPage = pathname.includes("/jdvp");
   const isPersonaForgePage = pathname.includes("/personaforge");
-  const isSubPage = isJdvpPage || isPersonaForgePage;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,11 +30,33 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
+
   const switchLocale = (newLocale: string) => {
-    // Get path without current locale prefix
     const pathWithoutLocale = pathname.replace(`/${locale}`, "") || "/";
     router.push(`/${newLocale}${pathWithoutLocale}`);
   };
+
+  const navLinks = isJdvpPage
+    ? [
+        { href: "#concept", label: t("nav.concept") },
+        { href: "#how-it-works", label: t("nav.howItWorks") },
+        { href: "#demo", label: t("nav.demo") },
+        { href: "#data-structures", label: t("nav.dataStructures") },
+      ]
+    : [
+        ...(!isPersonaForgePage
+          ? [{ href: "#stack", label: t("nav.stack") }]
+          : []),
+        { href: `/${locale}/jdvp`, label: t("nav.jdvp") },
+        { href: `/${locale}/personaforge`, label: t("nav.personaforge") },
+      ];
 
   return (
     <header
@@ -50,45 +73,32 @@ export default function Header() {
             <Logo size="sm" />
           </NextLink>
 
+          {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8 font-heading text-sm tracking-tight">
-            {isJdvpPage ? (
-              <>
-                <a href="#concept" className="text-surface-muted hover:text-white transition-colors duration-200">
-                  {t("nav.concept")}
-                </a>
-                <a href="#how-it-works" className="text-surface-muted hover:text-white transition-colors duration-200">
-                  {t("nav.howItWorks")}
-                </a>
-                <a href="#demo" className="text-surface-muted hover:text-white transition-colors duration-200">
-                  {t("nav.demo")}
-                </a>
-                <a href="#data-structures" className="text-surface-muted hover:text-white transition-colors duration-200">
-                  {t("nav.dataStructures")}
-                </a>
-              </>
-            ) : (
-              <>
-                {!isPersonaForgePage && (
-                  <a href="#stack" className="text-surface-muted hover:text-white transition-colors duration-200">
-                    {t("nav.stack")}
-                  </a>
-                )}
-                <a href={`/${locale}/jdvp`} className="text-surface-muted hover:text-white transition-colors duration-200">
-                  {t("nav.jdvp")}
-                </a>
-                <a href={`/${locale}/personaforge`} className="text-surface-muted hover:text-white transition-colors duration-200">
-                  {t("nav.personaforge")}
-                </a>
-              </>
-            )}
-            <a href={`/${locale}/deck`} className="text-accent-bufferline-light hover:text-accent-bufferline-subtle font-medium transition-colors duration-200">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-surface-muted hover:text-white transition-colors duration-200"
+              >
+                {link.label}
+              </a>
+            ))}
+            <a
+              href={`/${locale}/deck`}
+              className="text-accent-bufferline-light hover:text-accent-bufferline-subtle font-medium transition-colors duration-200"
+            >
               {t("nav.decks")}
             </a>
           </div>
 
           <div className="flex items-center gap-3">
             {/* Language Switcher */}
-            <div className="flex items-center rounded-lg bg-surface-elevated/50 p-0.5" role="group" aria-label={tLang("label")}>
+            <div
+              className="flex items-center rounded-lg bg-surface-elevated/50 p-0.5"
+              role="group"
+              aria-label={tLang("label")}
+            >
               {routing.locales.map((loc) => (
                 <button
                   key={loc}
@@ -107,24 +117,95 @@ export default function Header() {
               ))}
             </div>
 
+            {/* Desktop-only: GitHub + CTA */}
             <a
               href="https://github.com/sangwon0001/bufferline-protocol"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-lg font-medium transition-colors duration-200 px-3 py-1.5 text-sm text-neutral-300 hover:text-white hover:bg-surface-elevated"
+              className="hidden md:inline-flex items-center justify-center rounded-lg font-medium transition-colors duration-200 px-3 py-1.5 text-sm text-neutral-300 hover:text-white hover:bg-surface-elevated"
             >
               {t("github")}
             </a>
-            <Button size="sm">
-              {isJdvpPage ? (
-                <a href="#get-started">{t("getStarted")}</a>
-              ) : (
-                <a href={`/${locale}/jdvp`}>{t("getStarted")}</a>
-              )}
-            </Button>
+            <NextLink
+              href={isJdvpPage ? "#get-started" : `/${locale}/jdvp`}
+              className="hidden md:inline-flex"
+            >
+              <Button size="sm">{t("getStarted")}</Button>
+            </NextLink>
 
+            {/* Mobile menu toggle */}
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="md:hidden p-2 text-surface-muted hover:text-white transition-colors"
+              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileOpen}
+            >
+              {mobileOpen ? (
+                <X className="w-5 h-5" />
+              ) : (
+                <Menu className="w-5 h-5" />
+              )}
+            </button>
           </div>
         </nav>
+      </div>
+
+      {/* Mobile menu */}
+      <div
+        className={cn(
+          "md:hidden fixed inset-x-0 top-16 bottom-0 bg-[var(--surface-bg)]/95 backdrop-blur-xl transition-all duration-300 ease-out",
+          mobileOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+        )}
+      >
+        <div
+          className={cn(
+            "container mx-auto px-6 pt-8 pb-6 flex flex-col gap-6 transition-transform duration-300 ease-out",
+            mobileOpen ? "translate-y-0" : "-translate-y-4"
+          )}
+        >
+          <div className="flex flex-col gap-4 font-heading text-lg tracking-tight">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setMobileOpen(false)}
+                className="text-surface-muted hover:text-white transition-colors duration-200 py-1"
+              >
+                {link.label}
+              </a>
+            ))}
+            <a
+              href={`/${locale}/deck`}
+              onClick={() => setMobileOpen(false)}
+              className="text-accent-bufferline-light hover:text-accent-bufferline-subtle font-medium transition-colors duration-200 py-1"
+            >
+              {t("nav.decks")}
+            </a>
+          </div>
+
+          <hr className="border-surface-border" />
+
+          <div className="flex flex-col gap-3">
+            <a
+              href="https://github.com/sangwon0001/bufferline-protocol"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-300 hover:text-white transition-colors text-sm"
+            >
+              {t("github")}
+            </a>
+            <NextLink
+              href={isJdvpPage ? "#get-started" : `/${locale}/jdvp`}
+              onClick={() => setMobileOpen(false)}
+            >
+              <Button size="md" className="w-full">
+                {t("getStarted")}
+              </Button>
+            </NextLink>
+          </div>
+        </div>
       </div>
     </header>
   );

@@ -1,6 +1,6 @@
 "use client";
 
-import { Section, Card } from "@/components/ui";
+import { Section, Card, FadeInView } from "@/components/ui";
 import { ArrowRight } from "lucide-react";
 import NextLink from "next/link";
 import { useLocale, useTranslations } from "next-intl";
@@ -40,21 +40,23 @@ export default function StackOverview() {
   const locale = useLocale();
 
   return (
-    <Section id="stack">
-      <div className="text-center mb-12">
-        <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-accent-bufferline/10 text-accent-bufferline-light border border-accent-bufferline/20 mb-4">
-          {t("badge")}
-        </span>
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-          {t("title")}
-        </h2>
-        <p className="text-surface-muted max-w-2xl mx-auto">
-          {t("description")}
-        </p>
-      </div>
+    <Section id="stack" className="bg-surface-card/30">
+      <FadeInView>
+        <div className="text-center mb-12">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-accent-bufferline/10 text-accent-bufferline-light border border-accent-bufferline/20 mb-4">
+            {t("badge")}
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            {t("title")}
+          </h2>
+          <p className="text-surface-muted max-w-2xl mx-auto">
+            {t("description")}
+          </p>
+        </div>
+      </FadeInView>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {layers.map((layer) => {
+        {layers.map((layer, i) => {
           const hasLink = layer.href !== null;
 
           const content = (
@@ -92,15 +94,17 @@ export default function StackOverview() {
             </Card>
           );
 
-          if (hasLink) {
-            return (
-              <NextLink href={`/${locale}${layer.href}`} key={layer.key}>
-                {content}
-              </NextLink>
-            );
-          }
-
-          return <div key={layer.key}>{content}</div>;
+          return (
+            <FadeInView key={layer.key} delay={i * 100}>
+              {hasLink ? (
+                <NextLink href={`/${locale}${layer.href}`} className="h-full">
+                  {content}
+                </NextLink>
+              ) : (
+                <div className="h-full">{content}</div>
+              )}
+            </FadeInView>
+          );
         })}
       </div>
     </Section>
