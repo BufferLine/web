@@ -134,43 +134,6 @@ export default function InteractiveDemo({
       {insight && (
         <p className="text-center text-surface-muted mt-6 text-sm">{insight}</p>
       )}
-
-      {/* Animation Styles */}
-      <style jsx global>{`
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(10px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fadeIn {
-          animation: fadeIn 0.3s ease-out forwards;
-        }
-        @keyframes warningFlash {
-          0%, 100% {
-            box-shadow: 0 0 20px rgba(217, 119, 6, 0.3);
-            border-color: rgba(245, 158, 11, 0.5);
-          }
-          50% {
-            box-shadow: 0 0 40px rgba(217, 119, 6, 0.6), 0 0 60px rgba(217, 119, 6, 0.3);
-            border-color: rgba(245, 158, 11, 0.8);
-          }
-        }
-        .animate-warning-flash {
-          animation: warningFlash 1.5s ease-in-out infinite;
-        }
-        @keyframes siren {
-          0%, 100% {
-            background-color: rgb(217, 119, 6);
-            transform: scale(1);
-          }
-          50% {
-            background-color: rgb(245, 158, 11);
-            transform: scale(1.1);
-          }
-        }
-        .animate-siren {
-          animation: siren 0.8s ease-in-out infinite;
-        }
-      `}</style>
     </div>
   );
 }
