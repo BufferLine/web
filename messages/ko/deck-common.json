@@ -33,16 +33,15 @@
         "placeholder_dv": "상태 변화 후 DV가 표시됩니다.",
         "jsv": {
             "judgment_holder": "판단 주체",
-            "decision_status": "결정 상태",
-            "responsibility_awareness": "책임 인식",
-            "confidence_source": "자신감 원천",
-            "alternative_seeking": "대안 탐색"
+            "delegation_awareness": "위임 인식",
+            "cognitive_engagement": "인지적 노력",
+            "information_seeking": "정보 탐색"
         },
         "dv": {
             "delta_judgment_holder": "판단",
-            "delta_responsibility_awareness": "책임",
-            "delta_confidence_externalization": "자신감",
-            "delta_alternative_seeking": "대안"
+            "delta_delegation_awareness": "인식",
+            "delta_cognitive_engagement": "노력",
+            "delta_information_seeking": "탐색"
         },
         "values": {
             "judgment_holder": {
@@ -51,24 +50,17 @@
                 "Shared": "공유",
                 "Undefined": "미정"
             },
-            "decision_status": {
-                "Undecided": "미결정",
-                "Delegated": "위임됨",
-                "Completed": "완료",
-                "Deferred": "보류"
-            },
-            "responsibility_awareness": {
+            "delegation_awareness": {
                 "Explicit": "명시적",
                 "Implicit": "암묵적",
                 "Absent": "부재"
             },
-            "confidence_source": {
-                "Self": "스스로",
-                "AI": "AI",
-                "External": "외부",
-                "Mixed": "혼합"
+            "cognitive_engagement": {
+                "Active": "적극적",
+                "Reactive": "반응적",
+                "Passive": "수동적"
             },
-            "alternative_seeking": {
+            "information_seeking": {
                 "Active": "적극적",
                 "Passive": "소극적",
                 "None": "없음"

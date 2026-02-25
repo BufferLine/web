@@ -42,7 +42,7 @@
     },
     "point2": {
         "title": "JSV Data Structure",
-        "subtitle": "5 core fields to capture judgment state, plus domain-specific extensions"
+        "subtitle": "4 independent dimensions to capture judgment state, plus domain-specific extensions"
     },
     "point3": {
         "title": "JSV Extraction Methods",

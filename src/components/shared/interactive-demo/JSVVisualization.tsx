@@ -15,10 +15,9 @@ export default function JSVVisualization({ jsv, themeColor }: JSVVisualizationPr
 
   const fields = [
     "judgment_holder",
-    "decision_status",
-    "responsibility_awareness",
-    "confidence_source",
-    "alternative_seeking",
+    "delegation_awareness",
+    "cognitive_engagement",
+    "information_seeking",
   ] as const;
 
   // Translate JSV values

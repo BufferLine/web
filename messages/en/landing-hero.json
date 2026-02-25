@@ -42,10 +42,10 @@
         },
         "constraints": {
             "title": "Hard Constraints",
-            "noScoring": "No scoring or ranking",
+            "noScoring": "No rankings that compare AI systems",
             "noNormative": "Non-normative about delegation itself",
             "noRecommendations": "No recommendations",
-            "noAggregation": "No aggregation of DV values"
+            "noAggregation": "No conversion of measurements into authority"
         }
     }
 }

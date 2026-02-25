@@ -102,10 +102,9 @@
         },
         "jsv_labels": {
             "judgment_holder": "Judgment Holder",
-            "decision_status": "Decision Status",
-            "responsibility_awareness": "Responsibility Awareness",
-            "confidence_source": "Confidence Source",
-            "alternative_seeking": "Alternative Seeking"
+            "delegation_awareness": "Delegation Awareness",
+            "cognitive_engagement": "Cognitive Engagement",
+            "information_seeking": "Information Seeking"
         },
         "warning": {
             "title": "⚠️ Rapid Delegation Pattern Detected",

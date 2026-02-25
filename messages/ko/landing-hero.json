@@ -42,10 +42,10 @@
         },
         "constraints": {
             "title": "절대 하지 않는 것들",
-            "noScoring": "점수나 순위 매기기",
+            "noScoring": "AI 시스템 간 순위 비교",
             "noNormative": "위임 자체를 좋다/나쁘다 판단하기",
             "noRecommendations": "이렇게 하라고 권하기",
-            "noAggregation": "DV 값들을 합치거나 평균 내기"
+            "noAggregation": "측정값을 권위로 전환하기"
         }
     }
 }

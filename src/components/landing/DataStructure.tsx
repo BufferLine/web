@@ -6,18 +6,16 @@ import { useTranslations } from "next-intl";
 
 const jsvFieldKeys = [
   "judgment_holder",
-  "decision_status",
-  "responsibility_awareness",
-  "confidence_source",
-  "alternative_seeking",
+  "delegation_awareness",
+  "cognitive_engagement",
+  "information_seeking",
 ] as const;
 
 const dvFieldKeys = [
   "delta_judgment_holder",
-  "delta_responsibility_awareness",
-  "delta_decision_latency",
-  "delta_alternative_seeking",
-  "delta_confidence_externalization",
+  "delta_delegation_awareness",
+  "delta_cognitive_engagement",
+  "delta_information_seeking",
 ] as const;
 
 export default function DataStructure() {
@@ -99,15 +97,7 @@ export default function DataStructure() {
                 <span className="text-neutral-500">;</span>
                 {"\n"}
                 {"  "}
-                <span className="text-emerald-400">decision_status</span>
-                <span className="text-neutral-500">:</span>{" "}
-                <span className="text-amber-300">&quot;Undecided&quot;</span>{" "}
-                <span className="text-neutral-500">|</span>{" "}
-                <span className="text-amber-300">&quot;Delegated&quot;</span>
-                <span className="text-neutral-500">;</span>
-                {"\n"}
-                {"  "}
-                <span className="text-emerald-400">responsibility_awareness</span>
+                <span className="text-emerald-400">delegation_awareness</span>
                 <span className="text-neutral-500">:</span>{" "}
                 <span className="text-amber-300">&quot;Explicit&quot;</span>{" "}
                 <span className="text-neutral-500">|</span>{" "}
@@ -115,15 +105,15 @@ export default function DataStructure() {
                 <span className="text-neutral-500">;</span>
                 {"\n"}
                 {"  "}
-                <span className="text-emerald-400">confidence_source</span>
+                <span className="text-emerald-400">cognitive_engagement</span>
                 <span className="text-neutral-500">:</span>{" "}
-                <span className="text-amber-300">&quot;Self&quot;</span>{" "}
+                <span className="text-amber-300">&quot;Active&quot;</span>{" "}
                 <span className="text-neutral-500">|</span>{" "}
-                <span className="text-amber-300">&quot;AI&quot;</span>
+                <span className="text-amber-300">&quot;Reactive&quot;</span>
                 <span className="text-neutral-500">;</span>
                 {"\n"}
                 {"  "}
-                <span className="text-emerald-400">alternative_seeking</span>
+                <span className="text-emerald-400">information_seeking</span>
                 <span className="text-neutral-500">:</span>{" "}
                 <span className="text-amber-300">&quot;Active&quot;</span>{" "}
                 <span className="text-neutral-500">|</span>{" "}

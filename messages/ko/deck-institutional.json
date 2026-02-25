@@ -102,10 +102,9 @@
         },
         "jsv_labels": {
             "judgment_holder": "판단 주체",
-            "decision_status": "결정 상태",
-            "responsibility_awareness": "책임 인식",
-            "confidence_source": "확신 출처",
-            "alternative_seeking": "대안 탐색"
+            "delegation_awareness": "위임 인식",
+            "cognitive_engagement": "인지적 노력",
+            "information_seeking": "정보 탐색"
         },
         "warning": {
             "title": "⚠️ 급격한 위임 패턴 감지",

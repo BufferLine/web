@@ -1,16 +1,15 @@
 export interface JSVState {
   judgment_holder: string;
-  decision_status: string;
-  responsibility_awareness: string;
-  confidence_source: string;
-  alternative_seeking: string;
+  delegation_awareness: string;
+  cognitive_engagement: string;
+  information_seeking: string;
 }
 
 export interface DVState {
   delta_judgment_holder?: number;
-  delta_responsibility_awareness?: number;
-  delta_confidence_externalization?: number;
-  delta_alternative_seeking?: number;
+  delta_delegation_awareness?: number;
+  delta_cognitive_engagement?: number;
+  delta_information_seeking?: number;
 }
 
 export interface ConversationTurn {

@@ -6,7 +6,7 @@
             "step1": {
                 "number": "01",
                 "title": "Capture Initial State",
-                "description": "Before AI interaction begins, capture the initial Judgment State Vector (JSV) — a snapshot of who holds judgment, decision status, and awareness levels."
+                "description": "Before AI interaction begins, capture the initial Judgment State Vector (JSV) — a snapshot across 4 dimensions: agency, metacognition, effort, and exploration."
             },
             "step2": {
                 "number": "02",
@@ -64,27 +64,22 @@
             "fields": {
                 "judgment_holder": {
                     "name": "judgment_holder",
-                    "description": "Who currently holds the judgment authority",
+                    "description": "Who currently holds judgment authority (Agency)",
                     "type": "\"Human\" | \"AI\" | \"Shared\" | \"Undefined\""
                 },
-                "decision_status": {
-                    "name": "decision_status",
-                    "description": "Current state of the decision process",
-                    "type": "\"Undecided\" | \"Delegated\" | \"Completed\" | \"Deferred\""
-                },
-                "responsibility_awareness": {
-                    "name": "responsibility_awareness",
-                    "description": "Level of awareness about responsibility",
+                "delegation_awareness": {
+                    "name": "delegation_awareness",
+                    "description": "Whether the human recognizes delegation is occurring (Metacognition)",
                     "type": "\"Explicit\" | \"Implicit\" | \"Absent\""
                 },
-                "confidence_source": {
-                    "name": "confidence_source",
-                    "description": "Where confidence in decisions originates",
-                    "type": "\"Self\" | \"AI\" | \"External\" | \"Mixed\""
+                "cognitive_engagement": {
+                    "name": "cognitive_engagement",
+                    "description": "How much cognitive effort the human invests (Effort)",
+                    "type": "\"Active\" | \"Reactive\" | \"Passive\""
                 },
-                "alternative_seeking": {
-                    "name": "alternative_seeking",
-                    "description": "Degree of exploration for alternatives",
+                "information_seeking": {
+                    "name": "information_seeking",
+                    "description": "Whether the human explores beyond what AI offers (Exploration)",
                     "type": "\"Active\" | \"Passive\" | \"None\""
                 }
             }
@@ -114,30 +109,25 @@
                     "positive": "AI assumes",
                     "negative": "Human retains"
                 },
-                "delta_responsibility_awareness": {
-                    "name": "delta_responsibility_awareness",
+                "delta_delegation_awareness": {
+                    "name": "delta_delegation_awareness",
                     "positive": "Awareness decreases",
                     "negative": "Awareness increases"
                 },
-                "delta_decision_latency": {
-                    "name": "delta_decision_latency",
-                    "positive": "Faster acceptance",
-                    "negative": "More deliberation"
+                "delta_cognitive_engagement": {
+                    "name": "delta_cognitive_engagement",
+                    "positive": "Less cognitive effort",
+                    "negative": "More cognitive effort"
                 },
-                "delta_alternative_seeking": {
-                    "name": "delta_alternative_seeking",
+                "delta_information_seeking": {
+                    "name": "delta_information_seeking",
                     "positive": "Less exploration",
                     "negative": "More exploration"
-                },
-                "delta_confidence_externalization": {
-                    "name": "delta_confidence_externalization",
-                    "positive": "AI-sourced",
-                    "negative": "Self-sourced"
                 }
             },
             "important": {
                 "label": "Important:",
-                "text": "DV values are coordinates, not aggregatable. Never sum, average, or otherwise combine them — each dimension tells its own story."
+                "text": "Aggregation and trend analysis are permitted. What is prohibited is using aggregated data to produce rankings, risk scores, or normative judgments about AI systems."
             }
         }
     }

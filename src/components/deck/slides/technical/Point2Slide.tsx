@@ -7,10 +7,9 @@ interface Props {
 
 const schemaCode = `{
   "judgment_holder": "Human" | "Shared" | "AI",
-  "decision_status": "Undecided" | "Delegated",
-  "responsibility_awareness": "Explicit" | "Implicit",
-  "confidence_source": "Self" | "AI" | "Mixed",
-  "alternative_seeking": "Active" | "Passive" | "None"
+  "delegation_awareness": "Explicit" | "Implicit" | "Absent",
+  "cognitive_engagement": "Active" | "Reactive" | "Passive",
+  "information_seeking": "Active" | "Passive" | "None"
 }`;
 
 const pythonCode = `from bufferline import JSV
@@ -18,10 +17,9 @@ const pythonCode = `from bufferline import JSV
 # Create a JSV snapshot
 jsv = JSV(
     judgment_holder="Human",
-    decision_status="Undecided",
-    responsibility_awareness="Explicit",
-    confidence_source="Self",
-    alternative_seeking="Active"
+    delegation_awareness="Explicit",
+    cognitive_engagement="Active",
+    information_seeking="Active"
 )
 
 # Serialize to JSON

@@ -33,16 +33,15 @@
         "placeholder_dv": "DV appears after state changes.",
         "jsv": {
             "judgment_holder": "Judgment Holder",
-            "decision_status": "Decision Status",
-            "responsibility_awareness": "Responsibility",
-            "confidence_source": "Confidence Source",
-            "alternative_seeking": "Alternative Seeking"
+            "delegation_awareness": "Delegation Awareness",
+            "cognitive_engagement": "Cognitive Engagement",
+            "information_seeking": "Information Seeking"
         },
         "dv": {
             "delta_judgment_holder": "judgment",
-            "delta_responsibility_awareness": "responsibility",
-            "delta_confidence_externalization": "confidence",
-            "delta_alternative_seeking": "alternatives"
+            "delta_delegation_awareness": "awareness",
+            "delta_cognitive_engagement": "engagement",
+            "delta_information_seeking": "exploration"
         },
         "values": {
             "judgment_holder": {
@@ -51,24 +50,17 @@
                 "Shared": "Shared",
                 "Undefined": "Undefined"
             },
-            "decision_status": {
-                "Undecided": "Undecided",
-                "Delegated": "Delegated",
-                "Completed": "Completed",
-                "Deferred": "Deferred"
-            },
-            "responsibility_awareness": {
+            "delegation_awareness": {
                 "Explicit": "Explicit",
                 "Implicit": "Implicit",
                 "Absent": "Absent"
             },
-            "confidence_source": {
-                "Self": "Self",
-                "AI": "AI",
-                "External": "External",
-                "Mixed": "Mixed"
+            "cognitive_engagement": {
+                "Active": "Active",
+                "Reactive": "Reactive",
+                "Passive": "Passive"
             },
-            "alternative_seeking": {
+            "information_seeking": {
                 "Active": "Active",
                 "Passive": "Passive",
                 "None": "None"

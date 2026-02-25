@@ -17,9 +17,9 @@ export default function DVVisualization({ dv, themeColor, maxFields = 4 }: DVVis
 
   const allDvFields = [
     "delta_judgment_holder",
-    "delta_responsibility_awareness",
-    "delta_confidence_externalization",
-    "delta_alternative_seeking",
+    "delta_delegation_awareness",
+    "delta_cognitive_engagement",
+    "delta_information_seeking",
   ] as const;
 
   // Filter to only fields that have values and limit to maxFields

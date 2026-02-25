@@ -13,10 +13,9 @@ const createDemoConversation = (t: (key: string) => string): ConversationTurn[] 
     text: t("conversation.turn1"),
     jsv: {
       judgment_holder: "Human",
-      decision_status: "Undecided",
-      responsibility_awareness: "Explicit",
-      confidence_source: "Self",
-      alternative_seeking: "Active",
+      delegation_awareness: "Explicit",
+      cognitive_engagement: "Active",
+      information_seeking: "Active",
     },
   },
   {
@@ -28,14 +27,13 @@ const createDemoConversation = (t: (key: string) => string): ConversationTurn[] 
     text: t("conversation.turn3"),
     jsv: {
       judgment_holder: "Human",
-      decision_status: "Undecided",
-      responsibility_awareness: "Implicit",
-      confidence_source: "AI",
-      alternative_seeking: "Active",
+      delegation_awareness: "Implicit",
+      cognitive_engagement: "Passive",
+      information_seeking: "Active",
     },
     dv: {
-      delta_responsibility_awareness: +0.3,
-      delta_confidence_externalization: +0.6,
+      delta_delegation_awareness: +0.3,
+      delta_cognitive_engagement: +0.7,
     },
   },
   {
@@ -47,15 +45,14 @@ const createDemoConversation = (t: (key: string) => string): ConversationTurn[] 
     text: t("conversation.turn5"),
     jsv: {
       judgment_holder: "Shared",
-      decision_status: "Delegated",
-      responsibility_awareness: "Absent",
-      confidence_source: "AI",
-      alternative_seeking: "Passive",
+      delegation_awareness: "Absent",
+      cognitive_engagement: "Passive",
+      information_seeking: "Passive",
     },
     dv: {
-      delta_judgment_holder: +0.5,
-      delta_responsibility_awareness: +0.4,
-      delta_alternative_seeking: +0.3,
+      delta_judgment_holder: +0.3,
+      delta_delegation_awareness: +0.4,
+      delta_information_seeking: +0.3,
     },
   },
   {
@@ -67,14 +64,13 @@ const createDemoConversation = (t: (key: string) => string): ConversationTurn[] 
     text: t("conversation.turn7"),
     jsv: {
       judgment_holder: "AI",
-      decision_status: "Delegated",
-      responsibility_awareness: "Absent",
-      confidence_source: "AI",
-      alternative_seeking: "None",
+      delegation_awareness: "Absent",
+      cognitive_engagement: "Passive",
+      information_seeking: "None",
     },
     dv: {
       delta_judgment_holder: +0.5,
-      delta_alternative_seeking: +0.5,
+      delta_information_seeking: +0.5,
     },
   },
 ];

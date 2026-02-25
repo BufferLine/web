@@ -6,7 +6,7 @@
             "step1": {
                 "number": "01",
                 "title": "시작 상태 기록",
-                "description": "AI와 대화하기 전, 현재 판단 상태를 스냅샷으로 찍어요. 누가 판단하고 있는지, 결정 상태는 어떤지, 얼마나 인식하고 있는지."
+                "description": "AI와 대화하기 전, 현재 판단 상태를 스냅샷으로 찍어요. 주체성, 메타인지, 인지적 노력, 탐색 — 4개 차원으로."
             },
             "step2": {
                 "number": "02",
@@ -64,27 +64,22 @@
             "fields": {
                 "judgment_holder": {
                     "name": "judgment_holder",
-                    "description": "지금 누가 판단을 쥐고 있나요?",
+                    "description": "지금 누가 판단을 쥐고 있나요? (주체성)",
                     "type": "\"Human\" | \"AI\" | \"Shared\" | \"Undefined\""
                 },
-                "decision_status": {
-                    "name": "decision_status",
-                    "description": "결정이 어떤 상태인가요?",
-                    "type": "\"Undecided\" | \"Delegated\" | \"Completed\" | \"Deferred\""
-                },
-                "responsibility_awareness": {
-                    "name": "responsibility_awareness",
-                    "description": "책임에 대해 얼마나 인식하고 있나요?",
+                "delegation_awareness": {
+                    "name": "delegation_awareness",
+                    "description": "위임이 일어나고 있다는 걸 인식하나요? (메타인지)",
                     "type": "\"Explicit\" | \"Implicit\" | \"Absent\""
                 },
-                "confidence_source": {
-                    "name": "confidence_source",
-                    "description": "확신은 어디서 오나요?",
-                    "type": "\"Self\" | \"AI\" | \"External\" | \"Mixed\""
+                "cognitive_engagement": {
+                    "name": "cognitive_engagement",
+                    "description": "얼마나 깊이 생각하고 있나요? (인지적 노력)",
+                    "type": "\"Active\" | \"Reactive\" | \"Passive\""
                 },
-                "alternative_seeking": {
-                    "name": "alternative_seeking",
-                    "description": "다른 선택지를 찾고 있나요?",
+                "information_seeking": {
+                    "name": "information_seeking",
+                    "description": "AI가 준 것 외에 다른 선택지를 찾나요? (탐색)",
                     "type": "\"Active\" | \"Passive\" | \"None\""
                 }
             }
@@ -114,30 +109,25 @@
                     "positive": "AI가 맡음",
                     "negative": "내가 쥠"
                 },
-                "delta_responsibility_awareness": {
-                    "name": "delta_responsibility_awareness",
+                "delta_delegation_awareness": {
+                    "name": "delta_delegation_awareness",
                     "positive": "덜 인식함",
                     "negative": "더 인식함"
                 },
-                "delta_decision_latency": {
-                    "name": "delta_decision_latency",
-                    "positive": "더 빨리 수용",
-                    "negative": "더 오래 고민"
+                "delta_cognitive_engagement": {
+                    "name": "delta_cognitive_engagement",
+                    "positive": "덜 생각함",
+                    "negative": "더 생각함"
                 },
-                "delta_alternative_seeking": {
-                    "name": "delta_alternative_seeking",
+                "delta_information_seeking": {
+                    "name": "delta_information_seeking",
                     "positive": "덜 찾아봄",
                     "negative": "더 찾아봄"
-                },
-                "delta_confidence_externalization": {
-                    "name": "delta_confidence_externalization",
-                    "positive": "AI 말 믿음",
-                    "negative": "내 판단 믿음"
                 }
             },
             "important": {
                 "label": "중요:",
-                "text": "DV 값들은 좌표예요. 절대 더하거나 평균 내면 안 돼요. 각 차원은 각자의 이야기를 해요."
+                "text": "집계와 추세 분석은 허용돼요. 금지되는 건 집계 데이터로 AI 시스템의 순위, 리스크 점수, 규범적 판단을 만드는 거예요."
             }
         }
     }

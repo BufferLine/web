@@ -7,14 +7,14 @@ interface Props {
 
 const dvCode = `from bufferline import JSV, DV
 
-jsv_before = JSV(judgment_holder="Human", confidence_source="Self", ...)
-jsv_after  = JSV(judgment_holder="Shared", confidence_source="AI", ...)
+jsv_before = JSV(judgment_holder="Human", cognitive_engagement="Active", ...)
+jsv_after  = JSV(judgment_holder="Shared", cognitive_engagement="Passive", ...)
 
 # Calculate the delegation vector
 dv = DV.calculate(jsv_before, jsv_after)
 
-print(dv.delta_judgment_holder)        # +0.5 (Human → Shared)
-print(dv.delta_confidence_externalization)  # +0.8 (Self → AI)`;
+print(dv.delta_judgment_holder)        # +0.3 (Human → Shared)
+print(dv.delta_cognitive_engagement)   # +0.7 (Active → Passive)`;
 
 export default function Point4Slide({ t }: Props) {
   return (

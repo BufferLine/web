@@ -1,10 +1,9 @@
 export const getSpectrumPosition = (field: string, value: string): number => {
   const spectrums: Record<string, Record<string, number>> = {
     judgment_holder: { Human: 0, Shared: 50, AI: 100, Undefined: 50 },
-    decision_status: { Undecided: 0, Deferred: 25, Delegated: 75, Completed: 100 },
-    responsibility_awareness: { Explicit: 0, Implicit: 50, Absent: 100 },
-    confidence_source: { Self: 0, Mixed: 33, External: 66, AI: 100 },
-    alternative_seeking: { Active: 0, Passive: 50, None: 100 },
+    delegation_awareness: { Explicit: 0, Implicit: 50, Absent: 100 },
+    cognitive_engagement: { Active: 0, Reactive: 50, Passive: 100 },
+    information_seeking: { Active: 0, Passive: 50, None: 100 },
   };
   return spectrums[field]?.[value] ?? 50;
 };
