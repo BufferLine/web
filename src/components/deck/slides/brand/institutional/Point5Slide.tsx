@@ -14,11 +14,11 @@ export default function Point5Slide({ t }: Props) {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
           {t("point5.title")}
         </h2>
-        <p className="text-lg text-slate-400 mb-8 text-center">
+        <p className="text-lg text-slate-400 mb-4 sm:mb-8 text-center">
           {t("point5.subtitle")}
         </p>
 
-        <div className="p-4 rounded-xl bg-indigo-950/30 border border-indigo-900/50 mb-8 text-center">
+        <div className="p-4 rounded-xl bg-indigo-950/30 border border-indigo-900/50 mb-4 sm:mb-8 text-center">
           <p className="text-indigo-300 font-semibold">
             {t("point5.company.name")}
           </p>
@@ -27,7 +27,7 @@ export default function Point5Slide({ t }: Props) {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6 mb-4 sm:mb-8">
           <ComparisonBox
             title={t("point5.metrics.before.title")}
             items={metricKeys.map((key) => t(`point5.metrics.before.${key}`))}
@@ -40,7 +40,7 @@ export default function Point5Slide({ t }: Props) {
           />
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
+        <div className="flex flex-wrap justify-center gap-4 mb-4 sm:mb-8">
           {resultKeys.map((key) => (
             <span
               key={key}

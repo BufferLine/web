@@ -6,7 +6,7 @@ interface SlideProps {
 export default function Slide({ children, className = "" }: SlideProps) {
   return (
     <div
-      className={`min-h-screen w-full flex flex-col items-center justify-center p-8 md:p-16 ${className}`}
+      className={`min-h-screen w-full flex flex-col items-center justify-center p-4 sm:p-8 md:p-16 ${className}`}
     >
       {children}
     </div>

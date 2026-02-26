@@ -33,7 +33,7 @@ export default function Point2Slide({ t }: Props) {
           {t("point2.title")}
         </h2>
         <p className="text-slate-400 text-center mb-6">{t("point2.subtitle")}</p>
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
           <CodeBlock
             icon={Code2}
             title="jsv-schema.json"

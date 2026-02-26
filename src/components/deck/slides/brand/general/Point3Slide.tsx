@@ -14,10 +14,10 @@ export default function Point3Slide({ t }: Props) {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
           {t("point3.title")}
         </h2>
-        <p className="text-lg text-slate-400 mb-8 text-center">
+        <p className="text-lg text-slate-400 mb-4 sm:mb-8 text-center">
           {t("point3.subtitle")}
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-6 mb-4 sm:mb-8">
           {metrics.map((key) => (
             <MetricCard
               key={key}

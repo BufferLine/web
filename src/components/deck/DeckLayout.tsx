@@ -43,7 +43,7 @@ export default function DeckLayout({
         style={{ transform: `translateY(-${currentSlide * 100}vh)` }}
       >
         {slides.map((slide, index) => (
-          <div key={index} className="h-screen">
+          <div key={index} className="h-screen overflow-y-auto md:overflow-hidden">
             {typeof slide === "function"
               ? (slide as (setSlide: (n: number) => void) => React.ReactNode)(setCurrentSlide)
               : slide}

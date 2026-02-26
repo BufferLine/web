@@ -31,7 +31,7 @@ export default function TrackIntroTemplate({
   return (
     <Slide className="bg-slate-950">
       <div className="max-w-5xl w-full">
-        <div className="text-center mb-10">
+        <div className="text-center mb-5 sm:mb-10">
           <span className={`inline-flex px-3 py-1 rounded-full text-xs font-medium ${colors.bg} border ${colors.border} ${colors.text}`}>
             {badge}
           </span>
@@ -43,7 +43,7 @@ export default function TrackIntroTemplate({
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-5">
           {pillars.map((pillar) => (
             <InfoCard
               key={pillar.title}
@@ -57,7 +57,7 @@ export default function TrackIntroTemplate({
         </div>
 
         {conclusion && (
-          <ConclusionBox theme={theme} className="mt-8">
+          <ConclusionBox theme={theme} className="mt-4 sm:mt-8">
             {conclusion}
           </ConclusionBox>
         )}

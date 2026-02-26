@@ -18,11 +18,11 @@ export default function Point4Slide({ t }: Props) {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
           {t("point4.title")}
         </h2>
-        <p className="text-lg text-slate-400 mb-10 text-center">
+        <p className="text-lg text-slate-400 mb-5 sm:mb-10 text-center">
           {t("point4.subtitle")}
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-6 mb-5 sm:mb-10">
           {(["trust", "safety", "innovation"] as const).map((key) => (
             <InfoCard
               key={key}

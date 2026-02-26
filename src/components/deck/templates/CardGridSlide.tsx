@@ -42,9 +42,9 @@ export default function CardGridSlide({
           {title}
         </h2>
         {subtitle && (
-          <p className="text-lg text-slate-400 mb-8 text-center">{subtitle}</p>
+          <p className="text-base sm:text-lg text-slate-400 mb-4 sm:mb-8 text-center">{subtitle}</p>
         )}
-        <div className={`grid grid-cols-1 ${gridCols} gap-6`}>
+        <div className={`grid grid-cols-1 ${gridCols} gap-3 sm:gap-6`}>
           {cards.map((card, index) => (
             <InfoCard
               key={index}
@@ -58,7 +58,7 @@ export default function CardGridSlide({
           ))}
         </div>
         {conclusion && (
-          <ConclusionBox theme={theme} className="mt-8">
+          <ConclusionBox theme={theme} className="mt-4 sm:mt-8">
             {conclusion}
           </ConclusionBox>
         )}
