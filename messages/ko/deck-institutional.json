@@ -20,11 +20,11 @@
                 "description": "거버넌스를 선언문이 아닌 반복 가능한 워크플로로 정의합니다."
             },
             "control": {
-                "title": "통제 레이어",
+                "title": "통제 신호",
                 "description": "JDVP 신호로 검토, 개입, 리포팅 트리거를 작동시킵니다."
             },
             "capability": {
-                "title": "역량 레이어",
+                "title": "역량 개발",
                 "description": "의사결정 책임을 유지하면서 팀과 사용자 역량을 함께 강화합니다."
             }
         },
@@ -37,7 +37,7 @@
             "subtitle": "관리되지 않는 '판단 위임' 리스크"
         },
         "point2": {
-            "title": "BufferLine 거버넌스 스택",
+            "title": "BufferLine 거버넌스 플로우",
             "subtitle": "JDVP 기반 증거를 운영 거버넌스로 연결"
         },
         "point3": {
@@ -73,7 +73,7 @@
         "conclusion": "JDVP는 증거 기반 AI 거버넌스를 위한 도구를 제공합니다."
     },
     "point2": {
-        "title": "BufferLine 거버넌스 스택 (JDVP 기반)",
+        "title": "BufferLine 거버넌스 플로우 (JDVP 기반)",
         "subtitle": "관찰 데이터에서 거버넌스 액션과 감사 대응 리포팅까지 연결합니다.",
         "principles": {
             "observer": {
@@ -285,7 +285,7 @@
         },
         "point2": {
             "label": "해결책:",
-            "text": "BufferLine 기관 스택: JDVP 측정 + 거버넌스 워크플로."
+            "text": "BufferLine 기관 플로우: JDVP 관찰 + 거버넌스 워크플로."
         },
         "point3": {
             "label": "효과:",

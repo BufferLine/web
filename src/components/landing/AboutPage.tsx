@@ -41,10 +41,10 @@ export default function AboutPage() {
       {/* What we build */}
       <Section>
         <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
-          {t("stack.title")}
+          {t("system.title")}
         </h2>
         <p className="text-surface-muted mb-8">
-          {t("stack.description")}
+          {t("system.description")}
         </p>
 
         <div className="space-y-4">
@@ -53,7 +53,7 @@ export default function AboutPage() {
               <div className="flex items-start gap-4">
                 <span className="inline-block h-2.5 w-2.5 rounded-full bg-accent-jdvp mt-2 flex-shrink-0" />
                 <p className="text-neutral-300 text-sm leading-relaxed group-hover:text-white transition-colors">
-                  {t("stack.jdvp")}
+                  {t("system.jdvp")}
                 </p>
               </div>
             </Card>
@@ -64,7 +64,7 @@ export default function AboutPage() {
               <div className="flex items-start gap-4">
                 <span className="inline-block h-2.5 w-2.5 rounded-full bg-accent-thinkprint mt-2 flex-shrink-0" />
                 <p className="text-neutral-300 text-sm leading-relaxed group-hover:text-white transition-colors">
-                  {t("stack.thinkprint")}
+                  {t("system.thinkprint")}
                 </p>
               </div>
             </Card>
@@ -74,7 +74,7 @@ export default function AboutPage() {
             <div className="flex items-start gap-4">
               <span className="inline-block h-2.5 w-2.5 rounded-full bg-accent-meta mt-2 flex-shrink-0" />
               <p className="text-neutral-500 text-sm leading-relaxed">
-                {t("stack.metagovernance")}
+                {t("system.metagovernance")}
               </p>
             </div>
           </Card>

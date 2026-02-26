@@ -7,14 +7,14 @@
         },
         "mission": {
             "title": "Mission",
-            "description": "BufferLine builds measurement and governance infrastructure for human-AI judgment delegation. We develop the protocols, telemetry, and tools to make judgment shifts visible and governable."
+            "description": "BufferLine builds the Cognitive OS for human-AI judgment delegation. We develop observation, extraction, and governance infrastructure to make judgment shifts visible and governable."
         },
-        "stack": {
+        "system": {
             "title": "What we build",
-            "description": "Three layers of cognitive infrastructure.",
-            "jdvp": "JDVP — Judgment Delegation Visibility Protocol. Measures where judgment moves during AI interaction.",
-            "thinkprint": "Thinkprint — Logic-mode playground engine. Externalizes thinking patterns into inspectable artifacts.",
-            "metagovernance": "Meta Governance — Systemic stabilization layer for judgment governance across organizations. (Future)"
+            "description": "Three independent domains in one Cognitive OS.",
+            "jdvp": "JDVP — Judgment Delegation Visibility Protocol. An observation protocol that tracks where judgment moves during AI interaction.",
+            "thinkprint": "Thinkprint — Reasoning pattern extraction protocol. Externalizes thinking patterns into inspectable, shareable modes.",
+            "metagovernance": "Meta Governance — Authority architecture domain for designing how power flows and stabilizes across agents and humans."
         },
         "company": {
             "title": "Company Information",

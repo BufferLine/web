@@ -7,21 +7,21 @@
     "hook": {
         "line1": "How do we build trust in",
         "line2": "AI-assisted decisions?",
-        "question": "BufferLine frames the governance problem, JDVP measures delegation, and Thinkprint supports human growth.",
+        "question": "BufferLine builds a Cognitive OS where JDVP observes, Thinkprint extracts, and Meta Governance designs authority flow.",
         "navigate": "Press → or swipe to continue"
     },
     "trackIntro": {
         "badge": "Brand Track",
         "title": "How This Deck Flows",
-        "subtitle": "From framing to adoption, this deck explains why the BufferLine stack matters and how it lands in the market.",
+        "subtitle": "From framing to adoption, this deck explains why the BufferLine Cognitive OS matters and how it lands in the market.",
         "pillars": {
             "narrative": {
                 "title": "Strategic Framing",
                 "description": "Define the governance gap in language stakeholders can align on."
             },
             "measurement": {
-                "title": "Evidence Layer",
-                "description": "Position JDVP and Thinkprint as practical layers, not abstract concepts."
+                "title": "Domain Design",
+                "description": "Position JDVP, Thinkprint, and Meta Governance as independent but composable domains."
             },
             "adoption": {
                 "title": "Adoption Path",
@@ -37,8 +37,8 @@
             "subtitle": "The invisible risk of judgment delegation."
         },
         "point2": {
-            "title": "BufferLine Stack",
-            "subtitle": "Brand framing + measurement + personal modeling."
+            "title": "BufferLine Cognitive OS",
+            "subtitle": "Observation + extraction + authority architecture."
         },
         "point3": {
             "title": "Market Opportunity",
@@ -73,23 +73,23 @@
         "conclusion": "We need a 'cognitive dashboard' for the AI age."
     },
     "point2": {
-        "title": "BufferLine Stack: Observe, Model, Govern",
-        "subtitle": "A layered architecture: JDVP measures, Thinkprint models, and BufferLine operationalizes governance.",
+        "title": "BufferLine Cognitive OS: Observe, Extract, Govern",
+        "subtitle": "A domain architecture: JDVP observes, Thinkprint extracts, and Meta Governance designs authority systems.",
         "features": {
             "jsv": {
-                "title": "JDVP Measurement Layer",
-                "description": "Captures judgment state and delegation shifts with JSV and DV."
+                "title": "JDVP Observation Domain",
+                "description": "Captures judgment states and delegation shifts with JSV and DV telemetry."
             },
             "dv": {
-                "title": "Thinkprint Modeling Layer",
-                "description": "Turns individual reasoning habits into explicit, inspectable profiles."
+                "title": "Thinkprint Extraction Domain",
+                "description": "Turns individual reasoning habits into explicit, inspectable, shareable modes."
             },
             "citizenai": {
-                "title": "Governance Layer (BufferLine)",
-                "description": "Connects evidence to policy, workflow, and organizational decisions."
+                "title": "Meta Governance Domain",
+                "description": "Designs authority flow rules that connect evidence to policy, workflow, and organizational decisions."
             }
         },
-        "principle": "Stack Principle: BufferLine frames, JDVP measures, Thinkprint experiments."
+        "principle": "Domain principle: each module works independently; synergy emerges when they are combined."
     },
     "point3": {
         "title": "Market Opportunity",
@@ -183,7 +183,7 @@
         },
         "point2": {
             "label": "Our Solution:",
-            "text": "BufferLine stack: JDVP for measurement, Thinkprint for modeling, governance for action."
+            "text": "BufferLine Cognitive OS: JDVP for observation, Thinkprint for extraction, Meta Governance for authority architecture."
         },
         "point3": {
             "label": "The Opportunity:",

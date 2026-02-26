@@ -2,7 +2,7 @@
 
 /* ============================================================
  * Brand Token Bridge — synced from brand.tokens.json
- * Last sync: 2026-02-23
+ * Last sync: 2026-02-26
  * ============================================================ */
 
 :root {
@@ -27,7 +27,7 @@
   --neutral-100: #F1F5F9;
   --neutral-0: #FFFFFF;
 
-  /* --- Stack accents --- */
+  /* --- Domain accents --- */
   --accent-bufferline: #6366F1;
   --accent-bufferline-light: #818CF8;
   --accent-bufferline-subtle: #A5B4FC;
@@ -74,7 +74,7 @@
   --accent-thinkprint-hover: #D97706; /* amber-600 — one step darker */
 
   /* --- Gradient endpoints --- */
-  --gradient-text-end: #A78BFA;        /* violet-400, brand text gradient */
+  --gradient-text-end: #6366F1;        /* indigo-500, brand text gradient */
 
   /* --- Legacy aliases (backward-compat) --- */
   --background: var(--surface-bg);
@@ -106,7 +106,7 @@
   --color-neutral-900: var(--neutral-900);
   --color-neutral-950: var(--neutral-950);
 
-  /* --- Stack accents --- */
+  /* --- Domain accents --- */
   --color-accent-bufferline: var(--accent-bufferline);
   --color-accent-bufferline-light: var(--accent-bufferline-light);
   --color-accent-bufferline-subtle: var(--accent-bufferline-subtle);
@@ -198,7 +198,7 @@ code {
   font-family: var(--font-mono), ui-monospace, monospace;
 }
 
-/* Gradient text helper — brand spec: #818CF8 → #A78BFA */
+/* Gradient text helper — brand spec: #818CF8 → #6366F1 */
 .text-gradient {
   background: linear-gradient(to right, var(--accent-bufferline-light), var(--gradient-text-end));
   -webkit-background-clip: text;

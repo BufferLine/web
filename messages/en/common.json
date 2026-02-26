@@ -1,13 +1,13 @@
 {
     "metadata": {
         "title": "BufferLine | Cognitive Infrastructure for Judgment Governance",
-        "description": "BufferLine builds measurement and governance infrastructure for human-AI judgment delegation. Protocol, telemetry, and tools to make judgment shifts visible.",
+        "description": "BufferLine builds the Cognitive OS for human-AI judgment delegation: observation, extraction, and governance infrastructure.",
         "ogTitle": "BufferLine | Where does the judgment go?",
-        "ogDescription": "Measurement and governance infrastructure for human-AI judgment delegation."
+        "ogDescription": "Cognitive OS for human-AI judgment delegation: observation, extraction, and governance infrastructure."
     },
     "header": {
         "nav": {
-            "stack": "Stack",
+            "system": "System",
             "jdvp": "JDVP",
             "thinkprint": "Thinkprint",
             "concept": "Concept",
@@ -22,8 +22,8 @@
     },
     "footer": {
         "brand": {
-            "description": "Judgment Delegation Visibility Protocol - A cognitive infrastructure for observing how human judgment shifts during AI interactions.",
-            "note": "This is NOT a product. It's a protocol specification and observation framework."
+            "description": "BufferLine builds the Cognitive OS for observing judgment movement in human-AI interaction and connecting it to governance architecture.",
+            "note": "Protocol-first today. Platform and product layers follow when evidence is strong."
         },
         "resources": {
             "title": "Resources",
@@ -44,7 +44,7 @@
             "contact": "Contact"
         },
         "copyright": "© {year} BufferLine Labs Pte. Ltd.",
-        "tagline": "Measures judgment shifts. Never evaluates them."
+        "tagline": "Observe judgment shifts. Architect governable authority."
     },
     "languageSwitcher": {
         "en": "EN",

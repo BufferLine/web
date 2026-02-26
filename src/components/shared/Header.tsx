@@ -52,7 +52,7 @@ export default function Header() {
       ]
     : [
         ...(!isThinkprintPage
-          ? [{ href: "#stack", label: t("nav.stack") }]
+          ? [{ href: "#system", label: t("nav.system") }]
           : []),
         { href: `/${locale}/jdvp`, label: t("nav.jdvp") },
         { href: `/${locale}/thinkprint`, label: t("nav.thinkprint") },

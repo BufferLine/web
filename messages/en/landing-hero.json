@@ -25,7 +25,7 @@
         "cards": {
             "observer": {
                 "title": "Observer, Not Judge",
-                "description": "BufferLine acts as a neutral observation layer. It captures judgment state transitions without labeling them as positive or negative."
+                "description": "BufferLine acts as a neutral observation protocol. It captures judgment state transitions without labeling them as positive or negative."
             },
             "measure": {
                 "title": "Measure, Not Score",

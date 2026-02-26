@@ -7,21 +7,21 @@
     "hook": {
         "line1": "AI 보조 의사결정의 신뢰를",
         "line2": "어떻게 설계할 것인가?",
-        "question": "BufferLine은 거버넌스 문제를 프레이밍하고, JDVP는 위임을 측정하며, Thinkprint는 개인 성장을 지원합니다.",
+        "question": "BufferLine은 JDVP(관찰), Thinkprint(추출), Meta Governance(권한 설계)로 구성된 Cognitive OS를 구축합니다.",
         "navigate": "→ 키 또는 스와이프로 계속"
     },
     "trackIntro": {
         "badge": "Brand 트랙",
         "title": "이 덱의 구성 흐름",
-        "subtitle": "프레이밍에서 채택까지, BufferLine 스택이 왜 필요한지와 시장 적용 방식을 연결합니다.",
+        "subtitle": "프레이밍에서 채택까지, BufferLine Cognitive OS가 왜 필요한지와 시장 적용 방식을 연결합니다.",
         "pillars": {
             "narrative": {
                 "title": "전략 프레이밍",
                 "description": "이해관계자가 같은 언어로 정렬할 수 있게 거버넌스 갭을 정의합니다."
             },
             "measurement": {
-                "title": "근거 레이어",
-                "description": "JDVP와 Thinkprint를 추상이 아닌 실무 레이어로 제시합니다."
+                "title": "도메인 설계",
+                "description": "JDVP, Thinkprint, Meta Governance를 독립적이면서 조합 가능한 도메인으로 제시합니다."
             },
             "adoption": {
                 "title": "채택 경로",
@@ -37,8 +37,8 @@
             "subtitle": "보이지 않는 판단 위임의 위험"
         },
         "point2": {
-            "title": "BufferLine 스택",
-            "subtitle": "브랜드 프레이밍 + 측정 + 개인 모델링"
+            "title": "BufferLine Cognitive OS",
+            "subtitle": "관찰 + 추출 + 권한 아키텍처"
         },
         "point3": {
             "title": "시장 기회",
@@ -73,23 +73,23 @@
         "conclusion": "AI 시대를 위한 '인지 대시보드'가 필요합니다."
     },
     "point2": {
-        "title": "BufferLine 스택: Observe, Model, Govern",
-        "subtitle": "계층형 아키텍처: JDVP는 측정하고, Thinkprint는 모델링하며, BufferLine은 거버넌스를 운영으로 연결합니다.",
+        "title": "BufferLine Cognitive OS: Observe, Extract, Govern",
+        "subtitle": "도메인 아키텍처: JDVP는 관찰하고, Thinkprint는 추출하며, Meta Governance는 권한 시스템을 설계합니다.",
         "features": {
             "jsv": {
-                "title": "JDVP 측정 레이어",
-                "description": "JSV와 DV로 판단 상태와 위임 이동을 포착합니다."
+                "title": "JDVP 관찰 도메인",
+                "description": "JSV/DV 텔레메트리로 판단 상태와 위임 이동을 포착합니다."
             },
             "dv": {
-                "title": "Thinkprint 모델링 레이어",
-                "description": "개인의 사고 습관을 명시적이고 점검 가능한 프로필로 전환합니다."
+                "title": "Thinkprint 추출 도메인",
+                "description": "개인의 사고 습관을 명시적이고 점검 가능한 공유 모드로 전환합니다."
             },
             "citizenai": {
-                "title": "거버넌스 레이어 (BufferLine)",
-                "description": "관찰 근거를 정책, 워크플로, 조직 의사결정과 연결합니다."
+                "title": "Meta Governance 도메인",
+                "description": "관찰 근거를 정책, 워크플로, 조직 의사결정과 연결할 권한 흐름 규칙을 설계합니다."
             }
         },
-        "principle": "스택 원칙: BufferLine이 프레이밍하고, JDVP가 측정하며, Thinkprint가 실험합니다."
+        "principle": "도메인 원칙: 각 모듈은 독립적으로 동작하고, 함께 조합될 때 시너지가 생깁니다."
     },
     "point3": {
         "title": "시장 기회",
@@ -183,7 +183,7 @@
         },
         "point2": {
             "label": "솔루션:",
-            "text": "BufferLine 스택 — 측정은 JDVP, 모델링은 Thinkprint, 실행은 거버넌스."
+            "text": "BufferLine Cognitive OS — 관찰은 JDVP, 추출은 Thinkprint, 권한 설계는 Meta Governance."
         },
         "point3": {
             "label": "기회:",

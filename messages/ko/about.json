@@ -7,14 +7,14 @@
         },
         "mission": {
             "title": "미션",
-            "description": "BufferLine은 인간-AI 판단 위임을 위한 측정 및 거버넌스 인프라를 구축합니다. 판단의 이동을 가시화하고 통제 가능하게 만드는 프로토콜, 텔레메트리, 도구를 개발합니다."
+            "description": "BufferLine은 인간-AI 판단 위임을 위한 Cognitive OS를 구축합니다. 판단 이동을 가시화하고 거버넌스 가능한 상태로 만들기 위해 관찰, 추출, 거버넌스 인프라를 개발합니다."
         },
-        "stack": {
+        "system": {
             "title": "우리가 만드는 것",
-            "description": "인지 인프라의 세 가지 레이어.",
-            "jdvp": "JDVP — 판단 위임 가시성 프로토콜. AI 상호작용 중 판단이 어디로 이동하는지 측정합니다.",
-            "thinkprint": "Thinkprint — 로직 모드 플레이그라운드 엔진. 사고 패턴을 검사 가능한 아티팩트로 외부화합니다.",
-            "metagovernance": "Meta Governance — 조직 전반의 판단 거버넌스를 위한 시스템적 안정화 레이어. (예정)"
+            "description": "하나의 Cognitive OS를 이루는 3개의 독립 도메인.",
+            "jdvp": "JDVP — 판단 위임 가시성 프로토콜. AI 상호작용 중 판단이 어디로 이동하는지 관찰하는 프로토콜입니다.",
+            "thinkprint": "Thinkprint — 추론 패턴 추출 프로토콜. 사고 패턴을 검사 가능하고 공유 가능한 모드로 외부화합니다.",
+            "metagovernance": "Meta Governance — 에이전트와 인간 전반에서 권한의 흐름과 안정화를 설계하는 권한 아키텍처 도메인입니다."
         },
         "company": {
             "title": "회사 정보",

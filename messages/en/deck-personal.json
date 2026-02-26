@@ -7,7 +7,7 @@
     "hook": {
         "line1": "Personal AI use is a habit.",
         "line2": "Make it visible, then improve it.",
-        "question": "In the Brand track, Thinkprint drives reflection while JDVP tracks delegation shifts underneath.",
+        "question": "In the Brand track, Thinkprint drives reflection and JDVP provides observation signals that can be used independently or together.",
         "navigate": "Press → or swipe to continue"
     },
     "trackIntro": {
@@ -158,7 +158,7 @@
         },
         "point2": {
             "label": "The Tool:",
-            "text": "BufferLine personal stack combines Thinkprint reflection with JDVP measurement."
+            "text": "BufferLine personal flow combines Thinkprint reflection with JDVP observation."
         },
         "point3": {
             "label": "The Goal:",

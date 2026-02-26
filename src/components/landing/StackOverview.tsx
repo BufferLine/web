@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 import NextLink from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
-const layers = [
+const domains = [
   {
     key: "jdvp",
     accentText: "text-accent-jdvp",
@@ -36,11 +36,11 @@ const layers = [
 ] as const;
 
 export default function StackOverview() {
-  const t = useTranslations("stack");
+  const t = useTranslations("system");
   const locale = useLocale();
 
   return (
-    <Section id="stack" className="bg-surface-card/30">
+    <Section id="system" className="bg-surface-card/30">
       <FadeInView>
         <div className="text-center mb-12">
           <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-accent-bufferline/10 text-accent-bufferline-light border border-accent-bufferline/20 mb-4">
@@ -56,8 +56,8 @@ export default function StackOverview() {
       </FadeInView>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {layers.map((layer, i) => {
-          const hasLink = layer.href !== null;
+        {domains.map((domain, i) => {
+          const hasLink = domain.href !== null;
 
           const content = (
             <Card
@@ -66,28 +66,28 @@ export default function StackOverview() {
               className={`group h-full flex flex-col ${hasLink ? "cursor-pointer" : ""}`}
             >
               {/* Status badge */}
-              <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full ${layer.accentBg} border ${layer.accentBorder} text-xs font-medium ${layer.accentText} mb-4 w-fit`}>
-                <span className={`inline-block h-1.5 w-1.5 rounded-full ${layer.accentDot}`} />
-                {t(`${layer.key}.status`)}
+              <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full ${domain.accentBg} border ${domain.accentBorder} text-xs font-medium ${domain.accentText} mb-4 w-fit`}>
+                <span className={`inline-block h-1.5 w-1.5 rounded-full ${domain.accentDot}`} />
+                {t(`${domain.key}.status`)}
               </div>
 
               {/* Title */}
-              <h3 className={`text-xl font-bold text-white mb-1 transition-colors ${layer.hoverText}`}>
-                {t(`${layer.key}.title`)}
+              <h3 className={`text-xl font-bold text-white mb-1 transition-colors ${domain.hoverText}`}>
+                {t(`${domain.key}.title`)}
               </h3>
-              <p className={`text-sm ${layer.accentText} mb-3`}>
-                {t(`${layer.key}.subtitle`)}
+              <p className={`text-sm ${domain.accentText} mb-3`}>
+                {t(`${domain.key}.subtitle`)}
               </p>
 
               {/* Description */}
               <p className="text-surface-muted text-sm leading-relaxed flex-grow">
-                {t(`${layer.key}.description`)}
+                {t(`${domain.key}.description`)}
               </p>
 
               {/* CTA */}
               {hasLink && (
-                <div className={`mt-4 flex items-center text-sm font-medium text-neutral-500 transition-colors ${layer.hoverText}`}>
-                  {t(`${layer.key}.cta`)}
+                <div className={`mt-4 flex items-center text-sm font-medium text-neutral-500 transition-colors ${domain.hoverText}`}>
+                  {t(`${domain.key}.cta`)}
                   <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
                 </div>
               )}
@@ -95,9 +95,9 @@ export default function StackOverview() {
           );
 
           return (
-            <FadeInView key={layer.key} delay={i * 100}>
+            <FadeInView key={domain.key} delay={i * 100}>
               {hasLink ? (
-                <NextLink href={`/${locale}${layer.href}`} className="h-full">
+                <NextLink href={`/${locale}${domain.href}`} className="h-full">
                   {content}
                 </NextLink>
               ) : (

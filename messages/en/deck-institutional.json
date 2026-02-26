@@ -20,11 +20,11 @@
                 "description": "Define governance as a repeatable workflow, not a policy slide."
             },
             "control": {
-                "title": "Control Layer",
+                "title": "Control Signals",
                 "description": "Use JDVP signals to trigger review, escalation, and reporting."
             },
             "capability": {
-                "title": "Capability Layer",
+                "title": "Capability Development",
                 "description": "Develop teams and users while maintaining accountable decision ownership."
             }
         },
@@ -37,7 +37,7 @@
             "subtitle": "The unmanaged risk of 'judgment delegation'."
         },
         "point2": {
-            "title": "BufferLine Governance Stack",
+            "title": "BufferLine Governance Flow",
             "subtitle": "JDVP-powered evidence that drives operational governance."
         },
         "point3": {
@@ -73,7 +73,7 @@
         "conclusion": "JDVP provides the tools for evidence-based AI governance."
     },
     "point2": {
-        "title": "BufferLine Governance Stack (JDVP-powered)",
+        "title": "BufferLine Governance Flow (JDVP-powered)",
         "subtitle": "From observation data to governance actions and audit-ready reporting.",
         "principles": {
             "observer": {
@@ -285,7 +285,7 @@
         },
         "point2": {
             "label": "The Solution:",
-            "text": "BufferLine institutional stack: JDVP measurement plus governance workflows."
+            "text": "BufferLine institutional flow: JDVP observation plus governance workflows."
         },
         "point3": {
             "label": "The Benefit:",

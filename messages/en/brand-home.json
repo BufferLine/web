@@ -1,40 +1,40 @@
 {
     "brandHero": {
-        "badge": "Cognitive Infrastructure",
+        "badge": "Cognitive OS",
         "headline": {
             "line1": "Where does the",
             "line2": "judgment go?"
         },
-        "subtitle": "BufferLine builds measurement and governance infrastructure for human-AI judgment delegation.",
-        "description": "Every interaction with AI involves a judgment shift. BufferLine provides the protocol, telemetry, and tools to make these shifts visible and governable.",
+        "subtitle": "BufferLine builds the Cognitive OS for human-AI judgment delegation.",
+        "description": "Every interaction with AI involves a judgment shift. BufferLine builds observation protocols first, then platform and product layers that make these shifts visible and governable.",
         "cta": {
             "explore": "Explore JDVP",
             "github": "GitHub"
         }
     },
-    "stack": {
-        "badge": "The Stack",
-        "title": "Three layers of judgment infrastructure",
-        "description": "JDVP measures. Thinkprint models. Meta Governance stabilizes. BufferLine frames it all.",
+    "system": {
+        "badge": "System Domains",
+        "title": "Three independent domains, one Cognitive OS",
+        "description": "JDVP observes. Thinkprint extracts. Meta Governance architects authority systems. Each works independently. Together, they form a Cognitive OS.",
         "jdvp": {
-            "status": "Active",
+            "status": "Active Protocol",
             "title": "JDVP",
-            "subtitle": "Judgment Delegation Visibility Protocol",
-            "description": "Defines Judgment State Vectors and Delegation Vectors to capture how judgment holder, responsibility awareness, and decision latency shift over time.",
+            "subtitle": "Observation protocol",
+            "description": "Measures judgment movement with Judgment State Vectors and Delegation Vectors in human-AI workflows. Runs independently and interoperates with other domains.",
             "cta": "Explore protocol"
         },
         "thinkprint": {
-            "status": "Coming Soon",
+            "status": "Public Track",
             "title": "Thinkprint",
-            "subtitle": "Thinkprint playground",
-            "description": "Extracts logic structure into playable Thinkprint modes you can remix, compare, and iterate on top of JDVP signals.",
-            "cta": "Learn more"
+            "subtitle": "Extraction protocol",
+            "description": "Externalizes reasoning patterns into inspectable, shareable modes. Runs independently and combines with JDVP for richer calibration.",
+            "cta": "Explore Thinkprint"
         },
         "metagovernance": {
-            "status": "Future",
+            "status": "Research Track",
             "title": "Meta Governance",
-            "subtitle": "Systemic stabilization",
-            "description": "Distributed feedback and stabilization layer for judgment governance across organizations and systems."
+            "subtitle": "Authority architecture",
+            "description": "Designs how authority emerges, flows, and stabilizes across agents and humans. Operates independently and is strongest with JDVP plus Thinkprint."
         }
     }
 }
