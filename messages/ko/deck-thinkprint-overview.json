@@ -146,7 +146,7 @@
         "subtitle": "JDVP는 판단이 어디로 이동하는지 측정하고, Thinkprint는 논리구조를 포착합니다. 함께 실험 가능한 측정 루프를 만듭니다.",
         "connections": {
             "jdvp": {
-                "title": "JDVP가 이동을 측정",
+                "title": "JDVP는 판단의 이동을 측정",
                 "description": "프로토콜이 인간-AI 상호작용에서 판단 위임을 실시간으로 추적합니다."
             },
             "thinkprint": {

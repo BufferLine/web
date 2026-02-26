@@ -137,7 +137,7 @@
             },
             "metadata": {
                 "title": "metadata.json",
-                "description": "Versioning, extraction method, confidence scores, and optional JDVP links."
+                "description": "Versioning, extraction method, confidence, and optional JDVP links."
             }
         }
     },
@@ -146,7 +146,7 @@
         "subtitle": "JDVP tracks where judgment moves. Thinkprint captures your logic structure. Together, they make experimentation measurable.",
         "connections": {
             "jdvp": {
-                "title": "JDVP Measures Shifts",
+                "title": "JDVP Measures Judgment Shifts",
                 "description": "The protocol tracks judgment delegation across human-AI interactions in real time."
             },
             "thinkprint": {
