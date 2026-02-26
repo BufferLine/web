@@ -1,8 +1,9 @@
-export type DeckTheme = "bufferline" | "jdvp";
+export type DeckTheme = "bufferline" | "jdvp" | "thinkprint";
 
 const gradientMap: Record<DeckTheme, string> = {
   bufferline: "from-accent-bufferline to-accent-bufferline-light",
   jdvp: "from-accent-jdvp to-semantic-shared",
+  thinkprint: "from-accent-thinkprint to-accent-thinkprint-light",
 };
 
 interface ProgressBarProps {

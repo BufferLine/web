@@ -71,6 +71,7 @@
   --accent-jdvp-hover: #0D9488;       /* teal one step darker */
   --semantic-human-hover: #4ADE80;     /* green-400 — lighter for hover */
   --accent-thinkprint-light: #FBBF24; /* amber-400 — lighter variant */
+  --accent-thinkprint-subtle: #FCD34D; /* amber-300 — subtle variant */
   --accent-thinkprint-hover: #D97706; /* amber-600 — one step darker */
 
   /* --- Gradient endpoints --- */
@@ -127,6 +128,7 @@
 
   /* --- Accent derived states --- */
   --color-accent-thinkprint-light: var(--accent-thinkprint-light);
+  --color-accent-thinkprint-subtle: var(--accent-thinkprint-subtle);
 
   /* --- Typography --- */
   --font-sans: var(--font-inter);

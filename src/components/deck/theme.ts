@@ -1,4 +1,4 @@
-export type DeckTheme = "bufferline" | "jdvp";
+export type DeckTheme = "bufferline" | "jdvp" | "thinkprint";
 
 export interface ThemeColors {
   // Text colors
@@ -50,6 +50,19 @@ const themeMap: Record<DeckTheme, ThemeColors> = {
     button: "bg-accent-jdvp",
     buttonHover: "hover:bg-accent-jdvp-hover",
   },
+  thinkprint: {
+    text: "text-accent-thinkprint-light",
+    textLight: "text-accent-thinkprint-subtle",
+    textHover: "group-hover:text-accent-thinkprint-subtle",
+    border: "border-accent-thinkprint/[0.15]",
+    borderHover: "hover:border-accent-thinkprint/50",
+    bg: "bg-accent-thinkprint/[0.08]",
+    bgLight: "bg-accent-thinkprint/[0.05]",
+    gradient: "from-accent-thinkprint to-accent-thinkprint-light",
+    gradientText: "from-accent-thinkprint-light to-accent-thinkprint-subtle",
+    button: "bg-accent-thinkprint",
+    buttonHover: "hover:bg-accent-thinkprint-hover",
+  },
 };
 
 export function getTheme(theme: DeckTheme): ThemeColors {
@@ -61,6 +74,7 @@ export function getGradientBg(theme: DeckTheme): string {
   const colorMap: Record<DeckTheme, string> = {
     bufferline: "via-accent-bufferline/[0.08]",
     jdvp: "via-accent-jdvp/[0.08]",
+    thinkprint: "via-accent-thinkprint/[0.08]",
   };
   return colorMap[theme];
 }

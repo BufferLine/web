@@ -1,0 +1,9 @@
+export { default as HookSlide } from "./HookSlide";
+export { default as TrackIntroSlide } from "./TrackIntroSlide";
+export { default as TOCSlide } from "./TOCSlide";
+export { default as Point1Slide } from "./Point1Slide";
+export { default as Point2Slide } from "./Point2Slide";
+export { default as Point3Slide } from "./Point3Slide";
+export { default as Point4Slide } from "./Point4Slide";
+export { default as Point5Slide } from "./Point5Slide";
+export { default as SummarySlide } from "./SummarySlide";

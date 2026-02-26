@@ -15,6 +15,10 @@
             "jdvp": {
                 "title": "JDVP Decks",
                 "description": "Protocol-focused decks for architecture, measurement logic, and implementation details."
+            },
+            "thinkprint": {
+                "title": "Thinkprint Decks",
+                "description": "Reasoning extraction and logic-mode playground — capture how you think, not what you remember."
             }
         },
         "decks": {
@@ -33,6 +37,10 @@
             "technical": {
                 "title": "JDVP Deck · Technical Deep-Dive",
                 "description": "Protocol mechanics, data structures, algorithms, and implementation details."
+            },
+            "overview": {
+                "title": "Thinkprint Deck · Domain Overview",
+                "description": "What Thinkprint is, its pipeline, output artifacts, and JDVP synergy."
             }
         }
     },

@@ -24,6 +24,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     deckPersonal,
     deckInstitutional,
     deckTechnical,
+    deckThinkprintOverview,
   ] = await Promise.all([
     import(`@messages/${locale}/common.json`),
     import(`@messages/${locale}/brand-home.json`),
@@ -38,6 +39,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     import(`@messages/${locale}/deck-personal.json`),
     import(`@messages/${locale}/deck-institutional.json`),
     import(`@messages/${locale}/deck-technical.json`),
+    import(`@messages/${locale}/deck-thinkprint-overview.json`),
   ]);
 
   return {
@@ -56,6 +58,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       deck_personal: deckPersonal.default,
       deck_institution: deckInstitutional.default,
       deck_technical: deckTechnical.default,
+      deck_thinkprint_overview: deckThinkprintOverview.default,
     },
   };
 });
