@@ -92,12 +92,12 @@ export default function InteractiveDemo({
       {/* Header */}
       <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">{title}</h2>
       {subtitle && (
-        <p className="text-lg text-surface-muted mb-8 text-center">{subtitle}</p>
+        <p className="text-base sm:text-lg text-surface-muted mb-4 sm:mb-8 text-center">{subtitle}</p>
       )}
 
       {/* Main Grid with relative positioning for overlay */}
       <div className="relative">
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6">
           {/* Left: Conversation */}
           <ConversationPanel
             conversation={conversation}

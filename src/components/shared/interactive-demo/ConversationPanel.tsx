@@ -41,7 +41,7 @@ export default function ConversationPanel({
   };
 
   return (
-    <div className="rounded-xl bg-surface-card/70 border border-surface-border overflow-hidden flex flex-col h-[420px]">
+    <div className="rounded-xl bg-surface-card/70 border border-surface-border overflow-hidden flex flex-col h-[300px] sm:h-[420px]">
       {/* Header with play controls (top right) */}
       <div className="bg-surface-card/80 px-4 py-2 border-b border-surface-border flex items-center justify-between flex-shrink-0">
         <span className="text-xs text-neutral-500">

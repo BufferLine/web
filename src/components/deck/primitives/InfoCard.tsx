@@ -24,8 +24,8 @@ export default function InfoCard({
 
   const cardClasses =
     variant === "themed"
-      ? `p-6 rounded-xl ${colors.bg} border ${colors.border}`
-      : "p-5 rounded-xl bg-slate-900/50 border border-slate-800";
+      ? `p-4 sm:p-6 rounded-xl ${colors.bg} border ${colors.border}`
+      : "p-3 sm:p-5 rounded-xl bg-slate-900/50 border border-slate-800";
 
   return (
     <div className={cardClasses}>

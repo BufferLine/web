@@ -41,7 +41,7 @@ export default function CodeBlock({
           {title}
         </span>
       </div>
-      <pre className="p-4 text-xs overflow-x-auto text-slate-300 font-mono leading-relaxed">
+      <pre className="p-3 sm:p-4 text-xs overflow-x-auto text-slate-300 font-mono leading-relaxed">
         {code}
       </pre>
     </div>

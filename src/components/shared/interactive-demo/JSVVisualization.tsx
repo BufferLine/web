@@ -30,7 +30,7 @@ export default function JSVVisualization({ jsv, themeColor }: JSVVisualizationPr
   };
 
   return (
-    <div className="rounded-xl bg-surface-card/70 border border-surface-border p-4 h-[250px]">
+    <div className="rounded-xl bg-surface-card/70 border border-surface-border p-3 sm:p-4 h-[200px] sm:h-[250px]">
       <h4 className={`text-sm font-semibold ${getTextClass(themeColor)} mb-4`}>
         {t("jsv_title")}
       </h4>

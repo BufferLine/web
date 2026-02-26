@@ -29,7 +29,7 @@ export default function DVVisualization({ dv, themeColor, maxFields = 4 }: DVVis
 
   return (
     <div
-      className={`rounded-xl border ${borderClass} p-4 h-[150px] transition-opacity duration-300 ${
+      className={`rounded-xl border ${borderClass} p-3 sm:p-4 h-[120px] sm:h-[150px] transition-opacity duration-300 ${
         dv ? "opacity-100" : "opacity-30"
       }`}
     >
