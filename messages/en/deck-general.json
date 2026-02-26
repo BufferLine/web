@@ -135,7 +135,8 @@
                 "description": "JDVP-powered governance workflows for safety, auditability, and regulatory readiness.",
                 "model": "Enterprise SaaS licensing"
             }
-        }
+        },
+        "conclusion": "Both tracks share one brand architecture — domains compose differently per audience, but data and governance layers stay connected."
     },
     "domainDiff": {
         "title": "What Makes Each Domain Different",

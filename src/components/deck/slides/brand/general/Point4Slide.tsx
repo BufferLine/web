@@ -1,9 +1,14 @@
-import { Slide, InfoCard } from "@/components/deck";
+import { Slide, InfoCard, ConclusionBox } from "@/components/deck";
 import { Users, Building } from "lucide-react";
 
 interface Props {
   t: (key: string) => string;
 }
+
+const domainTags = {
+  personal: ["Thinkprint", "JDVP"],
+  institutional: ["JDVP", "Meta Governance", "Thinkprint"],
+} as const;
 
 export default function Point4Slide({ t }: Props) {
   return (
@@ -16,7 +21,7 @@ export default function Point4Slide({ t }: Props) {
           {t("point4.subtitle")}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6 mb-4 sm:mb-8">
           <InfoCard
             icon={Users}
             title={t("point4.strategies.personal.title")}
@@ -24,9 +29,18 @@ export default function Point4Slide({ t }: Props) {
             theme="bufferline"
             variant="themed"
             footer={
-              <p className="text-xs text-indigo-400/80 font-mono">
-                {t("point4.strategies.personal.model")}
-              </p>
+              <div className="space-y-2">
+                <p className="text-xs text-indigo-400/80 font-mono">
+                  {t("point4.strategies.personal.model")}
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {domainTags.personal.map((d) => (
+                    <span key={d} className="px-2 py-0.5 rounded-full bg-indigo-900/40 text-indigo-300 text-[10px] font-mono">
+                      {d}
+                    </span>
+                  ))}
+                </div>
+              </div>
             }
           />
           <InfoCard
@@ -36,12 +50,25 @@ export default function Point4Slide({ t }: Props) {
             theme="bufferline"
             variant="themed"
             footer={
-              <p className="text-xs text-indigo-400/80 font-mono">
-                {t("point4.strategies.institutional.model")}
-              </p>
+              <div className="space-y-2">
+                <p className="text-xs text-indigo-400/80 font-mono">
+                  {t("point4.strategies.institutional.model")}
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {domainTags.institutional.map((d) => (
+                    <span key={d} className="px-2 py-0.5 rounded-full bg-indigo-900/40 text-indigo-300 text-[10px] font-mono">
+                      {d}
+                    </span>
+                  ))}
+                </div>
+              </div>
             }
           />
         </div>
+
+        <ConclusionBox theme="bufferline">
+          {t("point4.conclusion")}
+        </ConclusionBox>
       </div>
     </Slide>
   );
