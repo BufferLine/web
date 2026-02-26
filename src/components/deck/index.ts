@@ -27,4 +27,5 @@ export {
   TOCTemplate,
   SummaryTemplate,
   CardGridSlide,
+  TrackIntroTemplate,
 } from "./templates";

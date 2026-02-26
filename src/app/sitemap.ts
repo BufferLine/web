@@ -28,14 +28,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   }));
 
-  const personaforgeRoutes = routing.locales.map((locale) => ({
-    url: `${baseUrl}/${locale}/personaforge`,
+  const thinkprintRoutes = routing.locales.map((locale) => ({
+    url: `${baseUrl}/${locale}/thinkprint`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.8,
     alternates: {
       languages: Object.fromEntries(
-        routing.locales.map((l) => [l, `${baseUrl}/${l}/personaforge`])
+        routing.locales.map((l) => [l, `${baseUrl}/${l}/thinkprint`])
       ),
     },
   }));
@@ -52,5 +52,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   }));
 
-  return [...homeRoutes, ...jdvpRoutes, ...personaforgeRoutes, ...aboutRoutes];
+  return [...homeRoutes, ...jdvpRoutes, ...thinkprintRoutes, ...aboutRoutes];
 }

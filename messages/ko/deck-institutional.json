@@ -5,24 +5,44 @@
         "keyboard": "로 이동"
     },
     "hook": {
-        "line1": "설명가능성(XAI)을 넘어",
-        "line2": "이제는 '영향력'을 측정할 때입니다.",
-        "question": "AI의 논리를 넘어, 인간의 결정에 미치는 '보이지 않는 영향력'. 이것이 우리가 놓치고 있는 진짜 거버넌스 갭입니다.",
+        "line1": "기관의 AI 도입에는",
+        "line2": "증거, 워크플로, 책임체계가 필요합니다.",
+        "question": "Brand 트랙에서 BufferLine은 JDVP 측정을 배포 가능한 거버넌스 운영으로 연결합니다.",
         "navigate": "→ 키 또는 스와이프로 계속"
     },
+    "trackIntro": {
+        "badge": "Brand 트랙 · Institutional",
+        "title": "기관 거버넌스 구성 흐름",
+        "subtitle": "거버넌스 갭을 운영모델로 전환하고, 로드맵과 성과 근거로 실효성을 검증합니다.",
+        "pillars": {
+            "operations": {
+                "title": "운영 프레이밍",
+                "description": "거버넌스를 선언문이 아닌 반복 가능한 워크플로로 정의합니다."
+            },
+            "control": {
+                "title": "통제 레이어",
+                "description": "JDVP 신호로 검토, 개입, 리포팅 트리거를 작동시킵니다."
+            },
+            "capability": {
+                "title": "역량 레이어",
+                "description": "의사결정 책임을 유지하면서 팀과 사용자 역량을 함께 강화합니다."
+            }
+        },
+        "conclusion": "컴플라이언스, 제품, 경영진 커뮤니케이션에 적합한 덱입니다."
+    },
     "toc": {
-        "title": "기관을 위한 JDVP",
+        "title": "Brand 덱: 기관 거버넌스",
         "point1": {
             "title": "거버넌스의 빈틈",
             "subtitle": "관리되지 않는 '판단 위임' 리스크"
         },
         "point2": {
-            "title": "JDVP 솔루션",
-            "subtitle": "증거 기반 AI 거버넌스 인프라"
+            "title": "BufferLine 거버넌스 스택",
+            "subtitle": "JDVP 기반 증거를 운영 거버넌스로 연결"
         },
         "point3": {
             "title": "라이브 데모",
-            "subtitle": "금융 상담 시뮬레이션으로 보는 JDVP"
+            "subtitle": "금융 상담 시나리오로 보는 거버넌스 워크플로"
         },
         "point4": {
             "title": "조직을 위한 가치",
@@ -53,26 +73,26 @@
         "conclusion": "JDVP는 증거 기반 AI 거버넌스를 위한 도구를 제공합니다."
     },
     "point2": {
-        "title": "JDVP: 증거 기반 AI 거버넌스",
-        "subtitle": "AI의 영향을 객관적으로 측정하고 문서화하는 프로토콜",
+        "title": "BufferLine 거버넌스 스택 (JDVP 기반)",
+        "subtitle": "관찰 데이터에서 거버넌스 액션과 감사 대응 리포팅까지 연결합니다.",
         "principles": {
             "observer": {
-                "title": "관찰 (Observe)",
-                "description": "AI-인간 대화의 판단 흐름을 중립적으로 기록합니다. 평가나 개입 없이 순수한 관찰만 수행합니다."
+                "title": "관찰 (Observe · JDVP)",
+                "description": "프로토콜 정합 텔레메트리로 AI-인간 대화의 판단 흐름을 중립적으로 기록합니다."
             },
             "measure": {
-                "title": "측정 (Measure)",
-                "description": "JSV와 DV를 통해 판단 위임의 방향과 크기를 정량화합니다. 주관적 추정이 아닌 데이터 기반 분석입니다."
+                "title": "해석 (Interpret · Risk Lens)",
+                "description": "JSV/DV 패턴을 리스크 신호, 임계치, 검토 트리거로 변환합니다."
             },
             "buffer": {
-                "title": "보고 (Report)",
-                "description": "좋고 나쁨을 판단하지 않습니다. 의사결정자가 스스로 해석하고 조치할 수 있는 객관적 정보를 제공합니다."
+                "title": "운영화 (Operationalize · Workflow)",
+                "description": "관찰 근거를 정책 통제, 사람 검토, 리포팅 워크플로로 연결합니다."
             }
         }
     },
     "point3_demo": {
         "title": "라이브 데모: 금융 상담 시뮬레이션",
-        "subtitle": "실제 AI 로보어드바이저 상담에서 JDVP가 어떻게 작동하는지 확인하세요.",
+        "subtitle": "실제 AI 로보어드바이저 상담에서 기관 거버넌스 워크플로가 어떻게 동작하는지 확인하세요.",
         "scenario": {
             "title": "시나리오: 펀드 추천 상담",
             "client": "고객",
@@ -109,13 +129,13 @@
         "warning": {
             "title": "⚠️ 급격한 위임 패턴 감지",
             "message": "급격한 판단 위임이 감지되었습니다. 고객이 대안 요청 없이 AI 추천을 수용했습니다.",
-            "action": "상담원 개입 권장"
+            "action": "상담원 검토 워크플로 트리거"
         },
         "insight": "이 대화에서 고객은 단 3턴 만에 판단을 AI에게 완전히 위임했습니다. JDVP는 이러한 '급격한 위임 패턴'을 실시간으로 감지합니다."
     },
     "point4": {
         "title": "조직을 위한 가치",
-        "subtitle": "AI 시대, 조직의 성공을 위한 핵심 가치",
+        "subtitle": "배포 가능한 거버넌스가 기관에 주는 실질 가치",
         "benefits": {
             "trust": {
                 "title": "신뢰 구축",
@@ -133,11 +153,11 @@
                 "kpi": "AI 서비스 확장 가속"
             }
         },
-        "tagline": "추정이 아닌 증거로, AI 거버넌스의 새로운 기준을 세우세요."
+        "tagline": "운영 가능한 거버넌스: 증거가 들어오면 액션이 나옵니다."
     },
     "point5": {
         "title": "도입 사례: A증권",
-        "subtitle": "가상의 도입 사례로 보는 구체적인 효과",
+        "subtitle": "운영 지표로 확인하는 가상 도입 사례",
         "company": {
             "name": "A증권 (가상)",
             "context": "AI 로보어드바이저 서비스 운영 중, 불완전판매 민원 증가로 규제 리스크 직면"
@@ -167,7 +187,7 @@
     "point6": {
         "title": "구성원을 위한 가치",
         "subtitle": "직원과 학생이 AI를 주도적으로 활용하도록",
-        "intro": "JDVP는 조직뿐 아니라 구성원 개개인의 AI 역량 강화를 지원합니다.",
+        "intro": "BufferLine 기관 트랙은 거버넌스 팀과 현업 사용자 모두를 지원합니다.",
         "benefits": {
             "awareness": {
                 "title": "AI 의존 패턴 인식",
@@ -218,11 +238,11 @@
                 "quote": "\"처음엔 AI 없으면 불안했는데, 이제는 먼저 생각하고 AI로 확인해요.\""
             }
         },
-        "insight": "JDVP는 '감시'가 아닌 '성장 지원' 도구입니다. 구성원 스스로 변화를 인식하고 개선할 수 있도록 돕습니다."
+        "insight": "감시가 아니라 역량 강화 루프입니다. 측정 가능한 근거 위에서 스스로 개선할 수 있게 돕습니다."
     },
     "point8": {
         "title": "도입 로드맵",
-        "subtitle": "귀사의 상황에 맞는 3단계 접근",
+        "subtitle": "파일럿에서 전사 운영모델까지 3단계 롤아웃",
         "phases": {
             "phase1": {
                 "title": "Phase 1: 파일럿",
@@ -265,14 +285,14 @@
         },
         "point2": {
             "label": "해결책:",
-            "text": "증거 기반 모니터링 인프라, JDVP."
+            "text": "BufferLine 기관 스택: JDVP 측정 + 거버넌스 워크플로."
         },
         "point3": {
             "label": "효과:",
             "text": "신뢰 구축, 안전 확보, 혁신 가속화."
         },
-        "tagline": "가정 기반에서 증거 기반의 AI 거버넌스로 전환하세요.",
-        "principle": "관찰, 측정, 보고: 증거 기반 거버넌스의 핵심입니다.",
+        "tagline": "정책 선언에서 운영 가능한 AI 거버넌스로 전환하세요.",
+        "principle": "관찰, 해석, 운영화: 기관 거버넌스 루프의 핵심입니다.",
         "cta": {
             "github": "백서 읽기",
             "home": "PoC 문의"

@@ -1,0 +1,96 @@
+{
+    "thinkprint": {
+        "badge": "Thinkprint Playground",
+        "headlineVariants": {
+            "a": {
+                "line1": "Spin up your thinking",
+                "line2": "as playable modes."
+            },
+            "b": {
+                "line1": "Build your logic style",
+                "line2": "then play with it."
+            },
+            "c": {
+                "line1": "Extract your reasoning",
+                "line2": "remix your mode."
+            }
+        },
+        "tagline": "Extract your logic structure into a Thinkprint mode you can play with, remix, and refine.",
+        "description": "Thinkprint is a fun but powerful playground. Instead of cloning your memory, it captures how you reason.",
+        "status": {
+            "label": "Status",
+            "value": "Early Development",
+            "note": "v0.4 whitepaper published. Extraction pipeline functional."
+        },
+        "cta": {
+            "github": "View on GitHub",
+            "whitepaper": "Read Whitepaper"
+        },
+        "whatItIs": {
+            "title": "What Thinkprint is",
+            "items": {
+                "toy": "A playful logic-structure extractor for building Thinkprint modes",
+                "reflection": "A self-reflection playground, not a memory-reconstruction product",
+                "declaration": "Thinkprint mode = editable reasoning profile, not fixed personality labeling"
+            }
+        },
+        "whatItIsNot": {
+            "title": "What it is not",
+            "items": {
+                "profiling": "Not a commercial profiling product",
+                "psychology": "Not a memory/experience replica engine",
+                "alignment": "Not an AI alignment control system",
+                "cloning": "Not human duplication"
+            }
+        },
+        "pipeline": {
+            "title": "Playground Pipeline",
+            "description": "Four lightweight steps from conversation to remixable Thinkprint artifacts.",
+            "steps": {
+                "extract": {
+                    "number": "01",
+                    "title": "Extract",
+                    "description": "Conversation-based extraction. Draft your reasoning structure from dialogue signals."
+                },
+                "calibrate": {
+                    "number": "02",
+                    "title": "Calibrate",
+                    "description": "Quick calibration prompts refine thresholds, preferences, and decision style."
+                },
+                "deepen": {
+                    "number": "03",
+                    "title": "Deepen",
+                    "description": "Interactive deepening on contradictions, delegation boundaries, and reasoning tradeoffs."
+                },
+                "freeze": {
+                    "number": "04",
+                    "title": "Freeze",
+                    "description": "Freeze a versioned snapshot you can reuse, compare, fork, and evolve."
+                }
+            }
+        },
+        "output": {
+            "title": "Output Structure",
+            "description": "Each Thinkprint version outputs three practical, remix-friendly artifacts.",
+            "declaration": {
+                "title": "thinkprint.md",
+                "description": "Reasoning principles, delegation policy, risk boundaries, and update triggers."
+            },
+            "prompt": {
+                "title": "agent_system_prompt.txt",
+                "description": "Executable reasoning policy for agents. Fast to test and iterate."
+            },
+            "metadata": {
+                "title": "metadata.json",
+                "description": "Versioning, extraction method, confidence, and optional JDVP links."
+            }
+        },
+        "connection": {
+            "title": "Connection to BufferLine",
+            "description": "JDVP tracks where judgment moves. Thinkprint captures your logic structure. Together, they make experimentation measurable.",
+            "jdvp": "JDVP measures judgment shifts",
+            "thinkprint": "Thinkprint models logic patterns",
+            "future": "Future: JDVP telemetry feeds into Thinkprint drift tracking"
+        }
+    }
+}

@@ -5,20 +5,40 @@
         "keyboard": "to navigate"
     },
     "hook": {
-        "line1": "How is AI changing",
-        "line2": "human judgment?",
-        "question": "We're surrounded by AI, but lack a 'dashboard' to observe its influence on our decisions.",
+        "line1": "How do we build trust in",
+        "line2": "AI-assisted decisions?",
+        "question": "BufferLine frames the governance problem, JDVP measures delegation, and Thinkprint supports human growth.",
         "navigate": "Press → or swipe to continue"
     },
+    "trackIntro": {
+        "badge": "Brand Track",
+        "title": "How This Deck Flows",
+        "subtitle": "From framing to adoption, this deck explains why the BufferLine stack matters and how it lands in the market.",
+        "pillars": {
+            "narrative": {
+                "title": "Strategic Framing",
+                "description": "Define the governance gap in language stakeholders can align on."
+            },
+            "measurement": {
+                "title": "Evidence Layer",
+                "description": "Position JDVP and Thinkprint as practical layers, not abstract concepts."
+            },
+            "adoption": {
+                "title": "Adoption Path",
+                "description": "Translate protocol value into GTM, partnerships, and execution milestones."
+            }
+        },
+        "conclusion": "Use this deck for partners, investors, and strategy stakeholders."
+    },
     "toc": {
-        "title": "Project Overview",
+        "title": "Brand Deck: Strategic Overview",
         "point1": {
             "title": "The Problem",
             "subtitle": "The invisible risk of judgment delegation."
         },
         "point2": {
-            "title": "Our Solution",
-            "subtitle": "JDVP: A protocol to measure judgment flow."
+            "title": "BufferLine Stack",
+            "subtitle": "Brand framing + measurement + personal modeling."
         },
         "point3": {
             "title": "Market Opportunity",
@@ -53,23 +73,23 @@
         "conclusion": "We need a 'cognitive dashboard' for the AI age."
     },
     "point2": {
-        "title": "Our Solution: JDVP Protocol",
-        "subtitle": "Judgment Delegation Visibility Protocol — The standard for observing human-AI interaction.",
+        "title": "BufferLine Stack: Observe, Model, Govern",
+        "subtitle": "A layered architecture: JDVP measures, Thinkprint models, and BufferLine operationalizes governance.",
         "features": {
             "jsv": {
-                "title": "Judgment State Vector (JSV)",
-                "description": "A snapshot of where judgment resides at any moment."
+                "title": "JDVP Measurement Layer",
+                "description": "Captures judgment state and delegation shifts with JSV and DV."
             },
             "dv": {
-                "title": "Delegation Vector (DV)",
-                "description": "Measures the direction and magnitude of judgment shifts."
+                "title": "Thinkprint Modeling Layer",
+                "description": "Turns individual reasoning habits into explicit, inspectable profiles."
             },
             "citizenai": {
-                "title": "Citizen AI Observer",
-                "description": "AI that makes delegation visible — without judging whether delegation is good or bad."
+                "title": "Governance Layer (BufferLine)",
+                "description": "Connects evidence to policy, workflow, and organizational decisions."
             }
         },
-        "principle": "Core Principle: Delegation should be visible. Whether it's good or bad is not for the protocol to say."
+        "principle": "Stack Principle: BufferLine frames, JDVP measures, Thinkprint experiments."
     },
     "point3": {
         "title": "Market Opportunity",
@@ -99,23 +119,32 @@
     },
     "point4": {
         "title": "Go-to-Market Strategy",
-        "subtitle": "Two main approaches for two target audiences.",
+        "subtitle": "Two adoption tracks under one brand architecture.",
         "strategies": {
             "personal": {
                 "title": "For Individuals",
-                "description": "A self-reflection tool to help users understand their AI usage patterns and maintain cognitive agency.",
+                "description": "Thinkprint-based self-reflection that helps users keep decision ownership while using AI.",
                 "model": "Freemium → Premium subscription"
             },
             "institutional": {
                 "title": "For Institutions",
-                "description": "A governance and risk management solution to ensure AI safety and regulatory compliance.",
+                "description": "JDVP-powered governance workflows for safety, auditability, and regulatory readiness.",
                 "model": "Enterprise SaaS licensing"
+            }
+        },
+        "differentiation": {
+            "title": "Why Thinkprint Is Different",
+            "summary": "Many cognitive twin products focus on memory/experience reconstruction. Thinkprint focuses on extracting your logic structure so you can build, remix, and test modes quickly.",
+            "items": {
+                "protocol": "Logic-first extraction: capture judgment rules, thresholds, and reasoning style instead of trying to replicate full memory.",
+                "declaration": "Playground workflow: generate, tweak, fork, and compare Thinkprint modes as lightweight experiments.",
+                "governance": "Fun but strong: outputs are still executable and reviewable (`thinkprint.md`, `agent_system_prompt.txt`, `metadata.json`) with JDVP compatibility."
             }
         }
     },
     "point5": {
         "title": "Roadmap & Traction",
-        "subtitle": "Our journey to becoming the standard for AI governance.",
+        "subtitle": "Execution milestones from protocol maturity to market adoption.",
         "phases": {
             "phase1": {
                 "title": "Phase 1: Protocol & POC",
@@ -130,18 +159,18 @@
                 "title": "Phase 2: Open Source",
                 "status": "In Progress",
                 "items": [
-                    "Public documentation",
-                    "Developer SDK",
-                    "Community building"
+                    "Public documentation and narrative assets",
+                    "Developer SDK and templates",
+                    "Early design partners"
                 ]
             },
             "phase3": {
                 "title": "Phase 3: Industry Adoption",
                 "status": "Planned",
                 "items": [
-                    "Pilot programs with partners",
-                    "Enterprise integrations",
-                    "Regulatory alignment"
+                    "Institutional pilot expansion",
+                    "Enterprise governance integrations",
+                    "Standards and regulatory alignment"
                 ]
             }
         }
@@ -154,13 +183,13 @@
         },
         "point2": {
             "label": "Our Solution:",
-            "text": "JDVP — the standard protocol for judgment visibility."
+            "text": "BufferLine stack: JDVP for measurement, Thinkprint for modeling, governance for action."
         },
         "point3": {
             "label": "The Opportunity:",
             "text": "A $50B+ market with no clear leader yet."
         },
-        "tagline": "BufferLine: Cognitive Infrastructure for the AI Age",
+        "tagline": "BufferLine: Brand, Protocol, and Governance Infrastructure for the AI Age",
         "cta": {
             "github": "Contact for Partnership",
             "home": "Read the Whitepaper"

@@ -20,7 +20,7 @@ export default function Header() {
   const pathname = usePathname();
 
   const isJdvpPage = pathname.includes("/jdvp");
-  const isPersonaForgePage = pathname.includes("/personaforge");
+  const isThinkprintPage = pathname.includes("/thinkprint");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,11 +51,11 @@ export default function Header() {
         { href: "#data-structures", label: t("nav.dataStructures") },
       ]
     : [
-        ...(!isPersonaForgePage
+        ...(!isThinkprintPage
           ? [{ href: "#stack", label: t("nav.stack") }]
           : []),
         { href: `/${locale}/jdvp`, label: t("nav.jdvp") },
-        { href: `/${locale}/personaforge`, label: t("nav.personaforge") },
+        { href: `/${locale}/thinkprint`, label: t("nav.thinkprint") },
       ];
 
   return (

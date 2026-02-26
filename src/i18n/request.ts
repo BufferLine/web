@@ -13,7 +13,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const [
     common,
     brandHome,
-    personaforge,
+    thinkprint,
     about,
     landingHero,
     landingMechanics,
@@ -27,7 +27,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   ] = await Promise.all([
     import(`@messages/${locale}/common.json`),
     import(`@messages/${locale}/brand-home.json`),
-    import(`@messages/${locale}/personaforge.json`),
+    import(`@messages/${locale}/thinkprint.json`),
     import(`@messages/${locale}/about.json`),
     import(`@messages/${locale}/landing-hero.json`),
     import(`@messages/${locale}/landing-mechanics.json`),
@@ -45,7 +45,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     messages: {
       ...common.default,
       ...brandHome.default,
-      ...personaforge.default,
+      ...thinkprint.default,
       ...about.default,
       ...landingHero.default,
       ...landingMechanics.default,

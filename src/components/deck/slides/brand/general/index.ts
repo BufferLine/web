@@ -1,4 +1,5 @@
 export { default as HookSlide } from "./HookSlide";
+export { default as TrackIntroSlide } from "./TrackIntroSlide";
 export { default as TOCSlide } from "./TOCSlide";
 export { default as Point1Slide } from "./Point1Slide";
 export { default as Point2Slide } from "./Point2Slide";

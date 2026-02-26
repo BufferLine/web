@@ -15,7 +15,7 @@
     "stack": {
         "badge": "스택",
         "title": "판단 인프라의 세 가지 레이어",
-        "description": "JDVP는 측정하고, PersonaForge는 모델링하고, Meta Governance는 안정화합니다. BufferLine이 전체를 프레이밍합니다.",
+        "description": "JDVP는 측정하고, Thinkprint는 모델링하고, Meta Governance는 안정화합니다. BufferLine이 전체를 프레이밍합니다.",
         "jdvp": {
             "status": "활성",
             "title": "JDVP",
@@ -23,11 +23,11 @@
             "description": "판단 상태 벡터와 위임 벡터를 정의하여 판단 보유자, 책임 인식, 의사결정 지연이 시간에 따라 어떻게 변화하는지 포착합니다.",
             "cta": "프로토콜 살펴보기"
         },
-        "personaforge": {
+        "thinkprint": {
             "status": "준비 중",
-            "title": "PersonaForge",
-            "subtitle": "인지 패턴 추출",
-            "description": "암묵적 사고 습관을 명시적이고 검사 가능한 선언으로 전환합니다. JDVP의 측정 프레임워크 위에 구축된 자기 성찰 도구입니다.",
+            "title": "Thinkprint",
+            "subtitle": "Thinkprint 플레이그라운드",
+            "description": "사고의 논리구조를 플레이 가능한 Thinkprint 모드로 추출해, JDVP 신호 위에서 리믹스·비교·반복 개선할 수 있게 합니다.",
             "cta": "자세히 보기"
         },
         "metagovernance": {

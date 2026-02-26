@@ -6,7 +6,8 @@ interface Props {
 }
 
 export default function TOCSlide({ t, setSlide }: Props) {
-  const items = [1, 2, 3, 4, 5, 6, 7, 8].map((num) => ({
+  const tocOrder = [1, 2, 3, 4, 8, 5, 6, 7] as const;
+  const items = tocOrder.map((num) => ({
     title: t(`toc.point${num}.title`),
     subtitle: t(`toc.point${num}.subtitle`),
   }));
@@ -17,6 +18,7 @@ export default function TOCSlide({ t, setSlide }: Props) {
       items={items}
       theme="bufferline"
       setSlide={setSlide}
+      startSlideIndex={3}
     />
   );
 }

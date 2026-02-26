@@ -57,7 +57,7 @@ export default function Hero() {
         {/* Key principle */}
         <div className="mt-16 p-4 rounded-lg bg-surface-elevated/30 border border-surface-border/50 max-w-xl mx-auto">
           <p className="text-neutral-300 text-sm">
-            <span className="text-accent-personaforge font-medium">{t("keyPrinciple.label")}</span>{" "}
+            <span className="text-accent-thinkprint font-medium">{t("keyPrinciple.label")}</span>{" "}
             {t.rich("keyPrinciple.text", {
               measures: (chunks) => <span className="text-white font-medium">{chunks}</span>,
               evaluates: (chunks) => <span className="text-white font-medium">{chunks}</span>,

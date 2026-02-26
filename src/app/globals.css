@@ -33,7 +33,7 @@
   --accent-bufferline-subtle: #A5B4FC;
   --accent-jdvp: #14B8A6;
   --accent-jdvp-light: #2DD4BF;         /* teal-400 — lighter variant */
-  --accent-personaforge: #F59E0B;
+  --accent-thinkprint: #F59E0B;
   --accent-meta: #EF4444;
 
   /* --- Semantic JDVP colors --- */
@@ -70,8 +70,8 @@
   --accent-bufferline-active: #4338CA; /* two steps darker — pressed */
   --accent-jdvp-hover: #0D9488;       /* teal one step darker */
   --semantic-human-hover: #4ADE80;     /* green-400 — lighter for hover */
-  --accent-personaforge-light: #FBBF24; /* amber-400 — lighter variant */
-  --accent-personaforge-hover: #D97706; /* amber-600 — one step darker */
+  --accent-thinkprint-light: #FBBF24; /* amber-400 — lighter variant */
+  --accent-thinkprint-hover: #D97706; /* amber-600 — one step darker */
 
   /* --- Gradient endpoints --- */
   --gradient-text-end: #A78BFA;        /* violet-400, brand text gradient */
@@ -114,8 +114,8 @@
   --color-accent-jdvp: var(--accent-jdvp);
   --color-accent-jdvp-light: var(--accent-jdvp-light);
   --color-accent-jdvp-hover: var(--accent-jdvp-hover);
-  --color-accent-personaforge: var(--accent-personaforge);
-  --color-accent-personaforge-hover: var(--accent-personaforge-hover);
+  --color-accent-thinkprint: var(--accent-thinkprint);
+  --color-accent-thinkprint-hover: var(--accent-thinkprint-hover);
   --color-accent-meta: var(--accent-meta);
 
   /* --- Semantic JDVP --- */
@@ -126,7 +126,7 @@
   --color-semantic-undefined: var(--semantic-undefined);
 
   /* --- Accent derived states --- */
-  --color-accent-personaforge-light: var(--accent-personaforge-light);
+  --color-accent-thinkprint-light: var(--accent-thinkprint-light);
 
   /* --- Typography --- */
   --font-sans: var(--font-inter);
@@ -214,9 +214,9 @@ code {
   background-clip: text;
 }
 
-/* PersonaForge gradient text — amber spectrum */
-.text-gradient-personaforge {
-  background: linear-gradient(to right, var(--accent-personaforge-light), var(--accent-personaforge));
+/* Thinkprint gradient text — amber spectrum */
+.text-gradient-thinkprint {
+  background: linear-gradient(to right, var(--accent-thinkprint-light), var(--accent-thinkprint));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

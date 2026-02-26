@@ -6,12 +6,32 @@
     },
     "hook": {
         "line1": "JDVP Architecture & Algorithms",
-        "line2": "A Technical Deep Dive",
-        "question": "For developers, researchers, and architects interested in the protocol's inner workings.",
+        "line2": "Protocol Deep Dive",
+        "question": "For developers, researchers, and architects who need spec semantics, extraction pipelines, and extension points.",
         "navigate": "Press → or swipe to continue"
     },
+    "trackIntro": {
+        "badge": "JDVP Track",
+        "title": "Technical Deep-Dive Flow",
+        "subtitle": "Architecture first, then state semantics, vector math, extraction pipelines, and extension strategy.",
+        "pillars": {
+            "architecture": {
+                "title": "Architecture",
+                "description": "Understand observer, analyzer, and reporter boundaries for integration."
+            },
+            "calculation": {
+                "title": "Calculation Logic",
+                "description": "Follow polarity and transition mapping from JSV states to DV vectors."
+            },
+            "extensibility": {
+                "title": "Extensibility",
+                "description": "Add domain markers and fields without breaking protocol semantics."
+            }
+        },
+        "conclusion": "Use this deck for implementers, auditors, and specification contributors."
+    },
     "toc": {
-        "title": "Technical Deck",
+        "title": "JDVP Technical Deck",
         "point1": {
             "title": "System Architecture",
             "subtitle": "Observer → Analyzer → Reporter"
@@ -29,7 +49,7 @@
             "subtitle": "Polarity convention and delta calculation"
         },
         "point5": {
-            "title": "Extensibility",
+            "title": "Protocol Extensibility",
             "subtitle": "Custom markers and fields"
         }
     },
@@ -38,15 +58,15 @@
         "observer": "Hooks into the conversation flow to capture real-time data.",
         "analyzer": "Processes conversational data against markers to generate JSVs and DVs.",
         "reporter": "Visualizes results or exports to JSON/Markdown.",
-        "conclusion": "A modular architecture for flexible integration."
+        "conclusion": "Protocol-native modular architecture for product and research integration."
     },
     "point2": {
         "title": "JSV Data Structure",
-        "subtitle": "4 independent dimensions to capture judgment state, plus domain-specific extensions"
+        "subtitle": "Four core fields with explicit enums, plus domain extension slots."
     },
     "point3": {
         "title": "JSV Extraction Methods",
-        "subtitle": "Three approaches to extract judgment state from conversations.",
+        "subtitle": "Deterministic, model-based, and hybrid pipelines for extracting judgment state.",
         "methods": {
             "marker": {
                 "title": "Marker-based",
@@ -79,11 +99,11 @@
         },
         "formula": {
             "title": "Delta Calculation",
-            "note": "State changes in each JSV field are quantified into a vector representation."
+            "note": "Each field transition is mapped via polarity tables and assembled into DV vectors."
         }
     },
     "point5": {
-        "title": "Extensibility",
+        "title": "Protocol Extensibility",
         "markers": {
             "title": "Custom Markers",
             "description": "Organizations can define their own markers in YAML to capture domain-specific language."
@@ -95,21 +115,21 @@
         "example": "Examples: Financial (risk_ownership), Education (reasoning_engagement), Healthcare (diagnostic_reliance)"
     },
     "summary": {
-        "title": "Let's Evolve the Protocol",
+        "title": "Evolve JDVP with Us",
         "point1": {
             "label": "The Core:",
-            "text": "A modular architecture and a set of precise algorithms."
+            "text": "Clear architecture, explicit semantics, and reproducible algorithms."
         },
         "point2": {
             "label": "The Flexibility:",
-            "text": "Designed to be extensible for various domains."
+            "text": "An extension model for domain-specific telemetry and policy needs."
         },
         "point3": {
             "label": "The Invitation:",
-            "text": "We invite you to contribute to the code and the specification."
+            "text": "Contribute markers, schemas, evaluation cases, and implementation feedback."
         },
-        "tagline": "Contribute to the standard for AI interaction.",
-        "principle": "",
+        "tagline": "Help define the measurement standard for human-AI judgment flow.",
+        "principle": "Spec first. Evidence always.",
         "cta": {
             "github": "Contribute on GitHub",
             "home": "Read the Specification"

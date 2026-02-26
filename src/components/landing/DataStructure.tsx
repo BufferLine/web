@@ -204,8 +204,8 @@ export default function DataStructure() {
           </div>
 
           {/* Important note */}
-          <div className="p-4 rounded-lg bg-accent-personaforge/[0.08] border border-accent-personaforge/[0.15] text-center">
-            <p className="text-accent-personaforge text-sm">
+          <div className="p-4 rounded-lg bg-accent-thinkprint/[0.08] border border-accent-thinkprint/[0.15] text-center">
+            <p className="text-accent-thinkprint text-sm">
               <span className="font-semibold">{t("dv.important.label")}</span>{" "}
               {t("dv.important.text")}
             </p>

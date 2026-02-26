@@ -5,13 +5,33 @@
         "keyboard": "to navigate"
     },
     "hook": {
-        "line1": "Are you really making",
-        "line2": "your own choices?",
-        "question": "Have you ever felt 'What would I do without this AI?' Let's check your AI usage habits.",
+        "line1": "Personal AI use is a habit.",
+        "line2": "Make it visible, then improve it.",
+        "question": "In the Brand track, Thinkprint drives reflection while JDVP tracks delegation shifts underneath.",
         "navigate": "Press → or swipe to continue"
     },
+    "trackIntro": {
+        "badge": "Brand Track · Personal",
+        "title": "Personal Adoption Flow",
+        "subtitle": "Start from everyday behavior, make delegation visible, then build practical improvement loops.",
+        "pillars": {
+            "awareness": {
+                "title": "Habit Awareness",
+                "description": "Recognize where AI support has become automatic."
+            },
+            "visibility": {
+                "title": "Delegation Visibility",
+                "description": "Use JDVP-backed signals to see how judgment shifts over time."
+            },
+            "improvement": {
+                "title": "Actionable Growth",
+                "description": "Convert reflection into small, repeatable behavior changes."
+            }
+        },
+        "conclusion": "Use this deck for end-user onboarding and community education."
+    },
     "toc": {
-        "title": "Understanding Your AI Patterns",
+        "title": "Brand Deck: Personal Adoption",
         "point1": {
             "title": "Everyday Examples",
             "subtitle": "Moments we unknowingly rely on AI."
@@ -25,8 +45,8 @@
             "subtitle": "See your judgment flow in real-time."
         },
         "point4": {
-            "title": "Your Dashboard",
-            "subtitle": "A personal cognitive awareness tool."
+            "title": "Thinkprint Dashboard",
+            "subtitle": "A personal reflection cockpit powered by JDVP signals."
         },
         "point5": {
             "title": "Conscious AI Usage",
@@ -93,23 +113,23 @@
         }
     },
     "point4": {
-        "title": "Your Personal Dashboard",
-        "subtitle": "BufferLine gives you a window into your cognitive patterns.",
+        "title": "Thinkprint + JDVP Dashboard",
+        "subtitle": "BufferLine gives you a reflection loop built on measurable delegation signals.",
         "features": {
             "patterns": {
-                "title": "Pattern Recognition",
-                "description": "See when and how often you delegate decisions to AI."
+                "title": "Delegation Pattern Map",
+                "description": "See where and how often decisions shift from you to AI."
             },
             "trends": {
-                "title": "Trend Tracking",
-                "description": "Monitor your judgment flow over days, weeks, and months."
+                "title": "Weekly Shift Trends",
+                "description": "Track how your judgment flow changes over time."
             },
             "insights": {
-                "title": "Personal Insights",
-                "description": "Understand your unique relationship with AI assistance."
+                "title": "Persona Reflection Notes",
+                "description": "Turn recurring behavior into explicit notes you can act on."
             }
         },
-        "tagline": "Know yourself better in the AI age."
+        "tagline": "Measure first, then improve with intention."
     },
     "point5": {
         "title": "Conscious AI Usage",
@@ -128,7 +148,7 @@
                 "description": "Review your dashboard and set personal goals."
             }
         },
-        "outcome": "Be an 'AI Tamer', not just a user."
+        "outcome": "Build steady judgment ownership while still benefiting from AI."
     },
     "summary": {
         "title": "Diagnose Your AI Life",
@@ -138,13 +158,13 @@
         },
         "point2": {
             "label": "The Tool:",
-            "text": "BufferLine visualizes your judgment flow and patterns."
+            "text": "BufferLine personal stack combines Thinkprint reflection with JDVP measurement."
         },
         "point3": {
             "label": "The Goal:",
             "text": "To become a more conscious, confident, and independent thinker."
         },
-        "tagline": "Find the joy of thinking for yourself again.",
+        "tagline": "Use AI deliberately, with your own judgment in the loop.",
         "cta": {
             "github": "Try More Scenarios",
             "home": "Share with Friends"

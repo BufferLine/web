@@ -6,12 +6,32 @@
     },
     "hook": {
         "line1": "JDVP 아키텍처와 알고리즘",
-        "line2": "기술 심층 분석",
-        "question": "프로토콜의 내부 동작에 관심 있는 개발자, 연구원, 아키텍트를 위한 자료입니다.",
+        "line2": "프로토콜 심층 분석",
+        "question": "명세 의미론, 추출 파이프라인, 확장 지점을 확인하려는 개발자·연구자·아키텍트를 위한 덱입니다.",
         "navigate": "→ 키 또는 스와이프로 계속"
     },
+    "trackIntro": {
+        "badge": "JDVP 트랙",
+        "title": "기술 심층 흐름",
+        "subtitle": "아키텍처에서 시작해 상태 의미론, 벡터 계산, 추출 파이프라인, 확장 전략으로 진행합니다.",
+        "pillars": {
+            "architecture": {
+                "title": "아키텍처",
+                "description": "Observer/Analyzer/Reporter 경계를 통합 관점에서 이해합니다."
+            },
+            "calculation": {
+                "title": "계산 로직",
+                "description": "JSV 상태 전이가 polarity를 거쳐 DV로 매핑되는 과정을 검증합니다."
+            },
+            "extensibility": {
+                "title": "확장성",
+                "description": "프로토콜 의미론을 유지하며 도메인 마커와 필드를 확장합니다."
+            }
+        },
+        "conclusion": "구현 담당자, 감사 담당자, 명세 기여자에게 적합한 덱입니다."
+    },
     "toc": {
-        "title": "기술 덱",
+        "title": "JDVP 기술 덱",
         "point1": {
             "title": "시스템 아키텍처",
             "subtitle": "Observer → Analyzer → Reporter"
@@ -29,7 +49,7 @@
             "subtitle": "부호 규칙 및 델타 계산"
         },
         "point5": {
-            "title": "확장성",
+            "title": "프로토콜 확장성",
             "subtitle": "커스텀 마커 및 필드"
         }
     },
@@ -38,15 +58,15 @@
         "observer": "대화 흐름에 연결되어 실시간 데이터를 캡처합니다.",
         "analyzer": "마커를 기반으로 대화 데이터를 처리하여 JSV와 DV를 생성합니다.",
         "reporter": "분석 결과를 시각화하거나 JSON/마크다운으로 내보냅니다.",
-        "conclusion": "유연한 통합을 위한 모듈식 아키텍처."
+        "conclusion": "제품/연구 통합을 위한 프로토콜 네이티브 모듈식 아키텍처."
     },
     "point2": {
         "title": "JSV 데이터 구조",
-        "subtitle": "판단 상태를 캡처하는 4개의 독립 차원과 도메인별 확장"
+        "subtitle": "명시적 enum을 갖는 4개 코어 필드와 도메인 확장 슬롯."
     },
     "point3": {
         "title": "JSV 추출 방식",
-        "subtitle": "대화에서 판단 상태를 추출하는 세 가지 접근법.",
+        "subtitle": "판단 상태를 추출하는 결정론/모델기반/하이브리드 파이프라인.",
         "methods": {
             "marker": {
                 "title": "마커 기반",
@@ -79,11 +99,11 @@
         },
         "formula": {
             "title": "델타 계산",
-            "note": "각 JSV 필드의 상태 변화를 수치화하여 벡터로 표현합니다."
+            "note": "각 필드 전이를 polarity 테이블로 매핑하고 DV 벡터로 조합합니다."
         }
     },
     "point5": {
-        "title": "확장성",
+        "title": "프로토콜 확장성",
         "markers": {
             "title": "커스텀 마커",
             "description": "도메인 특화 언어를 포착하기 위해 YAML에 자체 마커를 정의할 수 있습니다."
@@ -95,21 +115,21 @@
         "example": "예: 금융(risk_ownership), 교육(reasoning_engagement), 의료(diagnostic_reliance)"
     },
     "summary": {
-        "title": "함께 프로토콜을 발전시켜 나갑시다",
+        "title": "JDVP를 함께 발전시켜 갑시다",
         "point1": {
             "label": "핵심:",
-            "text": "모듈식 아키텍처와 정밀한 알고리즘의 집합."
+            "text": "명확한 아키텍처, 명시적 의미론, 재현 가능한 알고리즘."
         },
         "point2": {
             "label": "유연성:",
-            "text": "다양한 도메인에 적용 가능하도록 확장성 있게 설계되었습니다."
+            "text": "도메인별 텔레메트리와 정책 요구를 반영할 수 있는 확장 모델."
         },
         "point3": {
             "label": "초대:",
-            "text": "코드와 사양에 기여하여 프로토콜을 함께 발전시켜나가길 바랍니다."
+            "text": "마커, 스키마, 평가 케이스, 구현 피드백에 함께 기여해 주세요."
         },
-        "tagline": "AI 상호작용 표준에 기여하세요.",
-        "principle": "",
+        "tagline": "인간-AI 판단 흐름 측정 표준을 함께 정의하세요.",
+        "principle": "Spec first. Evidence always.",
         "cta": {
             "github": "GitHub에서 기여하기",
             "home": "사양 문서 읽기"

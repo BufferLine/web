@@ -15,7 +15,7 @@
     "stack": {
         "badge": "The Stack",
         "title": "Three layers of judgment infrastructure",
-        "description": "JDVP measures. PersonaForge models. Meta Governance stabilizes. BufferLine frames it all.",
+        "description": "JDVP measures. Thinkprint models. Meta Governance stabilizes. BufferLine frames it all.",
         "jdvp": {
             "status": "Active",
             "title": "JDVP",
@@ -23,11 +23,11 @@
             "description": "Defines Judgment State Vectors and Delegation Vectors to capture how judgment holder, responsibility awareness, and decision latency shift over time.",
             "cta": "Explore protocol"
         },
-        "personaforge": {
+        "thinkprint": {
             "status": "Coming Soon",
-            "title": "PersonaForge",
-            "subtitle": "Cognitive pattern extraction",
-            "description": "Turns implicit thinking habits into explicit, inspectable declarations. A self-reflection tool built on JDVP's measurement framework.",
+            "title": "Thinkprint",
+            "subtitle": "Thinkprint playground",
+            "description": "Extracts logic structure into playable Thinkprint modes you can remix, compare, and iterate on top of JDVP signals.",
             "cta": "Learn more"
         },
         "metagovernance": {

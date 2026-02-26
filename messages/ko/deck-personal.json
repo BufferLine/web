@@ -5,13 +5,33 @@
         "keyboard": "로 이동"
     },
     "hook": {
-        "line1": "정말 당신의 선택인가요,",
-        "line2": "AI의 선택인가요?",
-        "question": "'이 AI 없으면 어떡하지?' 라는 생각이 든 적 있나요? 당신의 AI 사용 습관을 점검해 보세요.",
+        "line1": "개인 AI 사용은 습관입니다.",
+        "line2": "보이게 만들고, 개선하세요.",
+        "question": "Brand 트랙에서는 Thinkprint가 성찰을 돕고, 그 아래에서 JDVP가 위임 이동을 측정합니다.",
         "navigate": "→ 키 또는 스와이프로 계속"
     },
+    "trackIntro": {
+        "badge": "Brand 트랙 · Personal",
+        "title": "개인 확산 흐름",
+        "subtitle": "일상 행동에서 시작해 위임을 가시화하고, 실천 가능한 개선 루프로 연결합니다.",
+        "pillars": {
+            "awareness": {
+                "title": "습관 인식",
+                "description": "AI 도움 요청이 자동화된 지점을 먼저 인식합니다."
+            },
+            "visibility": {
+                "title": "위임 가시화",
+                "description": "JDVP 신호를 통해 판단 이동을 시간 흐름으로 확인합니다."
+            },
+            "improvement": {
+                "title": "행동 개선",
+                "description": "성찰 결과를 반복 가능한 작은 행동 변화로 전환합니다."
+            }
+        },
+        "conclusion": "엔드유저 온보딩과 커뮤니티 교육에 적합한 덱입니다."
+    },
     "toc": {
-        "title": "나의 AI 패턴 이해하기",
+        "title": "Brand 덱: 개인 확산",
         "point1": {
             "title": "일상 속 사례들",
             "subtitle": "나도 모르게 AI에게 맡기는 순간들"
@@ -25,8 +45,8 @@
             "subtitle": "내 판단의 흐름을 실시간으로 확인"
         },
         "point4": {
-            "title": "나만의 대시보드",
-            "subtitle": "개인 인지 인식 도구"
+            "title": "Thinkprint 대시보드",
+            "subtitle": "JDVP 신호 기반의 개인 성찰 콕핏"
         },
         "point5": {
             "title": "의식적인 AI 사용",
@@ -93,23 +113,23 @@
         }
     },
     "point4": {
-        "title": "나만의 대시보드",
-        "subtitle": "BufferLine이 당신의 인지 패턴을 볼 수 있는 창을 제공합니다.",
+        "title": "Thinkprint + JDVP 대시보드",
+        "subtitle": "BufferLine은 측정 가능한 위임 신호 위에 개인 성찰 루프를 제공합니다.",
         "features": {
             "patterns": {
-                "title": "패턴 인식",
-                "description": "언제, 얼마나 자주 AI에게 결정을 맡기는지 확인하세요."
+                "title": "위임 패턴 맵",
+                "description": "어떤 상황에서 판단이 나에서 AI로 이동하는지 확인하세요."
             },
             "trends": {
-                "title": "추세 추적",
-                "description": "며칠, 몇 주, 몇 달에 걸친 판단 흐름을 모니터링하세요."
+                "title": "주간 이동 추세",
+                "description": "시간에 따라 판단 흐름이 어떻게 달라지는지 추적하세요."
             },
             "insights": {
-                "title": "개인 인사이트",
-                "description": "AI 도우미와의 고유한 관계를 이해하세요."
+                "title": "페르소나 성찰 노트",
+                "description": "반복 행동을 명시적 노트로 바꿔 실제 행동으로 연결하세요."
             }
         },
-        "tagline": "AI 시대에 자신을 더 잘 알아가세요."
+        "tagline": "먼저 측정하고, 의도적으로 개선하세요."
     },
     "point5": {
         "title": "의식적인 AI 사용",
@@ -128,7 +148,7 @@
                 "description": "대시보드를 검토하고 개인 목표를 설정하세요."
             }
         },
-        "outcome": "단순한 사용자를 넘어 'AI 조련사'가 되어보세요."
+        "outcome": "AI의 도움을 받되, 판단 주도권은 꾸준히 유지하세요."
     },
     "summary": {
         "title": "당신의 AI 생활을 진단해보세요",
@@ -138,13 +158,13 @@
         },
         "point2": {
             "label": "도구:",
-            "text": "BufferLine이 당신의 판단 흐름과 패턴을 시각화합니다."
+            "text": "BufferLine 개인 스택은 Thinkprint 성찰과 JDVP 측정을 결합합니다."
         },
         "point3": {
             "label": "목표:",
             "text": "더 의식적이고, 자신감 있고, 주체적인 사고를 하는 것."
         },
-        "tagline": "스스로 생각하는 즐거움을 다시 찾아보세요.",
+        "tagline": "내 판단을 중심에 둔 채 AI를 의도적으로 활용하세요.",
         "cta": {
             "github": "다른 시나리오 보기",
             "home": "친구에게 공유"

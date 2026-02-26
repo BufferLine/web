@@ -1,0 +1,96 @@
+{
+    "thinkprint": {
+        "badge": "Thinkprint 플레이그라운드",
+        "headlineVariants": {
+            "a": {
+                "line1": "당신의 사고를",
+                "line2": "플레이 가능한 모드로."
+            },
+            "b": {
+                "line1": "당신의 논리 스타일을 만들고",
+                "line2": "바로 가지고 놀아보세요."
+            },
+            "c": {
+                "line1": "추론 구조를 뽑아",
+                "line2": "모드를 리믹스하세요."
+            }
+        },
+        "tagline": "사고의 논리구조를 Thinkprint 모드로 추출하고, 자유롭게 만들고 리믹스하며 다듬어 보세요.",
+        "description": "Thinkprint는 재미있지만 강력한 플레이그라운드입니다. 기억 복제가 아니라, 당신의 추론 방식을 포착합니다.",
+        "status": {
+            "label": "상태",
+            "value": "초기 개발 중",
+            "note": "v0.4 백서 발행 완료. 추출 파이프라인 작동 중."
+        },
+        "cta": {
+            "github": "GitHub에서 보기",
+            "whitepaper": "백서 읽기"
+        },
+        "whatItIs": {
+            "title": "Thinkprint란",
+            "items": {
+                "toy": "논리구조를 추출해 Thinkprint 모드로 만드는 실험적 도구",
+                "reflection": "기억 복원 제품이 아닌 자기 성찰 플레이그라운드",
+                "declaration": "Thinkprint 모드 = 수정 가능한 추론 프로필, 고정 성격 라벨링이 아님"
+            }
+        },
+        "whatItIsNot": {
+            "title": "이것이 아닌 것",
+            "items": {
+                "profiling": "상업적 프로파일링 제품이 아님",
+                "psychology": "기억·경험 복제 엔진이 아님",
+                "alignment": "AI 정렬 제어 시스템이 아님",
+                "cloning": "인간 복제가 아님"
+            }
+        },
+        "pipeline": {
+            "title": "플레이그라운드 파이프라인",
+            "description": "대화에서 리믹스 가능한 Thinkprint 아티팩트까지, 가벼운 네 단계.",
+            "steps": {
+                "extract": {
+                    "number": "01",
+                    "title": "추출",
+                    "description": "대화 신호에서 당신의 추론 구조 초안을 뽑아냅니다."
+                },
+                "calibrate": {
+                    "number": "02",
+                    "title": "보정",
+                    "description": "간단한 질문으로 판단 임계값, 선호, 결정 스타일을 빠르게 보정합니다."
+                },
+                "deepen": {
+                    "number": "03",
+                    "title": "심화",
+                    "description": "모순 지점, 위임 경계, 추론 트레이드오프를 상호작용으로 심화합니다."
+                },
+                "freeze": {
+                    "number": "04",
+                    "title": "동결",
+                    "description": "버전 스냅샷을 고정해 재사용·비교·포크·진화시킬 수 있게 합니다."
+                }
+            }
+        },
+        "output": {
+            "title": "출력 구조",
+            "description": "각 Thinkprint 버전은 실전 적용 가능한 3개 아티팩트를 만듭니다.",
+            "declaration": {
+                "title": "thinkprint.md",
+                "description": "추론 원칙, 위임 정책, 위험 경계, 업데이트 트리거."
+            },
+            "prompt": {
+                "title": "agent_system_prompt.txt",
+                "description": "에이전트에 바로 적용 가능한 추론 정책. 빠르게 테스트하고 반복 개선할 수 있습니다."
+            },
+            "metadata": {
+                "title": "metadata.json",
+                "description": "버전, 추출 방식, 신뢰도, 선택적 JDVP 연결 정보."
+            }
+        },
+        "connection": {
+            "title": "BufferLine과의 연결",
+            "description": "JDVP는 판단이 어디로 이동하는지 측정하고, Thinkprint는 사고의 논리구조를 포착합니다. 함께 실험 가능한 측정 루프를 만듭니다.",
+            "jdvp": "JDVP는 판단의 이동을 측정",
+            "thinkprint": "Thinkprint는 논리 패턴을 모델링",
+            "future": "미래: JDVP 텔레메트리가 Thinkprint 드리프트 추적에 연동"
+        }
+    }
+}

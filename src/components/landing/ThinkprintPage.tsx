@@ -7,6 +7,7 @@ import { useLocale, useTranslations } from "next-intl";
 
 const stepKeys = ["extract", "calibrate", "deepen", "freeze"] as const;
 const outputKeys = ["declaration", "prompt", "metadata"] as const;
+const HEADLINE_VARIANT = "a" as const;
 
 const outputIcons = {
   declaration: (
@@ -26,33 +27,33 @@ const outputIcons = {
   ),
 };
 
-export default function PersonaForgePage() {
-  const t = useTranslations("personaforge");
+export default function ThinkprintPage() {
+  const t = useTranslations("thinkprint");
   const locale = useLocale();
 
   return (
     <>
       {/* Hero */}
       <Section size="lg" className="pt-32 md:pt-40 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-accent-personaforge/[0.08] via-transparent to-transparent pointer-events-none" />
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-accent-personaforge/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-accent-thinkprint/[0.08] via-transparent to-transparent pointer-events-none" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-accent-thinkprint/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-personaforge/10 border border-accent-personaforge/20 text-accent-personaforge-light text-sm mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-thinkprint/10 border border-accent-thinkprint/20 text-accent-thinkprint-light text-sm mb-8">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-personaforge-light opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-accent-personaforge"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-thinkprint-light opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-accent-thinkprint"></span>
             </span>
             {t("badge")}
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
-            {t("headline.line1")}
+            {t(`headlineVariants.${HEADLINE_VARIANT}.line1`)}
             <br />
-            <span className="text-gradient-personaforge">
-              {t("headline.line2")}
+            <span className="text-gradient-thinkprint">
+              {t(`headlineVariants.${HEADLINE_VARIANT}.line2`)}
             </span>
           </h1>
 
@@ -69,20 +70,20 @@ export default function PersonaForgePage() {
           {/* Status badge */}
           <div className="inline-flex items-center gap-3 px-4 py-2 rounded-lg bg-surface-elevated/50 border border-surface-border/50 text-sm mb-10">
             <span className="text-neutral-500">{t("status.label")}</span>
-            <span className="text-accent-personaforge font-medium">{t("status.value")}</span>
+            <span className="text-accent-thinkprint font-medium">{t("status.value")}</span>
             <span className="text-neutral-600">—</span>
             <span className="text-neutral-400">{t("status.note")}</span>
           </div>
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="bg-accent-personaforge hover:bg-accent-personaforge-hover focus:ring-accent-personaforge">
-              <a href="https://github.com/BufferLine/personaforge" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="bg-accent-thinkprint hover:bg-accent-thinkprint-hover focus:ring-accent-thinkprint">
+              <a href="https://github.com/BufferLine/thinkprint" target="_blank" rel="noopener noreferrer">
                 {t("cta.github")}
               </a>
             </Button>
             <Button variant="outline" size="lg">
-              <a href="https://github.com/BufferLine/personaforge/blob/main/docs/whitepaper_v0.4.md" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/BufferLine/thinkprint/blob/main/docs/whitepaper_v0.4.md" target="_blank" rel="noopener noreferrer">
                 {t("cta.whitepaper")}
               </a>
             </Button>
@@ -94,13 +95,13 @@ export default function PersonaForgePage() {
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Card variant="bordered">
-            <h3 className="text-lg font-semibold text-accent-personaforge-light mb-4">
+            <h3 className="text-lg font-semibold text-accent-thinkprint-light mb-4">
               {t("whatItIs.title")}
             </h3>
             <ul className="space-y-3">
               {(["toy", "reflection", "declaration"] as const).map((key) => (
                 <li key={key} className="flex items-start gap-3 text-sm text-neutral-300">
-                  <Check className="w-4 h-4 text-accent-personaforge mt-0.5 flex-shrink-0" />
+                  <Check className="w-4 h-4 text-accent-thinkprint mt-0.5 flex-shrink-0" />
                   {t(`whatItIs.items.${key}`)}
                 </li>
               ))}
@@ -137,9 +138,9 @@ export default function PersonaForgePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {stepKeys.map((key) => (
             <Card key={key} variant="glass" className="relative">
-              <div className="absolute top-0 left-0 right-0 h-1 rounded-t-xl bg-gradient-to-r from-accent-personaforge to-accent-personaforge-light" />
+              <div className="absolute top-0 left-0 right-0 h-1 rounded-t-xl bg-gradient-to-r from-accent-thinkprint to-accent-thinkprint-light" />
               <div className="pt-2">
-                <span className="text-4xl font-bold text-gradient-personaforge">
+                <span className="text-4xl font-bold text-gradient-thinkprint">
                   {t(`pipeline.steps.${key}.number`)}
                 </span>
                 <h3 className="text-lg font-semibold text-white mt-3 mb-2">
@@ -168,10 +169,10 @@ export default function PersonaForgePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {outputKeys.map((key) => (
             <Card key={key} variant="bordered">
-              <div className="w-10 h-10 rounded-lg bg-accent-personaforge/10 flex items-center justify-center text-accent-personaforge-light mb-4">
+              <div className="w-10 h-10 rounded-lg bg-accent-thinkprint/10 flex items-center justify-center text-accent-thinkprint-light mb-4">
                 {outputIcons[key]}
               </div>
-              <h3 className="font-mono text-sm text-accent-personaforge-light font-medium mb-2">
+              <h3 className="font-mono text-sm text-accent-thinkprint-light font-medium mb-2">
                 {t(`output.${key}.title`)}
               </h3>
               <p className="text-surface-muted text-sm">
@@ -184,7 +185,7 @@ export default function PersonaForgePage() {
 
       {/* Connection to BufferLine */}
       <Section className="bg-gradient-to-b from-surface-card/50 to-neutral-950/50">
-        <div className="text-center p-8 rounded-2xl bg-gradient-to-r from-accent-personaforge/[0.08] to-accent-bufferline/[0.08] border border-surface-border/50">
+        <div className="text-center p-8 rounded-2xl bg-gradient-to-r from-accent-thinkprint/[0.08] to-accent-bufferline/[0.08] border border-surface-border/50">
           <h3 className="text-2xl font-bold text-white mb-4">
             {t("connection.title")}
           </h3>
@@ -198,9 +199,9 @@ export default function PersonaForgePage() {
               <span className="text-accent-jdvp-light">{t("connection.jdvp")}</span>
             </div>
             <ArrowRight className="w-4 h-4 text-neutral-600 hidden sm:block" />
-            <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-accent-personaforge/10 border border-accent-personaforge/20">
-              <span className="inline-block h-2 w-2 rounded-full bg-accent-personaforge" />
-              <span className="text-accent-personaforge-light">{t("connection.personaforge")}</span>
+            <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-accent-thinkprint/10 border border-accent-thinkprint/20">
+              <span className="inline-block h-2 w-2 rounded-full bg-accent-thinkprint" />
+              <span className="text-accent-thinkprint-light">{t("connection.thinkprint")}</span>
             </div>
           </div>
 

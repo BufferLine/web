@@ -5,24 +5,34 @@
     },
     "deck_selection": {
         "title": "Choose Your Deck",
-        "subtitle": "Select the presentation tailored to your interests.",
+        "subtitle": "Pick a track first (Brand or JDVP), then choose the deck for your audience.",
         "viewDeck": "View Deck",
+        "groups": {
+            "brand": {
+                "title": "Brand Decks",
+                "description": "Narrative decks for positioning, adoption, and communication across audiences."
+            },
+            "jdvp": {
+                "title": "JDVP Decks",
+                "description": "Protocol-focused decks for architecture, measurement logic, and implementation details."
+            }
+        },
         "decks": {
             "general": {
-                "title": "General / For Business",
-                "description": "The project's vision, significance as a protocol, and business development strategies."
+                "title": "Brand Deck · General / Business",
+                "description": "Project vision, strategic framing, and go-to-market context."
             },
             "personal": {
-                "title": "For Personal Use",
-                "description": "A friendly guide on how to self-diagnose and get help with your AI usage habits."
+                "title": "Brand Deck · Personal",
+                "description": "A user-facing guide for understanding and improving personal AI usage habits."
             },
             "institutional": {
-                "title": "For Institutions",
-                "description": "Focusing on use cases for governments, schools, and companies."
+                "title": "Brand Deck · Institutional",
+                "description": "Use cases and operating model fit for governments, schools, and companies."
             },
             "technical": {
-                "title": "For Technical Deep-Dive",
-                "description": "Explaining the protocol's operations, algorithms, and technical details."
+                "title": "JDVP Deck · Technical Deep-Dive",
+                "description": "Protocol mechanics, data structures, algorithms, and implementation details."
             }
         }
     },

@@ -5,24 +5,44 @@
         "keyboard": "to navigate"
     },
     "hook": {
-        "line1": "Going Beyond Explainability (XAI)",
-        "line2": "It's Time to Measure the Influence.",
-        "question": "We scrutinize AI logic, but what about its silent influence on our decisions? That's the real governance gap.",
+        "line1": "Institutional AI adoption needs",
+        "line2": "evidence, workflow, and accountability.",
+        "question": "In the Brand track, BufferLine packages JDVP measurement into deployable governance operations.",
         "navigate": "Press → or swipe to continue"
     },
+    "trackIntro": {
+        "badge": "Brand Track · Institutional",
+        "title": "Institutional Governance Flow",
+        "subtitle": "Move from governance gap to operating model, then validate with roadmap and outcome evidence.",
+        "pillars": {
+            "operations": {
+                "title": "Operational Framing",
+                "description": "Define governance as a repeatable workflow, not a policy slide."
+            },
+            "control": {
+                "title": "Control Layer",
+                "description": "Use JDVP signals to trigger review, escalation, and reporting."
+            },
+            "capability": {
+                "title": "Capability Layer",
+                "description": "Develop teams and users while maintaining accountable decision ownership."
+            }
+        },
+        "conclusion": "Use this deck with compliance, product, and executive stakeholders."
+    },
     "toc": {
-        "title": "JDVP for Institutions",
+        "title": "Brand Deck: Institutional Governance",
         "point1": {
             "title": "The Governance Gap",
             "subtitle": "The unmanaged risk of 'judgment delegation'."
         },
         "point2": {
-            "title": "The JDVP Solution",
-            "subtitle": "Evidence-based AI governance infrastructure."
+            "title": "BufferLine Governance Stack",
+            "subtitle": "JDVP-powered evidence that drives operational governance."
         },
         "point3": {
             "title": "Live Demo",
-            "subtitle": "See JDVP in action with a finance simulation."
+            "subtitle": "See the governance workflow in a finance simulation."
         },
         "point4": {
             "title": "Value for Organizations",
@@ -53,26 +73,26 @@
         "conclusion": "JDVP provides the tools for evidence-based AI governance."
     },
     "point2": {
-        "title": "JDVP: Evidence-Based AI Governance",
-        "subtitle": "A protocol for objectively measuring and documenting AI's influence.",
+        "title": "BufferLine Governance Stack (JDVP-powered)",
+        "subtitle": "From observation data to governance actions and audit-ready reporting.",
         "principles": {
             "observer": {
-                "title": "Observe",
-                "description": "Neutrally record the judgment flow in AI-human conversations. Pure observation without evaluation or intervention."
+                "title": "Observe (JDVP)",
+                "description": "Neutrally record judgment flow in AI-human conversations using protocol-aligned telemetry."
             },
             "measure": {
-                "title": "Measure",
-                "description": "Quantify the direction and magnitude of judgment delegation using JSV and DV. Data-driven analysis, not subjective estimation."
+                "title": "Interpret (Risk Lens)",
+                "description": "Convert JSV/DV patterns into risk signals, thresholds, and review triggers."
             },
             "buffer": {
-                "title": "Report",
-                "description": "No good/bad judgments. Provide objective information for decision-makers to interpret and act upon."
+                "title": "Operationalize (Workflow)",
+                "description": "Route evidence into policy controls, human review, and reporting workflows."
             }
         }
     },
     "point3_demo": {
         "title": "Live Demo: Financial Consultation Simulation",
-        "subtitle": "See how JDVP works in a real AI robo-advisor scenario.",
+        "subtitle": "See the institutional governance workflow in a real AI robo-advisor scenario.",
         "scenario": {
             "title": "Scenario: Fund Recommendation",
             "client": "Client",
@@ -109,13 +129,13 @@
         "warning": {
             "title": "⚠️ Rapid Delegation Pattern Detected",
             "message": "Rapid judgment delegation detected. Client accepted AI recommendations without requesting alternatives.",
-            "action": "Human advisor intervention recommended"
+            "action": "Trigger human advisor review workflow"
         },
         "insight": "In this conversation, the client fully delegated judgment to AI in just 3 turns. JDVP detects such 'rapid delegation patterns' in real-time."
     },
     "point4": {
         "title": "Value for Organizations",
-        "subtitle": "Core benefits for your organization",
+        "subtitle": "What institutions gain from deployable governance",
         "benefits": {
             "trust": {
                 "title": "Build Trust",
@@ -133,11 +153,11 @@
                 "kpi": "Faster AI service expansion"
             }
         },
-        "tagline": "Set a new standard for AI governance — with evidence, not assumptions."
+        "tagline": "Operational governance: evidence in, action out."
     },
     "point5": {
         "title": "Case Study: ABC Securities",
-        "subtitle": "A hypothetical case demonstrating concrete results.",
+        "subtitle": "A hypothetical deployment showing measurable operational outcomes.",
         "company": {
             "name": "ABC Securities (Hypothetical)",
             "context": "Operating AI robo-advisor services, facing regulatory risk due to increasing mis-selling complaints."
@@ -167,7 +187,7 @@
     "point6": {
         "title": "Value for People",
         "subtitle": "Empower employees and students to use AI proactively",
-        "intro": "JDVP supports not just organizations, but individual growth in AI literacy.",
+        "intro": "BufferLine institutional track supports both governance teams and frontline users.",
         "benefits": {
             "awareness": {
                 "title": "Recognize AI Dependency Patterns",
@@ -218,11 +238,11 @@
                 "quote": "\"At first I felt anxious without AI. Now I think first, then verify with AI.\""
             }
         },
-        "insight": "JDVP is a growth support tool, not surveillance. It helps individuals recognize and improve their own patterns."
+        "insight": "Not surveillance. It's a capability-building loop backed by measurable evidence."
     },
     "point8": {
         "title": "Implementation Roadmap",
-        "subtitle": "A 3-phase approach tailored to your organization",
+        "subtitle": "A 3-phase rollout from pilot to enterprise operating model",
         "phases": {
             "phase1": {
                 "title": "Phase 1: Pilot",
@@ -265,14 +285,14 @@
         },
         "point2": {
             "label": "The Solution:",
-            "text": "JDVP, evidence-based monitoring infrastructure."
+            "text": "BufferLine institutional stack: JDVP measurement plus governance workflows."
         },
         "point3": {
             "label": "The Benefit:",
             "text": "Build trust, ensure safety, accelerate innovation."
         },
-        "tagline": "Move from assumption-based to evidence-based AI governance.",
-        "principle": "Observe, Measure, Report: The Pillars of Evidence-Based Governance.",
+        "tagline": "Move from policy statements to operational AI governance.",
+        "principle": "Observe, Interpret, Operationalize: the institutional governance loop.",
         "cta": {
             "github": "Read the Whitepaper",
             "home": "Contact for PoC"

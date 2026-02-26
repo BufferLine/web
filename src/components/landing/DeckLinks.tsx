@@ -5,7 +5,8 @@ import { ArrowRight, Briefcase, Heart, Rocket, SlidersHorizontal } from "lucide-
 import NextLink from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
-const deckKeys = ["general", "personal", "institutional", "technical"] as const;
+const brandDeckKeys = ["general", "personal", "institutional"] as const;
+const jdvpDeckKeys = ["technical"] as const;
 
 const deckIcons = {
   general: <Rocket className="w-8 h-8 text-accent-bufferline-light" />,
@@ -25,6 +26,10 @@ export default function DeckLinks() {
   const locale = useLocale();
   const t = useTranslations("deckLinks");
   const tDecks = useTranslations("deck_selection");
+  const deckGroups = [
+    { key: "brand", deckKeys: brandDeckKeys },
+    { key: "jdvp", deckKeys: jdvpDeckKeys },
+  ] as const;
 
   return (
     <Section id="decks" className="bg-surface-card/20">
@@ -42,31 +47,49 @@ export default function DeckLinks() {
         </div>
       </FadeInView>
 
-      <nav aria-label={t("title")} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {deckKeys.map((key, i) => (
-          <FadeInView key={key} delay={i * 80}>
-            <NextLink href={`/${locale}/deck/${key}`} passHref>
-              <Card
-                variant="bordered"
-                hover
-                className="group cursor-pointer h-full flex flex-col p-5"
-              >
-                <div className="flex-grow">
-                  <div className="mb-3">{deckIcons[key]}</div>
-                  <h3 className={`text-lg font-semibold text-white mb-2 transition-colors ${deckColors[key]}`}>
-                    {tDecks(`decks.${key}.title`)}
-                  </h3>
-                  <p className="text-surface-muted text-sm leading-relaxed">
-                    {tDecks(`decks.${key}.description`)}
-                  </p>
-                </div>
-                <div className={`mt-4 flex items-center text-sm font-medium text-neutral-500 transition-colors ${deckColors[key]}`}>
-                  {tDecks("viewDeck")}
-                  <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
-                </div>
-              </Card>
-            </NextLink>
-          </FadeInView>
+      <nav aria-label={t("title")} className="space-y-10">
+        {deckGroups.map((group, groupIndex) => (
+          <div key={group.key} className="space-y-4">
+            <div>
+              <h3 className="text-xl font-semibold text-white mb-1">
+                {tDecks(`groups.${group.key}.title`)}
+              </h3>
+              <p className="text-surface-muted text-sm">
+                {tDecks(`groups.${group.key}.description`)}
+              </p>
+            </div>
+
+            <div className={group.key === "brand" ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" : "grid grid-cols-1 sm:grid-cols-2 gap-4"}>
+              {group.deckKeys.map((key, deckIndex) => {
+                const delay = (groupIndex * 3 + deckIndex + 1) * 80;
+                return (
+                  <FadeInView key={key} delay={delay}>
+                    <NextLink href={`/${locale}/deck/${key}`} passHref>
+                      <Card
+                        variant="bordered"
+                        hover
+                        className="group cursor-pointer h-full flex flex-col p-5"
+                      >
+                        <div className="flex-grow">
+                          <div className="mb-3">{deckIcons[key]}</div>
+                          <h4 className={`text-lg font-semibold text-white mb-2 transition-colors ${deckColors[key]}`}>
+                            {tDecks(`decks.${key}.title`)}
+                          </h4>
+                          <p className="text-surface-muted text-sm leading-relaxed">
+                            {tDecks(`decks.${key}.description`)}
+                          </p>
+                        </div>
+                        <div className={`mt-4 flex items-center text-sm font-medium text-neutral-500 transition-colors ${deckColors[key]}`}>
+                          {tDecks("viewDeck")}
+                          <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
+                        </div>
+                      </Card>
+                    </NextLink>
+                  </FadeInView>
+                );
+              })}
+            </div>
+          </div>
         ))}
       </nav>
     </Section>

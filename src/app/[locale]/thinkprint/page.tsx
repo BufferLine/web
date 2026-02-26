@@ -1,12 +1,12 @@
 import { Header, Footer } from "@/components/shared";
-import PersonaForgePage from "@/components/landing/PersonaForgePage";
+import ThinkprintPage from "@/components/landing/ThinkprintPage";
 
-export default function PersonaForge() {
+export default function Thinkprint() {
   return (
     <>
       <Header />
       <main>
-        <PersonaForgePage />
+        <ThinkprintPage />
       </main>
       <Footer />
     </>

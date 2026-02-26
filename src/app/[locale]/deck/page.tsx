@@ -5,7 +5,8 @@ import { ArrowRight, Briefcase, Heart, Rocket, SlidersHorizontal } from "lucide-
 import NextLink from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
-const deckKeys = ["general", "personal", "institutional", "technical"] as const;
+const brandDeckKeys = ["general", "personal", "institutional"] as const;
+const jdvpDeckKeys = ["technical"] as const;
 
 const deckIcons = {
   general: <Rocket className="w-10 h-10 text-accent-bufferline-light" />,
@@ -14,12 +15,30 @@ const deckIcons = {
   technical: <SlidersHorizontal className="w-10 h-10 text-accent-jdvp" />,
 };
 
+const deckHoverText = {
+  general: "group-hover:text-accent-bufferline-light",
+  personal: "group-hover:text-accent-bufferline-light",
+  institutional: "group-hover:text-accent-bufferline-light",
+  technical: "group-hover:text-accent-jdvp",
+};
+
+const deckActionText = {
+  general: "text-accent-bufferline-light group-hover:text-accent-bufferline-subtle",
+  personal: "text-accent-bufferline-light group-hover:text-accent-bufferline-subtle",
+  institutional: "text-accent-bufferline-light group-hover:text-accent-bufferline-subtle",
+  technical: "text-accent-jdvp-light group-hover:text-accent-jdvp",
+};
+
 export default function DeckSelectionPage() {
   const locale = useLocale();
   const t = useTranslations("deck_selection");
+  const deckGroups = [
+    { key: "brand", deckKeys: brandDeckKeys },
+    { key: "jdvp", deckKeys: jdvpDeckKeys },
+  ] as const;
 
   return (
-    <main className="min-h-screen w-full flex flex-col items-center justify-center bg-surface-bg text-surface-fg p-8">
+    <main className="min-h-screen w-full bg-surface-bg text-surface-fg p-8">
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
           {t("title")}
@@ -29,29 +48,44 @@ export default function DeckSelectionPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl w-full">
-        {deckKeys.map((key) => (
-          <NextLink href={`/${locale}/deck/${key}`} key={key} passHref>
-            <Card
-              variant="bordered"
-              hover
-              className="group cursor-pointer h-full flex flex-col"
-            >
-              <div className="flex-grow">
-                <div className="mb-4">{deckIcons[key]}</div>
-                <h2 className="text-xl font-semibold text-white mb-2 group-hover:text-accent-bufferline-light transition-colors">
-                  {t(`decks.${key}.title`)}
-                </h2>
-                <p className="text-surface-muted text-sm">
-                  {t(`decks.${key}.description`)}
-                </p>
-              </div>
-              <div className="mt-6 flex items-center justify-end text-sm font-medium text-accent-bufferline-light group-hover:text-accent-bufferline-subtle">
-                {t("viewDeck")}
-                <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-              </div>
-            </Card>
-          </NextLink>
+      <div className="max-w-7xl w-full mx-auto space-y-12">
+        {deckGroups.map((group) => (
+          <section key={group.key} className="space-y-5">
+            <div>
+              <h2 className="text-2xl font-semibold text-white mb-2">
+                {t(`groups.${group.key}.title`)}
+              </h2>
+              <p className="text-surface-muted">
+                {t(`groups.${group.key}.description`)}
+              </p>
+            </div>
+
+            <div className={group.key === "brand" ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" : "grid grid-cols-1 md:grid-cols-2 gap-6"}>
+              {group.deckKeys.map((key) => (
+                <NextLink href={`/${locale}/deck/${key}`} key={key} passHref>
+                  <Card
+                    variant="bordered"
+                    hover
+                    className="group cursor-pointer h-full flex flex-col"
+                  >
+                    <div className="flex-grow">
+                      <div className="mb-4">{deckIcons[key]}</div>
+                      <h3 className={`text-xl font-semibold text-white mb-2 transition-colors ${deckHoverText[key]}`}>
+                        {t(`decks.${key}.title`)}
+                      </h3>
+                      <p className="text-surface-muted text-sm">
+                        {t(`decks.${key}.description`)}
+                      </p>
+                    </div>
+                    <div className={`mt-6 flex items-center justify-end text-sm font-medium transition-colors ${deckActionText[key]}`}>
+                      {t("viewDeck")}
+                      <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </Card>
+                </NextLink>
+              ))}
+            </div>
+          </section>
         ))}
       </div>
     </main>
