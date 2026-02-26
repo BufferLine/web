@@ -5,7 +5,7 @@ import {
   HowItWorks,
   InteractiveDemo,
   DataStructure,
-  DeckLinks,
+  JdvpDeckCta,
   GetStarted,
 } from "@/components/landing";
 
@@ -19,7 +19,7 @@ export default function JdvpPage() {
         <HowItWorks />
         <InteractiveDemo />
         <DataStructure />
-        <DeckLinks />
+        <JdvpDeckCta />
         <GetStarted />
       </main>
       <Footer />
