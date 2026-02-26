@@ -1,5 +1,5 @@
 import { CardGridSlide } from "@/components/deck";
-import { FileText, Terminal, FileJson } from "lucide-react";
+import { FileText, Terminal, FileJson, Package, FlaskConical, ClipboardCheck } from "lucide-react";
 
 interface Props {
   t: (key: string) => string;
@@ -25,6 +25,21 @@ export default function Point4Slide({ t }: Props) {
           icon: FileJson,
           title: t("point4.artifacts.metadata.title"),
           description: t("point4.artifacts.metadata.description"),
+        },
+        {
+          icon: Package,
+          title: t("point4.artifacts.manifest.title"),
+          description: t("point4.artifacts.manifest.description"),
+        },
+        {
+          icon: FlaskConical,
+          title: t("point4.artifacts.scenarios.title"),
+          description: t("point4.artifacts.scenarios.description"),
+        },
+        {
+          icon: ClipboardCheck,
+          title: t("point4.artifacts.evaluation.title"),
+          description: t("point4.artifacts.evaluation.description"),
         },
       ]}
       theme="thinkprint"

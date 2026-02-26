@@ -1,5 +1,5 @@
 import { CardGridSlide } from "@/components/deck";
-import { Activity, Brain, Zap } from "lucide-react";
+import { Shield, Link, Zap } from "lucide-react";
 
 interface Props {
   t: (key: string) => string;
@@ -12,14 +12,14 @@ export default function Point5Slide({ t }: Props) {
       subtitle={t("point5.subtitle")}
       cards={[
         {
-          icon: Activity,
-          title: t("point5.connections.jdvp.title"),
-          description: t("point5.connections.jdvp.description"),
+          icon: Shield,
+          title: t("point5.connections.independence.title"),
+          description: t("point5.connections.independence.description"),
         },
         {
-          icon: Brain,
-          title: t("point5.connections.thinkprint.title"),
-          description: t("point5.connections.thinkprint.description"),
+          icon: Link,
+          title: t("point5.connections.synergy.title"),
+          description: t("point5.connections.synergy.description"),
         },
         {
           icon: Zap,

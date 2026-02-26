@@ -5,30 +5,30 @@
         "keyboard": "으로 이동"
     },
     "hook": {
-        "line1": "당신의 사고를",
-        "line2": "플레이 가능한 모드로.",
-        "question": "추론 스타일이 재사용·리믹스 가능한 아티팩트가 된다면?",
+        "line1": "당신의 사고,",
+        "line2": "외재화하다.",
+        "question": "위임하기 전에, 자신이 어떻게 생각하는지 먼저 확인하세요.",
         "navigate": "스크롤 또는 → 키를 눌러 시작"
     },
     "trackIntro": {
         "badge": "Thinkprint 트랙",
         "title": "이 덱의 흐름",
-        "subtitle": "Thinkprint가 무엇을 포착하는지, 파이프라인이 어떻게 작동하는지, JDVP와 어떻게 연결되는지를 세 축으로 살펴봅니다.",
+        "subtitle": "Thinkprint가 무엇을 포착하는지, 전체 추출 라이프사이클, 그리고 JDVP와의 관계를 세 축으로 살펴봅니다.",
         "pillars": {
             "extraction": {
                 "title": "논리 추출",
-                "description": "대화에서 추론 구조를 포착합니다 — 기억이 아니라, 생각하는 방식을."
+                "description": "대화에서 논리구조를 포착합니다 — 기억이 아니라, 생각하는 방식을."
             },
             "calibration": {
-                "title": "보정 & 동결",
-                "description": "임계값을 다듬고, 모순을 해소하고, 버전 스냅샷을 동결합니다."
+                "title": "라이프사이클 & 아티팩트",
+                "description": "추출에서 퍼블리시까지 6단계 파이프라인으로 버전 관리되는 모드 패키지를 생성합니다."
             },
             "connection": {
-                "title": "JDVP 시너지",
-                "description": "Thinkprint 모드를 JDVP 텔레메트리와 연결해 측정 가능한 실험을 만듭니다."
+                "title": "독립적, 연결 가능",
+                "description": "모든 에이전트에서 독립 운영됩니다. 선택적 JDVP 연동으로 측정이 가능해집니다."
             }
         },
-        "conclusion": "Thinkprint는 추론을 플레이·버전 관리 가능한 아티팩트로 바꿉니다 — 고정 라벨이 아니라, 진화하는 모드."
+        "conclusion": "Thinkprint는 암묵적 사고 습관을 명시적이고 검사 가능한 논리구조로 바꿉니다 — 고정 라벨이 아니라, 진화하는 모드."
     },
     "toc": {
         "title": "Thinkprint: 도메인 개요",
@@ -41,33 +41,33 @@
             "subtitle": "흔한 오해 바로잡기"
         },
         "point3": {
-            "title": "파이프라인",
-            "subtitle": "추출 → 보정 → 심화 → 동결"
+            "title": "추출 라이프사이클",
+            "subtitle": "추출 → 보정 → 심화 → 동결 → 평가 → 퍼블리시"
         },
         "point4": {
-            "title": "출력 아티팩트",
-            "subtitle": "세 가지 실전 산출물"
+            "title": "모드 패키지",
+            "subtitle": "버전당 6개 표준 아티팩트"
         },
         "point5": {
-            "title": "JDVP 시너지",
-            "subtitle": "프로토콜과의 연결"
+            "title": "JDVP 관계",
+            "subtitle": "설계상 독립적, 선택적으로 연결 가능"
         }
     },
     "point1": {
         "title": "Thinkprint란",
-        "subtitle": "기억이 아니라 추론 방식을 포착합니다.",
+        "subtitle": "기억이 아니라 논리구조를 포착합니다.",
         "features": {
             "toy": {
                 "title": "논리구조 추출기",
-                "description": "추론 패턴에서 Thinkprint 모드를 만드는 실험적 도구."
+                "description": "개인의 추론 패턴을 검사·공유 가능한 모드로 외재화합니다."
             },
             "reflection": {
-                "title": "자기성찰 플레이그라운드",
-                "description": "기억 복원 제품이 아닌, 사고 방식을 탐색하는 공간."
+                "title": "정체성이 아닌 논리",
+                "description": "성격 주장이 아닌 추론 구성. 기본적으로 편집 가능하고, 버전 관리되며, 비교 가능합니다."
             },
             "declaration": {
                 "title": "편집 가능한 추론 프로필",
-                "description": "Thinkprint 모드 = 수정 가능한 추론 프로필, 고정 성격 라벨링이 아님."
+                "description": "결정 우선순위, 신뢰도 임계값, 위임 경계, 트레이드오프 패턴, 개정 트리거."
             }
         }
     },
@@ -81,7 +81,7 @@
             },
             "psychology": {
                 "title": "기억 복제가 아님",
-                "description": "추론 구조를 포착하지, 기억이나 경험을 복제하지 않음."
+                "description": "논리구조를 포착하지, 기억이나 경험을 복제하지 않음."
             },
             "alignment": {
                 "title": "AI 정렬 제어가 아님",
@@ -94,86 +94,110 @@
         }
     },
     "point3": {
-        "title": "플레이그라운드 파이프라인",
-        "subtitle": "대화에서 리믹스 가능한 Thinkprint 아티팩트까지, 가벼운 네 단계.",
+        "title": "추출 라이프사이클",
+        "subtitle": "대화에서 퍼블리시 가능한 모드 패키지까지 6단계.",
         "steps": {
             "extract": {
                 "number": "01",
                 "title": "추출",
-                "description": "대화 신호에서 당신의 추론 구조 초안을 뽑아냅니다.",
-                "items": ["대화 패턴 분석", "추론 구조 식별", "초기 초안 생성"]
+                "description": "대화와 이벤트에서 초기 추론 후보를 도출합니다.",
+                "items": ["기본 추론 스타일", "위임 경계", "위험 및 모순 신호"]
             },
             "calibrate": {
                 "number": "02",
                 "title": "보정",
-                "description": "간단한 질문으로 판단 임계값, 선호, 결정 스타일을 빠르게 보정합니다.",
+                "description": "대상 질문으로 임계값과 선호를 해소합니다.",
                 "items": ["대상 보정 프롬프트", "임계값 조정", "결정 스타일 매핑"]
             },
             "deepen": {
                 "number": "03",
                 "title": "심화",
-                "description": "모순 지점, 위임 경계, 추론 트레이드오프를 상호작용으로 심화합니다.",
-                "items": ["모순 해소", "위임 경계 매핑", "트레이드오프 탐색"]
+                "description": "모순과 경계 조건을 스트레스 테스트합니다.",
+                "items": ["모순 해소", "위임 경계 매핑", "경계 사례 실패 추출"]
             },
             "freeze": {
                 "number": "04",
                 "title": "동결",
-                "description": "버전 스냅샷을 고정해 재사용·비교·포크·진화시킬 수 있게 합니다.",
-                "items": ["버전 스냅샷 생성", "아티팩트 생성", "포크 및 진화 지원"]
+                "description": "불변 버전 스냅샷과 아티팩트 세트를 생성합니다.",
+                "items": ["버전 스냅샷 생성", "아티팩트 생성", "무결성 해시 계산"]
+            },
+            "evaluate": {
+                "number": "05",
+                "title": "평가",
+                "description": "벤치마크 시나리오를 실행하고 스코어카드를 생성합니다.",
+                "items": ["시나리오 커버리지 테스트", "일관성 점수 산정", "퍼블리시 준비 확인"]
+            },
+            "publish": {
+                "number": "06",
+                "title": "퍼블리시",
+                "description": "제한된 공개 모드 패키지를 내보냅니다 (선택).",
+                "items": ["선택적 축 내보내기", "PII 스크러빙", "서명된 매니페스트 생성"]
             }
         }
     },
     "point4": {
-        "title": "출력 아티팩트",
-        "subtitle": "각 Thinkprint 버전은 실전 적용 가능한 3개 아티팩트를 만듭니다.",
+        "title": "모드 패키지",
+        "subtitle": "각 버전의 모드는 6개 표준 아티팩트를 생성합니다.",
         "artifacts": {
             "declaration": {
                 "title": "thinkprint.md",
-                "description": "추론 원칙, 위임 정책, 위험 경계, 업데이트 트리거."
+                "description": "사람이 읽는 정책: 추론 축, 결정 우선순위, 위임 규칙, 위험 경계."
             },
             "prompt": {
                 "title": "agent_system_prompt.txt",
-                "description": "에이전트에 바로 적용 가능한 추론 정책. 빠르게 테스트하고 반복 개선."
+                "description": "에이전트 시스템 컨텍스트에 주입되어 추론 모드를 활성화하는 런타임 명령 계층."
             },
             "metadata": {
                 "title": "metadata.json",
-                "description": "버전, 추출 방식, 신뢰도, 선택적 JDVP 연결 정보."
+                "description": "버전, 추출 방식, 전체 신뢰도, 평가 참조, 거버넌스 플래그."
+            },
+            "manifest": {
+                "title": "manifest.json",
+                "description": "모드 패키지 구조, 무결성 해시, 호환성 매트릭스, 라이선스."
+            },
+            "scenarios": {
+                "title": "scenario_pack.json",
+                "description": "모드 일관성과 위임 정렬을 테스트하는 벤치마크 시나리오."
+            },
+            "evaluation": {
+                "title": "evaluation_report.json",
+                "description": "시나리오 커버리지, 일관성 점수, 위험 위반, 퍼블리시 준비도."
             }
         }
     },
     "point5": {
-        "title": "JDVP + Thinkprint 시너지",
-        "subtitle": "JDVP는 판단이 어디로 이동하는지 측정하고, Thinkprint는 논리구조를 포착합니다. 함께 실험 가능한 측정 루프를 만듭니다.",
+        "title": "JDVP 관계",
+        "subtitle": "Thinkprint는 독립적으로 운영됩니다 — JDVP 필수 아님. 연결 시 실험이 측정 가능해집니다.",
         "connections": {
-            "jdvp": {
-                "title": "JDVP는 판단의 이동을 측정",
-                "description": "프로토콜이 인간-AI 상호작용에서 판단 위임을 실시간으로 추적합니다."
+            "independence": {
+                "title": "설계상 독립적",
+                "description": "추론 행동이 있는 모든 에이전트나 인간에게 작동합니다. JDVP나 Meta Governance가 필요하지 않습니다."
             },
-            "thinkprint": {
-                "title": "Thinkprint가 패턴을 모델링",
-                "description": "추론 구조를 재사용·버전 관리 가능한 아티팩트로 포착합니다."
+            "synergy": {
+                "title": "선택적 시너지",
+                "description": "JDVP 텔레메트리와 결합하면 추론 드리프트 추적이 가능해지고 실험에 측정이 더해집니다."
             },
             "future": {
                 "title": "미래 통합",
-                "description": "JDVP 텔레메트리가 Thinkprint 드리프트 추적에 연동 — 추론의 진화가 측정 가능해집니다."
+                "description": "JDVP 드리프트 메트릭이 Thinkprint 모드 평가에 연동 — 언제나 선택적 확장으로."
             }
         }
     },
     "summary": {
-        "title": "나만의 사고 모드를 만들어 보세요",
+        "title": "당신의 사고, 외재화하다",
         "point1": {
             "label": "무엇인가:",
-            "text": "추론을 리믹스 가능한 모드로 바꾸는 실험적 논리구조 추출기."
+            "text": "논리구조를 검사 가능한 모드로 추출·버전 관리·공유하는 프로토콜."
         },
         "point2": {
             "label": "어떻게 작동하나:",
-            "text": "추출 → 보정 → 심화 → 동결 — 버전 관리되는 Thinkprint까지 네 단계."
+            "text": "6단계 라이프사이클: 추출 → 보정 → 심화 → 동결 → 평가 → 퍼블리시."
         },
         "point3": {
             "label": "왜 중요한가:",
-            "text": "JDVP와 연결되어 추론이 측정 가능하고 진화하는 인프라가 됩니다."
+            "text": "추론이 명시적이고 이식 가능해지며 — JDVP 연결 시 — 측정 가능해집니다."
         },
-        "tagline": "Thinkprint: 논리를 추출하고, 모드를 리믹스하고, 추론을 진화시키세요.",
+        "tagline": "추론 패턴을 검사·공유 가능한 모드로 추출하세요.",
         "cta": {
             "github": "GitHub에서 보기",
             "home": "백서 읽기"
