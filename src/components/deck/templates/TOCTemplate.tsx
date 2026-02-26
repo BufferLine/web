@@ -30,7 +30,7 @@ export default function TOCTemplate({
   return (
     <Slide className="bg-slate-950">
       <div className="max-w-3xl w-full">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 sm:mb-12 text-center">
           {title}
         </h2>
         <div className={spacing}>

@@ -6,10 +6,10 @@ interface Props {
 }
 
 export default function TOCSlide({ t, setSlide }: Props) {
-  const tocOrder = [1, 2, 4, 3, 5] as const;
-  const items = tocOrder.map((num) => ({
-    title: t(`toc.point${num}.title`),
-    subtitle: t(`toc.point${num}.subtitle`),
+  const tocKeys = ["point1", "point2", "point4", "domainDiff", "point3", "point5"] as const;
+  const items = tocKeys.map((key) => ({
+    title: t(`toc.${key}.title`),
+    subtitle: t(`toc.${key}.subtitle`),
   }));
 
   return (

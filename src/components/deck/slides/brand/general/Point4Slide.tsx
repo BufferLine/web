@@ -1,9 +1,14 @@
-import { Slide, InfoCard } from "@/components/deck";
-import { Users, Building, Sparkles } from "lucide-react";
+import { Slide, InfoCard, ConclusionBox } from "@/components/deck";
+import { Users, Building } from "lucide-react";
 
 interface Props {
   t: (key: string) => string;
 }
+
+const domainTags = {
+  personal: ["Thinkprint", "JDVP"],
+  institutional: ["JDVP", "Meta Governance", "Thinkprint"],
+} as const;
 
 export default function Point4Slide({ t }: Props) {
   return (
@@ -12,11 +17,11 @@ export default function Point4Slide({ t }: Props) {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
           {t("point4.title")}
         </h2>
-        <p className="text-lg text-slate-400 mb-8 text-center">
+        <p className="text-lg text-slate-400 mb-4 sm:mb-8 text-center">
           {t("point4.subtitle")}
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6 mb-4 sm:mb-8">
           <InfoCard
             icon={Users}
             title={t("point4.strategies.personal.title")}
@@ -24,9 +29,18 @@ export default function Point4Slide({ t }: Props) {
             theme="bufferline"
             variant="themed"
             footer={
-              <p className="text-xs text-indigo-400/80 font-mono">
-                {t("point4.strategies.personal.model")}
-              </p>
+              <div className="space-y-2">
+                <p className="text-xs text-indigo-400/80 font-mono">
+                  {t("point4.strategies.personal.model")}
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {domainTags.personal.map((d) => (
+                    <span key={d} className="px-2 py-0.5 rounded-full bg-indigo-900/40 text-indigo-300 text-[10px] font-mono">
+                      {d}
+                    </span>
+                  ))}
+                </div>
+              </div>
             }
           />
           <InfoCard
@@ -36,30 +50,25 @@ export default function Point4Slide({ t }: Props) {
             theme="bufferline"
             variant="themed"
             footer={
-              <p className="text-xs text-indigo-400/80 font-mono">
-                {t("point4.strategies.institutional.model")}
-              </p>
+              <div className="space-y-2">
+                <p className="text-xs text-indigo-400/80 font-mono">
+                  {t("point4.strategies.institutional.model")}
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {domainTags.institutional.map((d) => (
+                    <span key={d} className="px-2 py-0.5 rounded-full bg-indigo-900/40 text-indigo-300 text-[10px] font-mono">
+                      {d}
+                    </span>
+                  ))}
+                </div>
+              </div>
             }
           />
         </div>
 
-        <div className="p-5 rounded-xl bg-accent-bufferline/[0.08] border border-accent-bufferline/[0.15]">
-          <h3 className="text-lg font-semibold text-accent-bufferline-light mb-3 flex items-center gap-2">
-            <Sparkles className="w-4 h-4" />
-            {t("point4.differentiation.title")}
-          </h3>
-          <p className="text-slate-300 text-sm mb-4">
-            {t("point4.differentiation.summary")}
-          </p>
-          <ul className="space-y-2 text-sm text-slate-300">
-            {(["protocol", "declaration", "governance"] as const).map((key) => (
-              <li key={key} className="flex items-start gap-2">
-                <span className="text-accent-bufferline-light mt-0.5">•</span>
-                <span>{t(`point4.differentiation.items.${key}`)}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ConclusionBox theme="bufferline">
+          {t("point4.conclusion")}
+        </ConclusionBox>
       </div>
     </Slide>
   );

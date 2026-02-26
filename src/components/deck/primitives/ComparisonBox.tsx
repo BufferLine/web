@@ -13,7 +13,7 @@ export default function ComparisonBox({
 
   return (
     <div
-      className={`p-5 rounded-xl ${
+      className={`p-3 sm:p-5 rounded-xl ${
         isBefore
           ? "bg-slate-900/70 border border-slate-700"
           : "bg-green-950/30 border border-green-700"

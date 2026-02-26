@@ -19,7 +19,7 @@ export default function Point3Slide({ t }: Props) {
           {t("point3.title")}
         </h2>
         <p className="text-slate-400 text-center mb-6">{t("point3.subtitle")}</p>
-        <div className="grid md:grid-cols-3 gap-4 mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 mb-4">
           {methods.map(({ key, icon, variant }) => (
             <InfoCard
               key={key}

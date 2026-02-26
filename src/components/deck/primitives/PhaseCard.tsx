@@ -34,7 +34,7 @@ export default function PhaseCard({
   };
 
   return (
-    <div className={`p-5 rounded-xl border ${variantStyles[variant]}`}>
+    <div className={`p-3 sm:p-5 rounded-xl border ${variantStyles[variant]}`}>
       <div className="flex items-center justify-between mb-3">
         <h3 className={`text-lg font-bold ${colors.textLight}`}>{title}</h3>
         {status && (

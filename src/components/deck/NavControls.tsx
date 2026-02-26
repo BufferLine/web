@@ -18,7 +18,7 @@ export default function NavControls({
   nextLabel = "Next slide",
 }: NavControlsProps) {
   return (
-    <div className="fixed bottom-8 right-8 flex items-center gap-4 z-50">
+    <div className="fixed bottom-4 right-3 sm:bottom-8 sm:right-8 flex items-center gap-2 sm:gap-4 z-50">
       <span className="text-neutral-500 text-sm font-mono">
         {current + 1} / {total}
       </span>
@@ -26,20 +26,20 @@ export default function NavControls({
         <button
           onClick={onPrev}
           disabled={current === 0}
-          className="p-2 rounded-lg bg-surface-elevated/80 hover:bg-neutral-700 disabled:opacity-30 disabled:cursor-not-allowed transition-colors duration-200"
+          className="p-1.5 sm:p-2 rounded-lg bg-surface-elevated/80 hover:bg-neutral-700 disabled:opacity-30 disabled:cursor-not-allowed transition-colors duration-200"
           aria-label={prevLabel}
         >
-          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
         <button
           onClick={onNext}
           disabled={current === total - 1}
-          className="p-2 rounded-lg bg-surface-elevated/80 hover:bg-neutral-700 disabled:opacity-30 disabled:cursor-not-allowed transition-colors duration-200"
+          className="p-1.5 sm:p-2 rounded-lg bg-surface-elevated/80 hover:bg-neutral-700 disabled:opacity-30 disabled:cursor-not-allowed transition-colors duration-200"
           aria-label={nextLabel}
         >
-          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>

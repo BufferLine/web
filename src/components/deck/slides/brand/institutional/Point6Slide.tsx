@@ -27,11 +27,11 @@ export default function Point6Slide({ t }: Props) {
         <p className="text-lg text-slate-400 mb-4 text-center">
           {t("point6.subtitle")}
         </p>
-        <p className="text-base text-slate-500 mb-10 text-center">
+        <p className="text-base text-slate-500 mb-5 sm:mb-10 text-center">
           {t("point6.intro")}
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-6 mb-5 sm:mb-10">
           {(["awareness", "growth", "balance"] as const).map((key) => (
             <InfoCard
               key={key}
@@ -43,7 +43,7 @@ export default function Point6Slide({ t }: Props) {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {(["enterprise", "education", "healthcare"] as const).map((key) => {
             const Icon = domainIcons[key];
             return (
