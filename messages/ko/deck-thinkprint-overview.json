@@ -5,163 +5,163 @@
         "keyboard": "으로 이동"
     },
     "hook": {
-        "line1": "당신의 사고,",
-        "line2": "외재화하다.",
-        "question": "위임하기 전에, 자신이 어떻게 생각하는지 먼저 확인하세요.",
-        "navigate": "스크롤 또는 → 키를 눌러 시작"
+        "line1": "내 사고를",
+        "line2": "눈에 보이게.",
+        "question": "AI에 맡기기 전에, 내가 어떻게 생각하는지 먼저 보세요.",
+        "navigate": "스크롤 또는 → 키로 시작"
     },
     "trackIntro": {
         "badge": "Thinkprint 트랙",
         "title": "이 덱의 흐름",
-        "subtitle": "Thinkprint가 무엇을 포착하는지, 전체 추출 라이프사이클, 그리고 JDVP와의 관계를 세 축으로 살펴봅니다.",
+        "subtitle": "Thinkprint가 뭘 잡아내는지, 추출 과정은 어떤지, JDVP와는 어떤 관계인지 — 세 축으로 봅니다.",
         "pillars": {
             "extraction": {
                 "title": "논리 추출",
-                "description": "대화에서 논리구조를 포착합니다 — 기억이 아니라, 생각하는 방식을."
+                "description": "대화에서 논리구조를 잡아냅니다 — 기억이 아니라, 생각하는 방식을."
             },
             "calibration": {
-                "title": "라이프사이클 & 아티팩트",
-                "description": "추출에서 퍼블리시까지 6단계 파이프라인으로 버전 관리되는 모드 패키지를 생성합니다."
+                "title": "추출 과정 & 산출물",
+                "description": "추출부터 공개까지 6단계. 버전별 모드 패키지를 만들어냅니다."
             },
             "connection": {
-                "title": "독립적, 연결 가능",
-                "description": "모든 에이전트에서 독립 운영됩니다. 선택적 JDVP 연동으로 측정이 가능해집니다."
+                "title": "독립적이되, 연결 가능",
+                "description": "어떤 에이전트에서든 단독 작동. JDVP를 붙이면 측정까지 됩니다."
             }
         },
-        "conclusion": "Thinkprint는 암묵적 사고 습관을 명시적이고 검사 가능한 논리구조로 바꿉니다 — 고정 라벨이 아니라, 진화하는 모드."
+        "conclusion": "Thinkprint는 무의식적 사고 습관을 꺼내서 들여다볼 수 있는 논리구조로 만듭니다 — 고정 라벨이 아니라, 진화하는 모드."
     },
     "toc": {
-        "title": "Thinkprint: 도메인 개요",
+        "title": "Thinkprint 개요",
         "point1": {
             "title": "Thinkprint란",
-            "subtitle": "세 가지 핵심 정의"
+            "subtitle": "핵심 정의 세 가지"
         },
         "point2": {
-            "title": "이것이 아닌 것",
+            "title": "이런 건 아닙니다",
             "subtitle": "흔한 오해 바로잡기"
         },
         "point3": {
-            "title": "추출 라이프사이클",
-            "subtitle": "추출 → 보정 → 심화 → 동결 → 평가 → 퍼블리시"
+            "title": "추출 과정",
+            "subtitle": "추출 → 보정 → 심화 → 동결 → 평가 → 공개"
         },
         "point4": {
             "title": "모드 패키지",
-            "subtitle": "버전당 6개 표준 아티팩트"
+            "subtitle": "버전마다 나오는 6개 산출물"
         },
         "point5": {
-            "title": "JDVP 관계",
-            "subtitle": "설계상 독립적, 선택적으로 연결 가능"
+            "title": "JDVP와의 관계",
+            "subtitle": "독립적으로 돌아가고, 필요하면 연결"
         }
     },
     "point1": {
         "title": "Thinkprint란",
-        "subtitle": "기억이 아니라 논리구조를 포착합니다.",
+        "subtitle": "기억이 아니라, 논리구조를 잡아냅니다.",
         "features": {
             "toy": {
                 "title": "논리구조 추출기",
-                "description": "개인의 추론 패턴을 검사·공유 가능한 모드로 외재화합니다."
+                "description": "내 추론 패턴을 꺼내서, 들여다보고 공유할 수 있는 모드로 만듭니다."
             },
             "reflection": {
-                "title": "정체성이 아닌 논리",
-                "description": "성격 주장이 아닌 추론 구성. 기본적으로 편집 가능하고, 버전 관리되며, 비교 가능합니다."
+                "title": "성격이 아닌 논리",
+                "description": "성격 판정이 아닙니다. 편집하고, 버전 관리하고, 비교할 수 있는 추론 구성입니다."
             },
             "declaration": {
                 "title": "편집 가능한 추론 프로필",
-                "description": "결정 우선순위, 신뢰도 임계값, 위임 경계, 트레이드오프 패턴, 개정 트리거."
+                "description": "판단 우선순위, 신뢰 기준, 위임 경계, 트레이드오프, 수정 조건을 담습니다."
             }
         }
     },
     "point2": {
-        "title": "이것이 아닌 것",
-        "subtitle": "Thinkprint가 의도적으로 피하는 것들.",
+        "title": "이런 건 아닙니다",
+        "subtitle": "Thinkprint가 일부러 하지 않는 것들.",
         "items": {
             "profiling": {
                 "title": "상업적 프로파일링이 아님",
-                "description": "행동 타겟팅이나 데이터 수익화 없음 — 순수한 자기 주도 탐색."
+                "description": "행동 추적이나 데이터 장사 없이, 온전히 자기 탐색용입니다."
             },
             "psychology": {
                 "title": "기억 복제가 아님",
-                "description": "논리구조를 포착하지, 기억이나 경험을 복제하지 않음."
+                "description": "생각하는 방식을 잡아낼 뿐, 기억이나 경험을 베끼지 않습니다."
             },
             "alignment": {
-                "title": "AI 정렬 제어가 아님",
-                "description": "개인 추론 도구이지, AI 행동을 제어하는 시스템이 아님."
+                "title": "AI 제어 시스템이 아님",
+                "description": "개인 추론 도구이지, AI를 통제하는 장치가 아닙니다."
             },
             "cloning": {
-                "title": "인간 복제가 아님",
-                "description": "논리 패턴을 추출할 뿐, 사람을 복제하려 하지 않음."
+                "title": "사람 복제가 아님",
+                "description": "논리 패턴을 뽑아낼 뿐, 사람 자체를 복제하려는 게 아닙니다."
             }
         }
     },
     "point3": {
-        "title": "추출 라이프사이클",
-        "subtitle": "두 페이즈, 6단계: 대화형 추출, 그리고 아티팩트 릴리스.",
+        "title": "추출 과정",
+        "subtitle": "크게 두 단계, 총 6스텝. 대화로 뽑아내고, 산출물로 굳힙니다.",
         "phases": {
             "extract": {
-                "title": "추출 & 정제",
-                "status": "01–03단계",
-                "description": "추론 프로필을 구성하는 대화 기반 상호작용 단계.",
-                "items": ["추출 — 대화에서 추론 후보 도출", "보정 — 대상 질문으로 임계값 해소", "심화 — 모순과 경계 조건 스트레스 테스트"]
+                "title": "추출 & 다듬기",
+                "status": "01–03",
+                "description": "대화를 통해 추론 프로필을 만들어가는 단계.",
+                "items": ["추출 — 대화에서 추론 후보를 뽑아냄", "보정 — 질문으로 기준값과 선호를 잡아줌", "심화 — 모순과 극단 상황을 밀어붙여 검증"]
             },
             "release": {
-                "title": "동결 & 릴리스",
-                "status": "04–06단계",
-                "description": "아티팩트 생성, 품질 보증, 선택적 퍼블리시.",
-                "items": ["동결 — 불변 버전 스냅샷 생성", "평가 — 벤치마크 실행 및 스코어카드 생성", "퍼블리시 — 공개 모드 패키지 내보내기 (선택)"]
+                "title": "동결 & 내보내기",
+                "status": "04–06",
+                "description": "결과물을 굳히고, 검증하고, 필요하면 공개.",
+                "items": ["동결 — 고정된 버전 스냅샷 생성", "평가 — 시나리오 테스트로 품질 확인", "공개 — 모드 패키지 내보내기 (선택)"]
             }
         }
     },
     "point4": {
         "title": "모드 패키지",
-        "subtitle": "각 버전의 모드는 두 그룹, 6개 표준 아티팩트를 생성합니다.",
+        "subtitle": "모드 하나를 만들면 두 묶음, 6개 파일이 나옵니다.",
         "groups": {
             "core": {
-                "title": "핵심 아티팩트",
-                "status": "Primary",
-                "description": "추론 모드를 정의하고 활성화하는 주요 산출물.",
-                "items": ["thinkprint.md — 사람이 읽는 정책 문서", "agent_system_prompt.txt — 런타임 명령 계층", "metadata.json — 출처, 신뢰도, 거버넌스 플래그"]
+                "title": "핵심 산출물",
+                "status": "Core",
+                "description": "추론 모드를 정의하고 실행하는 본체.",
+                "items": ["thinkprint.md — 사람이 읽는 정책 문서", "agent_system_prompt.txt — 에이전트에 주입하는 실행 계층", "metadata.json — 버전, 신뢰도, 거버넌스 정보"]
             },
             "packaging": {
-                "title": "패키징 & QA",
-                "status": "Infrastructure",
-                "description": "무결성 검증, 테스트, 퍼블리시 준비도.",
-                "items": ["manifest.json — 패키지 구조 및 무결성 해시", "scenario_pack.json — 벤치마크 테스트 시나리오", "evaluation_report.json — 커버리지, 점수, 위반 사항"]
+                "title": "검증 & 배포",
+                "status": "QA",
+                "description": "무결성 확인, 테스트, 배포 준비.",
+                "items": ["manifest.json — 패키지 구조와 해시", "scenario_pack.json — 품질 테스트 시나리오", "evaluation_report.json — 점수, 위반, 배포 준비 여부"]
             }
         }
     },
     "point5": {
-        "title": "JDVP 관계",
-        "subtitle": "Thinkprint는 독립적으로 운영됩니다 — JDVP 필수 아님. 연결 시 실험이 측정 가능해집니다.",
+        "title": "JDVP와의 관계",
+        "subtitle": "Thinkprint는 혼자서도 돌아갑니다. JDVP를 붙이면 실험에 측정이 더해집니다.",
         "connections": {
             "independence": {
-                "title": "설계상 독립적",
-                "description": "추론 행동이 있는 모든 에이전트나 인간에게 작동합니다. JDVP나 Meta Governance가 필요하지 않습니다."
+                "title": "독립 설계",
+                "description": "추론하는 에이전트나 사람이면 어디서든 작동합니다. JDVP 없이도 됩니다."
             },
             "synergy": {
-                "title": "선택적 시너지",
-                "description": "JDVP 텔레메트리와 결합하면 추론 드리프트 추적이 가능해지고 실험에 측정이 더해집니다."
+                "title": "필요하면 연결",
+                "description": "JDVP 측정 데이터를 붙이면 추론 변화를 추적하고, 실험 결과를 수치로 볼 수 있습니다."
             },
             "future": {
-                "title": "미래 통합",
-                "description": "JDVP 드리프트 메트릭이 Thinkprint 모드 평가에 연동 — 언제나 선택적 확장으로."
+                "title": "앞으로의 연동",
+                "description": "JDVP 변화 지표가 Thinkprint 모드 평가에 연결될 예정 — 항상 선택 사항입니다."
             }
         }
     },
     "summary": {
-        "title": "당신의 사고, 외재화하다",
+        "title": "내 사고를 꺼내 보세요",
         "point1": {
-            "label": "무엇인가:",
-            "text": "논리구조를 검사 가능한 모드로 추출·버전 관리·공유하는 프로토콜."
+            "label": "이게 뭔가요:",
+            "text": "논리구조를 뽑아내서 모드로 만들고, 버전 관리하고, 공유하는 프로토콜."
         },
         "point2": {
-            "label": "어떻게 작동하나:",
-            "text": "6단계 라이프사이클: 추출 → 보정 → 심화 → 동결 → 평가 → 퍼블리시."
+            "label": "어떻게 돌아가나요:",
+            "text": "6단계: 추출 → 보정 → 심화 → 동결 → 평가 → 공개."
         },
         "point3": {
-            "label": "왜 중요한가:",
-            "text": "추론이 명시적이고 이식 가능해지며 — JDVP 연결 시 — 측정 가능해집니다."
+            "label": "왜 중요한가요:",
+            "text": "추론이 눈에 보이고, 옮길 수 있게 되며 — JDVP를 붙이면 측정까지 됩니다."
         },
-        "tagline": "추론 패턴을 검사·공유 가능한 모드로 추출하세요.",
+        "tagline": "추론 패턴을 꺼내서, 들여다보고, 공유하세요.",
         "cta": {
             "github": "GitHub에서 보기",
             "home": "백서 읽기"
