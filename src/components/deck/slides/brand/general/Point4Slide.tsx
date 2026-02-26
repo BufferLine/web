@@ -1,5 +1,5 @@
 import { Slide, InfoCard } from "@/components/deck";
-import { Users, Building, Sparkles } from "lucide-react";
+import { Users, Building } from "lucide-react";
 
 interface Props {
   t: (key: string) => string;
@@ -16,7 +16,7 @@ export default function Point4Slide({ t }: Props) {
           {t("point4.subtitle")}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6 mb-4 sm:mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6">
           <InfoCard
             icon={Users}
             title={t("point4.strategies.personal.title")}
@@ -41,24 +41,6 @@ export default function Point4Slide({ t }: Props) {
               </p>
             }
           />
-        </div>
-
-        <div className="p-5 rounded-xl bg-accent-bufferline/[0.08] border border-accent-bufferline/[0.15]">
-          <h3 className="text-lg font-semibold text-accent-bufferline-light mb-3 flex items-center gap-2">
-            <Sparkles className="w-4 h-4" />
-            {t("point4.differentiation.title")}
-          </h3>
-          <p className="text-slate-300 text-sm mb-4">
-            {t("point4.differentiation.summary")}
-          </p>
-          <ul className="space-y-2 text-sm text-slate-300">
-            {(["protocol", "declaration", "governance"] as const).map((key) => (
-              <li key={key} className="flex items-start gap-2">
-                <span className="text-accent-bufferline-light mt-0.5">•</span>
-                <span>{t(`point4.differentiation.items.${key}`)}</span>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </Slide>

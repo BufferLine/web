@@ -48,6 +48,10 @@
             "title": "Go-to-Market",
             "subtitle": "Two approaches: Personal and Institutional."
         },
+        "domainDiff": {
+            "title": "Domain Differentiation",
+            "subtitle": "What makes each domain unique."
+        },
         "point5": {
             "title": "Roadmap & Traction",
             "subtitle": "Where we are and where we're going."
@@ -131,14 +135,26 @@
                 "description": "JDVP-powered governance workflows for safety, auditability, and regulatory readiness.",
                 "model": "Enterprise SaaS licensing"
             }
-        },
-        "differentiation": {
-            "title": "Why Thinkprint Is Different",
-            "summary": "Many cognitive twin products focus on memory/experience reconstruction. Thinkprint focuses on extracting your logic structure so you can build, remix, and test modes quickly.",
-            "items": {
-                "protocol": "Logic-first extraction: capture judgment rules, thresholds, and reasoning style instead of trying to replicate full memory.",
-                "declaration": "Playground workflow: generate, tweak, fork, and compare Thinkprint modes as lightweight experiments.",
-                "governance": "Fun but strong: outputs are still executable and reviewable (`thinkprint.md`, `agent_system_prompt.txt`, `metadata.json`) with JDVP compatibility."
+        }
+    },
+    "domainDiff": {
+        "title": "What Makes Each Domain Different",
+        "subtitle": "Each domain solves a distinct problem that existing tools miss.",
+        "domains": {
+            "jdvp": {
+                "title": "JDVP",
+                "description": "Quantifies judgment shifts with JSV/DV vectors instead of relying on subjective trust surveys or post-hoc audits.",
+                "diff": "Observation, not opinion — real-time telemetry for judgment delegation."
+            },
+            "thinkprint": {
+                "title": "Thinkprint",
+                "description": "Extracts reasoning structure (not memory) into lightweight, remixable modes you can fork and compare.",
+                "diff": "Logic-first extraction — not a cognitive twin, but a thinking playground."
+            },
+            "metagov": {
+                "title": "Meta Governance",
+                "description": "Designs authority flow rules that connect observation evidence to organizational policy and workflow.",
+                "diff": "Authority architecture — governance as composable infrastructure, not compliance checklists."
             }
         }
     },

@@ -48,6 +48,10 @@
             "title": "시장 전략",
             "subtitle": "개인과 기관을 위한 두 가지 접근법"
         },
+        "domainDiff": {
+            "title": "도메인 차별화",
+            "subtitle": "각 도메인이 기존 도구와 다른 이유"
+        },
         "point5": {
             "title": "로드맵 & 현황",
             "subtitle": "현재 위치와 나아갈 방향"
@@ -131,14 +135,26 @@
                 "description": "JDVP 기반 거버넌스 워크플로로 안전성, 감사 대응, 규제 준비를 강화합니다.",
                 "model": "엔터프라이즈 SaaS 라이선스"
             }
-        },
-        "differentiation": {
-            "title": "Thinkprint가 다른 점",
-            "summary": "많은 cognitive twin 제품이 기억/경험 복원에 집중하는 반면, Thinkprint는 사고의 논리구조를 추출해 빠르게 모드를 만들고 리믹스해볼 수 있도록 설계되었습니다.",
-            "items": {
-                "protocol": "논리구조 우선 추출: 전체 기억 복제 대신 판단 규칙, 임계값, 추론 스타일을 포착합니다.",
-                "declaration": "플레이그라운드 워크플로: Thinkprint 모드를 빠르게 생성·수정·포크·비교하며 실험할 수 있습니다.",
-                "governance": "재미있지만 강력함: 산출물(`thinkprint.md`, `agent_system_prompt.txt`, `metadata.json`)은 실행/리뷰 가능하고 JDVP와도 정합됩니다."
+        }
+    },
+    "domainDiff": {
+        "title": "각 도메인이 다른 이유",
+        "subtitle": "기존 도구가 놓치는 고유한 문제를 각 도메인이 해결합니다.",
+        "domains": {
+            "jdvp": {
+                "title": "JDVP",
+                "description": "주관적 신뢰 설문이나 사후 감사가 아닌, JSV/DV 벡터로 판단 이동을 정량화합니다.",
+                "diff": "의견이 아닌 관찰 — 판단 위임의 실시간 텔레메트리."
+            },
+            "thinkprint": {
+                "title": "Thinkprint",
+                "description": "기억이 아닌 추론 구조를 추출해 포크·비교할 수 있는 경량 모드로 만듭니다.",
+                "diff": "논리구조 우선 추출 — 코그니티브 트윈이 아닌 사고 플레이그라운드."
+            },
+            "metagov": {
+                "title": "Meta Governance",
+                "description": "관찰 근거를 조직 정책·워크플로와 연결하는 권한 흐름 규칙을 설계합니다.",
+                "diff": "권한 아키텍처 — 컴플라이언스 체크리스트가 아닌 조합 가능한 거버넌스 인프라."
             }
         }
     },
