@@ -4,13 +4,9 @@ interface Props {
   t: (key: string) => string;
 }
 
-const steps = [
+const phases = [
   { key: "extract", variant: "active" as const, statusColor: "green" as const },
-  { key: "calibrate", variant: "current" as const, statusColor: "yellow" as const },
-  { key: "deepen", variant: "current" as const, statusColor: "yellow" as const },
-  { key: "freeze", variant: "upcoming" as const, statusColor: "slate" as const },
-  { key: "evaluate", variant: "upcoming" as const, statusColor: "slate" as const },
-  { key: "publish", variant: "upcoming" as const, statusColor: "slate" as const },
+  { key: "release", variant: "current" as const, statusColor: "yellow" as const },
 ];
 
 export default function Point3Slide({ t }: Props) {
@@ -23,14 +19,14 @@ export default function Point3Slide({ t }: Props) {
         <p className="text-lg text-slate-400 mb-4 sm:mb-8 text-center">
           {t("point3.subtitle")}
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5">
-          {steps.map(({ key, variant, statusColor }) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-5">
+          {phases.map(({ key, variant, statusColor }) => (
             <PhaseCard
               key={key}
-              title={t(`point3.steps.${key}.title`)}
-              status={t(`point3.steps.${key}.number`)}
+              title={t(`point3.phases.${key}.title`)}
+              status={t(`point3.phases.${key}.status`)}
               statusColor={statusColor}
-              items={[0, 1, 2].map((i) => t(`point3.steps.${key}.items.${i}`))}
+              items={[0, 1, 2].map((i) => t(`point3.phases.${key}.items.${i}`))}
               theme="thinkprint"
               variant={variant}
             />

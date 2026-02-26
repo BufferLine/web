@@ -95,73 +95,37 @@
     },
     "point3": {
         "title": "Extraction Lifecycle",
-        "subtitle": "Six steps from conversation to publishable mode package.",
-        "steps": {
+        "subtitle": "Six steps in two phases: interactive extraction, then artifact release.",
+        "phases": {
             "extract": {
-                "number": "01",
-                "title": "Extract",
-                "description": "Derive initial reasoning candidates from dialogue and events.",
-                "items": ["Baseline reasoning style", "Delegation boundaries", "Risk and contradiction signals"]
+                "title": "Extract & Refine",
+                "status": "Steps 01–03",
+                "description": "Interactive, conversation-based steps that build the reasoning profile.",
+                "items": ["Extract — derive reasoning candidates from dialogue", "Calibrate — resolve thresholds via targeted probes", "Deepen — stress-test contradictions and edge conditions"]
             },
-            "calibrate": {
-                "number": "02",
-                "title": "Calibrate",
-                "description": "Resolve thresholds and preferences via targeted probes.",
-                "items": ["Targeted calibration prompts", "Threshold refinement", "Decision style mapping"]
-            },
-            "deepen": {
-                "number": "03",
-                "title": "Deepen",
-                "description": "Stress-test contradictions and edge conditions.",
-                "items": ["Contradiction resolution", "Delegation boundary mapping", "Edge-case failure extraction"]
-            },
-            "freeze": {
-                "number": "04",
-                "title": "Freeze",
-                "description": "Produce immutable version snapshot and artifact set.",
-                "items": ["Version snapshot creation", "Artifact generation", "Integrity hash computation"]
-            },
-            "evaluate": {
-                "number": "05",
-                "title": "Evaluate",
-                "description": "Run benchmark scenarios and produce scorecard.",
-                "items": ["Scenario coverage testing", "Consistency scoring", "Publish readiness check"]
-            },
-            "publish": {
-                "number": "06",
-                "title": "Publish",
-                "description": "Export limited public mode package (optional).",
-                "items": ["Selective axis export", "PII scrubbing", "Signed manifest generation"]
+            "release": {
+                "title": "Freeze & Release",
+                "status": "Steps 04–06",
+                "description": "Artifact generation, quality assurance, and optional publication.",
+                "items": ["Freeze — produce immutable version snapshot", "Evaluate — run benchmarks and produce scorecard", "Publish — export public mode package (optional)"]
             }
         }
     },
     "point4": {
         "title": "Mode Package",
-        "subtitle": "Each versioned mode produces six canonical artifacts.",
-        "artifacts": {
-            "declaration": {
-                "title": "thinkprint.md",
-                "description": "Human-readable policy: reasoning axes, decision priorities, delegation rules, risk boundaries."
+        "subtitle": "Each versioned mode produces six canonical artifacts in two groups.",
+        "groups": {
+            "core": {
+                "title": "Core Artifacts",
+                "status": "Primary",
+                "description": "The primary deliverables that define and activate the reasoning mode.",
+                "items": ["thinkprint.md — human-readable policy document", "agent_system_prompt.txt — runtime instruction layer", "metadata.json — provenance, confidence, governance flags"]
             },
-            "prompt": {
-                "title": "agent_system_prompt.txt",
-                "description": "Runtime instruction layer injected into agent system context to activate reasoning mode."
-            },
-            "metadata": {
-                "title": "metadata.json",
-                "description": "Version, extraction method, overall confidence, evaluation reference, and governance flags."
-            },
-            "manifest": {
-                "title": "manifest.json",
-                "description": "Mode package structure, integrity hashes, compatibility matrix, and license."
-            },
-            "scenarios": {
-                "title": "scenario_pack.json",
-                "description": "Benchmark scenarios for testing mode consistency and delegation alignment."
-            },
-            "evaluation": {
-                "title": "evaluation_report.json",
-                "description": "Scenario coverage, consistency score, risk violations, and publish readiness."
+            "packaging": {
+                "title": "Packaging & QA",
+                "status": "Infrastructure",
+                "description": "Integrity verification, testing, and publish readiness.",
+                "items": ["manifest.json — package structure and integrity hashes", "scenario_pack.json — benchmark test scenarios", "evaluation_report.json — coverage, scores, and violations"]
             }
         }
     },

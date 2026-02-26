@@ -95,73 +95,37 @@
     },
     "point3": {
         "title": "추출 라이프사이클",
-        "subtitle": "대화에서 퍼블리시 가능한 모드 패키지까지 6단계.",
-        "steps": {
+        "subtitle": "두 페이즈, 6단계: 대화형 추출, 그리고 아티팩트 릴리스.",
+        "phases": {
             "extract": {
-                "number": "01",
-                "title": "추출",
-                "description": "대화와 이벤트에서 초기 추론 후보를 도출합니다.",
-                "items": ["기본 추론 스타일", "위임 경계", "위험 및 모순 신호"]
+                "title": "추출 & 정제",
+                "status": "01–03단계",
+                "description": "추론 프로필을 구성하는 대화 기반 상호작용 단계.",
+                "items": ["추출 — 대화에서 추론 후보 도출", "보정 — 대상 질문으로 임계값 해소", "심화 — 모순과 경계 조건 스트레스 테스트"]
             },
-            "calibrate": {
-                "number": "02",
-                "title": "보정",
-                "description": "대상 질문으로 임계값과 선호를 해소합니다.",
-                "items": ["대상 보정 프롬프트", "임계값 조정", "결정 스타일 매핑"]
-            },
-            "deepen": {
-                "number": "03",
-                "title": "심화",
-                "description": "모순과 경계 조건을 스트레스 테스트합니다.",
-                "items": ["모순 해소", "위임 경계 매핑", "경계 사례 실패 추출"]
-            },
-            "freeze": {
-                "number": "04",
-                "title": "동결",
-                "description": "불변 버전 스냅샷과 아티팩트 세트를 생성합니다.",
-                "items": ["버전 스냅샷 생성", "아티팩트 생성", "무결성 해시 계산"]
-            },
-            "evaluate": {
-                "number": "05",
-                "title": "평가",
-                "description": "벤치마크 시나리오를 실행하고 스코어카드를 생성합니다.",
-                "items": ["시나리오 커버리지 테스트", "일관성 점수 산정", "퍼블리시 준비 확인"]
-            },
-            "publish": {
-                "number": "06",
-                "title": "퍼블리시",
-                "description": "제한된 공개 모드 패키지를 내보냅니다 (선택).",
-                "items": ["선택적 축 내보내기", "PII 스크러빙", "서명된 매니페스트 생성"]
+            "release": {
+                "title": "동결 & 릴리스",
+                "status": "04–06단계",
+                "description": "아티팩트 생성, 품질 보증, 선택적 퍼블리시.",
+                "items": ["동결 — 불변 버전 스냅샷 생성", "평가 — 벤치마크 실행 및 스코어카드 생성", "퍼블리시 — 공개 모드 패키지 내보내기 (선택)"]
             }
         }
     },
     "point4": {
         "title": "모드 패키지",
-        "subtitle": "각 버전의 모드는 6개 표준 아티팩트를 생성합니다.",
-        "artifacts": {
-            "declaration": {
-                "title": "thinkprint.md",
-                "description": "사람이 읽는 정책: 추론 축, 결정 우선순위, 위임 규칙, 위험 경계."
+        "subtitle": "각 버전의 모드는 두 그룹, 6개 표준 아티팩트를 생성합니다.",
+        "groups": {
+            "core": {
+                "title": "핵심 아티팩트",
+                "status": "Primary",
+                "description": "추론 모드를 정의하고 활성화하는 주요 산출물.",
+                "items": ["thinkprint.md — 사람이 읽는 정책 문서", "agent_system_prompt.txt — 런타임 명령 계층", "metadata.json — 출처, 신뢰도, 거버넌스 플래그"]
             },
-            "prompt": {
-                "title": "agent_system_prompt.txt",
-                "description": "에이전트 시스템 컨텍스트에 주입되어 추론 모드를 활성화하는 런타임 명령 계층."
-            },
-            "metadata": {
-                "title": "metadata.json",
-                "description": "버전, 추출 방식, 전체 신뢰도, 평가 참조, 거버넌스 플래그."
-            },
-            "manifest": {
-                "title": "manifest.json",
-                "description": "모드 패키지 구조, 무결성 해시, 호환성 매트릭스, 라이선스."
-            },
-            "scenarios": {
-                "title": "scenario_pack.json",
-                "description": "모드 일관성과 위임 정렬을 테스트하는 벤치마크 시나리오."
-            },
-            "evaluation": {
-                "title": "evaluation_report.json",
-                "description": "시나리오 커버리지, 일관성 점수, 위험 위반, 퍼블리시 준비도."
+            "packaging": {
+                "title": "패키징 & QA",
+                "status": "Infrastructure",
+                "description": "무결성 검증, 테스트, 퍼블리시 준비도.",
+                "items": ["manifest.json — 패키지 구조 및 무결성 해시", "scenario_pack.json — 벤치마크 테스트 시나리오", "evaluation_report.json — 커버리지, 점수, 위반 사항"]
             }
         }
     },
