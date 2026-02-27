@@ -91,6 +91,12 @@
             "jdvp": "JDVP는 판단의 이동을 측정",
             "thinkprint": "Thinkprint는 논리 패턴을 모델링",
             "future": "미래: JDVP 텔레메트리가 Thinkprint 드리프트 추적에 연동"
+        },
+        "deck": {
+            "badge": "프레젠테이션 덱",
+            "title": "Thinkprint 덱 살펴보기",
+            "description": "Thinkprint 도메인을 슬라이드별로 살펴봅니다 — 정의, 파이프라인, 아티팩트, JDVP 시너지.",
+            "cta": "덱 보기"
         }
     }
 }

@@ -32,6 +32,7 @@ export default function SummaryTemplate({
   const gradientMap: Record<DeckTheme, string> = {
     bufferline: "via-indigo-950/20",
     jdvp: "via-teal-950/20",
+    thinkprint: "via-amber-950/20",
   };
   const gradientVia = gradientMap[theme];
 

@@ -1,18 +1,20 @@
 "use client";
 
 import { Card } from "@/components/ui";
-import { ArrowRight, Briefcase, Heart, Rocket, SlidersHorizontal } from "lucide-react";
+import { ArrowRight, Brain, Briefcase, Heart, Rocket, SlidersHorizontal } from "lucide-react";
 import NextLink from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
 const brandDeckKeys = ["general", "personal", "institutional"] as const;
 const jdvpDeckKeys = ["technical"] as const;
+const thinkprintDeckKeys = ["overview"] as const;
 
 const deckIcons = {
   general: <Rocket className="w-10 h-10 text-accent-bufferline-light" />,
   personal: <Heart className="w-10 h-10 text-accent-bufferline-light" />,
   institutional: <Briefcase className="w-10 h-10 text-accent-bufferline-light" />,
   technical: <SlidersHorizontal className="w-10 h-10 text-accent-jdvp" />,
+  overview: <Brain className="w-10 h-10 text-accent-thinkprint-light" />,
 };
 
 const deckHoverText = {
@@ -20,6 +22,7 @@ const deckHoverText = {
   personal: "group-hover:text-accent-bufferline-light",
   institutional: "group-hover:text-accent-bufferline-light",
   technical: "group-hover:text-accent-jdvp",
+  overview: "group-hover:text-accent-thinkprint-light",
 };
 
 const deckActionText = {
@@ -27,6 +30,7 @@ const deckActionText = {
   personal: "text-accent-bufferline-light group-hover:text-accent-bufferline-subtle",
   institutional: "text-accent-bufferline-light group-hover:text-accent-bufferline-subtle",
   technical: "text-accent-jdvp-light group-hover:text-accent-jdvp",
+  overview: "text-accent-thinkprint-light group-hover:text-accent-thinkprint-subtle",
 };
 
 export default function DeckSelectionPage() {
@@ -35,6 +39,7 @@ export default function DeckSelectionPage() {
   const deckGroups = [
     { key: "brand", deckKeys: brandDeckKeys },
     { key: "jdvp", deckKeys: jdvpDeckKeys },
+    { key: "thinkprint", deckKeys: thinkprintDeckKeys },
   ] as const;
 
   return (

@@ -25,8 +25,9 @@
         }
     },
     "deckLinks": {
-        "badge": "Presentations",
-        "title": "Explore by Interest",
-        "description": "Explore two tracks: Brand decks for narrative and adoption, and JDVP decks for protocol-level technical depth."
+        "badge": "Presentation Deck",
+        "title": "Explore the JDVP Deck",
+        "description": "A slide-by-slide technical deep-dive into the JDVP protocol — architecture, measurement logic, and implementation details.",
+        "cta": "View Deck"
     }
 }

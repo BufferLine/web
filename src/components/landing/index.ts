@@ -6,6 +6,7 @@ export { default as HowItWorks } from "./HowItWorks";
 export { default as InteractiveDemo } from "./InteractiveDemo";
 export { default as DataStructure } from "./DataStructure";
 export { default as DeckLinks } from "./DeckLinks";
+export { default as JdvpDeckCta } from "./JdvpDeckCta";
 export { default as GetStarted } from "./GetStarted";
 export { default as ThinkprintPage } from "./ThinkprintPage";
 export { default as AboutPage } from "./AboutPage";

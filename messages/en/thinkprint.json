@@ -91,6 +91,12 @@
             "jdvp": "JDVP measures judgment shifts",
             "thinkprint": "Thinkprint models logic patterns",
             "future": "Future: JDVP telemetry feeds into Thinkprint drift tracking"
+        },
+        "deck": {
+            "badge": "Presentation Deck",
+            "title": "Explore the Thinkprint Deck",
+            "description": "A slide-by-slide walkthrough of the Thinkprint domain — definition, pipeline, artifacts, and JDVP synergy.",
+            "cta": "View Deck"
         }
     }
 }

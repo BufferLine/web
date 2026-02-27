@@ -1,7 +1,7 @@
 "use client";
 
 import { Section, Card, Button } from "@/components/ui";
-import { ArrowRight, Check, X } from "lucide-react";
+import { ArrowRight, Check, Presentation, X } from "lucide-react";
 import NextLink from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -218,6 +218,28 @@ export default function ThinkprintPage() {
               <ArrowRight className="w-4 h-4" />
             </NextLink>
           </div>
+        </div>
+      </Section>
+
+      {/* Deck CTA */}
+      <Section>
+        <div className="text-center">
+          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-accent-thinkprint/10 text-accent-thinkprint-light border border-accent-thinkprint/20 mb-4">
+            <Presentation className="w-3.5 h-3.5" />
+            {t("deck.badge")}
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            {t("deck.title")}
+          </h2>
+          <p className="text-surface-muted max-w-2xl mx-auto mb-8">
+            {t("deck.description")}
+          </p>
+          <NextLink href={`/${locale}/deck/overview`}>
+            <Button size="lg" className="bg-accent-thinkprint hover:bg-accent-thinkprint-hover focus:ring-accent-thinkprint">
+              {t("deck.cta")}
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
+          </NextLink>
         </div>
       </Section>
     </>

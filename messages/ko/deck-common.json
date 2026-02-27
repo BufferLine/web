@@ -15,6 +15,10 @@
             "jdvp": {
                 "title": "JDVP 덱",
                 "description": "아키텍처, 측정 로직, 구현 디테일 중심의 프로토콜 덱입니다."
+            },
+            "thinkprint": {
+                "title": "Thinkprint 덱",
+                "description": "추론 추출과 논리 모드 플레이그라운드 — 기억이 아닌 사고 방식을 포착합니다."
             }
         },
         "decks": {
@@ -33,6 +37,10 @@
             "technical": {
                 "title": "JDVP 덱 · 기술 심층",
                 "description": "프로토콜 동작, 데이터 구조, 알고리즘, 구현 세부를 설명합니다."
+            },
+            "overview": {
+                "title": "Thinkprint 덱 · 도메인 개요",
+                "description": "Thinkprint의 정의, 파이프라인, 출력 아티팩트, JDVP 시너지를 다룹니다."
             }
         }
     },

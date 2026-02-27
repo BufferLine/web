@@ -18,10 +18,12 @@ export default function HookTemplate({
   theme,
 }: HookTemplateProps) {
   const colors = getTheme(theme);
-  const gradientVia =
-    theme === "jdvp"
-      ? "via-teal-950/20"
-      : "via-indigo-950/20";
+  const gradientViaMap: Record<DeckTheme, string> = {
+    bufferline: "via-indigo-950/20",
+    jdvp: "via-teal-950/20",
+    thinkprint: "via-amber-950/20",
+  };
+  const gradientVia = gradientViaMap[theme];
 
   return (
     <Slide className={`bg-gradient-to-b from-slate-950 ${gradientVia} to-slate-950`}>
