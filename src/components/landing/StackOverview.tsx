@@ -1,7 +1,7 @@
 "use client";
 
-import { Section, Card, FadeInView } from "@/components/ui";
-import { ArrowRight } from "lucide-react";
+import { Section, FadeInView } from "@/components/ui";
+import { ArrowRight, Dot } from "lucide-react";
 import NextLink from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -55,57 +55,85 @@ export default function StackOverview() {
         </div>
       </FadeInView>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {domains.map((domain, i) => {
-          const hasLink = domain.href !== null;
-
-          const content = (
-            <Card
-              variant="bordered"
-              hover={hasLink}
-              className={`group h-full flex flex-col ${hasLink ? "cursor-pointer" : ""}`}
-            >
-              {/* Status badge */}
-              <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full ${domain.accentBg} border ${domain.accentBorder} text-xs font-medium ${domain.accentText} mb-4 w-fit`}>
-                <span className={`inline-block h-1.5 w-1.5 rounded-full ${domain.accentDot}`} />
-                {t(`${domain.key}.status`)}
-              </div>
-
-              {/* Title */}
-              <h3 className={`text-xl font-bold text-white mb-1 transition-colors ${domain.hoverText}`}>
-                {t(`${domain.key}.title`)}
+      <div className="rounded-2xl border border-surface-border/60 bg-surface-bg/60 p-4 sm:p-6 md:p-8">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.7fr] gap-8">
+          <FadeInView direction="right">
+            <div className="lg:sticky lg:top-24">
+              <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 mb-3">
+                {t("layoutLabel")}
+              </p>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
+                BufferLine
               </h3>
-              <p className={`text-sm ${domain.accentText} mb-3`}>
-                {t(`${domain.key}.subtitle`)}
+              <p className="text-sm md:text-base text-surface-muted">
+                {t("description")}
               </p>
+              <div className="mt-6 rounded-xl border border-surface-border/60 bg-surface-card/60 p-4">
+                <p className="text-xs text-neutral-400 uppercase tracking-wide mb-2">
+                  {t("coreRuleTitle")}
+                </p>
+                <p className="text-sm text-neutral-300">
+                  {t("coreRuleDescription")}
+                </p>
+              </div>
+            </div>
+          </FadeInView>
 
-              {/* Description */}
-              <p className="text-surface-muted text-sm leading-relaxed flex-grow">
-                {t(`${domain.key}.description`)}
-              </p>
-
-              {/* CTA */}
-              {hasLink && (
-                <div className={`mt-4 flex items-center text-sm font-medium text-neutral-500 transition-colors ${domain.hoverText}`}>
-                  {t(`${domain.key}.cta`)}
-                  <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
+          <div className="space-y-4">
+            {domains.map((domain, i) => {
+              const hasLink = domain.href !== null;
+              const rowContent = (
+                <div
+                  className={`group rounded-xl border p-5 md:p-6 transition-colors ${
+                    hasLink
+                      ? `${domain.accentBorder} ${domain.accentBg} hover:border-current`
+                      : "border-surface-border/60 bg-surface-card/40"
+                  }`}
+                >
+                  <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-6">
+                    <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full border text-xs font-medium ${domain.accentBorder} ${domain.accentBg} ${domain.accentText} w-fit`}>
+                      <span className={`inline-block h-1.5 w-1.5 rounded-full ${domain.accentDot}`} />
+                      {t(`${domain.key}.status`)}
+                    </div>
+                    <div className="flex-1">
+                      <h4 className={`text-lg md:text-xl font-semibold text-white ${domain.hoverText}`}>
+                        {t(`${domain.key}.title`)}
+                      </h4>
+                      <p className={`text-sm ${domain.accentText} mt-1`}>{t(`${domain.key}.subtitle`)}</p>
+                      <p className="text-sm text-surface-muted mt-3 leading-relaxed">
+                        {t(`${domain.key}.description`)}
+                      </p>
+                    </div>
+                    {hasLink && (
+                      <div className={`text-sm font-medium inline-flex items-center gap-1 ${domain.hoverText}`}>
+                        {t(`${domain.key}.cta`)}
+                        <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                      </div>
+                    )}
+                  </div>
                 </div>
-              )}
-            </Card>
-          );
+              );
 
-          return (
-            <FadeInView key={domain.key} delay={i * 100}>
-              {hasLink ? (
-                <NextLink href={`/${locale}${domain.href}`} className="h-full">
-                  {content}
-                </NextLink>
-              ) : (
-                <div className="h-full">{content}</div>
-              )}
-            </FadeInView>
-          );
-        })}
+              return (
+                <FadeInView key={domain.key} delay={i * 90}>
+                  <div className="flex items-stretch gap-2">
+                    <div className="hidden sm:flex flex-col items-center pt-3" aria-hidden="true">
+                      <Dot className={`w-5 h-5 ${domain.accentText}`} />
+                      {i < domains.length - 1 && <div className="w-px flex-1 bg-surface-border/70" />}
+                    </div>
+                    {hasLink ? (
+                      <NextLink href={`/${locale}${domain.href}`} className="flex-1">
+                        {rowContent}
+                      </NextLink>
+                    ) : (
+                      <div className="flex-1">{rowContent}</div>
+                    )}
+                  </div>
+                </FadeInView>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </Section>
   );

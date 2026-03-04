@@ -2,20 +2,24 @@
     "brandHero": {
         "badge": "Cognitive OS",
         "headline": {
-            "line1": "Where does the",
-            "line2": "judgment go?"
+            "line1": "AI use is unavoidable.",
+            "line2": "We can still define the boundary of judgment."
         },
-        "subtitle": "BufferLine builds the Cognitive OS for human-AI judgment delegation.",
-        "description": "Every interaction with AI involves a judgment shift. BufferLine builds observation protocols first, then platform and product layers that make these shifts visible and governable.",
+        "subtitle": "BufferLine makes that boundary visible.",
+        "description": "By connecting observation (JDVP), extraction (Thinkprint), and governance (Meta Governance), BufferLine turns judgment shifts into an operable system.",
         "cta": {
-            "explore": "Explore JDVP",
+            "explore": "Explore BufferLine",
+            "projectDeck": "View Project Deck",
             "github": "GitHub"
         }
     },
     "system": {
         "badge": "System Domains",
         "title": "Three independent domains, one Cognitive OS",
-        "description": "JDVP observes. Thinkprint extracts. Meta Governance architects authority systems. Each works independently. Together, they form a Cognitive OS.",
+        "description": "BufferLine is the umbrella brand. JDVP, Thinkprint, and Meta Governance are independent domains under it. Each can run alone or connect as one system.",
+        "layoutLabel": "Domain Layout",
+        "coreRuleTitle": "Core Rule",
+        "coreRuleDescription": "Domains stay independent by design, then connect through shared governance and evidence loops.",
         "jdvp": {
             "status": "Active Protocol",
             "title": "JDVP",

@@ -22,7 +22,7 @@ export default function JdvpDeckCta() {
         <p className="text-surface-muted max-w-2xl mx-auto mb-8">
           {t("description")}
         </p>
-        <NextLink href={`/${locale}/deck/technical`}>
+        <NextLink href={`/${locale}/deck`}>
           <Button size="lg" className="bg-accent-jdvp hover:bg-accent-jdvp-hover focus:ring-accent-jdvp">
             {t("cta")}
             <ArrowRight className="w-4 h-4 ml-2" />

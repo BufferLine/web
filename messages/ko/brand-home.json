@@ -2,20 +2,24 @@
     "brandHero": {
         "badge": "Cognitive OS",
         "headline": {
-            "line1": "판단은",
-            "line2": "어디로 가는가?"
+            "line1": "AI 사용은 피할 수 없습니다.",
+            "line2": "판단의 경계는 우리가 정할 수 있습니다."
         },
-        "subtitle": "BufferLine은 인간-AI 판단 위임을 위한 Cognitive OS를 구축합니다.",
-        "description": "AI와의 모든 상호작용에는 판단의 이동이 수반됩니다. BufferLine은 관찰 프로토콜을 먼저 만들고, 이 이동을 가시화하고 거버넌스 가능한 상태로 만드는 플랫폼과 제품 레이어를 구축합니다.",
+        "subtitle": "BufferLine은 그 경계를 보이게 만듭니다.",
+        "description": "관찰(JDVP), 추출(Thinkprint), 거버넌스(Meta Governance)를 연결해 판단 이동을 운영 가능한 구조로 만듭니다.",
         "cta": {
-            "explore": "JDVP 살펴보기",
+            "explore": "BufferLine 구조 보기",
+            "projectDeck": "프로젝트 덱 보기",
             "github": "GitHub"
         }
     },
     "system": {
         "badge": "시스템 도메인",
         "title": "독립적으로 동작하는 3개 도메인, 하나의 Cognitive OS",
-        "description": "JDVP는 관찰하고, Thinkprint는 추출하며, Meta Governance는 권한 아키텍처를 설계합니다. 각 도메인은 독립적으로 동작하고, 함께 쓰면 Cognitive OS를 이룹니다.",
+        "description": "BufferLine은 상위 브랜드이고, JDVP·Thinkprint·Meta Governance는 그 안의 독립 도메인입니다. 각 도메인은 단독으로도 동작하고 함께 연결할 수도 있습니다.",
+        "layoutLabel": "도메인 구조",
+        "coreRuleTitle": "핵심 원칙",
+        "coreRuleDescription": "도메인은 독립성을 유지한 채 설계되고, 이후 거버넌스와 증거 루프로 연결됩니다.",
         "jdvp": {
             "status": "활성 프로토콜",
             "title": "JDVP",

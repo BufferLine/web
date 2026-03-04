@@ -26,8 +26,14 @@
     },
     "deckLinks": {
         "badge": "Presentation Deck",
-        "title": "Explore the JDVP Deck",
-        "description": "A slide-by-slide technical deep-dive into the JDVP protocol — architecture, measurement logic, and implementation details.",
-        "cta": "View Deck"
+        "title": "Explore the Decks",
+        "description": "Browse brand, protocol, and domain tracks slide by slide.",
+        "cta": "View Deck",
+        "more": {
+            "badge": "All Decks",
+            "title": "Browse Other Decks",
+            "description": "See the full list, including JDVP and Thinkprint, on the /deck page.",
+            "cta": "View All Decks"
+        }
     }
 }

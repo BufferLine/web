@@ -1,43 +1,33 @@
 "use client";
 
 import { Card } from "@/components/ui";
-import { ArrowRight, Brain, Rocket, SlidersHorizontal } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import NextLink from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
-const brandDeckKeys = ["general"] as const;
-const jdvpDeckKeys = ["technical"] as const;
-const thinkprintDeckKeys = ["overview"] as const;
-
-const deckIcons = {
-  general: <Rocket className="w-10 h-10 text-accent-bufferline-light" />,
-  technical: <SlidersHorizontal className="w-10 h-10 text-accent-jdvp" />,
-  overview: <Brain className="w-10 h-10 text-accent-thinkprint-light" />,
-};
-
-const deckHoverText = {
-  general: "group-hover:text-accent-bufferline-light",
-  technical: "group-hover:text-accent-jdvp",
-  overview: "group-hover:text-accent-thinkprint-light",
-};
-
-const deckActionText = {
-  general: "text-accent-bufferline-light group-hover:text-accent-bufferline-subtle",
-  technical: "text-accent-jdvp-light group-hover:text-accent-jdvp",
-  overview: "text-accent-thinkprint-light group-hover:text-accent-thinkprint-subtle",
-};
+const deckGroups = [
+  { key: "brand", deckKeys: ["general"] as const, accent: "group-hover:text-accent-bufferline-light" },
+  { key: "jdvp", deckKeys: ["technical"] as const, accent: "group-hover:text-accent-jdvp-light" },
+  { key: "thinkprint", deckKeys: ["overview"] as const, accent: "group-hover:text-accent-thinkprint-light" },
+] as const;
 
 export default function DeckSelectionPage() {
   const locale = useLocale();
   const t = useTranslations("deck_selection");
-  const deckGroups = [
-    { key: "brand", deckKeys: brandDeckKeys },
-    { key: "jdvp", deckKeys: jdvpDeckKeys },
-    { key: "thinkprint", deckKeys: thinkprintDeckKeys },
-  ] as const;
+  const tNav = useTranslations("deck_nav");
 
   return (
     <main className="min-h-screen w-full bg-surface-bg text-surface-fg p-8">
+      <div className="max-w-5xl w-full mx-auto mb-8">
+        <NextLink
+          href={`/${locale}`}
+          className="inline-flex items-center gap-2 text-sm text-surface-muted hover:text-white transition-colors"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          {tNav("home")}
+        </NextLink>
+      </div>
+
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
           {t("title")}
@@ -47,43 +37,44 @@ export default function DeckSelectionPage() {
         </p>
       </div>
 
-      <div className="max-w-7xl w-full mx-auto space-y-12">
+      <div className="max-w-5xl w-full mx-auto space-y-8">
         {deckGroups.map((group) => (
-          <section key={group.key} className="space-y-5">
-            <div>
-              <h2 className="text-2xl font-semibold text-white mb-2">
+          <section key={group.key} className="rounded-xl border border-surface-border/70 bg-surface-card/30 p-5 md:p-6">
+            <div className="mb-4">
+              <h2 className="text-2xl font-semibold text-white">
                 {t(`groups.${group.key}.title`)}
               </h2>
-              <p className="text-surface-muted">
+              <p className="text-surface-muted text-sm mt-1">
                 {t(`groups.${group.key}.description`)}
               </p>
             </div>
 
-            <div className={group.key === "brand" ? "grid grid-cols-1 gap-6" : "grid grid-cols-1 md:grid-cols-2 gap-6"}>
+            <ul className="space-y-3">
               {group.deckKeys.map((key) => (
-                <NextLink href={`/${locale}/deck/${key}`} key={key} passHref>
-                  <Card
-                    variant="bordered"
-                    hover
-                    className="group cursor-pointer h-full flex flex-col"
-                  >
-                    <div className="flex-grow">
-                      <div className="mb-4">{deckIcons[key]}</div>
-                      <h3 className={`text-xl font-semibold text-white mb-2 transition-colors ${deckHoverText[key]}`}>
-                        {t(`decks.${key}.title`)}
-                      </h3>
-                      <p className="text-surface-muted text-sm">
-                        {t(`decks.${key}.description`)}
-                      </p>
-                    </div>
-                    <div className={`mt-6 flex items-center justify-end text-sm font-medium transition-colors ${deckActionText[key]}`}>
-                      {t("viewDeck")}
-                      <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-                    </div>
-                  </Card>
-                </NextLink>
+                <li key={key}>
+                  <NextLink href={`/${locale}/deck/${key}`} passHref>
+                    <Card
+                      variant="bordered"
+                      hover
+                      className={`group cursor-pointer flex items-center justify-between gap-4 p-4 ${group.accent}`}
+                    >
+                      <div>
+                        <h3 className="text-base md:text-lg font-semibold text-white transition-colors">
+                          {t(`decks.${key}.title`)}
+                        </h3>
+                        <p className="text-surface-muted text-sm mt-1">
+                          {t(`decks.${key}.description`)}
+                        </p>
+                      </div>
+                      <div className="flex items-center text-sm text-neutral-400 transition-colors">
+                        {t("viewDeck")}
+                        <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
+                      </div>
+                    </Card>
+                  </NextLink>
+                </li>
               ))}
-            </div>
+            </ul>
           </section>
         ))}
       </div>

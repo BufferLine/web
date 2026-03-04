@@ -57,6 +57,8 @@ export default function Header() {
         { href: `/${locale}/jdvp`, label: t("nav.jdvp") },
         { href: `/${locale}/thinkprint`, label: t("nav.thinkprint") },
       ];
+  const ctaHref = isJdvpPage ? "#get-started" : `/${locale}#system`;
+  const ctaLabel = isJdvpPage ? t("getStarted") : t("exploreBrand");
 
   return (
     <header
@@ -127,10 +129,10 @@ export default function Header() {
               {t("github")}
             </a>
             <NextLink
-              href={isJdvpPage ? "#get-started" : `/${locale}/jdvp`}
+              href={ctaHref}
               className="hidden md:inline-flex"
             >
-              <Button size="sm">{t("getStarted")}</Button>
+              <Button size="sm">{ctaLabel}</Button>
             </NextLink>
 
             {/* Mobile menu toggle */}
@@ -197,11 +199,11 @@ export default function Header() {
               {t("github")}
             </a>
             <NextLink
-              href={isJdvpPage ? "#get-started" : `/${locale}/jdvp`}
+              href={ctaHref}
               onClick={() => setMobileOpen(false)}
             >
               <Button size="md" className="w-full">
-                {t("getStarted")}
+                {ctaLabel}
               </Button>
             </NextLink>
           </div>
