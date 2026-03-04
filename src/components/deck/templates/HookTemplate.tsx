@@ -35,7 +35,8 @@ export default function HookTemplate({
           {line1}
           <br />
           <span
-            className={`inline-block md:whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r ${colors.gradientText}`}
+            className={`block text-transparent bg-clip-text bg-gradient-to-r ${colors.gradientText}`}
+            style={{ textWrap: "balance" }}
           >
             {line2}
           </span>
