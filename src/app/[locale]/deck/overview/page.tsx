@@ -10,7 +10,6 @@ import {
   Point2Slide,
   Point3Slide,
   Point4Slide,
-  Point5Slide,
   SummarySlide,
 } from "@/components/deck/slides/thinkprint/overview";
 
@@ -25,7 +24,6 @@ export default function DeckPage() {
     <Point2Slide key="point2" t={t} />,
     <Point3Slide key="point3" t={t} />,
     <Point4Slide key="point4" t={t} />,
-    <Point5Slide key="point5" t={t} />,
     <SummarySlide key="summary" t={t} />,
   ];
 

@@ -18,10 +18,14 @@ export default function SummarySlide({ t }: Props) {
       buttons={[
         {
           label: t("summary.cta.github"),
-          href: "https://github.com/sangwon0001/bufferline-protocol",
+          href: "https://github.com/BufferLine/thinkprint",
           variant: "primary",
         },
-        { label: t("summary.cta.home"), href: "#", variant: "secondary" },
+        {
+          label: t("summary.cta.home"),
+          href: "https://github.com/BufferLine/thinkprint/blob/main/packages/thinkprint-core/docs/00_governance/thinkprint-v1-whitepaper.md",
+          variant: "secondary",
+        },
       ]}
       theme="thinkprint"
     />

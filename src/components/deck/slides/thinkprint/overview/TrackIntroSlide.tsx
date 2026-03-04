@@ -1,5 +1,5 @@
 import { TrackIntroTemplate } from "@/components/deck";
-import { Pickaxe, SlidersHorizontal, Link } from "lucide-react";
+import { Heart, Route, Sparkles } from "lucide-react";
 
 interface Props {
   t: (key: string) => string;
@@ -13,17 +13,17 @@ export default function TrackIntroSlide({ t }: Props) {
       subtitle={t("trackIntro.subtitle")}
       pillars={[
         {
-          icon: Pickaxe,
+          icon: Heart,
           title: t("trackIntro.pillars.extraction.title"),
           description: t("trackIntro.pillars.extraction.description"),
         },
         {
-          icon: SlidersHorizontal,
+          icon: Route,
           title: t("trackIntro.pillars.calibration.title"),
           description: t("trackIntro.pillars.calibration.description"),
         },
         {
-          icon: Link,
+          icon: Sparkles,
           title: t("trackIntro.pillars.connection.title"),
           description: t("trackIntro.pillars.connection.description"),
         },

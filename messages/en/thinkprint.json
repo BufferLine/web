@@ -1,101 +1,180 @@
 {
     "thinkprint": {
-        "badge": "Thinkprint Playground",
+        "badge": "Thinkprint",
         "headlineVariants": {
             "a": {
-                "line1": "Spin up your thinking",
-                "line2": "as playable modes."
-            },
-            "b": {
-                "line1": "Build your logic style",
+                "line1": "Extract your style,",
                 "line2": "then play with it."
             },
+            "b": {
+                "line1": "Build your Thinkprint,",
+                "line2": "run fun projects."
+            },
             "c": {
-                "line1": "Extract your reasoning",
-                "line2": "remix your mode."
+                "line1": "From chat signals",
+                "line2": "to playful experiments."
             }
         },
-        "tagline": "Extract your logic structure into a Thinkprint mode you can play with, remix, and refine.",
-        "description": "Thinkprint is a fun but powerful playground. Instead of cloning your memory, it captures how you reason.",
+        "tagline": "Thinkprint extracts your decision style and turns it into projects you can actually try.",
+        "description": "The core loop is simple: personality/thinking extraction → Thinkprint generation → 3 fun projects.",
         "status": {
             "label": "Status",
-            "value": "Early Development",
-            "note": "v0.4 whitepaper published. Extraction pipeline functional."
+            "value": "Demo in progress",
+            "note": "We prioritize playful hands-on experience over heavy explanation."
         },
         "cta": {
             "github": "View on GitHub",
-            "whitepaper": "Read Whitepaper"
+            "whitepaper": "Read Docs"
         },
         "whatItIs": {
-            "title": "What Thinkprint is",
+            "title": "What we are building",
             "items": {
-                "toy": "A playful logic-structure extractor for building Thinkprint modes",
-                "reflection": "A self-reflection playground, not a memory-reconstruction product",
-                "declaration": "Thinkprint mode = editable reasoning profile, not fixed personality labeling"
+                "toy": "Extract decision-style clues from conversation",
+                "reflection": "Turn those clues into a visible Thinkprint profile",
+                "declaration": "Run fun projects directly with that Thinkprint"
             }
         },
         "whatItIsNot": {
-            "title": "What it is not",
+            "title": "Safety in one line",
             "items": {
-                "profiling": "Not a commercial profiling product",
-                "psychology": "Not a memory/experience replica engine",
-                "alignment": "Not an AI alignment control system",
-                "cloning": "Not human duplication"
+                "profiling": "No medical diagnosis or clinical labeling",
+                "psychology": "No memory or life-story replication",
+                "alignment": "Not a hidden AI control tool",
+                "cloning": "Not a human cloning project"
             }
         },
         "pipeline": {
-            "title": "Playground Pipeline",
-            "description": "Four lightweight steps from conversation to remixable Thinkprint artifacts.",
+            "title": "Flow",
+            "description": "A lightweight 4-step loop.",
             "steps": {
                 "extract": {
                     "number": "01",
-                    "title": "Extract",
-                    "description": "Conversation-based extraction. Draft your reasoning structure from dialogue signals."
+                    "title": "Extract style",
+                    "description": "Read chat signals related to personality and thinking patterns."
                 },
                 "calibrate": {
                     "number": "02",
-                    "title": "Calibrate",
-                    "description": "Quick calibration prompts refine thresholds, preferences, and decision style."
+                    "title": "Generate Thinkprint",
+                    "description": "Build a clear profile card set from those signals."
                 },
                 "deepen": {
                     "number": "03",
-                    "title": "Deepen",
-                    "description": "Interactive deepening on contradictions, delegation boundaries, and reasoning tradeoffs."
+                    "title": "Run projects",
+                    "description": "Try the 3 fun projects with your Thinkprint."
                 },
                 "freeze": {
                     "number": "04",
-                    "title": "Freeze",
-                    "description": "Freeze a versioned snapshot you can reuse, compare, fork, and evolve."
+                    "title": "Update with feedback",
+                    "description": "Refine and save a better next version."
+                },
+                "evaluate": {
+                    "number": "05",
+                    "title": "Evaluate",
+                    "description": ""
+                },
+                "publish": {
+                    "number": "06",
+                    "title": "Publish",
+                    "description": ""
                 }
             }
         },
+        "demo": {
+            "title": "Three fun projects",
+            "description": "Once your Thinkprint is created, you can immediately run these.",
+            "cards": {
+                "blindDate": {
+                    "title": "AI Me Blind Date",
+                    "description": "See where two styles match or clash in conversation."
+                },
+                "persona": {
+                    "title": "Persona Battle",
+                    "description": "Compare your style and a famous persona on the same dilemma."
+                },
+                "difficulty": {
+                    "title": "Find Weak Situations",
+                    "description": "Spot contexts where your style may struggle and prepare early."
+                }
+            }
+        },
+        "interactiveDemo": {
+            "title": "Interactive demo",
+            "description": "This is a real Thinkprint flow simulation running on the page.",
+            "panelTitle": "Thinkprint Live Simulation",
+            "panelSubtitle": "Extraction -> Thinkprint generation -> project run -> feedback update",
+            "controls": {
+                "play": "Play",
+                "pause": "Pause",
+                "reset": "Reset"
+            },
+            "projectResultLabel": "Current project output",
+            "stages": {
+                "extract": {
+                    "title": "Step 1: Extract style clues",
+                    "subtitle": "Conversation is scanned for decision habit signals.",
+                    "user": "I keep hesitating when options are risky.",
+                    "agent": "Noted: risk-avoidance tendency + longer deliberation pattern.",
+                    "cardLabel": "Thinkprint card",
+                    "cardValue": "Risk-sensitive, reflection-first",
+                    "result": "Profile seed created from conversation evidence."
+                },
+                "generate": {
+                    "title": "Step 2: Generate Thinkprint",
+                    "subtitle": "A clear style profile is assembled from extracted clues.",
+                    "user": "I prefer stable choices even if upside is smaller.",
+                    "agent": "Thinkprint updated: stability priority above growth priority.",
+                    "cardLabel": "Thinkprint card",
+                    "cardValue": "Stability > Growth",
+                    "result": "Thinkprint v0 generated."
+                },
+                "project": {
+                    "title": "Step 3: Run fun project",
+                    "subtitle": "The profile is now used in one of the demo projects.",
+                    "user": "Run Persona Battle on this business dilemma.",
+                    "agent": "Your style picks low-risk expansion, persona picks high-risk acceleration.",
+                    "cardLabel": "Thinkprint card",
+                    "cardValue": "Cautious under uncertainty",
+                    "result": "Difference map created: your style vs persona style."
+                },
+                "update": {
+                    "title": "Step 4: Update with feedback",
+                    "subtitle": "Your correction updates the next Thinkprint version.",
+                    "user": "Actually, I can take risk if downside is capped.",
+                    "agent": "Applied feedback: conditional-risk tolerance increased.",
+                    "cardLabel": "Thinkprint card",
+                    "cardValue": "Condition-based risk taker",
+                    "result": "Thinkprint v1 saved with updated decision rules."
+                }
+            },
+            "insight": "The point: the whole loop runs in one place, and your profile improves each cycle."
+        },
         "output": {
-            "title": "Output Structure",
-            "description": "Each Thinkprint version outputs three practical, remix-friendly artifacts.",
-            "declaration": {
-                "title": "thinkprint.md",
-                "description": "Reasoning principles, delegation policy, risk boundaries, and update triggers."
+            "title": "Technical corner",
+            "description": "Core technical foundations: model design, evidence calibration, and safety constraints.",
+            "model": {
+                "title": "Psychology Model",
+                "description": "Built on Dual-Process theory, GDMS/MDMQ decision styles, and sensation-seeking constructs."
             },
-            "prompt": {
-                "title": "agent_system_prompt.txt",
-                "description": "Executable reasoning policy for agents. Fast to test and iterate."
+            "evidence": {
+                "title": "Evidence & Calibration",
+                "description": "Language evidence is scored with sufficiency thresholds, uncertainty bands, and calibrated methods."
             },
-            "metadata": {
-                "title": "metadata.json",
-                "description": "Versioning, extraction method, confidence, and optional JDVP links."
+            "safety": {
+                "title": "Safety & Ethics",
+                "description": "Strict non-clinical boundary, opt-out support, and crisis short-circuit guardrails."
             }
         },
         "connection": {
-            "title": "Connection to BufferLine",
-            "description": "JDVP tracks where judgment moves. Thinkprint captures your logic structure. Together, they make experimentation measurable.",
-            "jdvp": "JDVP measures judgment shifts",
-            "thinkprint": "Thinkprint models logic patterns",
-            "future": "Future: JDVP telemetry feeds into Thinkprint drift tracking"
+            "title": "With BufferLine",
+            "description": "Thinkprint creates your style profile. JDVP measures how that style changes over time.",
+            "jdvp": "JDVP measures change",
+            "thinkprint": "Thinkprint creates style",
+            "future": "Start fun, then connect to real decision improvement"
         },
         "deck": {
             "badge": "Presentation Deck",
-            "title": "Explore the Thinkprint Deck",
-            "description": "A slide-by-slide walkthrough of the Thinkprint domain — definition, pipeline, artifacts, and JDVP synergy.",
+            "title": "See the Thinkprint deck",
+            "description": "Focused on what is fun and what you can actually try, not protocol details.",
             "cta": "View Deck"
         }
     }

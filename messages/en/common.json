@@ -14,11 +14,16 @@
             "howItWorks": "How It Works",
             "demo": "Demo",
             "dataStructures": "Data Structures",
+            "overview": "Overview",
+            "flow": "Flow",
+            "projects": "Projects",
+            "artifacts": "Tech",
             "decks": "Decks",
             "about": "About"
         },
         "github": "GitHub",
         "getStarted": "Get Started",
+        "viewDeck": "View Deck",
         "exploreBrand": "Explore BufferLine"
     },
     "footer": {

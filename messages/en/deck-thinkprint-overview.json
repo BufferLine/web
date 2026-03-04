@@ -5,166 +5,152 @@
         "keyboard": "to navigate"
     },
     "hook": {
-        "line1": "Your thinking,",
-        "line2": "externalized.",
-        "question": "See how you think before you delegate.",
+        "line1": "Extract your style,",
+        "line2": "then play with it",
+        "question": "Simple loop: extraction -> Thinkprint generation -> three fun projects",
         "navigate": "Scroll or press → to begin"
     },
     "trackIntro": {
-        "badge": "Thinkprint Track",
+        "badge": "Thinkprint Deck",
         "title": "How This Deck Flows",
-        "subtitle": "Three pillars guide this overview: what Thinkprint captures, the full extraction lifecycle, and how it relates to JDVP.",
+        "subtitle": "We focus on what we are building, how you try it, and why it feels fun.",
         "pillars": {
             "extraction": {
-                "title": "Logic Extraction",
-                "description": "Capture logic structure from conversations — not memory, but how you think."
+                "title": "What",
+                "description": "Extract style signals and generate Thinkprint."
             },
             "calibration": {
-                "title": "Lifecycle & Artifacts",
-                "description": "Six-step pipeline from extraction to publish, producing versioned mode packages."
+                "title": "How",
+                "description": "Run a simple 4-step user flow."
             },
             "connection": {
-                "title": "Independent, Connectable",
-                "description": "Operates standalone on any agent. Optional JDVP synergy adds measurement."
+                "title": "Fun",
+                "description": "Use your Thinkprint in three playful projects."
             }
         },
-        "conclusion": "Thinkprint turns implicit thinking habits into explicit, inspectable logic structures — not a fixed label, but an evolving mode."
+        "conclusion": "Less protocol talk upfront, more direct experience."
     },
     "toc": {
-        "title": "Thinkprint: Domain Overview",
+        "title": "Thinkprint Overview",
         "point1": {
-            "title": "What Thinkprint Is",
-            "subtitle": "Three core definitions"
+            "title": "What We Want To Do",
+            "subtitle": "Extract style and make it usable"
         },
         "point2": {
-            "title": "What It Is Not",
-            "subtitle": "Common misconceptions addressed"
+            "title": "4-Step Flow",
+            "subtitle": "From extraction to update"
         },
         "point3": {
-            "title": "Extraction Lifecycle",
-            "subtitle": "Extract → Calibrate → Deepen → Freeze → Evaluate → Publish"
+            "title": "Three Fun Projects",
+            "subtitle": "Hands-on experiences"
         },
         "point4": {
-            "title": "Mode Package",
-            "subtitle": "Six canonical artifacts per version"
-        },
-        "point5": {
-            "title": "JDVP Relationship",
-            "subtitle": "Independent by design, connectable by choice"
+            "title": "Technical Corner",
+            "subtitle": "Core technical stack and psychology basis"
         }
     },
     "point1": {
-        "title": "What Thinkprint Is",
-        "subtitle": "Thinkprint captures your logic structure — not what you remember.",
+        "title": "What We Want To Do",
+        "subtitle": "Extract personality/thinking style and use it in real interactive experiences.",
         "features": {
             "toy": {
-                "title": "Logic-Structure Extractor",
-                "description": "Externalize personal reasoning patterns into inspectable, shareable modes."
+                "title": "Extract style clues",
+                "description": "Read decision signals from conversation."
             },
             "reflection": {
-                "title": "Logic over Identity",
-                "description": "A reasoning configuration, not a personality claim. Editable by default, versioned, comparable."
+                "title": "Generate Thinkprint",
+                "description": "Turn those signals into clear profile cards."
             },
             "declaration": {
-                "title": "Editable Reasoning Profile",
-                "description": "Decision priorities, confidence thresholds, delegation boundaries, tradeoff patterns, and revision triggers."
+                "title": "Run projects",
+                "description": "Use that profile in practical and playful projects."
             }
         }
     },
     "point2": {
-        "title": "What Thinkprint Is Not",
-        "subtitle": "Clearing up what Thinkprint deliberately avoids.",
+        "title": "4-Step Flow",
+        "subtitle": "No heavy setup. Just this loop.",
         "items": {
             "profiling": {
-                "title": "Not Commercial Profiling",
-                "description": "No behavioral targeting or data monetization — purely self-directed exploration."
+                "title": "1) Extract style",
+                "description": "Find decision-pattern signals in chat."
             },
             "psychology": {
-                "title": "Not Memory Replication",
-                "description": "Captures logic structure, not memories or lived experiences."
+                "title": "2) Generate Thinkprint",
+                "description": "Build your style cards."
             },
             "alignment": {
-                "title": "Not AI Alignment Control",
-                "description": "A personal reasoning tool, not a system for controlling AI behavior."
+                "title": "3) Run fun projects",
+                "description": "Try three scenarios with your Thinkprint."
             },
             "cloning": {
-                "title": "Not Human Duplication",
-                "description": "Extracts logic patterns — doesn't attempt to clone or replicate a person."
+                "title": "4) Update with feedback",
+                "description": "Improve your next version from outcomes."
             }
         }
     },
     "point3": {
-        "title": "Extraction Lifecycle",
-        "subtitle": "Six steps in two phases: interactive extraction, then artifact release.",
-        "phases": {
-            "extract": {
-                "title": "Extract & Refine",
-                "status": "Steps 01–03",
-                "description": "Interactive, conversation-based steps that build the reasoning profile.",
-                "items": ["Extract — derive reasoning candidates from dialogue", "Calibrate — resolve thresholds via targeted probes", "Deepen — stress-test contradictions and edge conditions"]
+        "title": "Three Fun Projects",
+        "subtitle": "Fun first, but still useful for self-understanding.",
+        "projects": {
+            "blindDate": {
+                "title": "AI Me Blind Date",
+                "description": "See where two styles click or clash in dialogue."
             },
-            "release": {
-                "title": "Freeze & Release",
-                "status": "Steps 04–06",
-                "description": "Artifact generation, quality assurance, and optional publication.",
-                "items": ["Freeze — produce immutable version snapshot", "Evaluate — run benchmarks and produce scorecard", "Publish — export public mode package (optional)"]
+            "persona": {
+                "title": "Persona Battle",
+                "description": "Compare your style with a famous persona on the same dilemma."
+            },
+            "difficulty": {
+                "title": "Weak-Situation Finder",
+                "description": "Find where your decisions may break down and get guardrail tips."
             }
         }
     },
     "point4": {
-        "title": "Mode Package",
-        "subtitle": "Each versioned mode produces six canonical artifacts in two groups.",
+        "title": "Technical Corner",
+        "subtitle": "Psychology grounding, evidence logic, and safety rules are concentrated here.",
         "groups": {
             "core": {
-                "title": "Core Artifacts",
-                "status": "Primary",
-                "description": "The primary deliverables that define and activate the reasoning mode.",
-                "items": ["thinkprint.md — human-readable policy document", "agent_system_prompt.txt — runtime instruction layer", "metadata.json — provenance, confidence, governance flags"]
+                "title": "Psychology Foundation",
+                "status": "Core",
+                "description": "The construct model is grounded in established decision-science frameworks.",
+                "items": [
+                    "Dual-Process theory for analytic vs intuitive balance",
+                    "GDMS/MDMQ styles for rational, intuitive, dependent, avoidant, spontaneous tendencies",
+                    "Sensation-seeking construct for novelty/risk engagement"
+                ]
             },
             "packaging": {
-                "title": "Packaging & QA",
-                "status": "Infrastructure",
-                "description": "Integrity verification, testing, and publish readiness.",
-                "items": ["manifest.json — package structure and integrity hashes", "scenario_pack.json — benchmark test scenarios", "evaluation_report.json — coverage, scores, and violations"]
-            }
-        }
-    },
-    "point5": {
-        "title": "JDVP Relationship",
-        "subtitle": "Thinkprint operates independently — no JDVP required. When connected, experimentation becomes measurable.",
-        "connections": {
-            "independence": {
-                "title": "Independent by Design",
-                "description": "Operates on any agent or human with reasoning behavior. Does not require JDVP or Meta Governance."
-            },
-            "synergy": {
-                "title": "Optional Synergy",
-                "description": "When combined with JDVP telemetry, reasoning drift becomes trackable and experimentation gains measurement."
-            },
-            "future": {
-                "title": "Future Integration",
-                "description": "JDVP drift metrics feed into Thinkprint mode evaluation — always as an optional extension."
+                "title": "Evidence, Calibration, Safety",
+                "status": "QA",
+                "description": "Inference quality and safety are controlled as explicit technical requirements.",
+                "items": [
+                    "Evidence sufficiency gates and uncertainty bands for score reliability",
+                    "Calibrated extraction methods instead of single-pass zero-shot scoring",
+                    "Non-clinical guardrails: no diagnosis claims, opt-out, crisis short-circuit"
+                ]
             }
         }
     },
     "summary": {
-        "title": "Your Thinking, Externalized",
+        "title": "One-Line Summary",
         "point1": {
-            "label": "What It Is:",
-            "text": "A protocol for extracting, versioning, and sharing logic structures as inspectable modes."
+            "label": "What:",
+            "text": "Extract style, generate Thinkprint, run fun projects."
         },
         "point2": {
-            "label": "How It Works:",
-            "text": "Six-step lifecycle: Extract → Calibrate → Deepen → Freeze → Evaluate → Publish."
+            "label": "Flow:",
+            "text": "Extract -> Generate -> Run -> Update"
         },
         "point3": {
-            "label": "Why It Matters:",
-            "text": "Reasoning becomes explicit, portable, and — when connected with JDVP — measurable."
+            "label": "Value:",
+            "text": "Understand through interaction, then improve real decisions."
         },
-        "tagline": "Extract your reasoning patterns into inspectable, shareable modes.",
+        "tagline": "Start playful, end practical.",
         "cta": {
             "github": "View on GitHub",
-            "home": "Read the Whitepaper"
+            "home": "Read Docs"
         }
     }
 }

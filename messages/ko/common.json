@@ -14,11 +14,16 @@
             "howItWorks": "작동 방식",
             "demo": "데모",
             "dataStructures": "데이터 구조",
+            "overview": "개요",
+            "flow": "흐름",
+            "projects": "프로젝트",
+            "artifacts": "기술",
             "decks": "덱",
             "about": "소개"
         },
         "github": "GitHub",
         "getStarted": "시작하기",
+        "viewDeck": "덱 보기",
         "exploreBrand": "BufferLine 보기"
     },
     "footer": {

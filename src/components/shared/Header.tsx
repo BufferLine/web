@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import Logo from "./Logo";
 import { Button } from "@/components/ui";
 import NextLink from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -13,6 +13,11 @@ import { Menu, X } from "lucide-react";
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string | null>(
+    typeof window !== "undefined" && window.location.hash
+      ? window.location.hash.replace("#", "")
+      : null
+  );
   const t = useTranslations("header");
   const tLang = useTranslations("languageSwitcher");
   const locale = useLocale();
@@ -43,22 +48,96 @@ export default function Header() {
     router.push(`/${newLocale}${pathWithoutLocale}`);
   };
 
-  const navLinks = isJdvpPage
-    ? [
-        { href: "#concept", label: t("nav.concept") },
-        { href: "#how-it-works", label: t("nav.howItWorks") },
-        { href: "#demo", label: t("nav.demo") },
-        { href: "#data-structures", label: t("nav.dataStructures") },
-      ]
-    : [
-        ...(!isThinkprintPage
-          ? [{ href: "#system", label: t("nav.system") }]
-          : []),
-        { href: `/${locale}/jdvp`, label: t("nav.jdvp") },
-        { href: `/${locale}/thinkprint`, label: t("nav.thinkprint") },
-      ];
-  const ctaHref = isJdvpPage ? "#get-started" : `/${locale}#system`;
-  const ctaLabel = isJdvpPage ? t("getStarted") : t("exploreBrand");
+  const navLinks = useMemo(
+    () =>
+      isJdvpPage
+        ? [
+            { href: "#concept", label: t("nav.concept") },
+            { href: "#how-it-works", label: t("nav.howItWorks") },
+            { href: "#demo", label: t("nav.demo") },
+            { href: "#data-structures", label: t("nav.dataStructures") },
+          ]
+        : isThinkprintPage
+          ? [
+              { href: "#overview", label: t("nav.overview") },
+              { href: "#flow", label: t("nav.flow") },
+              { href: "#projects", label: t("nav.projects") },
+              { href: "#artifacts", label: t("nav.artifacts") },
+            ]
+          : [
+              { href: "#system", label: t("nav.system") },
+              { href: `/${locale}/jdvp`, label: t("nav.jdvp") },
+              { href: `/${locale}/thinkprint`, label: t("nav.thinkprint") },
+            ],
+    [isJdvpPage, isThinkprintPage, locale, t]
+  );
+  const ctaHref = isJdvpPage ? "#get-started" : isThinkprintPage ? "#deck" : `/${locale}#system`;
+  const ctaLabel = isJdvpPage ? t("getStarted") : isThinkprintPage ? t("viewDeck") : t("exploreBrand");
+  const firstHashSection = navLinks.find((link) => link.href.startsWith("#"))?.href.slice(1) ?? null;
+
+  useEffect(() => {
+    const sectionIds = navLinks
+      .map((link) => link.href)
+      .filter((href) => href.startsWith("#"))
+      .map((href) => href.slice(1));
+
+    if (sectionIds.length === 0) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+        if (visible.length > 0) {
+          setActiveSection(visible[0].target.id);
+        }
+      },
+      { rootMargin: "-35% 0px -45% 0px", threshold: [0.15, 0.35, 0.6] }
+    );
+
+    sectionIds.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) observer.observe(element);
+    });
+
+    const updateFromHash = () => {
+      const hash = window.location.hash.replace("#", "");
+      if (hash && sectionIds.includes(hash)) {
+        setActiveSection(hash);
+      }
+    };
+
+    const handleTop = () => {
+      if (window.scrollY < 120) {
+        setActiveSection(sectionIds[0]);
+      }
+    };
+
+    window.addEventListener("hashchange", updateFromHash);
+    window.addEventListener("scroll", handleTop, { passive: true });
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("hashchange", updateFromHash);
+      window.removeEventListener("scroll", handleTop);
+    };
+  }, [navLinks]);
+
+  const navLinkClass = (href: string) => {
+    const isHashLink = href.startsWith("#");
+    const currentSection = activeSection ?? firstHashSection;
+    const isActive = isHashLink && currentSection === href.slice(1);
+
+    return cn(
+      "transition-colors duration-200",
+      isActive
+        ? "text-neutral-100 font-medium"
+        : "text-surface-muted hover:text-neutral-100"
+    );
+  };
 
   return (
     <header
@@ -81,7 +160,7 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-surface-muted hover:text-neutral-100 transition-colors duration-200"
+                className={navLinkClass(link.href)}
               >
                 {link.label}
               </a>
@@ -173,7 +252,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-surface-muted hover:text-neutral-100 transition-colors duration-200 py-1"
+                className={cn("py-1", navLinkClass(link.href))}
               >
                 {link.label}
               </a>

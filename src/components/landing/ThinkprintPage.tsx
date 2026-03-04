@@ -1,30 +1,38 @@
 "use client";
 
 import { Section, Card, Button } from "@/components/ui";
-import { ArrowRight, Check, Presentation, X } from "lucide-react";
+import { ArrowRight, Check, Presentation, Users, BriefcaseBusiness, TriangleAlert, X } from "lucide-react";
 import NextLink from "next/link";
 import { useLocale, useTranslations } from "next-intl";
+import ThinkprintInteractiveDemo from "./ThinkprintInteractiveDemo";
 
 const stepKeys = ["extract", "calibrate", "deepen", "freeze"] as const;
-const outputKeys = ["declaration", "prompt", "metadata"] as const;
+const outputKeys = ["model", "evidence", "safety"] as const;
+const demoKeys = ["blindDate", "persona", "difficulty"] as const;
 const HEADLINE_VARIANT = "a" as const;
 
 const outputIcons = {
-  declaration: (
+  model: (
     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 3v2.25m4.5-2.25v2.25M4.5 8.25h15m-13.5 12h10.5a2.25 2.25 0 002.25-2.25V8.25H3.75V18a2.25 2.25 0 002.25 2.25z" />
     </svg>
   ),
-  prompt: (
+  evidence: (
     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-6m3 6V7m3 10v-4m3 8H6a2 2 0 01-2-2V5a2 2 0 012-2h8l4 4v12a2 2 0 01-2 2z" />
     </svg>
   ),
-  metadata: (
+  safety: (
     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3l7.5 4.5v6c0 4.5-3.1 7.8-7.5 8.9-4.4-1.1-7.5-4.4-7.5-8.9v-6L12 3z" />
     </svg>
   ),
+};
+
+const demoIcons = {
+  blindDate: <Users className="w-5 h-5" />,
+  persona: <BriefcaseBusiness className="w-5 h-5" />,
+  difficulty: <TriangleAlert className="w-5 h-5" />,
 };
 
 export default function ThinkprintPage() {
@@ -83,7 +91,7 @@ export default function ThinkprintPage() {
               </a>
             </Button>
             <Button variant="outline" size="lg">
-              <a href="https://github.com/BufferLine/thinkprint/blob/main/docs/whitepaper_v0.4.md" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/BufferLine/thinkprint/blob/main/packages/thinkprint-core/docs/00_governance/thinkprint-v1-whitepaper.md" target="_blank" rel="noopener noreferrer">
                 {t("cta.whitepaper")}
               </a>
             </Button>
@@ -92,7 +100,7 @@ export default function ThinkprintPage() {
       </Section>
 
       {/* What it is / What it is not */}
-      <Section>
+      <Section id="overview">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Card variant="bordered">
             <h3 className="text-lg font-semibold text-accent-thinkprint-light mb-4">
@@ -125,7 +133,7 @@ export default function ThinkprintPage() {
       </Section>
 
       {/* Pipeline */}
-      <Section className="bg-surface-card/50">
+      <Section id="flow" className="bg-surface-card/50">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {t("pipeline.title")}
@@ -156,7 +164,49 @@ export default function ThinkprintPage() {
       </Section>
 
       {/* Output Structure */}
+      <Section id="projects" className="bg-surface-card/35">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            {t("demo.title")}
+          </h2>
+          <p className="text-surface-muted max-w-2xl mx-auto">
+            {t("demo.description")}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {demoKeys.map((key) => (
+            <Card key={key} variant="bordered">
+              <div className="w-10 h-10 rounded-lg bg-accent-thinkprint/10 flex items-center justify-center text-accent-thinkprint-light mb-4">
+                {demoIcons[key]}
+              </div>
+              <h3 className="text-base font-semibold text-neutral-100 mb-2">
+                {t(`demo.cards.${key}.title`)}
+              </h3>
+              <p className="text-surface-muted text-sm">
+                {t(`demo.cards.${key}.description`)}
+              </p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      {/* Interactive Demo */}
       <Section>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            {t("interactiveDemo.title")}
+          </h2>
+          <p className="text-surface-muted max-w-2xl mx-auto">
+            {t("interactiveDemo.description")}
+          </p>
+        </div>
+
+        <ThinkprintInteractiveDemo t={t} />
+      </Section>
+
+      {/* Technical Corner */}
+      <Section id="artifacts">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {t("output.title")}
@@ -222,7 +272,7 @@ export default function ThinkprintPage() {
       </Section>
 
       {/* Deck CTA */}
-      <Section>
+      <Section id="deck">
         <div className="text-center">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-accent-thinkprint/10 text-accent-thinkprint-light border border-accent-thinkprint/20 mb-4">
             <Presentation className="w-3.5 h-3.5" />

@@ -1,101 +1,180 @@
 {
     "thinkprint": {
-        "badge": "Thinkprint 플레이그라운드",
+        "badge": "Thinkprint",
         "headlineVariants": {
             "a": {
-                "line1": "당신의 사고를",
-                "line2": "플레이 가능한 모드로."
+                "line1": "내 성격/사고방식을 뽑아서",
+                "line2": "재밌게 써보자."
             },
             "b": {
-                "line1": "당신의 논리 스타일을 만들고",
-                "line2": "바로 가지고 놀아보세요."
+                "line1": "내 스타일을 만들고",
+                "line2": "재밌는 프로젝트를 돌려보자."
             },
             "c": {
-                "line1": "추론 구조를 뽑아",
-                "line2": "모드를 리믹스하세요."
+                "line1": "대화에서 찾고",
+                "line2": "프로젝트로 확인하기."
             }
         },
-        "tagline": "사고의 논리구조를 Thinkprint 모드로 추출하고, 자유롭게 만들고 리믹스하며 다듬어 보세요.",
-        "description": "Thinkprint는 재미있지만 강력한 플레이그라운드입니다. 기억 복제가 아니라, 당신의 추론 방식을 포착합니다.",
+        "tagline": "Thinkprint는 내 의사결정 스타일을 추출해, 바로 체험 가능한 프로젝트로 연결합니다.",
+        "description": "핵심은 간단합니다. 성격/사고방식 추출 → Thinkprint 생성 → 3가지 fun 프로젝트 수행.",
         "status": {
             "label": "상태",
-            "value": "초기 개발 중",
-            "note": "v0.4 백서 발행 완료. 추출 파이프라인 작동 중."
+            "value": "데모 준비 중",
+            "note": "복잡한 설명보다, 바로 해보는 재미를 우선으로 만들고 있습니다."
         },
         "cta": {
             "github": "GitHub에서 보기",
-            "whitepaper": "백서 읽기"
+            "whitepaper": "문서 보기"
         },
         "whatItIs": {
-            "title": "Thinkprint란",
+            "title": "무엇을 하려는가",
             "items": {
-                "toy": "논리구조를 추출해 Thinkprint 모드로 만드는 실험적 도구",
-                "reflection": "기억 복원 제품이 아닌 자기 성찰 플레이그라운드",
-                "declaration": "Thinkprint 모드 = 수정 가능한 추론 프로필, 고정 성격 라벨링이 아님"
+                "toy": "내 대화에서 판단 습관 단서를 뽑아 Thinkprint를 만듭니다",
+                "reflection": "내가 왜 그런 선택을 하는지 눈에 보이게 정리합니다",
+                "declaration": "만든 Thinkprint로 바로 재미있는 프로젝트를 실행해봅니다"
             }
         },
         "whatItIsNot": {
-            "title": "이것이 아닌 것",
+            "title": "한 줄 안전 원칙",
             "items": {
-                "profiling": "상업적 프로파일링 제품이 아님",
-                "psychology": "기억·경험 복제 엔진이 아님",
-                "alignment": "AI 정렬 제어 시스템이 아님",
-                "cloning": "인간 복제가 아님"
+                "profiling": "의료 진단이나 병명 판단을 하지 않습니다",
+                "psychology": "기억이나 인생을 복제하지 않습니다",
+                "alignment": "사용자 몰래 AI를 조종하는 도구가 아닙니다",
+                "cloning": "사람 자체를 복제하는 프로젝트가 아닙니다"
             }
         },
         "pipeline": {
-            "title": "플레이그라운드 파이프라인",
-            "description": "대화에서 리믹스 가능한 Thinkprint 아티팩트까지, 가벼운 네 단계.",
+            "title": "진행 흐름",
+            "description": "어렵지 않게 4단계로 끝납니다.",
             "steps": {
                 "extract": {
                     "number": "01",
-                    "title": "추출",
-                    "description": "대화 신호에서 당신의 추론 구조 초안을 뽑아냅니다."
+                    "title": "성향 추출",
+                    "description": "대화에서 성격/사고방식 단서를 읽습니다."
                 },
                 "calibrate": {
                     "number": "02",
-                    "title": "보정",
-                    "description": "간단한 질문으로 판단 임계값, 선호, 결정 스타일을 빠르게 보정합니다."
+                    "title": "Thinkprint 생성",
+                    "description": "내 스타일을 카드처럼 정리해 Thinkprint를 만듭니다."
                 },
                 "deepen": {
                     "number": "03",
-                    "title": "심화",
-                    "description": "모순 지점, 위임 경계, 추론 트레이드오프를 상호작용으로 심화합니다."
+                    "title": "프로젝트 실행",
+                    "description": "3가지 fun 프로젝트에서 내 스타일을 돌려봅니다."
                 },
                 "freeze": {
                     "number": "04",
-                    "title": "동결",
-                    "description": "버전 스냅샷을 고정해 재사용·비교·포크·진화시킬 수 있게 합니다."
+                    "title": "피드백 업데이트",
+                    "description": "결과를 보고 보정해서 더 나은 다음 버전으로 저장합니다."
+                },
+                "evaluate": {
+                    "number": "05",
+                    "title": "평가",
+                    "description": ""
+                },
+                "publish": {
+                    "number": "06",
+                    "title": "공개",
+                    "description": ""
                 }
             }
         },
+        "demo": {
+            "title": "3가지 fun 프로젝트",
+            "description": "Thinkprint를 만들면 아래 프로젝트를 바로 체험할 수 있습니다.",
+            "cards": {
+                "blindDate": {
+                    "title": "AI Me 블라인드데이트",
+                    "description": "두 성향이 대화할 때 어디서 맞고 어디서 충돌하는지 보여줍니다."
+                },
+                "persona": {
+                    "title": "페르소나 대결",
+                    "description": "같은 문제를 내 스타일 vs 유명 인물 스타일로 비교합니다."
+                },
+                "difficulty": {
+                    "title": "내 약점 상황 찾기",
+                    "description": "내가 흔들리기 쉬운 상황을 찾아 미리 대비하게 도와줍니다."
+                }
+            }
+        },
+        "interactiveDemo": {
+            "title": "인터랙티브 데모",
+            "description": "페이지 안에서 실제 Thinkprint 흐름이 재생되는 데모입니다.",
+            "panelTitle": "Thinkprint 라이브 시뮬레이션",
+            "panelSubtitle": "추출 -> Thinkprint 생성 -> 프로젝트 실행 -> 피드백 업데이트",
+            "controls": {
+                "play": "재생",
+                "pause": "일시정지",
+                "reset": "처음으로"
+            },
+            "projectResultLabel": "현재 프로젝트 결과",
+            "stages": {
+                "extract": {
+                    "title": "1단계: 성향 단서 추출",
+                    "subtitle": "대화에서 의사결정 습관 신호를 읽습니다.",
+                    "user": "리스크가 있는 선택은 자꾸 망설이게 돼.",
+                    "agent": "확인: 리스크 회피 성향 + 숙고 시간 길어짐 패턴.",
+                    "cardLabel": "Thinkprint 카드",
+                    "cardValue": "리스크 민감, 숙고 우선",
+                    "result": "대화 근거로 프로필 초안 생성."
+                },
+                "generate": {
+                    "title": "2단계: Thinkprint 생성",
+                    "subtitle": "추출한 단서를 바탕으로 스타일 프로필을 만듭니다.",
+                    "user": "상승 여지가 작아도 안정적인 선택이 좋아.",
+                    "agent": "Thinkprint 반영: 성장보다 안정 우선.",
+                    "cardLabel": "Thinkprint 카드",
+                    "cardValue": "안정 > 성장",
+                    "result": "Thinkprint v0 생성 완료."
+                },
+                "project": {
+                    "title": "3단계: fun 프로젝트 실행",
+                    "subtitle": "생성된 프로필을 프로젝트에 바로 적용합니다.",
+                    "user": "이 비즈니스 문제로 페르소나 배틀 돌려줘.",
+                    "agent": "당신은 저위험 확장, 페르소나는 고위험 가속을 선택했어요.",
+                    "cardLabel": "Thinkprint 카드",
+                    "cardValue": "불확실성에서 신중 선택",
+                    "result": "내 스타일 vs 페르소나 차이 맵 생성."
+                },
+                "update": {
+                    "title": "4단계: 피드백 업데이트",
+                    "subtitle": "사용자 피드백으로 다음 버전을 개선합니다.",
+                    "user": "손실 상한이 있으면 리스크를 감수할 수 있어.",
+                    "agent": "피드백 반영: 조건부 리스크 허용치 상향.",
+                    "cardLabel": "Thinkprint 카드",
+                    "cardValue": "조건부 리스크 수용",
+                    "result": "의사결정 규칙이 반영된 Thinkprint v1 저장."
+                }
+            },
+            "insight": "핵심은 한 화면에서 전체 루프를 체험하고, 매번 프로필을 더 좋게 업데이트하는 것입니다."
+        },
         "output": {
-            "title": "출력 구조",
-            "description": "각 Thinkprint 버전은 실전 적용 가능한 3개 아티팩트를 만듭니다.",
-            "declaration": {
-                "title": "thinkprint.md",
-                "description": "추론 원칙, 위임 정책, 위험 경계, 업데이트 트리거."
+            "title": "기술 섹션",
+            "description": "핵심 기술 근거는 모델 설계, 증거/보정, 안전/윤리 3축입니다.",
+            "model": {
+                "title": "심리학 모델 기반",
+                "description": "Dual-Process, GDMS/MDMQ 의사결정 스타일, Sensation Seeking 연구를 기반으로 설계합니다."
             },
-            "prompt": {
-                "title": "agent_system_prompt.txt",
-                "description": "에이전트에 바로 적용 가능한 추론 정책. 빠르게 테스트하고 반복 개선할 수 있습니다."
+            "evidence": {
+                "title": "증거 & 보정 체계",
+                "description": "언어 근거를 임계치와 불확실성 밴드로 관리하고, 보정된 방법으로 점수를 산출합니다."
             },
-            "metadata": {
-                "title": "metadata.json",
-                "description": "버전, 추출 방식, 신뢰도, 선택적 JDVP 연결 정보."
+            "safety": {
+                "title": "안전 & 윤리 가드레일",
+                "description": "비임상 경계, 옵트아웃, 위기 신호 시 프로파일링 중단 원칙을 강제합니다."
             }
         },
         "connection": {
-            "title": "BufferLine과의 연결",
-            "description": "JDVP는 판단이 어디로 이동하는지 측정하고, Thinkprint는 사고의 논리구조를 포착합니다. 함께 실험 가능한 측정 루프를 만듭니다.",
-            "jdvp": "JDVP는 판단의 이동을 측정",
-            "thinkprint": "Thinkprint는 논리 패턴을 모델링",
-            "future": "미래: JDVP 텔레메트리가 Thinkprint 드리프트 추적에 연동"
+            "title": "BufferLine과 함께",
+            "description": "Thinkprint로 내 스타일을 만들고, JDVP로 그 변화가 실제로 달라졌는지 측정할 수 있습니다.",
+            "jdvp": "JDVP는 변화량을 측정",
+            "thinkprint": "Thinkprint는 스타일을 생성",
+            "future": "목표는 간단합니다: 재미있게 시작해서, 실제 의사결정 개선까지 연결"
         },
         "deck": {
             "badge": "프레젠테이션 덱",
-            "title": "Thinkprint 덱 살펴보기",
-            "description": "Thinkprint 도메인을 슬라이드별로 살펴봅니다 — 정의, 파이프라인, 아티팩트, JDVP 시너지.",
+            "title": "Thinkprint 소개 덱 보기",
+            "description": "기술 설명보다 ‘무슨 재미가 있고 뭘 해볼 수 있는지’에 집중한 덱입니다.",
             "cta": "덱 보기"
         }
     }
