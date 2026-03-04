@@ -27,21 +27,21 @@ export default function HookTemplate({
 
   return (
     <Slide className={`bg-gradient-to-b from-slate-950 ${gradientVia} to-slate-950`}>
-      <div className="text-center max-w-4xl">
-        <div className="mb-6 sm:mb-12 opacity-60">
+      <div className="text-center max-w-6xl w-full min-h-[calc(100vh-12rem)] md:min-h-0 flex flex-col justify-center">
+        <div className="mb-6 md:mb-12 opacity-60">
           <Logo />
         </div>
-        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-8 leading-tight">
+        <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold text-white mb-3 md:mb-8 leading-tight">
           {line1}
           <br />
           <span
-            className={`text-transparent bg-clip-text bg-gradient-to-r ${colors.gradientText}`}
+            className={`inline-block md:whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r ${colors.gradientText}`}
           >
             {line2}
           </span>
         </h1>
-        <p className="text-xl md:text-2xl text-slate-400">{question}</p>
-        <div className="mt-8 sm:mt-16 text-slate-600 text-sm animate-bounce">{navigateHint}</div>
+        <p className="text-base md:text-2xl text-slate-400 px-2">{question}</p>
+        <div className="mt-6 md:mt-16 text-slate-600 text-xs md:text-sm animate-bounce">{navigateHint}</div>
       </div>
     </Slide>
   );

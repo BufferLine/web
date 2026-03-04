@@ -1,34 +1,28 @@
 "use client";
 
 import { Card } from "@/components/ui";
-import { ArrowRight, Brain, Briefcase, Heart, Rocket, SlidersHorizontal } from "lucide-react";
+import { ArrowRight, Brain, Rocket, SlidersHorizontal } from "lucide-react";
 import NextLink from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
-const brandDeckKeys = ["general", "personal", "institutional"] as const;
+const brandDeckKeys = ["general"] as const;
 const jdvpDeckKeys = ["technical"] as const;
 const thinkprintDeckKeys = ["overview"] as const;
 
 const deckIcons = {
   general: <Rocket className="w-10 h-10 text-accent-bufferline-light" />,
-  personal: <Heart className="w-10 h-10 text-accent-bufferline-light" />,
-  institutional: <Briefcase className="w-10 h-10 text-accent-bufferline-light" />,
   technical: <SlidersHorizontal className="w-10 h-10 text-accent-jdvp" />,
   overview: <Brain className="w-10 h-10 text-accent-thinkprint-light" />,
 };
 
 const deckHoverText = {
   general: "group-hover:text-accent-bufferline-light",
-  personal: "group-hover:text-accent-bufferline-light",
-  institutional: "group-hover:text-accent-bufferline-light",
   technical: "group-hover:text-accent-jdvp",
   overview: "group-hover:text-accent-thinkprint-light",
 };
 
 const deckActionText = {
   general: "text-accent-bufferline-light group-hover:text-accent-bufferline-subtle",
-  personal: "text-accent-bufferline-light group-hover:text-accent-bufferline-subtle",
-  institutional: "text-accent-bufferline-light group-hover:text-accent-bufferline-subtle",
   technical: "text-accent-jdvp-light group-hover:text-accent-jdvp",
   overview: "text-accent-thinkprint-light group-hover:text-accent-thinkprint-subtle",
 };
@@ -65,7 +59,7 @@ export default function DeckSelectionPage() {
               </p>
             </div>
 
-            <div className={group.key === "brand" ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" : "grid grid-cols-1 md:grid-cols-2 gap-6"}>
+            <div className={group.key === "brand" ? "grid grid-cols-1 gap-6" : "grid grid-cols-1 md:grid-cols-2 gap-6"}>
               {group.deckKeys.map((key) => (
                 <NextLink href={`/${locale}/deck/${key}`} key={key} passHref>
                   <Card

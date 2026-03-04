@@ -1,24 +1,20 @@
 "use client";
 
 import { Section, Card, FadeInView } from "@/components/ui";
-import { ArrowRight, Briefcase, Heart, Rocket, SlidersHorizontal } from "lucide-react";
+import { ArrowRight, Rocket, SlidersHorizontal } from "lucide-react";
 import NextLink from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
-const brandDeckKeys = ["general", "personal", "institutional"] as const;
+const brandDeckKeys = ["general"] as const;
 const jdvpDeckKeys = ["technical"] as const;
 
 const deckIcons = {
   general: <Rocket className="w-8 h-8 text-accent-bufferline-light" />,
-  personal: <Heart className="w-8 h-8 text-accent-bufferline-light" />,
-  institutional: <Briefcase className="w-8 h-8 text-accent-bufferline-light" />,
   technical: <SlidersHorizontal className="w-8 h-8 text-accent-jdvp" />,
 };
 
 const deckColors = {
   general: "group-hover:text-accent-bufferline-light",
-  personal: "group-hover:text-accent-bufferline-light",
-  institutional: "group-hover:text-accent-bufferline-light",
   technical: "group-hover:text-accent-jdvp",
 };
 
@@ -59,7 +55,7 @@ export default function DeckLinks() {
               </p>
             </div>
 
-            <div className={group.key === "brand" ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" : "grid grid-cols-1 sm:grid-cols-2 gap-4"}>
+            <div className={group.key === "brand" ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 sm:grid-cols-2 gap-4"}>
               {group.deckKeys.map((key, deckIndex) => {
                 const delay = (groupIndex * 3 + deckIndex + 1) * 80;
                 return (

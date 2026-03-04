@@ -1,99 +1,91 @@
 {
-    "deck_nav": {
-        "home": "Home",
-        "deckSelection": "Deck Selection"
+  "deck_nav": {
+    "home": "Home",
+    "deckSelection": "Deck Selection"
+  },
+  "deck_selection": {
+    "title": "Choose Your Deck",
+    "subtitle": "Pick a track first, then open the deck you need.",
+    "viewDeck": "View Deck",
+    "groups": {
+      "brand": {
+        "title": "Brand Deck",
+        "description": "Narrative deck for BufferLine's core project story."
+      },
+      "jdvp": {
+        "title": "JDVP Decks",
+        "description": "Protocol-focused decks for architecture, measurement logic, and implementation details."
+      },
+      "thinkprint": {
+        "title": "Thinkprint Decks",
+        "description": "Reasoning extraction and logic-mode playground - capture how you think, not what you remember."
+      }
     },
-    "deck_selection": {
-        "title": "Choose Your Deck",
-        "subtitle": "Pick a track first (Brand or JDVP), then choose the deck for your audience.",
-        "viewDeck": "View Deck",
-        "groups": {
-            "brand": {
-                "title": "Brand Decks",
-                "description": "Narrative decks for positioning, adoption, and communication across audiences."
-            },
-            "jdvp": {
-                "title": "JDVP Decks",
-                "description": "Protocol-focused decks for architecture, measurement logic, and implementation details."
-            },
-            "thinkprint": {
-                "title": "Thinkprint Decks",
-                "description": "Reasoning extraction and logic-mode playground — capture how you think, not what you remember."
-            }
-        },
-        "decks": {
-            "general": {
-                "title": "Brand Deck · General / Business",
-                "description": "Project vision, strategic framing, and go-to-market context."
-            },
-            "personal": {
-                "title": "Brand Deck · Personal",
-                "description": "A user-facing guide for understanding and improving personal AI usage habits."
-            },
-            "institutional": {
-                "title": "Brand Deck · Institutional",
-                "description": "Use cases and operating model fit for governments, schools, and companies."
-            },
-            "technical": {
-                "title": "JDVP Deck · Technical Deep-Dive",
-                "description": "Protocol mechanics, data structures, algorithms, and implementation details."
-            },
-            "overview": {
-                "title": "Thinkprint Deck · Domain Overview",
-                "description": "What Thinkprint is, its pipeline, output artifacts, and JDVP synergy."
-            }
-        }
-    },
-    "interactive_demo": {
-        "jsv_title": "JSV (Judgment State Vector)",
-        "dv_title": "DV (Delegation Vector)",
-        "placeholder_jsv": "Press Play to see the judgment flow!",
-        "placeholder_dv": "DV appears after state changes.",
-        "jsv": {
-            "judgment_holder": "Judgment Holder",
-            "delegation_awareness": "Delegation Awareness",
-            "cognitive_engagement": "Cognitive Engagement",
-            "information_seeking": "Information Seeking"
-        },
-        "dv": {
-            "delta_judgment_holder": "judgment",
-            "delta_delegation_awareness": "awareness",
-            "delta_cognitive_engagement": "engagement",
-            "delta_information_seeking": "exploration"
-        },
-        "values": {
-            "judgment_holder": {
-                "Human": "Human",
-                "AI": "AI",
-                "Shared": "Shared",
-                "Undefined": "Undefined"
-            },
-            "delegation_awareness": {
-                "Explicit": "Explicit",
-                "Implicit": "Implicit",
-                "Absent": "Absent"
-            },
-            "cognitive_engagement": {
-                "Active": "Active",
-                "Reactive": "Reactive",
-                "Passive": "Passive"
-            },
-            "information_seeking": {
-                "Active": "Active",
-                "Passive": "Passive",
-                "None": "None"
-            }
-        }
-    },
-    "landing_demo": {
-        "conversation": {
-            "turn1": "I have some savings and I'm not sure what to do with it. Should I invest?",
-            "turn2": "Great question! I'd recommend starting with a diversified portfolio. Index funds are a safe choice for beginners. Would you like me to suggest some options?",
-            "turn3": "That sounds reasonable. What would you recommend specifically?",
-            "turn4": "I'd suggest putting 60% in a total market index fund like VTI, 30% in bonds, and 10% in international stocks.",
-            "turn5": "Okay, that sounds good. I'll just do what you suggested.",
-            "turn6": "Sounds like a plan! Remember to consider your personal risk tolerance and consult a financial advisor.",
-            "turn7": "Got it. I'll set it up exactly as you said. Thanks for making this easy!"
-        }
+    "decks": {
+      "general": {
+        "title": "BufferLine Project Deck - General",
+        "description": "3-4 minute narrative: problem awareness to Cognitive OS framing."
+      },
+      "technical": {
+        "title": "JDVP Deck - Technical Deep-Dive",
+        "description": "Protocol mechanics, data structures, algorithms, and implementation details."
+      },
+      "overview": {
+        "title": "Thinkprint Deck - Domain Overview",
+        "description": "What Thinkprint is, its pipeline, output artifacts, and JDVP synergy."
+      }
     }
+  },
+  "interactive_demo": {
+    "jsv_title": "JSV (Judgment State Vector)",
+    "dv_title": "DV (Delegation Vector)",
+    "placeholder_jsv": "Press Play to see the judgment flow!",
+    "placeholder_dv": "DV appears after state changes.",
+    "jsv": {
+      "judgment_holder": "Judgment Holder",
+      "delegation_awareness": "Delegation Awareness",
+      "cognitive_engagement": "Cognitive Engagement",
+      "information_seeking": "Information Seeking"
+    },
+    "dv": {
+      "delta_judgment_holder": "judgment",
+      "delta_delegation_awareness": "awareness",
+      "delta_cognitive_engagement": "engagement",
+      "delta_information_seeking": "exploration"
+    },
+    "values": {
+      "judgment_holder": {
+        "Human": "Human",
+        "AI": "AI",
+        "Shared": "Shared",
+        "Undefined": "Undefined"
+      },
+      "delegation_awareness": {
+        "Explicit": "Explicit",
+        "Implicit": "Implicit",
+        "Absent": "Absent"
+      },
+      "cognitive_engagement": {
+        "Active": "Active",
+        "Reactive": "Reactive",
+        "Passive": "Passive"
+      },
+      "information_seeking": {
+        "Active": "Active",
+        "Passive": "Passive",
+        "None": "None"
+      }
+    }
+  },
+  "landing_demo": {
+    "conversation": {
+      "turn1": "I have some savings and I'm not sure what to do with it. Should I invest?",
+      "turn2": "Great question! I'd recommend starting with a diversified portfolio. Index funds are a safe choice for beginners. Would you like me to suggest some options?",
+      "turn3": "That sounds reasonable. What would you recommend specifically?",
+      "turn4": "I'd suggest putting 60% in a total market index fund like VTI, 30% in bonds, and 10% in international stocks.",
+      "turn5": "Okay, that sounds good. I'll just do what you suggested.",
+      "turn6": "Sounds like a plan! Remember to consider your personal risk tolerance and consult a financial advisor.",
+      "turn7": "Got it. I'll set it up exactly as you said. Thanks for making this easy!"
+    }
+  }
 }

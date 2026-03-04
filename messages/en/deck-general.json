@@ -1,215 +1,183 @@
 {
-    "controls": {
-        "prev": "Previous slide",
-        "next": "Next slide",
-        "keyboard": "to navigate"
+  "controls": {
+    "prev": "Previous slide",
+    "next": "Next slide",
+    "keyboard": "to navigate"
+  },
+  "hook": {
+    "line1": "AI is already in daily decisions.",
+    "line2": "The real question is how far we delegate judgment.",
+    "question": "BufferLine makes that boundary visible and operable.",
+    "navigate": "Press → or swipe to continue"
+  },
+  "everydayShift": {
+    "title": "Judgment shifts start quietly.",
+    "subtitle": "Not with dramatic failures, but with everyday habits.",
+    "items": {
+      "1": {
+        "tag": "Life",
+        "text": "People now read AI answers first when comparing health and finance options."
+      },
+      "2": {
+        "tag": "Work",
+        "text": "Founders and teams begin with AI for hypotheses, priorities, and first drafts."
+      },
+      "3": {
+        "tag": "Teams",
+        "text": "Final decisions remain, but the moment of judgment transfer is often lost."
+      }
     },
-    "hook": {
-        "line1": "How do we build trust in",
-        "line2": "AI-assisted decisions?",
-        "question": "BufferLine builds a Cognitive OS where JDVP observes, Thinkprint extracts, and Meta Governance designs authority flow.",
-        "navigate": "Press → or swipe to continue"
+    "talkTrack": "Convenience grows quickly. Visibility into delegation usually does not."
+  },
+  "awareness": {
+    "title": "Run three quick checks.",
+    "subtitle": "If these are hard to answer, judgment flow is already drifting.",
+    "points": {
+      "1": {
+        "title": "Do you feel the speed?",
+        "description": "AI is replacing real work units faster than most teams notice."
+      },
+      "2": {
+        "title": "Do you see the influence?",
+        "description": "AI changes not only outputs, but how decisions are framed."
+      },
+      "3": {
+        "title": "Do you remember the start point?",
+        "description": "In key decisions, did you start from your own reasoning or from AI direction?"
+      }
     },
-    "trackIntro": {
-        "badge": "Brand Track",
-        "title": "How This Deck Flows",
-        "subtitle": "From framing to adoption, this deck explains why the BufferLine Cognitive OS matters and how it lands in the market.",
-        "pillars": {
-            "narrative": {
-                "title": "Strategic Framing",
-                "description": "Define the governance gap in language stakeholders can align on."
-            },
-            "measurement": {
-                "title": "Domain Design",
-                "description": "Position JDVP, Thinkprint, and Meta Governance as independent but composable domains."
-            },
-            "adoption": {
-                "title": "Adoption Path",
-                "description": "Translate protocol value into GTM, partnerships, and execution milestones."
-            }
-        },
-        "conclusion": "Use this deck for partners, investors, and strategy stakeholders."
+    "talkTrack": "Surprise points differ by person, but the pattern is the same: AI is now inside judgment flow."
+  },
+  "coreGap": {
+    "title": "Awareness reveals structural gaps.",
+    "subtitle": "This is not a model-quality issue. It is an operating issue.",
+    "items": {
+      "observation": {
+        "title": "Observation Gap",
+        "description": "We cannot clearly track when judgment moved."
+      },
+      "policy": {
+        "title": "Policy Gap",
+        "description": "Personal reasoning rules remain implicit and disappear."
+      },
+      "authority": {
+        "title": "Authority Gap",
+        "description": "Decision rights lack explicit, testable criteria."
+      }
     },
-    "toc": {
-        "title": "Brand Deck: Strategic Overview",
-        "point1": {
-            "title": "The Problem",
-            "subtitle": "The invisible risk of judgment delegation."
-        },
-        "point2": {
-            "title": "BufferLine Cognitive OS",
-            "subtitle": "Observation + extraction + authority architecture."
-        },
-        "point3": {
-            "title": "Market Opportunity",
-            "subtitle": "A $50B+ AI governance & safety market."
-        },
-        "point4": {
-            "title": "Go-to-Market",
-            "subtitle": "Two approaches: Personal and Institutional."
-        },
-        "domainDiff": {
-            "title": "Domain Differentiation",
-            "subtitle": "What makes each domain unique."
-        },
-        "point5": {
-            "title": "Roadmap & Traction",
-            "subtitle": "Where we are and where we're going."
-        }
+    "talkTrack": "Without closing these gaps, productivity rises while judgment sovereignty weakens."
+  },
+  "cognitiveOs": {
+    "title": "The answer is not one feature. It is a 3-layer operating model.",
+    "subtitle": "Each layer stands alone. Together they become a system.",
+    "layers": {
+      "jdvp": {
+        "title": "JDVP",
+        "description": "Observe judgment shifts as logs."
+      },
+      "thinkprint": {
+        "title": "Thinkprint",
+        "description": "Extract reusable reasoning policy."
+      },
+      "metagov": {
+        "title": "Meta Governance",
+        "description": "Design and maintain decision-right architecture."
+      }
     },
-    "point1": {
-        "title": "The Problem: Invisible Judgment Shifts",
-        "subtitle": "AI is changing how we make decisions, but we can't see it.",
-        "problems": {
-            "invisible": {
-                "title": "Invisible Influence",
-                "description": "AI subtly shapes our choices in ways we don't notice or measure."
-            },
-            "nostandard": {
-                "title": "No Standard Measurement",
-                "description": "There's no protocol to track how much judgment we're delegating to AI."
-            },
-            "risk": {
-                "title": "Growing Risk",
-                "description": "Without visibility, we can't manage the risks of over-reliance on AI."
-            }
-        },
-        "conclusion": "We need a 'cognitive dashboard' for the AI age."
+    "talkTrack": "Connected together, they move AI usage from convenience to accountable operation."
+  },
+  "jdvp": {
+    "title": "JDVP turns judgment transfer into data.",
+    "subtitle": "Use logs, not memory, to understand delegation.",
+    "flowTitle": "JDVP Flow",
+    "items": {
+      "input": {
+        "title": "Input",
+        "description": "Human-AI interaction events"
+      },
+      "output": {
+        "title": "Output",
+        "description": "JSV/DV time series + delegation telemetry"
+      },
+      "principle": {
+        "title": "Principle",
+        "description": "Do not score delegation as good or bad first. Make it visible first."
+      }
     },
-    "point2": {
-        "title": "BufferLine Cognitive OS: Observe, Extract, Govern",
-        "subtitle": "A domain architecture: JDVP observes, Thinkprint extracts, and Meta Governance designs authority systems.",
-        "features": {
-            "jsv": {
-                "title": "JDVP Observation Domain",
-                "description": "Captures judgment states and delegation shifts with JSV and DV telemetry."
-            },
-            "dv": {
-                "title": "Thinkprint Extraction Domain",
-                "description": "Turns individual reasoning habits into explicit, inspectable, shareable modes."
-            },
-            "citizenai": {
-                "title": "Meta Governance Domain",
-                "description": "Designs authority flow rules that connect evidence to policy, workflow, and organizational decisions."
-            }
-        },
-        "principle": "Domain principle: each module works independently; synergy emerges when they are combined."
+    "good": {
+      "title": "Strengths",
+      "items": {
+        "1": "Turns intuition-heavy delegation debates into evidence-based discussion.",
+        "2": "The same logs can support audits, retrospectives, and model operations."
+      }
     },
-    "point3": {
-        "title": "Market Opportunity",
-        "subtitle": "AI governance and safety is a rapidly growing market.",
-        "market": {
-            "tam": {
-                "label": "TAM",
-                "value": "$50B+",
-                "description": "Global AI governance, safety, and compliance market by 2028."
-            },
-            "sam": {
-                "label": "SAM",
-                "value": "$12B",
-                "description": "Enterprise AI risk management and observability tools."
-            },
-            "som": {
-                "label": "SOM",
-                "value": "$500M",
-                "description": "Initial target: Finance, Healthcare, Education sectors."
-            }
-        },
-        "drivers": {
-            "regulation": "Growing AI regulations (EU AI Act, etc.)",
-            "trust": "Rising demand for AI transparency and trust",
-            "incidents": "Increasing AI-related incidents and liability concerns"
-        }
+    "caution": {
+      "title": "Watch-outs",
+      "items": {
+        "1": "Metrics without context can misrepresent human intent.",
+        "2": "Delegation telemetry should not be misused as simplistic performance ranking."
+      }
     },
-    "point4": {
-        "title": "Go-to-Market Strategy",
-        "subtitle": "Two adoption tracks under one brand architecture.",
-        "strategies": {
-            "personal": {
-                "title": "For Individuals",
-                "description": "Thinkprint-based self-reflection that helps users keep decision ownership while using AI.",
-                "model": "Freemium → Premium subscription"
-            },
-            "institutional": {
-                "title": "For Institutions",
-                "description": "JDVP-powered governance workflows for safety, auditability, and regulatory readiness.",
-                "model": "Enterprise SaaS licensing"
-            }
-        },
-        "conclusion": "Both tracks share one brand architecture — domains compose differently per audience, but data and governance layers stay connected."
+    "talkTrack": "The key win is removing the state of 'I do not know when I delegated.'"
+  },
+  "thinkprint": {
+    "title": "Thinkprint makes reasoning style reusable.",
+    "subtitle": "Convert tacit judgment into editable, shareable policy.",
+    "inputTitle": "What it reads",
+    "outputTitle": "What it leaves",
+    "items": {
+      "input": {
+        "1": "Conversation traces",
+        "2": "Decision behavior patterns",
+        "3": "Self-explained rationale"
+      },
+      "output": {
+        "1": "Reasoning profile",
+        "2": "Versionable, shareable reasoning mode"
+      }
     },
-    "domainDiff": {
-        "title": "What Makes Each Domain Different",
-        "subtitle": "Each domain solves a distinct problem that existing tools miss.",
-        "domains": {
-            "jdvp": {
-                "title": "JDVP",
-                "description": "Quantifies judgment shifts with JSV/DV vectors instead of relying on subjective trust surveys or post-hoc audits.",
-                "diff": "Observation, not opinion — real-time telemetry for judgment delegation."
-            },
-            "thinkprint": {
-                "title": "Thinkprint",
-                "description": "Extracts reasoning structure (not memory) into lightweight, remixable modes you can fork and compare.",
-                "diff": "Logic-first extraction — not a cognitive twin, but a thinking playground."
-            },
-            "metagov": {
-                "title": "Meta Governance",
-                "description": "Designs authority flow rules that connect observation evidence to organizational policy and workflow.",
-                "diff": "Authority architecture — governance as composable infrastructure, not compliance checklists."
-            }
-        }
+    "good": {
+      "title": "Strengths",
+      "body": "Teams keep the logic behind decisions, not just the final answer."
     },
-    "point5": {
-        "title": "Roadmap & Traction",
-        "subtitle": "Execution milestones from protocol maturity to market adoption.",
-        "phases": {
-            "phase1": {
-                "title": "Phase 1: Protocol & POC",
-                "status": "✓ Complete",
-                "items": [
-                    "JDVP v1.2 specification",
-                    "Working POC with 450+ tests",
-                    "Multi-model observer support"
-                ]
-            },
-            "phase2": {
-                "title": "Phase 2: Open Source",
-                "status": "In Progress",
-                "items": [
-                    "Public documentation and narrative assets",
-                    "Developer SDK and templates",
-                    "Early design partners"
-                ]
-            },
-            "phase3": {
-                "title": "Phase 3: Industry Adoption",
-                "status": "Planned",
-                "items": [
-                    "Institutional pilot expansion",
-                    "Enterprise governance integrations",
-                    "Standards and regulatory alignment"
-                ]
-            }
-        }
+    "caution": {
+      "title": "Watch-outs",
+      "body": "If treated as a fixed personality label, it narrows thinking. Keep it editable and versioned."
     },
-    "summary": {
-        "title": "Let's Build the Future Together",
-        "point1": {
-            "label": "The Problem:",
-            "text": "AI is invisibly changing how we make decisions."
-        },
-        "point2": {
-            "label": "Our Solution:",
-            "text": "BufferLine Cognitive OS: JDVP for observation, Thinkprint for extraction, Meta Governance for authority architecture."
-        },
-        "point3": {
-            "label": "The Opportunity:",
-            "text": "A $50B+ market with no clear leader yet."
-        },
-        "tagline": "BufferLine: Brand, Protocol, and Governance Infrastructure for the AI Age",
-        "cta": {
-            "github": "Contact for Partnership",
-            "home": "Read the Whitepaper"
-        }
+    "talkTrack": "Thinkprint is not about labeling people. It is about making reasoning collaborative."
+  },
+  "metagov": {
+    "title": "Meta Governance designs how decision rights move.",
+    "subtitle": "The question is not only who decides, but who is authorized to decide under which conditions.",
+    "items": {
+      "signal": {
+        "title": "Qualification Signals",
+        "description": "Define participation conditions from evidence, context, and role requirements."
+      },
+      "renewal": {
+        "title": "Authority Renewal",
+        "description": "Refresh decision rights as risk, role, and outcomes change."
+      },
+      "defense": {
+        "title": "Abuse Defense",
+        "description": "Prevent concentration of authority, blame shifting, and opaque automation."
+      }
+    },
+    "caution": "Without authority design, even strong models collapse into accountability gaps.",
+    "talkTrack": "BufferLine is not a model recommendation tool. It is an operating system for judgment responsibility."
+  },
+  "close": {
+    "badge": "Wrap-up",
+    "title": "BufferLine makes judgment sovereignty operational.",
+    "subtitle": "It links observation, reasoning policy, and authority design into one system.",
+    "points": {
+      "1": "Observe judgment transfer with JDVP,",
+      "2": "Extract reasoning policy with Thinkprint,",
+      "3": "Design decision-right architecture with Meta Governance."
+    },
+    "cta": {
+      "deck": "Browse Decks",
+      "about": "About BufferLine"
     }
+  }
 }

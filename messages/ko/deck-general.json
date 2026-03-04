@@ -1,215 +1,183 @@
 {
-    "controls": {
-        "prev": "이전 슬라이드",
-        "next": "다음 슬라이드",
-        "keyboard": "로 이동"
+  "controls": {
+    "prev": "이전 슬라이드",
+    "next": "다음 슬라이드",
+    "keyboard": "로 이동"
+  },
+  "hook": {
+    "line1": "AI 사용은 피할 수 없습니다.",
+    "line2": "판단의 경계는 우리가 정할 수 있습니다.",
+    "question": "BufferLine은 그 경계를 보이게 만듭니다.",
+    "navigate": "→ 키 또는 스와이프로 계속"
+  },
+  "everydayShift": {
+    "title": "판단 이동은 사소한 순간에서 시작됩니다.",
+    "subtitle": "거창한 시스템 장애보다, 조용한 습관 변화가 먼저 옵니다.",
+    "items": {
+      "1": {
+        "tag": "생활",
+        "text": "건강 정보나 보험 비교를 할 때, 이제는 검색보다 AI 답변을 먼저 봅니다."
+      },
+      "2": {
+        "tag": "업무",
+        "text": "회의 요약, 제안서 초안, 고객 답변 초안, 데이터 쿼리 작성까지 AI가 먼저 투입됩니다."
+      },
+      "3": {
+        "tag": "팀",
+        "text": "결론은 남는데, 누가 어느 순간 판단을 넘겼는지는 기록에서 사라집니다."
+      }
     },
-    "hook": {
-        "line1": "AI 보조 의사결정의 신뢰를",
-        "line2": "어떻게 설계할 것인가?",
-        "question": "BufferLine은 JDVP(관찰), Thinkprint(추출), Meta Governance(권한 설계)로 구성된 Cognitive OS를 구축합니다.",
-        "navigate": "→ 키 또는 스와이프로 계속"
+    "talkTrack": "편해지는 건 맞습니다. 다만 편의가 커질수록 판단 이동은 더 안 보이게 됩니다."
+  },
+  "awareness": {
+    "title": "딱 세 가지만 체크해보죠.",
+    "subtitle": "이 질문에 선명하게 답하기 어렵다면, 이미 판단 흐름이 흔들리고 있을 수 있습니다.",
+    "points": {
+      "1": {
+        "title": "속도 감각이 있나요?",
+        "description": "AI가 단순 보조를 넘어서 실무 단위를 대체하는 속도를 체감하고 있나요?"
+      },
+      "2": {
+        "title": "영향 범위를 알고 있나요?",
+        "description": "AI가 답변 품질뿐 아니라 내 판단 기준 자체를 바꾼다는 걸 인지하고 있나요?"
+      },
+      "3": {
+        "title": "출발점을 기억하나요?",
+        "description": "최근 중요한 결정에서 내가 먼저 생각했는지, AI가 먼저 방향을 잡았는지 떠오르나요?"
+      }
     },
-    "trackIntro": {
-        "badge": "Brand 트랙",
-        "title": "이 덱의 구성 흐름",
-        "subtitle": "프레이밍에서 채택까지, BufferLine Cognitive OS가 왜 필요한지와 시장 적용 방식을 연결합니다.",
-        "pillars": {
-            "narrative": {
-                "title": "전략 프레이밍",
-                "description": "이해관계자가 같은 언어로 정렬할 수 있게 거버넌스 갭을 정의합니다."
-            },
-            "measurement": {
-                "title": "도메인 설계",
-                "description": "JDVP, Thinkprint, Meta Governance를 독립적이면서 조합 가능한 도메인으로 제시합니다."
-            },
-            "adoption": {
-                "title": "채택 경로",
-                "description": "프로토콜 가치를 GTM, 파트너십, 실행 마일스톤으로 번역합니다."
-            }
-        },
-        "conclusion": "파트너, 투자자, 전략 이해관계자 커뮤니케이션에 적합한 덱입니다."
+    "talkTrack": "사람마다 반응 포인트는 다르지만 결론은 같습니다. AI는 이미 판단 흐름 안에 들어와 있습니다."
+  },
+  "coreGap": {
+    "title": "조금만 파고들어보면, 공백이 바로 보입니다.",
+    "subtitle": "핵심은 성능 문제가 아니라 운영 공백입니다.",
+    "items": {
+      "observation": {
+        "title": "관측 공백",
+        "description": "언제 판단이 이동했는지 추적이 어렵습니다."
+      },
+      "policy": {
+        "title": "정책 공백",
+        "description": "내 사고 규칙이 문서화되지 않아 상황마다 흔들립니다."
+      },
+      "authority": {
+        "title": "권한 공백",
+        "description": "결정권을 누가, 어떤 근거로 가지는지 기준이 약합니다."
+      }
     },
-    "toc": {
-        "title": "Brand 덱: 전략 개요",
-        "point1": {
-            "title": "문제 정의",
-            "subtitle": "보이지 않는 판단 위임의 위험"
-        },
-        "point2": {
-            "title": "BufferLine Cognitive OS",
-            "subtitle": "관찰 + 추출 + 권한 아키텍처"
-        },
-        "point3": {
-            "title": "시장 기회",
-            "subtitle": "$500억+ AI 거버넌스 & 안전 시장"
-        },
-        "point4": {
-            "title": "시장 전략",
-            "subtitle": "개인과 기관을 위한 두 가지 접근법"
-        },
-        "domainDiff": {
-            "title": "도메인 차별화",
-            "subtitle": "각 도메인이 기존 도구와 다른 이유"
-        },
-        "point5": {
-            "title": "로드맵 & 현황",
-            "subtitle": "현재 위치와 나아갈 방향"
-        }
+    "talkTrack": "이 공백이 쌓이면 생산성은 올라가도 판단 주권은 약해집니다."
+  },
+  "cognitiveOs": {
+    "title": "해법은 기능 하나가 아니라 3계층 운영 구조입니다.",
+    "subtitle": "각 계층은 독립적으로 쓸 수 있고, 연결하면 효과가 커집니다.",
+    "layers": {
+      "jdvp": {
+        "title": "JDVP",
+        "description": "판단 이동을 로그로 관측합니다."
+      },
+      "thinkprint": {
+        "title": "Thinkprint",
+        "description": "사고 패턴을 재사용 가능한 정책으로 추출합니다."
+      },
+      "metagov": {
+        "title": "Meta Governance",
+        "description": "결정권 부여 규칙을 설계합니다."
+      }
     },
-    "point1": {
-        "title": "문제: 보이지 않는 판단의 이동",
-        "subtitle": "AI가 우리의 의사결정 방식을 바꾸고 있지만, 우리는 이를 볼 수 없습니다.",
-        "problems": {
-            "invisible": {
-                "title": "보이지 않는 영향",
-                "description": "AI는 우리가 인식하거나 측정하지 못하는 방식으로 우리의 선택에 영향을 미칩니다."
-            },
-            "nostandard": {
-                "title": "표준 측정 부재",
-                "description": "우리가 AI에 얼마나 많은 판단을 위임하는지 추적할 프로토콜이 없습니다."
-            },
-            "risk": {
-                "title": "증가하는 위험",
-                "description": "가시성이 없으면 AI 과의존의 위험을 관리할 수 없습니다."
-            }
-        },
-        "conclusion": "AI 시대를 위한 '인지 대시보드'가 필요합니다."
+    "talkTrack": "관측, 추출, 권한 설계를 연결하면 AI 사용이 '편한 상태'에서 '설명 가능한 상태'로 넘어갑니다."
+  },
+  "jdvp": {
+    "title": "JDVP: 판단 이동을 기록 가능한 데이터로 바꿉니다.",
+    "subtitle": "기억이 아니라 로그로 판단 위임을 다룹니다.",
+    "flowTitle": "JDVP 처리 흐름",
+    "items": {
+      "input": {
+        "title": "입력",
+        "description": "사람-AI 상호작용 이벤트"
+      },
+      "output": {
+        "title": "출력",
+        "description": "JSV/DV 시계열 + 위임 텔레메트리"
+      },
+      "principle": {
+        "title": "원칙",
+        "description": "좋고 나쁨을 판정하지 않고, 이동 사실을 먼저 드러냅니다."
+      }
     },
-    "point2": {
-        "title": "BufferLine Cognitive OS: Observe, Extract, Govern",
-        "subtitle": "도메인 아키텍처: JDVP는 관찰하고, Thinkprint는 추출하며, Meta Governance는 권한 시스템을 설계합니다.",
-        "features": {
-            "jsv": {
-                "title": "JDVP 관찰 도메인",
-                "description": "JSV/DV 텔레메트리로 판단 상태와 위임 이동을 포착합니다."
-            },
-            "dv": {
-                "title": "Thinkprint 추출 도메인",
-                "description": "개인의 사고 습관을 명시적이고 점검 가능한 공유 모드로 전환합니다."
-            },
-            "citizenai": {
-                "title": "Meta Governance 도메인",
-                "description": "관찰 근거를 정책, 워크플로, 조직 의사결정과 연결할 권한 흐름 규칙을 설계합니다."
-            }
-        },
-        "principle": "도메인 원칙: 각 모듈은 독립적으로 동작하고, 함께 조합될 때 시너지가 생깁니다."
+    "good": {
+      "title": "좋은 점",
+      "items": {
+        "1": "감으로 이야기하던 위임 이슈를 근거 기반으로 대화할 수 있습니다.",
+        "2": "감사, 회고, 모델 운영 개선에 같은 로그를 재활용할 수 있습니다."
+      }
     },
-    "point3": {
-        "title": "시장 기회",
-        "subtitle": "AI 거버넌스 및 안전은 빠르게 성장하는 시장입니다.",
-        "market": {
-            "tam": {
-                "label": "TAM",
-                "value": "$500억+",
-                "description": "2028년까지 글로벌 AI 거버넌스, 안전, 컴플라이언스 시장"
-            },
-            "sam": {
-                "label": "SAM",
-                "value": "$120억",
-                "description": "엔터프라이즈 AI 리스크 관리 및 관측 도구"
-            },
-            "som": {
-                "label": "SOM",
-                "value": "$5억",
-                "description": "초기 타겟: 금융, 의료, 교육 분야"
-            }
-        },
-        "drivers": {
-            "regulation": "AI 규제 강화 (EU AI Act 등)",
-            "trust": "AI 투명성 및 신뢰에 대한 수요 증가",
-            "incidents": "AI 관련 사고 및 책임 우려 증가"
-        }
+    "caution": {
+      "title": "주의할 점",
+      "items": {
+        "1": "숫자만 보고 사람의 맥락을 지우면 역효과가 납니다.",
+        "2": "관측 지표를 성과평가 도구로 오용하지 않도록 경계가 필요합니다."
+      }
     },
-    "point4": {
-        "title": "시장 진출 전략",
-        "subtitle": "하나의 브랜드 아키텍처 위에서 개인/기관 두 트랙으로 확장",
-        "strategies": {
-            "personal": {
-                "title": "개인 사용자",
-                "description": "Thinkprint 기반 자기 성찰 도구로, AI를 쓰면서도 판단 주도권을 유지하도록 돕습니다.",
-                "model": "프리미엄 → 유료 구독"
-            },
-            "institutional": {
-                "title": "기관 고객",
-                "description": "JDVP 기반 거버넌스 워크플로로 안전성, 감사 대응, 규제 준비를 강화합니다.",
-                "model": "엔터프라이즈 SaaS 라이선스"
-            }
-        },
-        "conclusion": "두 트랙은 하나의 브랜드 아키텍처를 공유합니다 — 도메인 조합은 대상에 따라 달라지지만, 데이터와 거버넌스 레이어는 연결됩니다."
+    "talkTrack": "핵심은 '내가 언제 넘겼는지 모르는 상태'를 없애는 것입니다."
+  },
+  "thinkprint": {
+    "title": "Thinkprint: 내 판단 방식을 팀이 다시 쓸 수 있게 만듭니다.",
+    "subtitle": "암묵지를 문서화 가능한 추론 정책으로 바꿉니다.",
+    "inputTitle": "어떤 데이터를 보나",
+    "outputTitle": "무엇을 남기나",
+    "items": {
+      "input": {
+        "1": "실제 대화 로그",
+        "2": "의사결정 행동 패턴",
+        "3": "본인이 설명한 판단 근거"
+      },
+      "output": {
+        "1": "reasoning profile (판단 프로파일)",
+        "2": "공유/수정 가능한 reasoning mode"
+      }
     },
-    "domainDiff": {
-        "title": "각 도메인이 다른 이유",
-        "subtitle": "기존 도구가 놓치는 고유한 문제를 각 도메인이 해결합니다.",
-        "domains": {
-            "jdvp": {
-                "title": "JDVP",
-                "description": "주관적 신뢰 설문이나 사후 감사가 아닌, JSV/DV 벡터로 판단 이동을 정량화합니다.",
-                "diff": "의견이 아닌 관찰 — 판단 위임의 실시간 텔레메트리."
-            },
-            "thinkprint": {
-                "title": "Thinkprint",
-                "description": "기억이 아닌 추론 구조를 추출해 포크·비교할 수 있는 경량 모드로 만듭니다.",
-                "diff": "논리구조 우선 추출 — 코그니티브 트윈이 아닌 사고 플레이그라운드."
-            },
-            "metagov": {
-                "title": "Meta Governance",
-                "description": "관찰 근거를 조직 정책·워크플로와 연결하는 권한 흐름 규칙을 설계합니다.",
-                "diff": "권한 아키텍처 — 컴플라이언스 체크리스트가 아닌 조합 가능한 거버넌스 인프라."
-            }
-        }
+    "good": {
+      "title": "좋은 점",
+      "body": "사람이 바뀌어도 기준이 남아, '왜 이렇게 결정했는지'를 재현할 수 있습니다."
     },
-    "point5": {
-        "title": "로드맵 & 현황",
-        "subtitle": "프로토콜 성숙도에서 시장 확산까지의 실행 마일스톤",
-        "phases": {
-            "phase1": {
-                "title": "1단계: 프로토콜 & POC",
-                "status": "✓ 완료",
-                "items": [
-                    "JDVP v1.2 명세",
-                    "450+ 테스트 POC",
-                    "다중 모델 옵저버 지원"
-                ]
-            },
-            "phase2": {
-                "title": "2단계: 오픈소스",
-                "status": "진행 중",
-                "items": [
-                    "공개 문서와 내러티브 에셋",
-                    "개발자 SDK와 템플릿",
-                    "초기 디자인 파트너 확보"
-                ]
-            },
-            "phase3": {
-                "title": "3단계: 산업 적용",
-                "status": "계획됨",
-                "items": [
-                    "기관 파일럿 확대",
-                    "엔터프라이즈 거버넌스 통합",
-                    "표준화 및 규제 정합성"
-                ]
-            }
-        }
+    "caution": {
+      "title": "주의할 점",
+      "body": "고정 성격 라벨처럼 쓰면 오히려 사고를 좁힐 수 있어, 버전 관리와 수정 권한이 중요합니다."
     },
-    "summary": {
-        "title": "함께 미래를 만들어 갑시다",
-        "point1": {
-            "label": "문제:",
-            "text": "AI가 우리의 의사결정 방식을 보이지 않게 바꾸고 있습니다."
-        },
-        "point2": {
-            "label": "솔루션:",
-            "text": "BufferLine Cognitive OS — 관찰은 JDVP, 추출은 Thinkprint, 권한 설계는 Meta Governance."
-        },
-        "point3": {
-            "label": "기회:",
-            "text": "아직 명확한 리더가 없는 $500억+ 시장"
-        },
-        "tagline": "BufferLine: AI 시대를 위한 브랜드·프로토콜·거버넌스 인프라",
-        "cta": {
-            "github": "파트너십 문의",
-            "home": "백서 읽기"
-        }
+    "talkTrack": "Thinkprint의 목적은 사람을 규정하는 게 아니라, 판단 기준을 협업 가능한 형태로 바꾸는 데 있습니다."
+  },
+  "metagov": {
+    "title": "Meta Governance: 결정권이 이동하는 규칙을 설계합니다.",
+    "subtitle": "'누가 맞나'보다 '누가 어떤 조건에서 결정권을 갖나'를 다룹니다.",
+    "items": {
+      "signal": {
+        "title": "자격 신호",
+        "description": "판단 로그와 맥락 정보를 바탕으로 의사결정 참여 조건을 정의합니다."
+      },
+      "renewal": {
+        "title": "권한 갱신",
+        "description": "역할·리스크·성과 변화에 따라 권한을 주기적으로 재검토합니다."
+      },
+      "defense": {
+        "title": "오남용 방어",
+        "description": "권한 집중, 책임 전가, 설명 불가능한 자동화를 제어합니다."
+      }
+    },
+    "caution": "권한 설계가 약하면, 좋은 모델을 써도 조직은 결국 책임 공백으로 돌아갑니다.",
+    "talkTrack": "BufferLine은 모델 추천 시스템이 아니라, 판단 책임이 이동하는 구조를 다루는 운영 시스템입니다."
+  },
+  "close": {
+    "badge": "Wrap-up",
+    "title": "정리하면, BufferLine은 판단 주권을 운영 가능한 상태로 만듭니다.",
+    "subtitle": "기술 성능을 넘어, 판단 흐름과 권한 구조를 함께 설계하는 프레임입니다.",
+    "points": {
+      "1": "JDVP로 판단 이동을 관측하고,",
+      "2": "Thinkprint로 판단 정책을 추출하며,",
+      "3": "Meta Governance로 결정권 구조를 설계합니다."
+    },
+    "cta": {
+      "deck": "다른 덱 보기",
+      "about": "프로젝트 소개 보기"
     }
+  }
 }

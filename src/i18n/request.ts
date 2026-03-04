@@ -21,8 +21,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
     landingCta,
     deckCommon,
     deckGeneral,
-    deckPersonal,
-    deckInstitutional,
     deckTechnical,
     deckThinkprintOverview,
   ] = await Promise.all([
@@ -36,8 +34,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
     import(`@messages/${locale}/landing-cta.json`),
     import(`@messages/${locale}/deck-common.json`),
     import(`@messages/${locale}/deck-general.json`),
-    import(`@messages/${locale}/deck-personal.json`),
-    import(`@messages/${locale}/deck-institutional.json`),
     import(`@messages/${locale}/deck-technical.json`),
     import(`@messages/${locale}/deck-thinkprint-overview.json`),
   ]);
@@ -55,8 +51,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...landingCta.default,
       ...deckCommon.default,
       deck_general: deckGeneral.default,
-      deck_personal: deckPersonal.default,
-      deck_institution: deckInstitutional.default,
       deck_technical: deckTechnical.default,
       deck_thinkprint_overview: deckThinkprintOverview.default,
     },

@@ -122,15 +122,14 @@ export default function AboutPage() {
           </div>
 
           <div className="space-y-10">
-            {/* Founder */}
-            <div>
+            {/* Founder (temporarily hidden) */}
+            <div className="hidden" aria-hidden="true">
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
                 {t("founder.title")}
               </h2>
 
               <Card variant="bordered" className="p-5">
                 <div className="flex items-start gap-4">
-                  {/* Avatar placeholder */}
                   <div className="w-12 h-12 rounded-full bg-accent-bufferline/20 flex items-center justify-center text-accent-bufferline-light font-bold text-lg flex-shrink-0">
                     S
                   </div>

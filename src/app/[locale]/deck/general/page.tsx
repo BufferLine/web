@@ -10,7 +10,6 @@ import {
   Point2Slide,
   Point3Slide,
   Point4Slide,
-  DomainDiffSlide,
   Point5Slide,
   SummarySlide,
 } from "@/components/deck/slides/brand/general";
@@ -20,15 +19,14 @@ export default function DeckPage() {
 
   const slides = [
     <HookSlide key="hook" t={t} />,
-    <TrackIntroSlide key="track-intro" t={t} />,
-    (setSlide: (n: number) => void) => <TOCSlide key="toc" t={t} setSlide={setSlide} />,
-    <Point1Slide key="point1" t={t} />,
-    <Point2Slide key="point2" t={t} />,
-    <Point4Slide key="point4" t={t} />,
-    <DomainDiffSlide key="domain-diff" t={t} />,
-    <Point3Slide key="point3" t={t} />,
-    <Point5Slide key="point5" t={t} />,
-    <SummarySlide key="summary" t={t} />,
+    <TrackIntroSlide key="everyday-shift" t={t} />,
+    <TOCSlide key="awareness" t={t} />,
+    <Point1Slide key="core-gap" t={t} />,
+    <Point2Slide key="cognitive-os" t={t} />,
+    <Point3Slide key="jdvp" t={t} />,
+    <Point4Slide key="thinkprint" t={t} />,
+    <Point5Slide key="metagov" t={t} />,
+    <SummarySlide key="close" t={t} />,
   ];
 
   return (

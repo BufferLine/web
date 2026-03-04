@@ -1,35 +1,45 @@
-import { TrackIntroTemplate } from "@/components/deck";
-import { Rocket, BarChart3, Briefcase } from "lucide-react";
+import { Slide } from "@/components/deck";
+import { HeartPulse, Lightbulb, Users } from "lucide-react";
 
 interface Props {
   t: (key: string) => string;
 }
 
+const scenes = [
+  { key: "1", icon: HeartPulse },
+  { key: "2", icon: Lightbulb },
+  { key: "3", icon: Users },
+] as const;
+
 export default function TrackIntroSlide({ t }: Props) {
   return (
-    <TrackIntroTemplate
-      badge={t("trackIntro.badge")}
-      title={t("trackIntro.title")}
-      subtitle={t("trackIntro.subtitle")}
-      pillars={[
-        {
-          icon: Rocket,
-          title: t("trackIntro.pillars.narrative.title"),
-          description: t("trackIntro.pillars.narrative.description"),
-        },
-        {
-          icon: BarChart3,
-          title: t("trackIntro.pillars.measurement.title"),
-          description: t("trackIntro.pillars.measurement.description"),
-        },
-        {
-          icon: Briefcase,
-          title: t("trackIntro.pillars.adoption.title"),
-          description: t("trackIntro.pillars.adoption.description"),
-        },
-      ]}
-      conclusion={t("trackIntro.conclusion")}
-      theme="bufferline"
-    />
+    <Slide className="bg-slate-950">
+      <div className="max-w-6xl w-full">
+        <h2 className="text-2xl md:text-4xl font-bold text-white mb-3 md:mb-4 text-center">
+          {t("everydayShift.title")}
+        </h2>
+        <p className="text-base md:text-lg text-slate-300 mb-6 md:mb-10 text-center">
+          {t("everydayShift.subtitle")}
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-5 md:mb-8">
+          {scenes.map(({ key, icon: Icon }) => (
+            <div key={key} className="rounded-2xl border border-accent-bufferline/25 bg-accent-bufferline/[0.08] p-3.5 md:p-5">
+              <div className="flex items-center gap-2 mb-3 text-accent-bufferline-light">
+                <Icon className="w-5 h-5" />
+                <p className="text-xs font-semibold tracking-wide uppercase">{t(`everydayShift.items.${key}.tag`)}</p>
+              </div>
+              <p className="text-sm md:text-base leading-relaxed text-slate-100">
+                {t(`everydayShift.items.${key}.text`)}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <p className="text-center text-sm md:text-base text-indigo-200">
+          {t("everydayShift.talkTrack")}
+        </p>
+      </div>
+    </Slide>
   );
 }

@@ -1,44 +1,82 @@
-import { Slide, MetricCard } from "@/components/deck";
-import { Zap } from "lucide-react";
+import { Slide } from "@/components/deck";
+import { ArrowRightLeft, CircleCheckBig, TriangleAlert } from "lucide-react";
 
 interface Props {
   t: (key: string) => string;
 }
 
-const metrics = ["tam", "sam", "som"] as const;
+const flow = ["input", "output", "principle"] as const;
+const goodKeys = ["1", "2"] as const;
+const cautionKeys = ["1", "2"] as const;
 
 export default function Point3Slide({ t }: Props) {
+  const title = t("jdvp.title");
+  const [label, ...restParts] = title.split(":");
+  const rest = restParts.join(":").trim();
+
   return (
     <Slide className="bg-slate-950">
-      <div className="max-w-5xl w-full">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-          {t("point3.title")}
+      <div className="max-w-6xl w-full">
+        <h2 className="text-2xl md:text-4xl font-bold text-white mb-3 md:mb-4 text-center">
+          {rest ? (
+            <>
+              <span className="text-accent-jdvp-light">{label}:</span>{" "}
+              {rest}
+            </>
+          ) : (
+            title
+          )}
         </h2>
-        <p className="text-lg text-slate-400 mb-4 sm:mb-8 text-center">
-          {t("point3.subtitle")}
+        <p className="text-base md:text-lg text-slate-300 mb-6 md:mb-8 text-center">
+          {t("jdvp.subtitle")}
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-6 mb-4 sm:mb-8">
-          {metrics.map((key) => (
-            <MetricCard
-              key={key}
-              label={t(`point3.market.${key}.label`)}
-              value={t(`point3.market.${key}.value`)}
-              description={t(`point3.market.${key}.description`)}
-              theme="bufferline"
-            />
-          ))}
-        </div>
-        <div className="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
-          <h4 className="text-indigo-300 font-semibold mb-3 flex items-center gap-2">
-            <Zap className="w-4 h-4" />
-            Market Drivers
-          </h4>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm text-slate-400">
-            <p>• {t("point3.drivers.regulation")}</p>
-            <p>• {t("point3.drivers.trust")}</p>
-            <p>• {t("point3.drivers.incidents")}</p>
+
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 md:gap-6 mb-6 md:mb-8">
+          <div className="lg:col-span-3 rounded-2xl border border-accent-jdvp/30 bg-accent-jdvp/[0.08] p-4 md:p-5">
+            <div className="flex items-center gap-2 mb-4 text-accent-jdvp-light">
+              <ArrowRightLeft className="w-5 h-5" />
+              <h3 className="text-lg font-semibold">{t("jdvp.flowTitle")}</h3>
+            </div>
+            <div className="space-y-3">
+              {flow.map((key, idx) => (
+                <div key={key} className="rounded-lg border border-slate-700 bg-slate-900/60 p-3">
+                  <p className="text-xs text-slate-400 mb-1">STEP {idx + 1}</p>
+                  <p className="text-white font-medium">{t(`jdvp.items.${key}.title`)}</p>
+                  <p className="text-xs md:text-sm text-slate-300">{t(`jdvp.items.${key}.description`)}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="lg:col-span-2 space-y-4">
+            <div className="rounded-2xl border border-accent-bufferline/30 bg-accent-bufferline/[0.10] p-4 md:p-4">
+              <div className="flex items-center gap-2 mb-2 text-accent-bufferline-light">
+                <CircleCheckBig className="w-5 h-5" />
+                <h4 className="font-semibold">{t("jdvp.good.title")}</h4>
+              </div>
+              <ul className="space-y-1 text-sm text-indigo-100">
+                {goodKeys.map((key) => (
+                  <li key={key} className={key === "2" ? "hidden md:list-item" : undefined}>- {t(`jdvp.good.items.${key}`)}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-2xl border border-orange-500/30 bg-orange-500/10 p-4 md:p-4">
+              <div className="flex items-center gap-2 mb-2 text-orange-300">
+                <TriangleAlert className="w-5 h-5" />
+                <h4 className="font-semibold">{t("jdvp.caution.title")}</h4>
+              </div>
+              <ul className="space-y-1 text-sm text-orange-100">
+                {cautionKeys.map((key) => (
+                  <li key={key} className={key === "2" ? "hidden md:list-item" : undefined}>- {t(`jdvp.caution.items.${key}`)}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
+
+        <p className="text-center text-sm md:text-base text-accent-jdvp-light">
+          {t("jdvp.talkTrack")}
+        </p>
       </div>
     </Slide>
   );
