@@ -6,7 +6,6 @@ import NextLink from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import ThinkprintInteractiveDemo from "./ThinkprintInteractiveDemo";
 
-const stepKeys = ["extract", "calibrate", "deepen", "freeze"] as const;
 const outputKeys = ["model", "evidence", "safety"] as const;
 const demoKeys = ["blindDate", "persona", "difficulty"] as const;
 const HEADLINE_VARIANT = "a" as const;
@@ -129,37 +128,6 @@ export default function ThinkprintPage() {
               ))}
             </ul>
           </Card>
-        </div>
-      </Section>
-
-      {/* Pipeline */}
-      <Section id="flow" className="bg-surface-card/50">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            {t("pipeline.title")}
-          </h2>
-          <p className="text-surface-muted max-w-2xl mx-auto">
-            {t("pipeline.description")}
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {stepKeys.map((key) => (
-            <Card key={key} variant="glass" className="relative">
-              <div className="absolute top-0 left-0 right-0 h-1 rounded-t-xl bg-gradient-to-r from-accent-thinkprint to-accent-thinkprint-light" />
-              <div className="pt-2">
-                <span className="text-4xl font-bold text-gradient-thinkprint">
-                  {t(`pipeline.steps.${key}.number`)}
-                </span>
-                <h3 className="text-lg font-semibold text-white mt-3 mb-2">
-                  {t(`pipeline.steps.${key}.title`)}
-                </h3>
-                <p className="text-surface-muted text-sm">
-                  {t(`pipeline.steps.${key}.description`)}
-                </p>
-              </div>
-            </Card>
-          ))}
         </div>
       </Section>
 

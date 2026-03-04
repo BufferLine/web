@@ -45,27 +45,32 @@
         },
         "pipeline": {
             "title": "진행 흐름",
-            "description": "어렵지 않게 4단계로 끝납니다.",
+            "description": "입력부터 시나리오 점수까지, 한 번에 보이는 5단계.",
             "steps": {
                 "extract": {
                     "number": "01",
-                    "title": "성향 추출",
-                    "description": "대화에서 성격/사고방식 단서를 읽습니다."
+                    "title": "내 입력",
+                    "description": "내가 실제로 고민하는 문장/상황을 그대로 넣습니다."
                 },
                 "calibrate": {
                     "number": "02",
-                    "title": "Thinkprint 생성",
-                    "description": "내 스타일을 카드처럼 정리해 Thinkprint를 만듭니다."
+                    "title": "추출",
+                    "description": "대화에서 의사결정 신호를 추출해 Thinkprint를 만듭니다."
                 },
                 "deepen": {
                     "number": "03",
-                    "title": "프로젝트 실행",
-                    "description": "3가지 fun 프로젝트에서 내 스타일을 돌려봅니다."
+                    "title": "AI Me 데이팅",
+                    "description": "대화 적합도와 충돌 포인트를 먼저 확인합니다."
+                },
+                "compare": {
+                    "number": "04",
+                    "title": "AI Elon 비교",
+                    "description": "같은 상황에서 내 선택과 AI Elon 선택을 나란히 봅니다."
                 },
                 "freeze": {
-                    "number": "04",
-                    "title": "피드백 업데이트",
-                    "description": "결과를 보고 보정해서 더 나은 다음 버전으로 저장합니다."
+                    "number": "05",
+                    "title": "힘든 시나리오 점수",
+                    "description": "내가 흔들리는 시나리오를 점수로 확인하고 보정합니다."
                 },
                 "evaluate": {
                     "number": "05",
@@ -81,72 +86,104 @@
         },
         "demo": {
             "title": "3가지 fun 프로젝트",
-            "description": "Thinkprint를 만들면 아래 프로젝트를 바로 체험할 수 있습니다.",
+            "description": "프로세스 설명 대신, 바로 실험 가능한 데모 프로젝트 3개를 보여줍니다.",
             "cards": {
                 "blindDate": {
-                    "title": "AI Me 블라인드데이트",
-                    "description": "두 성향이 대화할 때 어디서 맞고 어디서 충돌하는지 보여줍니다."
+                    "title": "Fun Project #1 · AI Me 데이팅",
+                    "description": "Thinkprint 모드끼리 실시간 상호작용하며, 한 번에 여러 가상 데이팅을 돌려 내 성격 이상형을 찾습니다."
                 },
                 "persona": {
-                    "title": "페르소나 대결",
-                    "description": "같은 문제를 내 스타일 vs 유명 인물 스타일로 비교합니다."
+                    "title": "Fun Project #2 · AI Elon 비교",
+                    "description": "내가 후회하거나 고민했던 문제를 다른 Thinkprint(예: AI Elon)는 어떻게 풀었는지 비교합니다."
                 },
                 "difficulty": {
-                    "title": "내 약점 상황 찾기",
-                    "description": "내가 흔들리기 쉬운 상황을 찾아 미리 대비하게 도와줍니다."
+                    "title": "Fun Project #3 · 힘든 시나리오",
+                    "description": "압박면접, 데이트, 어려운 대화 같은 상황에 던져보고 취약 패턴을 찾아 선제적으로 준비합니다."
                 }
             }
         },
         "interactiveDemo": {
             "title": "인터랙티브 데모",
-            "description": "페이지 안에서 실제 Thinkprint 흐름이 재생되는 데모입니다.",
-            "panelTitle": "Thinkprint 라이브 시뮬레이션",
-            "panelSubtitle": "추출 -> Thinkprint 생성 -> 프로젝트 실행 -> 피드백 업데이트",
+            "description": "아래 3개 Fun Project 중 하나를 선택해 실시간 결과를 확인합니다.",
+            "panelTitle": "Thinkprint Fun Lab",
+            "projectLabel": "Fun Project",
+            "briefLabel": "프로젝트 목표",
+            "signals": {
+                "user": "내 입력",
+                "agent": "실시간 시뮬레이터"
+            },
+            "scoreboardTitle": "시나리오 스코어보드",
+            "scoreboardRoleLabel": "역할 재정의",
+            "scoreboardRole": "이 보드는 프로젝트별로 달라지는 진단 패널입니다. 전역 순위가 아니라, 현재 프로젝트에서 강점과 취약 구간을 빠르게 읽기 위한 용도입니다.",
+            "boards": {
+                "blindDate": {
+                    "title": "AI Me 데이팅 진단",
+                    "items": {
+                        "1": { "label": "실시간 상호작용 적합도" },
+                        "2": { "label": "성격 이상형 일치도" },
+                        "3": { "label": "충돌 복구력" }
+                    }
+                },
+                "persona": {
+                    "title": "AI Elon 비교 진단",
+                    "items": {
+                        "1": { "label": "해결 전략 차이도" },
+                        "2": { "label": "후회 지점 재해석력" },
+                        "3": { "label": "내 선택 기준 개선도" }
+                    }
+                },
+                "difficulty": {
+                    "title": "힘든 시나리오 진단",
+                    "items": {
+                        "1": { "label": "시간 압박 대응력" },
+                        "2": { "label": "관계 스트레스 안정성" },
+                        "3": { "label": "선제 준비 우선순위" }
+                    }
+                }
+            },
+            "scoreInsightLabel": "해석",
             "controls": {
                 "play": "재생",
                 "pause": "일시정지",
                 "reset": "처음으로"
             },
-            "projectResultLabel": "현재 프로젝트 결과",
-            "stages": {
-                "extract": {
-                    "title": "1단계: 성향 단서 추출",
-                    "subtitle": "대화에서 의사결정 습관 신호를 읽습니다.",
-                    "user": "리스크가 있는 선택은 자꾸 망설이게 돼.",
-                    "agent": "확인: 리스크 회피 성향 + 숙고 시간 길어짐 패턴.",
+            "resultLabel": "현재 프로젝트 결과",
+            "projects": {
+                "blindDate": {
+                    "title": "Fun Project #1 · AI Me 데이팅",
+                    "subtitle": "여러 Thinkprint 모드를 동시에 돌려 성향 상호작용을 테스트합니다.",
+                    "brief": "한 번에 수십 명의 가상 데이팅을 실행해, 나도 몰랐던 성격 이상형 패턴을 찾는다.",
+                    "user": "안정적인데 지루하지 않은 대화 상대를 찾고 싶어.",
+                    "agent": "32개 Thinkprint 페어링 동시 실행 완료. 안정감은 높고 탐험성도 유지되는 조합 3개가 상위권.",
                     "cardLabel": "Thinkprint 카드",
-                    "cardValue": "리스크 민감, 숙고 우선",
-                    "result": "대화 근거로 프로필 초안 생성."
+                    "cardValue": "이상형 후보: 안정형 탐험가",
+                    "result": "가상 데이팅 매칭 랭킹 + 갈등 트리거 리포트 생성.",
+                    "scoreNote": "이 프로젝트는 '어떤 타입과 잘 맞는지'를 찾는 탐색용입니다."
                 },
-                "generate": {
-                    "title": "2단계: Thinkprint 생성",
-                    "subtitle": "추출한 단서를 바탕으로 스타일 프로필을 만듭니다.",
-                    "user": "상승 여지가 작아도 안정적인 선택이 좋아.",
-                    "agent": "Thinkprint 반영: 성장보다 안정 우선.",
+                "persona": {
+                    "title": "Fun Project #2 · AI Elon 비교",
+                    "subtitle": "후회되던 결정이나 오래 끌던 고민을 다른 Thinkprint 해법과 비교합니다.",
+                    "brief": "내가 막혔던 문제를 AI Elon 스타일은 어떻게 풀었는지 보고, 내 기준을 업데이트한다.",
+                    "user": "그때 확장 타이밍을 놓친 게 계속 후회돼.",
+                    "agent": "AI Elon 해법 분석: 고속 실험-빠른 폐기 전략으로 리스크를 분할 관리. 당신 해법은 안정 우선으로 회수 기간이 길었음.",
                     "cardLabel": "Thinkprint 카드",
-                    "cardValue": "안정 > 성장",
-                    "result": "Thinkprint v0 생성 완료."
+                    "cardValue": "개선 포인트: 리스크 분할 실험",
+                    "result": "내 선택 vs AI Elon 선택 비교 리포트 생성.",
+                    "scoreNote": "이 프로젝트는 정답 찾기가 아니라 '다른 해결 프레임'을 확보하는 용도입니다."
                 },
-                "project": {
-                    "title": "3단계: fun 프로젝트 실행",
-                    "subtitle": "생성된 프로필을 프로젝트에 바로 적용합니다.",
-                    "user": "이 비즈니스 문제로 페르소나 배틀 돌려줘.",
-                    "agent": "당신은 저위험 확장, 페르소나는 고위험 가속을 선택했어요.",
+                "difficulty": {
+                    "title": "Fun Project #3 · 힘든 시나리오",
+                    "subtitle": "압박면접, 데이트, 어려운 대화 등 다양한 고압 시나리오로 복원력을 측정합니다.",
+                    "brief": "여러 시나리오에 나를 던져보고, 어떤 상황에서 급격히 흔들리는지 미리 파악해 선제적으로 준비한다.",
+                    "user": "압박면접이나 감정적인 대화에서 페이스가 무너지는 느낌이 있어.",
+                    "agent": "시나리오 시뮬레이션 완료: 시간 압박 + 관계 긴장 조합에서 판단 품질이 가장 크게 하락.",
                     "cardLabel": "Thinkprint 카드",
-                    "cardValue": "불확실성에서 신중 선택",
-                    "result": "내 스타일 vs 페르소나 차이 맵 생성."
-                },
-                "update": {
-                    "title": "4단계: 피드백 업데이트",
-                    "subtitle": "사용자 피드백으로 다음 버전을 개선합니다.",
-                    "user": "손실 상한이 있으면 리스크를 감수할 수 있어.",
-                    "agent": "피드백 반영: 조건부 리스크 허용치 상향.",
-                    "cardLabel": "Thinkprint 카드",
-                    "cardValue": "조건부 리스크 수용",
-                    "result": "의사결정 규칙이 반영된 Thinkprint v1 저장."
+                    "cardValue": "취약 구간: 고압박 대면 상황",
+                    "result": "시나리오별 붕괴 포인트와 선제 준비 체크리스트 생성.",
+                    "scoreNote": "이 프로젝트는 약점을 미리 알아내고 대비 루틴을 만드는 용도입니다."
                 }
             },
-            "insight": "핵심은 한 화면에서 전체 루프를 체험하고, 매번 프로필을 더 좋게 업데이트하는 것입니다."
+            "insight": "핵심은 설명이 아니라 체험입니다. 세 프로젝트를 돌리며 내 스타일을 직접 확인합니다."
         },
         "output": {
             "title": "기술 섹션",

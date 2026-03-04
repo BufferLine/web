@@ -45,27 +45,32 @@
         },
         "pipeline": {
             "title": "Flow",
-            "description": "A lightweight 4-step loop.",
+            "description": "A clear 5-step loop from input to scenario scoring.",
             "steps": {
                 "extract": {
                     "number": "01",
-                    "title": "Extract style",
-                    "description": "Read chat signals related to personality and thinking patterns."
+                    "title": "Your input",
+                    "description": "Start with a real line from your own decision context."
                 },
                 "calibrate": {
                     "number": "02",
-                    "title": "Generate Thinkprint",
-                    "description": "Build a clear profile card set from those signals."
+                    "title": "Extraction",
+                    "description": "Extract decision signals and structure your Thinkprint."
                 },
                 "deepen": {
                     "number": "03",
-                    "title": "Run projects",
-                    "description": "Try the 3 fun projects with your Thinkprint."
+                    "title": "AI Me Dating",
+                    "description": "Check fit and friction points in dialogue first."
+                },
+                "compare": {
+                    "number": "04",
+                    "title": "AI Elon Comparison",
+                    "description": "Then compare your choice and AI Elon's choice side by side."
                 },
                 "freeze": {
-                    "number": "04",
-                    "title": "Update with feedback",
-                    "description": "Refine and save a better next version."
+                    "number": "05",
+                    "title": "Hard scenario score",
+                    "description": "See where your style struggles through scenario scores."
                 },
                 "evaluate": {
                     "number": "05",
@@ -81,72 +86,104 @@
         },
         "demo": {
             "title": "Three fun projects",
-            "description": "Once your Thinkprint is created, you can immediately run these.",
+            "description": "No process-heavy flow here. Just three runnable demo projects.",
             "cards": {
                 "blindDate": {
-                    "title": "AI Me Blind Date",
-                    "description": "See where two styles match or clash in conversation."
+                    "title": "Fun Project #1 · AI Me Dating",
+                    "description": "Run many Thinkprint-to-Thinkprint virtual dates in parallel and discover your hidden personality ideal type."
                 },
                 "persona": {
-                    "title": "Persona Battle",
-                    "description": "Compare your style and a famous persona on the same dilemma."
+                    "title": "Fun Project #2 · AI Elon Comparison",
+                    "description": "For your regrets and unresolved dilemmas, compare how other Thinkprints (like AI Elon) would solve them."
                 },
                 "difficulty": {
-                    "title": "Find Weak Situations",
-                    "description": "Spot contexts where your style may struggle and prepare early."
+                    "title": "Fun Project #3 · Hard Scenarios",
+                    "description": "Throw your profile into stressful situations and pre-train for pressure interviews, dating, and difficult conversations."
                 }
             }
         },
         "interactiveDemo": {
             "title": "Interactive demo",
-            "description": "This is a real Thinkprint flow simulation running on the page.",
-            "panelTitle": "Thinkprint Live Simulation",
-            "panelSubtitle": "Extraction -> Thinkprint generation -> project run -> feedback update",
+            "description": "Pick one of the 3 Fun Projects and watch live simulation output.",
+            "panelTitle": "Thinkprint Fun Lab",
+            "projectLabel": "Fun Project",
+            "briefLabel": "Project goal",
+            "signals": {
+                "user": "Your input",
+                "agent": "Live simulator"
+            },
+            "scoreboardTitle": "Scenario Scoreboard",
+            "scoreboardRoleLabel": "Role Redefined",
+            "scoreboardRole": "This board changes by project. It is not a global ranking, but a focused diagnosis for strengths and weak zones in the active project.",
+            "boards": {
+                "blindDate": {
+                    "title": "AI Me Dating Diagnosis",
+                    "items": {
+                        "1": { "label": "Real-time interaction fit" },
+                        "2": { "label": "Ideal-type match" },
+                        "3": { "label": "Conflict recovery" }
+                    }
+                },
+                "persona": {
+                    "title": "AI Elon Comparison Diagnosis",
+                    "items": {
+                        "1": { "label": "Strategy divergence" },
+                        "2": { "label": "Regret reinterpretation" },
+                        "3": { "label": "Decision-rule improvement" }
+                    }
+                },
+                "difficulty": {
+                    "title": "Hard Scenario Diagnosis",
+                    "items": {
+                        "1": { "label": "Time-pressure resilience" },
+                        "2": { "label": "Relational-stress stability" },
+                        "3": { "label": "Preemptive prep priority" }
+                    }
+                }
+            },
+            "scoreInsightLabel": "Interpretation",
             "controls": {
                 "play": "Play",
                 "pause": "Pause",
                 "reset": "Reset"
             },
-            "projectResultLabel": "Current project output",
-            "stages": {
-                "extract": {
-                    "title": "Step 1: Extract style clues",
-                    "subtitle": "Conversation is scanned for decision habit signals.",
-                    "user": "I keep hesitating when options are risky.",
-                    "agent": "Noted: risk-avoidance tendency + longer deliberation pattern.",
+            "resultLabel": "Current project output",
+            "projects": {
+                "blindDate": {
+                    "title": "Fun Project #1 · AI Me Dating",
+                    "subtitle": "Run multiple Thinkprint modes in parallel and test personality interactions.",
+                    "brief": "Launch dozens of virtual dates at once and discover a personality ideal type you did not know you had.",
+                    "user": "I want someone stable, but not boring to talk with.",
+                    "agent": "32 Thinkprint pairings simulated in parallel. Top matches keep emotional stability while retaining novelty.",
                     "cardLabel": "Thinkprint card",
-                    "cardValue": "Risk-sensitive, reflection-first",
-                    "result": "Profile seed created from conversation evidence."
+                    "cardValue": "Ideal-type candidate: Stable Explorer",
+                    "result": "Virtual-date ranking and conflict-trigger report generated.",
+                    "scoreNote": "Use this project to discover who your style is actually compatible with."
                 },
-                "generate": {
-                    "title": "Step 2: Generate Thinkprint",
-                    "subtitle": "A clear style profile is assembled from extracted clues.",
-                    "user": "I prefer stable choices even if upside is smaller.",
-                    "agent": "Thinkprint updated: stability priority above growth priority.",
+                "persona": {
+                    "title": "Fun Project #2 · AI Elon Comparison",
+                    "subtitle": "Revisit your regrets and unresolved decisions using another Thinkprint lens.",
+                    "brief": "Take a decision you struggled with and compare your path with what AI Elon-style reasoning would do.",
+                    "user": "I still regret missing that expansion timing.",
+                    "agent": "AI Elon path detected: fast test-and-kill loop with split risk buckets. Your path prioritized stability with longer payback time.",
                     "cardLabel": "Thinkprint card",
-                    "cardValue": "Stability > Growth",
-                    "result": "Thinkprint v0 generated."
+                    "cardValue": "Upgrade target: split-risk experiments",
+                    "result": "My choice vs AI Elon comparison report generated.",
+                    "scoreNote": "Use this project to secure alternative solution frames, not a single 'correct' answer."
                 },
-                "project": {
-                    "title": "Step 3: Run fun project",
-                    "subtitle": "The profile is now used in one of the demo projects.",
-                    "user": "Run Persona Battle on this business dilemma.",
-                    "agent": "Your style picks low-risk expansion, persona picks high-risk acceleration.",
+                "difficulty": {
+                    "title": "Fun Project #3 · Hard Scenarios",
+                    "subtitle": "Stress-test your style across pressure interviews, dating, and difficult conversations.",
+                    "brief": "Throw your profile into many scenarios, find where you collapse, and prepare counter-routines in advance.",
+                    "user": "I lose pace in pressure interviews and emotionally loaded conversations.",
+                    "agent": "Scenario simulation complete: biggest drop appears in high time-pressure plus relational tension combinations.",
                     "cardLabel": "Thinkprint card",
-                    "cardValue": "Cautious under uncertainty",
-                    "result": "Difference map created: your style vs persona style."
-                },
-                "update": {
-                    "title": "Step 4: Update with feedback",
-                    "subtitle": "Your correction updates the next Thinkprint version.",
-                    "user": "Actually, I can take risk if downside is capped.",
-                    "agent": "Applied feedback: conditional-risk tolerance increased.",
-                    "cardLabel": "Thinkprint card",
-                    "cardValue": "Condition-based risk taker",
-                    "result": "Thinkprint v1 saved with updated decision rules."
+                    "cardValue": "Weak zone: high-pressure face-to-face",
+                    "result": "Breakdown points and preemptive prep checklist generated.",
+                    "scoreNote": "Use this project to preempt failures before real situations happen."
                 }
             },
-            "insight": "The point: the whole loop runs in one place, and your profile improves each cycle."
+            "insight": "The core is experience over explanation: run all three projects and inspect your style in action."
         },
         "output": {
             "title": "Technical corner",
