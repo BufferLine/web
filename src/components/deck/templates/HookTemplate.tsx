@@ -31,7 +31,7 @@ export default function HookTemplate({
         <div className="mb-6 md:mb-12 opacity-60">
           <Logo />
         </div>
-        <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold text-white mb-3 md:mb-8 leading-tight">
+        <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold text-neutral-100 mb-3 md:mb-8 leading-tight">
           {line1}
           <br />
           <span
@@ -40,8 +40,8 @@ export default function HookTemplate({
             {line2}
           </span>
         </h1>
-        <p className="text-base md:text-2xl text-slate-400 px-2">{question}</p>
-        <div className="mt-6 md:mt-16 text-slate-600 text-xs md:text-sm animate-bounce">{navigateHint}</div>
+        <p className="text-base md:text-2xl text-surface-muted px-2">{question}</p>
+        <div className="mt-6 md:mt-16 text-neutral-600 text-xs md:text-sm animate-bounce">{navigateHint}</div>
       </div>
     </Slide>
   );

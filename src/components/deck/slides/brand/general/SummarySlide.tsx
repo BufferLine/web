@@ -19,16 +19,16 @@ export default function SummarySlide({ t }: Props) {
         <p className="inline-flex px-3 py-1 rounded-full text-xs font-medium border border-indigo-400/30 bg-indigo-500/10 text-indigo-200 mb-5">
           {t("close.badge")}
         </p>
-        <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white mb-4 md:mb-5">
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-neutral-100 mb-4 md:mb-5">
           {t("close.title")}
         </h2>
-        <p className="text-base md:text-lg text-slate-300 mb-8">
+        <p className="text-base md:text-lg text-neutral-300 mb-8">
           {t("close.subtitle")}
         </p>
 
         <div className="space-y-3 text-left mb-8">
           {summaryKeys.map((key) => (
-            <div key={key} className="rounded-lg border border-slate-700 bg-slate-900/60 px-3.5 md:px-4 py-3 text-slate-100 text-sm md:text-base">
+            <div key={key} className="rounded-lg border border-surface-border bg-surface-card/80 px-3.5 md:px-4 py-3 text-neutral-100 text-sm md:text-base">
               {t(`close.points.${key}`)}
             </div>
           ))}
@@ -37,13 +37,13 @@ export default function SummarySlide({ t }: Props) {
         <div className="flex flex-col md:flex-row gap-3 justify-center">
           <NextLink
             href={`/${locale}/deck`}
-            className="px-6 py-3 rounded-lg bg-accent-bufferline hover:bg-accent-bufferline-hover text-white font-medium transition-colors"
+            className="px-6 py-3 rounded-lg bg-accent-bufferline hover:bg-accent-bufferline-hover text-neutral-100 font-medium transition-colors"
           >
             {t("close.cta.deck")}
           </NextLink>
           <NextLink
             href={`/${locale}/about`}
-            className="px-6 py-3 rounded-lg border border-slate-600 hover:border-slate-500 text-slate-200 hover:text-white font-medium transition-colors"
+            className="px-6 py-3 rounded-lg border border-surface-border/80 hover:border-neutral-500 text-neutral-200 hover:text-neutral-100 font-medium transition-colors"
           >
             {t("close.cta.about")}
           </NextLink>

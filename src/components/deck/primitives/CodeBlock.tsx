@@ -21,27 +21,27 @@ export default function CodeBlock({
 
   return (
     <div
-      className={`bg-slate-900 rounded-xl overflow-hidden ${
+      className={`bg-surface-card rounded-xl overflow-hidden ${
         isThemed
           ? `border ${colors.border}`
-          : "border border-slate-700"
+          : "border border-surface-border"
       }`}
     >
       <div
         className={`flex items-center gap-2 px-4 py-2 border-b ${
           isThemed
             ? `${colors.bgLight} ${colors.border}`
-            : "bg-slate-800 border-slate-700"
+            : "bg-surface-elevated border-surface-border"
         }`}
       >
         <Icon className={`w-4 h-4 ${colors.text}`} />
         <span
-          className={`text-sm font-mono ${isThemed ? colors.textLight : "text-slate-400"}`}
+          className={`text-sm font-mono ${isThemed ? colors.textLight : "text-surface-muted"}`}
         >
           {title}
         </span>
       </div>
-      <pre className="p-3 sm:p-4 text-xs overflow-x-auto text-slate-300 font-mono leading-relaxed">
+      <pre className="p-3 sm:p-4 text-xs overflow-x-auto text-neutral-300 font-mono leading-relaxed">
         {code}
       </pre>
     </div>

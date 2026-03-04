@@ -19,9 +19,9 @@ export default function ConclusionBox({
   const boxClasses =
     variant === "accent"
       ? `p-4 rounded-xl ${colors.bg} border ${colors.border} text-center`
-      : "p-4 rounded-xl bg-slate-900/50 border border-slate-700 text-center";
+      : "p-4 rounded-xl bg-surface-card/75 border border-surface-border text-center";
 
-  const textClasses = variant === "accent" ? colors.textLight : "text-slate-300";
+  const textClasses = variant === "accent" ? colors.textLight : "text-neutral-300";
 
   return (
     <div className={`${boxClasses} ${className}`}>

@@ -29,16 +29,16 @@ export default function TrackIntroTemplate({
   const colors = getTheme(theme);
 
   return (
-    <Slide className="bg-slate-950">
+    <Slide className="bg-surface-bg">
       <div className="max-w-5xl w-full">
         <div className="text-center mb-5 sm:mb-10">
           <span className={`inline-flex px-3 py-1 rounded-full text-xs font-medium ${colors.bg} border ${colors.border} ${colors.text}`}>
             {badge}
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mt-4 mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold text-neutral-100 mt-4 mb-3">
             {title}
           </h2>
-          <p className="text-slate-400 text-lg max-w-3xl mx-auto">
+          <p className="text-surface-muted text-lg max-w-3xl mx-auto">
             {subtitle}
           </p>
         </div>

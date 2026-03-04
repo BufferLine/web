@@ -36,7 +36,7 @@ export default function DeckLayout({
   });
 
   return (
-    <main className="bg-slate-950 text-slate-100 overflow-hidden">
+    <main className="bg-surface-bg text-neutral-100 overflow-hidden">
       <DeckNav deckName={deckName} />
       <div
         className="transition-transform duration-500 ease-out"

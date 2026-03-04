@@ -90,7 +90,7 @@ export default function InteractiveDemo({
   return (
     <div className="w-full max-w-6xl">
       {/* Header */}
-      <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">{title}</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-neutral-100 mb-4 text-center">{title}</h2>
       {subtitle && (
         <p className="text-base sm:text-lg text-surface-muted mb-4 sm:mb-8 text-center">{subtitle}</p>
       )}

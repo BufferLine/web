@@ -27,12 +27,12 @@ jsv.to_json()  # Ready for storage`;
 
 export default function Point2Slide({ t }: Props) {
   return (
-    <Slide className="bg-slate-950">
+    <Slide className="bg-surface-bg">
       <div className="max-w-6xl w-full">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-neutral-100 mb-6 text-center">
           {t("point2.title")}
         </h2>
-        <p className="text-slate-400 text-center mb-6">{t("point2.subtitle")}</p>
+        <p className="text-surface-muted text-center mb-6">{t("point2.subtitle")}</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
           <CodeBlock
             icon={Code2}

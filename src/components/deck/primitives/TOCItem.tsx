@@ -26,7 +26,7 @@ export default function TOCItem({
   return (
     <button
       onClick={onClick}
-      className={`w-full text-left ${padding} rounded-xl bg-slate-900/50 border border-slate-800 ${colors.borderHover} hover:bg-slate-800/50 transition-all group`}
+      className={`w-full text-left ${padding} rounded-xl bg-surface-card/75 border border-surface-border ${colors.borderHover} hover:bg-surface-elevated/70 transition-all group`}
     >
       <div className="flex items-start gap-4">
         <span className={`${colors.text} font-mono text-lg`}>
@@ -34,11 +34,11 @@ export default function TOCItem({
         </span>
         <div>
           <h3
-            className={`${titleSize} font-semibold text-white ${colors.textHover} transition-colors`}
+            className={`${titleSize} font-semibold text-neutral-100 ${colors.textHover} transition-colors`}
           >
             {title}
           </h3>
-          <p className={`text-slate-400 text-sm ${subtitleMargin}`}>{subtitle}</p>
+          <p className={`text-surface-muted text-sm ${subtitleMargin}`}>{subtitle}</p>
         </div>
       </div>
     </button>

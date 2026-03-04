@@ -15,10 +15,10 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
           "rounded-xl p-6",
           {
             "bg-[var(--surface-card)]": variant === "default",
-            "bg-white/5 backdrop-blur-sm": variant === "glass",
+            "bg-[var(--surface-card)]/85 backdrop-blur-sm border border-[var(--surface-border)]/60": variant === "glass",
             "bg-[var(--surface-bg)] border border-[var(--surface-border)]": variant === "bordered",
           },
-          hover && "transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent-bufferline/10",
+          hover && "transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-600 hover:shadow-brand-base",
           className
         )}
         {...props}

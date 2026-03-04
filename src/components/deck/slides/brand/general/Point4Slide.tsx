@@ -14,9 +14,9 @@ export default function Point4Slide({ t }: Props) {
   const rest = restParts.join(":").trim();
 
   return (
-    <Slide className="bg-slate-950">
+    <Slide className="bg-surface-bg">
       <div className="max-w-6xl w-full">
-        <h2 className="text-2xl md:text-4xl font-bold text-white mb-3 md:mb-4 text-center">
+        <h2 className="text-2xl md:text-4xl font-bold text-neutral-100 mb-3 md:mb-4 text-center">
           {rest ? (
             <>
               <span className="text-accent-thinkprint-light">{label}:</span>{" "}
@@ -26,7 +26,7 @@ export default function Point4Slide({ t }: Props) {
             title
           )}
         </h2>
-        <p className="text-base md:text-lg text-slate-300 mb-6 md:mb-8 text-center">
+        <p className="text-base md:text-lg text-neutral-300 mb-6 md:mb-8 text-center">
           {t("thinkprint.subtitle")}
         </p>
 
@@ -36,19 +36,19 @@ export default function Point4Slide({ t }: Props) {
               <UserRound className="w-5 h-5" />
               <h3 className="text-lg font-semibold">{t("thinkprint.inputTitle")}</h3>
             </div>
-            <ul className="space-y-2 text-sm md:text-base text-slate-100">
+            <ul className="space-y-2 text-sm md:text-base text-neutral-100">
               {inputKeys.map((key) => (
                 <li key={key} className={key === "3" ? "hidden md:list-item" : undefined}>- {t(`thinkprint.items.input.${key}`)}</li>
               ))}
             </ul>
           </div>
 
-          <div className="rounded-2xl border border-accent-thinkprint/30 bg-slate-900/70 p-4 md:p-5">
+          <div className="rounded-2xl border border-accent-thinkprint/30 bg-surface-card/85 p-4 md:p-5">
             <div className="flex items-center gap-2 mb-3 text-accent-thinkprint-light">
               <Repeat2 className="w-5 h-5" />
               <h3 className="text-lg font-semibold">{t("thinkprint.outputTitle")}</h3>
             </div>
-            <ul className="space-y-2 text-sm md:text-base text-slate-100">
+            <ul className="space-y-2 text-sm md:text-base text-neutral-100">
               {outputKeys.map((key) => (
                 <li key={key} className={key === "2" ? "hidden md:list-item" : undefined}>- {t(`thinkprint.items.output.${key}`)}</li>
               ))}

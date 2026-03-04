@@ -15,7 +15,7 @@ export default function ComparisonBox({
     <div
       className={`p-3 sm:p-5 rounded-xl ${
         isBefore
-          ? "bg-slate-900/70 border border-slate-700"
+          ? "bg-surface-card/85 border border-surface-border"
           : "bg-green-950/30 border border-green-700"
       }`}
     >
@@ -34,7 +34,7 @@ export default function ComparisonBox({
                 isBefore ? "bg-red-500" : "bg-green-500"
               }`}
             />
-            <span className="text-slate-300">{item}</span>
+            <span className="text-neutral-300">{item}</span>
           </div>
         ))}
       </div>

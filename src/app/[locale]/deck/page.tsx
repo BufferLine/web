@@ -21,7 +21,7 @@ export default function DeckSelectionPage() {
       <div className="max-w-5xl w-full mx-auto mb-8">
         <NextLink
           href={`/${locale}`}
-          className="inline-flex items-center gap-2 text-sm text-surface-muted hover:text-white transition-colors"
+          className="inline-flex items-center gap-2 text-sm text-surface-muted hover:text-neutral-100 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           {tNav("home")}
@@ -29,7 +29,7 @@ export default function DeckSelectionPage() {
       </div>
 
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-neutral-100 mb-4">
           {t("title")}
         </h1>
         <p className="text-surface-muted max-w-2xl mx-auto">
@@ -41,7 +41,7 @@ export default function DeckSelectionPage() {
         {deckGroups.map((group) => (
           <section key={group.key} className="rounded-xl border border-surface-border/70 bg-surface-card/30 p-5 md:p-6">
             <div className="mb-4">
-              <h2 className="text-2xl font-semibold text-white">
+              <h2 className="text-2xl font-semibold text-neutral-100">
                 {t(`groups.${group.key}.title`)}
               </h2>
               <p className="text-surface-muted text-sm mt-1">
@@ -59,7 +59,7 @@ export default function DeckSelectionPage() {
                       className={`group cursor-pointer flex items-center justify-between gap-4 p-4 ${group.accent}`}
                     >
                       <div>
-                        <h3 className="text-base md:text-lg font-semibold text-white transition-colors">
+                        <h3 className="text-base md:text-lg font-semibold text-neutral-100 transition-colors">
                           {t(`decks.${key}.title`)}
                         </h3>
                         <p className="text-surface-muted text-sm mt-1">

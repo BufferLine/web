@@ -14,7 +14,7 @@ interface PhaseCardProps {
 const statusColorMap: Record<StatusColor, string> = {
   green: "text-green-400",
   yellow: "text-yellow-400",
-  slate: "text-slate-500",
+  slate: "text-neutral-500",
 };
 
 export default function PhaseCard({
@@ -29,8 +29,8 @@ export default function PhaseCard({
 
   const variantStyles = {
     active: `${colors.bgLight} ${colors.border}`,
-    current: `bg-slate-900/70 ${colors.border}`,
-    upcoming: "bg-slate-900/70 border-slate-700",
+    current: `bg-surface-card/85 ${colors.border}`,
+    upcoming: "bg-surface-card/85 border-surface-border",
   };
 
   return (
@@ -43,7 +43,7 @@ export default function PhaseCard({
           </span>
         )}
       </div>
-      <ul className="space-y-1 text-sm text-slate-400">
+      <ul className="space-y-1 text-sm text-surface-muted">
         {items.map((item, i) => (
           <li key={i}>• {item}</li>
         ))}

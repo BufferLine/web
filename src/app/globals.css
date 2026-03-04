@@ -6,48 +6,48 @@
  * ============================================================ */
 
 :root {
-  /* --- Surfaces (dark theme) --- */
-  --surface-bg: #020617;
-  --surface-card: #0F172A;
-  --surface-elevated: #1E293B;
-  --surface-fg: #F1F5F9;
-  --surface-muted: #94A3B8;
-  --surface-border: #334155;
+  /* --- Surfaces (deep slate theme) --- */
+  --surface-bg: #0b1220;
+  --surface-card: #121b2b;
+  --surface-elevated: #1a2538;
+  --surface-fg: #e5ecf5;
+  --surface-muted: #9ba9bc;
+  --surface-border: #2f3d52;
 
   /* --- Neutral scale --- */
-  --neutral-950: #020617;
-  --neutral-900: #0F172A;
-  --neutral-800: #1E293B;
-  --neutral-700: #334155;
-  --neutral-600: #475569;
-  --neutral-500: #64748B;
-  --neutral-400: #94A3B8;
-  --neutral-300: #CBD5E1;
-  --neutral-200: #E2E8F0;
-  --neutral-100: #F1F5F9;
-  --neutral-0: #FFFFFF;
+  --neutral-950: #070d17;
+  --neutral-900: #101928;
+  --neutral-800: #1a2538;
+  --neutral-700: #2a3a52;
+  --neutral-600: #445671;
+  --neutral-500: #61738c;
+  --neutral-400: #8ea0b8;
+  --neutral-300: #b8c6d7;
+  --neutral-200: #d4dde9;
+  --neutral-100: #e9eff7;
+  --neutral-0: #ffffff;
 
   /* --- Domain accents --- */
-  --accent-bufferline: #6366F1;
-  --accent-bufferline-light: #818CF8;
-  --accent-bufferline-subtle: #A5B4FC;
-  --accent-jdvp: #14B8A6;
-  --accent-jdvp-light: #2DD4BF;         /* teal-400 — lighter variant */
-  --accent-thinkprint: #F59E0B;
-  --accent-meta: #EF4444;
+  --accent-bufferline: #2f6e8f;
+  --accent-bufferline-light: #4b89a9;
+  --accent-bufferline-subtle: #86b2c8;
+  --accent-jdvp: #1c9a8c;
+  --accent-jdvp-light: #45b8aa;
+  --accent-thinkprint: #cc8c2f;
+  --accent-meta: #d66060;
 
   /* --- Semantic JDVP colors --- */
-  --semantic-human: #22C55E;
-  --semantic-ai: #6366F1;
-  --semantic-shared: #06B6D4;
-  --semantic-undefined: #64748B;
+  --semantic-human: #2fbe83;
+  --semantic-ai: #2f6e8f;
+  --semantic-shared: #2da8bd;
+  --semantic-undefined: #61738c;
 
   /* --- Shadows --- */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-base: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2);
-  --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.15);
-  --shadow-accent: 0 4px 14px rgba(99, 102, 241, 0.10);
+  --shadow-glow: 0 0 40px rgba(47, 110, 143, 0.12);
+  --shadow-accent: 0 6px 20px rgba(18, 43, 65, 0.28);
 
   /* --- Motion --- */
   --duration-fast: 150ms;
@@ -66,16 +66,16 @@
   --opacity-overlay: 0.80;
 
   /* --- Derived accent states (interaction) --- */
-  --accent-bufferline-hover: #4F46E5;  /* one step darker — active/hover */
-  --accent-bufferline-active: #4338CA; /* two steps darker — pressed */
-  --accent-jdvp-hover: #0D9488;       /* teal one step darker */
-  --semantic-human-hover: #4ADE80;     /* green-400 — lighter for hover */
-  --accent-thinkprint-light: #FBBF24; /* amber-400 — lighter variant */
-  --accent-thinkprint-subtle: #FCD34D; /* amber-300 — subtle variant */
-  --accent-thinkprint-hover: #D97706; /* amber-600 — one step darker */
+  --accent-bufferline-hover: #275f7c;
+  --accent-bufferline-active: #1f4f68;
+  --accent-jdvp-hover: #14786c;
+  --semantic-human-hover: #34cd91;
+  --accent-thinkprint-light: #deab59;
+  --accent-thinkprint-subtle: #e8c88f;
+  --accent-thinkprint-hover: #ad7421;
 
   /* --- Gradient endpoints --- */
-  --gradient-text-end: #6366F1;        /* indigo-500, brand text gradient */
+  --gradient-text-end: #245b7b;
 
   /* --- Legacy aliases (backward-compat) --- */
   --background: var(--surface-bg);
@@ -181,7 +181,7 @@ h1, h2, h3 {
 
 /* Selection */
 ::selection {
-  background: rgba(99, 102, 241, 0.3);
+  background: rgba(47, 110, 143, 0.35);
   color: #fff;
 }
 

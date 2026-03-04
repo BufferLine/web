@@ -28,9 +28,9 @@ export default function TOCTemplate({
   const spacing = compact ? "space-y-3" : "space-y-4";
 
   return (
-    <Slide className="bg-slate-950">
+    <Slide className="bg-surface-bg">
       <div className="max-w-3xl w-full">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 sm:mb-12 text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-100 mb-6 sm:mb-12 text-center">
           {title}
         </h2>
         <div className={spacing}>

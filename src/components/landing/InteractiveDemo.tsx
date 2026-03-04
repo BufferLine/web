@@ -82,10 +82,10 @@ export default function InteractiveDemo() {
   const conversation = createDemoConversation((key) => tConv(key));
 
   return (
-    <Section id="demo" className="bg-gradient-to-b from-surface-card/50 to-transparent">
+    <Section id="demo" className="bg-gradient-to-b from-surface-card/60 to-transparent">
       <FadeInView>
         <div className="text-center mb-12">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-semantic-human/10 text-semantic-human border border-semantic-human/20 mb-4">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-surface-elevated/70 text-semantic-human border border-surface-border/80 mb-4">
             {t("badge")}
           </span>
         </div>

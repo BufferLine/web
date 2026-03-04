@@ -25,12 +25,12 @@ const layers = [
 
 export default function Point2Slide({ t }: Props) {
   return (
-    <Slide className="bg-slate-950">
+    <Slide className="bg-surface-bg">
       <div className="max-w-6xl w-full">
-        <h2 className="text-2xl md:text-4xl font-bold text-white mb-3 md:mb-4 text-center">
+        <h2 className="text-2xl md:text-4xl font-bold text-neutral-100 mb-3 md:mb-4 text-center">
           {t("cognitiveOs.title")}
         </h2>
-        <p className="text-base md:text-lg text-slate-300 mb-6 md:mb-10 text-center">
+        <p className="text-base md:text-lg text-neutral-300 mb-6 md:mb-10 text-center">
           {t("cognitiveOs.subtitle")}
         </p>
 
@@ -40,16 +40,16 @@ export default function Point2Slide({ t }: Props) {
               <div className={`w-full rounded-xl border p-3.5 md:p-5 ${tone}`}>
                 <div className="flex items-center gap-2 mb-2">
                   <Icon className="w-5 h-5" />
-                  <h3 className="font-semibold text-white text-base md:text-lg">
+                  <h3 className="font-semibold text-neutral-100 text-base md:text-lg">
                     {t(`cognitiveOs.layers.${key}.title`)}
                   </h3>
                 </div>
-                <p className="text-sm md:text-base text-slate-200">
+                <p className="text-sm md:text-base text-neutral-200">
                   {t(`cognitiveOs.layers.${key}.description`)}
                 </p>
               </div>
               {idx < layers.length - 1 && (
-                <ArrowRight className="hidden md:block w-5 h-5 text-slate-500 mx-2 shrink-0" />
+                <ArrowRight className="hidden md:block w-5 h-5 text-neutral-500 mx-2 shrink-0" />
               )}
             </div>
           ))}

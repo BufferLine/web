@@ -17,9 +17,9 @@ export default function Point5Slide({ t }: Props) {
   const rest = restParts.join(":").trim();
 
   return (
-    <Slide className="bg-slate-950">
+    <Slide className="bg-surface-bg">
       <div className="max-w-6xl w-full">
-        <h2 className="text-2xl md:text-4xl font-bold text-white mb-3 md:mb-4 text-center">
+        <h2 className="text-2xl md:text-4xl font-bold text-neutral-100 mb-3 md:mb-4 text-center">
           {rest ? (
             <>
               <span className="text-rose-300">{label}:</span>{" "}
@@ -29,7 +29,7 @@ export default function Point5Slide({ t }: Props) {
             title
           )}
         </h2>
-        <p className="text-base md:text-lg text-slate-300 mb-6 md:mb-8 text-center">
+        <p className="text-base md:text-lg text-neutral-300 mb-6 md:mb-8 text-center">
           {t("metagov.subtitle")}
         </p>
 
@@ -37,7 +37,7 @@ export default function Point5Slide({ t }: Props) {
           {blocks.map(({ key, icon: Icon }) => (
             <article key={key} className="rounded-2xl border border-rose-500/30 bg-rose-500/10 p-4 md:p-5">
               <Icon className="w-6 h-6 text-rose-300 mb-3" />
-              <h3 className="text-lg font-semibold text-white mb-2">
+              <h3 className="text-lg font-semibold text-neutral-100 mb-2">
                 {t(`metagov.items.${key}.title`)}
               </h3>
               <p className="text-xs md:text-base text-rose-100 leading-relaxed">

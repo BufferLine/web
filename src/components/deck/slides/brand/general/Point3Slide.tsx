@@ -15,9 +15,9 @@ export default function Point3Slide({ t }: Props) {
   const rest = restParts.join(":").trim();
 
   return (
-    <Slide className="bg-slate-950">
+    <Slide className="bg-surface-bg">
       <div className="max-w-6xl w-full">
-        <h2 className="text-2xl md:text-4xl font-bold text-white mb-3 md:mb-4 text-center">
+        <h2 className="text-2xl md:text-4xl font-bold text-neutral-100 mb-3 md:mb-4 text-center">
           {rest ? (
             <>
               <span className="text-accent-jdvp-light">{label}:</span>{" "}
@@ -27,7 +27,7 @@ export default function Point3Slide({ t }: Props) {
             title
           )}
         </h2>
-        <p className="text-base md:text-lg text-slate-300 mb-6 md:mb-8 text-center">
+        <p className="text-base md:text-lg text-neutral-300 mb-6 md:mb-8 text-center">
           {t("jdvp.subtitle")}
         </p>
 
@@ -39,10 +39,10 @@ export default function Point3Slide({ t }: Props) {
             </div>
             <div className="space-y-3">
               {flow.map((key, idx) => (
-                <div key={key} className="rounded-lg border border-slate-700 bg-slate-900/60 p-3">
-                  <p className="text-xs text-slate-400 mb-1">STEP {idx + 1}</p>
-                  <p className="text-white font-medium">{t(`jdvp.items.${key}.title`)}</p>
-                  <p className="text-xs md:text-sm text-slate-300">{t(`jdvp.items.${key}.description`)}</p>
+                <div key={key} className="rounded-lg border border-surface-border bg-surface-card/80 p-3">
+                  <p className="text-xs text-surface-muted mb-1">STEP {idx + 1}</p>
+                  <p className="text-neutral-100 font-medium">{t(`jdvp.items.${key}.title`)}</p>
+                  <p className="text-xs md:text-sm text-neutral-300">{t(`jdvp.items.${key}.description`)}</p>
                 </div>
               ))}
             </div>

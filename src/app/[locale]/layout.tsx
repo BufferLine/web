@@ -133,7 +133,7 @@ export default async function RootLayout({
       <head>
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-icon" />
-        <meta name="theme-color" content="#6366F1" />
+        <meta name="theme-color" content="#2f6e8f" />
       </head>
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} ${notoSansKr.variable} ${spaceGrotesk.variable} font-sans antialiased bg-surface-bg text-surface-fg`}

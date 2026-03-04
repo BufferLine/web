@@ -25,7 +25,7 @@ export default function InfoCard({
   const cardClasses =
     variant === "themed"
       ? `p-4 sm:p-6 rounded-xl ${colors.bg} border ${colors.border}`
-      : "p-3 sm:p-5 rounded-xl bg-slate-900/50 border border-slate-800";
+      : "p-3 sm:p-5 rounded-xl bg-surface-card/75 border border-surface-border";
 
   return (
     <div className={cardClasses}>
@@ -33,9 +33,9 @@ export default function InfoCard({
         <Icon className={`w-5 h-5 ${colors.text}`} />
         <h3 className={`text-lg font-semibold ${colors.textLight}`}>{title}</h3>
       </div>
-      <p className="text-slate-400 text-sm">{description}</p>
+      <p className="text-surface-muted text-sm">{description}</p>
       {footer && (
-        <div className="mt-3 p-2 rounded border border-slate-700/50 bg-slate-800/30">
+        <div className="mt-3 p-2 rounded border border-surface-border/70 bg-surface-elevated/45">
           {footer}
         </div>
       )}

@@ -40,13 +40,13 @@ export default function StackOverview() {
   const locale = useLocale();
 
   return (
-    <Section id="system" className="bg-surface-card/30">
+    <Section id="system" className="bg-surface-card/40">
       <FadeInView>
         <div className="text-center mb-12">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-accent-bufferline/10 text-accent-bufferline-light border border-accent-bufferline/20 mb-4">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-surface-elevated/70 text-accent-bufferline-subtle border border-surface-border/80 mb-4">
             {t("badge")}
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-neutral-100 mb-4">
             {t("title")}
           </h2>
           <p className="text-surface-muted max-w-2xl mx-auto">
@@ -55,24 +55,24 @@ export default function StackOverview() {
         </div>
       </FadeInView>
 
-      <div className="rounded-2xl border border-surface-border/60 bg-surface-bg/60 p-4 sm:p-6 md:p-8">
+      <div className="rounded-2xl border border-surface-border/70 bg-surface-bg/70 p-4 sm:p-6 md:p-8">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.7fr] gap-8">
           <FadeInView direction="right">
             <div className="lg:sticky lg:top-24">
               <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 mb-3">
                 {t("layoutLabel")}
               </p>
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
+              <h3 className="text-2xl md:text-3xl font-bold text-neutral-100 mb-3">
                 BufferLine
               </h3>
               <p className="text-sm md:text-base text-surface-muted">
                 {t("description")}
               </p>
-              <div className="mt-6 rounded-xl border border-surface-border/60 bg-surface-card/60 p-4">
+              <div className="mt-6 rounded-xl border border-surface-border/70 bg-surface-card/80 p-4">
                 <p className="text-xs text-neutral-400 uppercase tracking-wide mb-2">
                   {t("coreRuleTitle")}
                 </p>
-                <p className="text-sm text-neutral-300">
+                <p className="text-sm text-neutral-200">
                   {t("coreRuleDescription")}
                 </p>
               </div>
@@ -86,8 +86,8 @@ export default function StackOverview() {
                 <div
                   className={`group rounded-xl border p-5 md:p-6 transition-colors ${
                     hasLink
-                      ? `${domain.accentBorder} ${domain.accentBg} hover:border-current`
-                      : "border-surface-border/60 bg-surface-card/40"
+                      ? `${domain.accentBorder} ${domain.accentBg} hover:border-surface-border`
+                      : "border-surface-border/70 bg-surface-card/65"
                   }`}
                 >
                   <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-6">
@@ -96,7 +96,7 @@ export default function StackOverview() {
                       {t(`${domain.key}.status`)}
                     </div>
                     <div className="flex-1">
-                      <h4 className={`text-lg md:text-xl font-semibold text-white ${domain.hoverText}`}>
+                      <h4 className={`text-lg md:text-xl font-semibold text-neutral-100 ${domain.hoverText}`}>
                         {t(`${domain.key}.title`)}
                       </h4>
                       <p className={`text-sm ${domain.accentText} mt-1`}>{t(`${domain.key}.subtitle`)}</p>

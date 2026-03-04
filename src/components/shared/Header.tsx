@@ -65,7 +65,7 @@ export default function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-[var(--surface-card)]/80 backdrop-blur-lg border-b border-[var(--surface-border)]"
+          ? "bg-[var(--surface-card)]/88 backdrop-blur-lg border-b border-[var(--surface-border)]"
           : "bg-transparent"
       )}
     >
@@ -81,14 +81,14 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-surface-muted hover:text-white transition-colors duration-200"
+                className="text-surface-muted hover:text-neutral-100 transition-colors duration-200"
               >
                 {link.label}
               </a>
             ))}
             <a
               href={`/${locale}/deck`}
-              className="text-accent-bufferline-light hover:text-accent-bufferline-subtle font-medium transition-colors duration-200"
+              className="text-accent-bufferline-subtle hover:text-neutral-100 font-medium transition-colors duration-200"
             >
               {t("nav.decks")}
             </a>
@@ -97,7 +97,7 @@ export default function Header() {
           <div className="flex items-center gap-3">
             {/* Language Switcher */}
             <div
-              className="flex items-center rounded-lg bg-surface-elevated/50 p-0.5"
+              className="flex items-center rounded-lg bg-surface-elevated/70 p-0.5 border border-surface-border/70"
               role="group"
               aria-label={tLang("label")}
             >
@@ -110,8 +110,8 @@ export default function Header() {
                   className={cn(
                     "px-2.5 py-1 text-xs font-medium rounded-md transition-colors duration-200",
                     locale === loc
-                      ? "bg-accent-bufferline text-white"
-                      : "text-surface-muted hover:text-white"
+                      ? "bg-accent-bufferline text-neutral-0"
+                      : "text-surface-muted hover:text-neutral-100"
                   )}
                 >
                   {tLang(loc)}
@@ -124,7 +124,7 @@ export default function Header() {
               href="https://github.com/sangwon0001/bufferline-protocol"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:inline-flex items-center justify-center rounded-lg font-medium transition-colors duration-200 px-3 py-1.5 text-sm text-neutral-300 hover:text-white hover:bg-surface-elevated"
+              className="hidden md:inline-flex items-center justify-center rounded-lg font-medium transition-colors duration-200 px-3 py-1.5 text-sm text-neutral-300 hover:text-neutral-100 hover:bg-surface-elevated"
             >
               {t("github")}
             </a>
@@ -138,7 +138,7 @@ export default function Header() {
             {/* Mobile menu toggle */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden p-2 text-surface-muted hover:text-white transition-colors"
+              className="md:hidden p-2 text-surface-muted hover:text-neutral-100 transition-colors"
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileOpen}
             >
@@ -155,7 +155,7 @@ export default function Header() {
       {/* Mobile menu */}
       <div
         className={cn(
-          "md:hidden fixed inset-x-0 top-16 bottom-0 bg-[var(--surface-bg)]/95 backdrop-blur-xl transition-all duration-300 ease-out",
+          "md:hidden fixed inset-x-0 top-16 bottom-0 bg-[var(--surface-bg)]/96 backdrop-blur-xl transition-all duration-300 ease-out",
           mobileOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -173,7 +173,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-surface-muted hover:text-white transition-colors duration-200 py-1"
+                className="text-surface-muted hover:text-neutral-100 transition-colors duration-200 py-1"
               >
                 {link.label}
               </a>
@@ -181,7 +181,7 @@ export default function Header() {
             <a
               href={`/${locale}/deck`}
               onClick={() => setMobileOpen(false)}
-              className="text-accent-bufferline-light hover:text-accent-bufferline-subtle font-medium transition-colors duration-200 py-1"
+              className="text-accent-bufferline-subtle hover:text-neutral-100 font-medium transition-colors duration-200 py-1"
             >
               {t("nav.decks")}
             </a>
@@ -194,7 +194,7 @@ export default function Header() {
               href="https://github.com/sangwon0001/bufferline-protocol"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-300 hover:text-white transition-colors text-sm"
+              className="text-neutral-300 hover:text-neutral-100 transition-colors text-sm"
             >
               {t("github")}
             </a>

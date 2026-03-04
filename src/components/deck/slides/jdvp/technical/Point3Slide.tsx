@@ -13,12 +13,12 @@ const methods = [
 
 export default function Point3Slide({ t }: Props) {
   return (
-    <Slide className="bg-slate-950">
+    <Slide className="bg-surface-bg">
       <div className="max-w-5xl w-full">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-neutral-100 mb-4 text-center">
           {t("point3.title")}
         </h2>
-        <p className="text-slate-400 text-center mb-6">{t("point3.subtitle")}</p>
+        <p className="text-surface-muted text-center mb-6">{t("point3.subtitle")}</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 mb-4">
           {methods.map(({ key, icon, variant }) => (
             <InfoCard
@@ -33,7 +33,7 @@ export default function Point3Slide({ t }: Props) {
                   <p className="text-green-400">
                     ✓ {t(`point3.methods.${key}.pros`)}
                   </p>
-                  <p className="text-slate-500">
+                  <p className="text-neutral-500">
                     ✗ {t(`point3.methods.${key}.cons`)}
                   </p>
                 </div>

@@ -13,12 +13,12 @@ const scenes = [
 
 export default function TrackIntroSlide({ t }: Props) {
   return (
-    <Slide className="bg-slate-950">
+    <Slide className="bg-surface-bg">
       <div className="max-w-6xl w-full">
-        <h2 className="text-2xl md:text-4xl font-bold text-white mb-3 md:mb-4 text-center">
+        <h2 className="text-2xl md:text-4xl font-bold text-neutral-100 mb-3 md:mb-4 text-center">
           {t("everydayShift.title")}
         </h2>
-        <p className="text-base md:text-lg text-slate-300 mb-6 md:mb-10 text-center">
+        <p className="text-base md:text-lg text-neutral-300 mb-6 md:mb-10 text-center">
           {t("everydayShift.subtitle")}
         </p>
 
@@ -29,7 +29,7 @@ export default function TrackIntroSlide({ t }: Props) {
                 <Icon className="w-5 h-5" />
                 <p className="text-xs font-semibold tracking-wide uppercase">{t(`everydayShift.items.${key}.tag`)}</p>
               </div>
-              <p className="text-sm md:text-base leading-relaxed text-slate-100">
+              <p className="text-sm md:text-base leading-relaxed text-neutral-100">
                 {t(`everydayShift.items.${key}.text`)}
               </p>
             </div>

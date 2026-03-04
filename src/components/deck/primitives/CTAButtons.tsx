@@ -22,8 +22,8 @@ export default function CTAButtons({ buttons, theme }: CTAButtonsProps) {
           href={button.href}
           className={
             button.variant === "primary"
-              ? `px-8 py-3 rounded-lg ${colors.button} ${colors.buttonHover} text-white font-medium transition-colors`
-              : "px-8 py-3 rounded-lg border border-slate-600 hover:border-slate-500 text-slate-300 hover:text-white font-medium transition-colors"
+              ? `px-8 py-3 rounded-lg ${colors.button} ${colors.buttonHover} text-neutral-100 font-medium transition-colors`
+              : "px-8 py-3 rounded-lg border border-surface-border/80 hover:border-neutral-500 text-neutral-300 hover:text-neutral-100 font-medium transition-colors"
           }
         >
           {button.label}

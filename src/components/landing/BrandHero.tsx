@@ -11,26 +11,23 @@ export default function BrandHero() {
   return (
     <Section size="lg" className="pt-28 md:pt-36 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-b from-accent-bufferline/[0.1] via-transparent to-transparent" />
-        <div className="absolute top-12 left-1/2 -translate-x-1/2 w-[680px] h-[320px] bg-accent-bufferline/[0.07] rounded-full blur-[120px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_8%,rgba(75,137,169,0.22),transparent_54%)]" />
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent-bufferline/50 to-transparent" />
       </div>
 
       <div className="relative text-center max-w-3xl mx-auto">
         <FadeInView delay={0}>
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-bufferline/10 border border-accent-bufferline/20 text-accent-bufferline-subtle text-sm mb-7">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-bufferline-light opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-accent-bufferline"></span>
-            </span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-card/80 border border-surface-border/80 text-accent-bufferline-subtle text-sm mb-7">
+            <span className="inline-flex rounded-full h-2 w-2 bg-accent-bufferline" />
             {t("badge")}
           </div>
         </FadeInView>
 
         <FadeInView delay={80}>
-          <h1 className="text-4xl md:text-5xl lg:text-[3.65rem] font-bold tracking-tight text-white mb-6 leading-[1.12]">
+          <h1 className="text-4xl md:text-5xl lg:text-[3.65rem] font-bold tracking-tight text-neutral-100 mb-6 leading-[1.12]">
             {t("headline.line1")}
             <br />
-            <span className="text-gradient inline-block text-[1.03em]" style={{ textWrap: "balance" }}>
+            <span className="text-accent-bufferline-subtle inline-block text-[1.03em]" style={{ textWrap: "balance" }}>
               {t("headline.line2")}
             </span>
           </h1>

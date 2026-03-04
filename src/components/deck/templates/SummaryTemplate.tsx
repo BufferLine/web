@@ -39,7 +39,7 @@ export default function SummaryTemplate({
   return (
     <Slide className={`bg-gradient-to-b from-slate-950 ${gradientVia} to-slate-950`}>
       <div className="max-w-4xl w-full text-center">
-        <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-6 sm:mb-12">{title}</h2>
+        <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-neutral-100 mb-6 sm:mb-12">{title}</h2>
         <div className="space-y-3 sm:space-y-6 mb-8 sm:mb-16">
           {points.map((point, index) => (
             <SummaryPoint
@@ -51,7 +51,7 @@ export default function SummaryTemplate({
           ))}
         </div>
         <div className="mb-6 sm:mb-12">
-          <p className="text-lg sm:text-2xl text-white font-medium mb-4">{tagline}</p>
+          <p className="text-lg sm:text-2xl text-neutral-100 font-medium mb-4">{tagline}</p>
         </div>
         <CTAButtons buttons={buttons} theme={theme} />
       </div>

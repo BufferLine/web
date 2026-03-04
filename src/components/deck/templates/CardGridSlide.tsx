@@ -36,13 +36,13 @@ export default function CardGridSlide({
   const gridCols = cols === 2 ? "md:grid-cols-2" : "md:grid-cols-3";
 
   return (
-    <Slide className="bg-slate-950">
+    <Slide className="bg-surface-bg">
       <div className="max-w-4xl w-full">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-neutral-100 mb-4 text-center">
           {title}
         </h2>
         {subtitle && (
-          <p className="text-base sm:text-lg text-slate-400 mb-4 sm:mb-8 text-center">{subtitle}</p>
+          <p className="text-base sm:text-lg text-surface-muted mb-4 sm:mb-8 text-center">{subtitle}</p>
         )}
         <div className={`grid grid-cols-1 ${gridCols} gap-3 sm:gap-6`}>
           {cards.map((card, index) => (
