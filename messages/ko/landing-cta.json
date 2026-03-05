@@ -25,14 +25,14 @@
         }
     },
     "deckLinks": {
-        "badge": "프레젠테이션 덱",
-        "title": "덱 살펴보기",
-        "description": "브랜드/프로토콜/도메인 트랙 덱을 슬라이드별로 탐색하세요.",
+        "badge": "더 알아보기",
+        "title": "더 깊이 들여다보기",
+        "description": "프레젠테이션으로 BufferLine을 살펴보세요.",
         "cta": "덱 보기",
         "more": {
-            "badge": "전체 덱 탐색",
-            "title": "다른 덱들 구경하기",
-            "description": "JDVP와 Thinkprint를 포함한 전체 덱 목록은 /deck 페이지에서 확인하세요.",
+            "badge": "전체 덱",
+            "title": "모든 덱 둘러보기",
+            "description": "JDVP, Thinkprint 등 전체 덱을 확인하세요.",
             "cta": "전체 덱 보기"
         }
     }

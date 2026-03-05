@@ -1,9 +1,9 @@
 {
     "metadata": {
-        "title": "BufferLine | 판단 거버넌스를 위한 인지 인프라",
-        "description": "BufferLine은 인간-AI 판단 위임을 위한 Cognitive OS를 구축합니다. 관찰, 추출, 거버넌스 인프라로 판단 이동을 가시화합니다.",
-        "ogTitle": "BufferLine | 판단은 어디로 가는가?",
-        "ogDescription": "인간-AI 판단 위임을 위한 Cognitive OS: 관찰, 추출, 거버넌스 인프라."
+        "title": "BufferLine | AI가 바꾸는 사고, 판단, 신뢰의 변화를 보다",
+        "description": "AI가 우리의 사고, 판단, 권한 공유 방식을 어떻게 바꾸는지 이해하기 위한 오픈 프레임워크입니다.",
+        "ogTitle": "BufferLine | AI는 생각하고, 판단하고, 맡기는 방식을 바꿉니다.",
+        "ogDescription": "AI가 인간 판단을 어떻게 바꾸는지 이해하기 위한 오픈 프레임워크. 좋다 나쁘다 말하지 않아요 — 보이게 할 뿐입니다."
     },
     "header": {
         "nav": {
@@ -24,11 +24,11 @@
         "github": "GitHub",
         "getStarted": "시작하기",
         "viewDeck": "덱 보기",
-        "exploreBrand": "BufferLine 보기"
+        "exploreBrand": "작동 방식 보기"
     },
     "footer": {
         "brand": {
-            "description": "BufferLine은 인간-AI 상호작용에서 판단 이동을 관찰하고, 이를 거버넌스 아키텍처로 연결하는 Cognitive OS를 구축합니다.",
+            "description": "AI가 우리의 사고, 판단, 권한 공유 방식을 어떻게 바꾸는지 이해하기 위한 오픈 프레임워크입니다.",
             "note": "현재는 프로토콜 우선 전략으로 실행하며, 근거가 충분해지면 플랫폼과 제품 레이어를 확장합니다."
         },
         "resources": {
@@ -50,7 +50,7 @@
             "contact": "연락처"
         },
         "copyright": "© {year} BufferLine Labs Pte. Ltd.",
-        "tagline": "판단 이동을 관찰하고, 권한 구조를 설계합니다."
+        "tagline": "AI가 바꾸는 사고, 판단, 신뢰의 변화를 보다."
     },
     "languageSwitcher": {
         "en": "EN",

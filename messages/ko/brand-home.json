@@ -1,44 +1,44 @@
 {
     "brandHero": {
-        "badge": "Cognitive OS",
+        "badge": "오픈 프레임워크",
         "headline": {
-            "line1": "AI 사용은 피할 수 없습니다.",
-            "line2": "판단의 경계는 우리가 정할 수 있습니다."
+            "line1": "AI는 생각하고, 판단하고, 맡기는 방식을 바꿉니다.",
+            "line2": "그 변화가 보이시나요?"
         },
-        "subtitle": "BufferLine은 그 경계를 보이게 만듭니다.",
-        "description": "관찰(JDVP), 추출(Thinkprint), 거버넌스(Meta Governance)를 연결해 판단 이동을 운영 가능한 구조로 만듭니다.",
+        "subtitle": "BufferLine은 그 변화를 보이게 만듭니다.",
+        "description": "AI가 우리의 사고, 판단, 권한 공유 방식을 어떻게 바꾸는지 이해하기 위한 오픈 프레임워크입니다. 그 변화가 좋다 나쁘다 말하지 않아요 — 보이게 할 뿐입니다.",
         "cta": {
-            "explore": "BufferLine 구조 보기",
+            "explore": "작동 방식 보기",
             "projectDeck": "프로젝트 덱 보기",
             "github": "GitHub"
         }
     },
     "system": {
-        "badge": "시스템 도메인",
-        "title": "독립적으로 동작하는 3개 도메인, 하나의 Cognitive OS",
-        "description": "BufferLine은 상위 브랜드이고, JDVP·Thinkprint·Meta Governance는 그 안의 독립 도메인입니다. 각 도메인은 단독으로도 동작하고 함께 연결할 수도 있습니다.",
-        "layoutLabel": "도메인 구조",
-        "coreRuleTitle": "핵심 원칙",
-        "coreRuleDescription": "도메인은 독립성을 유지한 채 설계되고, 이후 거버넌스와 증거 루프로 연결됩니다.",
+        "badge": "구조",
+        "title": "세 가지 도구, 하나의 목적",
+        "description": "BufferLine은 AI 상호작용에서 인간 판단을 이해하기 위한 세 가지 독립적 접근을 연결합니다.",
+        "layoutLabel": "구조",
+        "coreRuleTitle": "설계 원칙",
+        "coreRuleDescription": "각 도메인은 독립적으로 작동합니다. 함께 모이면 하나의 완전한 그림이 됩니다.",
         "jdvp": {
-            "status": "활성 프로토콜",
+            "status": "활성",
             "title": "JDVP",
-            "subtitle": "관찰 프로토콜",
-            "description": "판단 상태 벡터(JSV)와 위임 벡터(DV)로 인간-AI 워크플로에서 판단 이동을 측정합니다. 단독으로 동작하며 다른 도메인과도 연동됩니다.",
-            "cta": "프로토콜 살펴보기"
+            "subtitle": "관찰",
+            "description": "AI와 대화할 때 내 판단이 어디로 가는지 추적합니다 — 결정하는 건 나인가, AI인가? 점수도 순위도 없이, 그저 관찰합니다.",
+            "cta": "JDVP 살펴보기"
         },
         "thinkprint": {
             "status": "퍼블릭 트랙",
             "title": "Thinkprint",
-            "subtitle": "추출 프로토콜",
-            "description": "추론 패턴을 검사 가능하고 공유 가능한 모드로 외부화합니다. 단독으로 동작하며 JDVP와 결합하면 보정 신호가 더 풍부해집니다.",
+            "subtitle": "추론 추출",
+            "description": "추론 패턴을 눈에 보이게 만듭니다. 무엇을 아느냐가 아니라 어떻게 생각하느냐를 — 포착하고 공유할 수 있게.",
             "cta": "Thinkprint 살펴보기"
         },
         "metagovernance": {
             "status": "리서치 트랙",
             "title": "Meta Governance",
-            "subtitle": "권한 아키텍처",
-            "description": "에이전트와 인간 전반에서 권한이 어떻게 생성되고 흐르며 안정화되는지 설계합니다. 독립적으로 동작하며 JDVP+Thinkprint와 결합할 때 가장 강력합니다."
+            "subtitle": "권한 설계",
+            "description": "의사결정 권한이 사람과 AI 사이에서 어떻게 생기고 흘러가는지 탐구합니다."
         }
     }
 }

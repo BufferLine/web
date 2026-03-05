@@ -1,44 +1,44 @@
 {
     "brandHero": {
-        "badge": "Cognitive OS",
+        "badge": "Open Framework",
         "headline": {
-            "line1": "AI use is unavoidable.",
-            "line2": "We can still define the boundary of judgment."
+            "line1": "AI changes how you think, decide, and trust.",
+            "line2": "Can you see it happening?"
         },
-        "subtitle": "BufferLine makes that boundary visible.",
-        "description": "By connecting observation (JDVP), extraction (Thinkprint), and governance (Meta Governance), BufferLine turns judgment shifts into an operable system.",
+        "subtitle": "BufferLine makes those shifts visible.",
+        "description": "An open framework for understanding how AI changes the way you think, decide, and share authority. It doesn't say those changes are good or bad — it just makes them visible.",
         "cta": {
-            "explore": "Explore BufferLine",
+            "explore": "See How It Works",
             "projectDeck": "View Project Deck",
             "github": "GitHub"
         }
     },
     "system": {
-        "badge": "System Domains",
-        "title": "Three independent domains, one Cognitive OS",
-        "description": "BufferLine is the umbrella brand. JDVP, Thinkprint, and Meta Governance are independent domains under it. Each can run alone or connect as one system.",
-        "layoutLabel": "Domain Layout",
-        "coreRuleTitle": "Core Rule",
-        "coreRuleDescription": "Domains stay independent by design, then connect through shared governance and evidence loops.",
+        "badge": "How It Works",
+        "title": "Three tools, one purpose",
+        "description": "BufferLine connects three independent approaches to understanding human judgment in AI interactions.",
+        "layoutLabel": "Structure",
+        "coreRuleTitle": "Design Principle",
+        "coreRuleDescription": "Each domain works on its own. Together, they form a complete picture.",
         "jdvp": {
-            "status": "Active Protocol",
+            "status": "Active",
             "title": "JDVP",
-            "subtitle": "Observation protocol",
-            "description": "Measures judgment movement with Judgment State Vectors and Delegation Vectors in human-AI workflows. Runs independently and interoperates with other domains.",
-            "cta": "Explore protocol"
+            "subtitle": "Observation",
+            "description": "Tracks where your judgment goes during AI conversations — are you deciding, or is the AI? No scores, no rankings. Just observation.",
+            "cta": "Explore JDVP"
         },
         "thinkprint": {
             "status": "Public Track",
             "title": "Thinkprint",
-            "subtitle": "Extraction protocol",
-            "description": "Externalizes reasoning patterns into inspectable, shareable modes. Runs independently and combines with JDVP for richer calibration.",
+            "subtitle": "Reasoning extraction",
+            "description": "Makes your reasoning patterns visible. Not what you know, but how you think — captured and shareable.",
             "cta": "Explore Thinkprint"
         },
         "metagovernance": {
             "status": "Research Track",
             "title": "Meta Governance",
-            "subtitle": "Authority architecture",
-            "description": "Designs how authority emerges, flows, and stabilizes across agents and humans. Operates independently and is strongest with JDVP plus Thinkprint."
+            "subtitle": "Authority design",
+            "description": "Explores how decision-making authority forms and moves between people and AI agents."
         }
     }
 }

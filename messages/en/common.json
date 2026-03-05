@@ -1,9 +1,9 @@
 {
     "metadata": {
-        "title": "BufferLine | Cognitive Infrastructure for Judgment Governance",
-        "description": "BufferLine builds the Cognitive OS for human-AI judgment delegation: observation, extraction, and governance infrastructure.",
-        "ogTitle": "BufferLine | Where does the judgment go?",
-        "ogDescription": "Cognitive OS for human-AI judgment delegation: observation, extraction, and governance infrastructure."
+        "title": "BufferLine | See how AI changes the way you think, decide, and trust",
+        "description": "An open framework for understanding how AI changes the way you think, decide, and share authority. Observation, extraction, and governance — made visible.",
+        "ogTitle": "BufferLine | AI changes how you think, decide, and trust. Can you see it?",
+        "ogDescription": "An open framework for understanding how AI reshapes human judgment. It doesn't say those changes are good or bad — it just makes them visible."
     },
     "header": {
         "nav": {
@@ -24,11 +24,11 @@
         "github": "GitHub",
         "getStarted": "Get Started",
         "viewDeck": "View Deck",
-        "exploreBrand": "Explore BufferLine"
+        "exploreBrand": "See How It Works"
     },
     "footer": {
         "brand": {
-            "description": "BufferLine builds the Cognitive OS for observing judgment movement in human-AI interaction and connecting it to governance architecture.",
+            "description": "An open framework for understanding how AI changes the way you think, decide, and share authority.",
             "note": "Protocol-first today. Platform and product layers follow when evidence is strong."
         },
         "resources": {
@@ -50,7 +50,7 @@
             "contact": "Contact"
         },
         "copyright": "© {year} BufferLine Labs Pte. Ltd.",
-        "tagline": "Observe judgment shifts. Architect governable authority."
+        "tagline": "See how AI changes the way you think, decide, and trust."
     },
     "languageSwitcher": {
         "en": "EN",

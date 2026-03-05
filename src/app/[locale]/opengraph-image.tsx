@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "BufferLine - Judgment Delegation Visibility Protocol";
+export const alt = "BufferLine - See how AI changes the way you think, decide, and trust";
 export const size = {
   width: 1200,
   height: 630,
@@ -11,15 +11,15 @@ export const contentType = "image/png";
 const content = {
   en: {
     title: "BufferLine",
-    subtitle: "Judgment Delegation Visibility Protocol",
-    tagline: "Where does human judgment move?",
-    badge: "Protocol v1.0",
+    subtitle: "Think. Decide. Trust. Made visible.",
+    tagline: "AI changes how you think, decide, and trust. Can you see it?",
+    badge: "Open Framework",
   },
   ko: {
     title: "BufferLine",
-    subtitle: "판단 위임 가시화 프로토콜",
-    tagline: "내 판단은 어디로 흘러가는가?",
-    badge: "Protocol v1.0",
+    subtitle: "사고. 판단. 신뢰. 보이게 만들다.",
+    tagline: "AI는 생각하고, 판단하고, 맡기는 방식을 바꿉니다.",
+    badge: "오픈 프레임워크",
   },
 };
 

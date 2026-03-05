@@ -1,8 +1,8 @@
 {
     "demo": {
-        "badge": "Interactive Demo",
-        "title": "See It In Action",
-        "description": "Watch how judgment state shifts during a real AI conversation. Click through the turns to observe JSV changes and DV deltas in real-time.",
+        "badge": "Live Example",
+        "title": "Watch judgment move in real time",
+        "description": "A simple investment conversation. Notice how the person gradually lets AI make the decisions.",
         "conversation": {
             "title": "Conversation",
             "turn": "Turn",
@@ -19,20 +19,20 @@
         "jsv": {
             "title": "Judgment State Vector (JSV)",
             "observedAt": "Observed at Turn",
-            "humanSide": "← Human",
-            "aiSide": "AI →",
-            "waiting": "Start the conversation to see JSV observations"
+            "humanSide": "Human",
+            "aiSide": "AI",
+            "waiting": "Start the conversation to see judgment observations"
         },
         "dv": {
             "title": "Delegation Vector (DV)",
-            "towardAI": "→ AI",
-            "towardHuman": "→ Human",
+            "towardAI": "toward AI",
+            "towardHuman": "toward Human",
             "noChange": "No change",
             "waiting": "DV appears after the first state change"
         },
         "note": {
-            "label": "Note:",
-            "text": "This demo shows a \"Gradual Delegation\" pattern. The human starts with clear ownership but progressively defers to AI suggestions. Notice how cognitive_engagement shifts from Active to Passive."
+            "label": "What you're seeing:",
+            "text": "This is a \"gradual delegation\" pattern — the most common kind. The person starts by asking their own questions, but ends up just following AI's suggestions."
         }
     }
 }

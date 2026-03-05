@@ -25,14 +25,14 @@
         }
     },
     "deckLinks": {
-        "badge": "Presentation Deck",
-        "title": "Explore the Decks",
-        "description": "Browse brand, protocol, and domain tracks slide by slide.",
+        "badge": "Learn More",
+        "title": "Dive Deeper",
+        "description": "Explore BufferLine through visual presentations.",
         "cta": "View Deck",
         "more": {
             "badge": "All Decks",
-            "title": "Browse Other Decks",
-            "description": "See the full list, including JDVP and Thinkprint, on the /deck page.",
+            "title": "Browse All Decks",
+            "description": "See all available decks — JDVP, Thinkprint, and more.",
             "cta": "View All Decks"
         }
     }
