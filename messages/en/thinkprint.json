@@ -110,20 +110,20 @@
             "projects": {
                 "blindDate": {
                     "title": "Blind Think Date",
-                    "input": "Find other Thinkprints that click with how I think.",
-                    "output": "1,000 virtual dates complete. Top matches: a calm strategist, a playful realist, and a curious builder. Want to reach out to the real people behind them?",
+                    "input": "Find other Thinkprints that <em>click with how I think</em>.",
+                    "output": "1,000 virtual dates complete. Top matches: <em>a calm strategist</em>, <em>a playful realist</em>, and <em>a curious builder</em>. Want to reach out to the real people behind them?",
                     "result": "Compatibility report with conflict triggers."
                 },
                 "persona": {
                     "title": "Mode Playground",
-                    "input": "Am I making the right call here? How would others decide? What would Elon's Thinkprint do?",
-                    "output": "AI Elon would split the risk into small experiments and kill the losers fast. Want to train yourself to think like his Thinkprint?",
+                    "input": "Am I making the right call here? How would others decide? What would <em>Elon's Thinkprint</em> do?",
+                    "output": "AI Elon would <em>split the risk into small experiments and kill the losers fast</em>. Want to train yourself to think like his Thinkprint?",
                     "result": "Side-by-side decision comparison."
                 },
                 "difficulty": {
                     "title": "Hard Scenarios",
-                    "input": "My Thinkprint looks solid. Throw it into tough scenarios so I can prep for weak spots.",
-                    "output": "After 1,000 simulations: your Thinkprint tends to over-commit under time pressure, and avoids confrontation in emotional settings. Want to find ways to overcome that?",
+                    "input": "My Thinkprint looks solid. Throw it into tough scenarios so I can <em>prep for weak spots</em>.",
+                    "output": "After 1,000 simulations: your Thinkprint tends to <em>over-commit under time pressure</em>, and <em>avoids confrontation in emotional settings</em>. Want to find ways to overcome that?",
                     "result": "Scenario breakdown and growth plan."
                 }
             },

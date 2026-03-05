@@ -1,12 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { Card } from "@/components/ui";
 import { MessageCircleHeart, GitCompareArrows, TriangleAlert } from "lucide-react";
+import type { useTranslations } from "next-intl";
 
 interface Props {
-  t: (key: string) => string;
+  t: ReturnType<typeof useTranslations>;
 }
+
+const emTags = {
+  em: (chunks: ReactNode) => (
+    <em className="not-italic text-accent-thinkprint-light font-semibold">{chunks}</em>
+  ),
+};
 
 const projectKeys = ["blindDate", "persona", "difficulty"] as const;
 
@@ -57,7 +64,7 @@ export default function ThinkprintInteractiveDemo({ t }: Props) {
           </p>
           <div className="rounded-xl bg-surface-card/75 border border-surface-border/70 px-5 py-4">
             <p className="text-base md:text-lg text-neutral-100 leading-relaxed">
-              &ldquo;{t(`interactiveDemo.projects.${key}.input`)}&rdquo;
+              &ldquo;{t.rich(`interactiveDemo.projects.${key}.input`, emTags)}&rdquo;
             </p>
           </div>
         </div>
@@ -69,7 +76,7 @@ export default function ThinkprintInteractiveDemo({ t }: Props) {
           </p>
           <div className="rounded-xl bg-accent-thinkprint/10 border border-accent-thinkprint/30 px-5 py-4 space-y-3">
             <p className="text-base md:text-lg font-semibold text-neutral-100">
-              {t(`interactiveDemo.projects.${key}.output`)}
+              {t.rich(`interactiveDemo.projects.${key}.output`, emTags)}
             </p>
             <p className="text-sm text-accent-thinkprint-subtle">
               {t(`interactiveDemo.projects.${key}.result`)}
