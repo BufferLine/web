@@ -5,7 +5,7 @@
             "line1": "AI는 생각하고, 판단하고, 맡기는 방식을 바꿉니다.",
             "line2": "그 변화가 보이시나요?"
         },
-        "subtitle": "BufferLine은 그 변화를 보이게 만듭니다.",
+        "subtitle": "버퍼라인은 그 변화를 보이게 만듭니다.",
         "description": "AI가 우리의 사고, 판단, 권한 공유 방식을 어떻게 바꾸는지 이해하기 위한 오픈 프레임워크입니다. 그 변화가 좋다 나쁘다 말하지 않아요 — 보이게 할 뿐입니다.",
         "cta": {
             "explore": "작동 방식 보기",
@@ -16,27 +16,27 @@
     "system": {
         "badge": "구조",
         "title": "세 가지 도구, 하나의 목적",
-        "description": "BufferLine은 AI 상호작용에서 인간 판단을 이해하기 위한 세 가지 독립적 접근을 연결합니다.",
+        "description": "버퍼라인은 AI 상호작용에서 인간 판단을 이해하기 위한 세 가지 독립적 접근을 연결합니다.",
         "layoutLabel": "구조",
         "coreRuleTitle": "설계 원칙",
         "coreRuleDescription": "각 도메인은 독립적으로 작동합니다. 함께 모이면 하나의 완전한 그림이 됩니다.",
         "jdvp": {
             "status": "활성",
             "title": "JDVP",
-            "subtitle": "관찰",
+            "subtitle": "관찰 (판단 위임 가시성 프로토콜)",
             "description": "AI와 대화할 때 내 판단이 어디로 가는지 추적합니다 — 결정하는 건 나인가, AI인가? 점수도 순위도 없이, 그저 관찰합니다.",
             "cta": "JDVP 살펴보기"
         },
         "thinkprint": {
             "status": "퍼블릭 트랙",
             "title": "Thinkprint",
-            "subtitle": "추론 추출",
+            "subtitle": "추론 추출 (생각지문)",
             "description": "추론 패턴을 눈에 보이게 만듭니다. 무엇을 아느냐가 아니라 어떻게 생각하느냐를 — 포착하고 공유할 수 있게.",
             "cta": "Thinkprint 살펴보기"
         },
         "metagovernance": {
             "status": "리서치 트랙",
-            "title": "Meta Governance",
+            "title": "메타 거버넌스",
             "subtitle": "권한 설계",
             "description": "의사결정 권한이 사람과 AI 사이에서 어떻게 생기고 흘러가는지 탐구합니다."
         }

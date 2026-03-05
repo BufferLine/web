@@ -10,7 +10,7 @@
     "groups": {
       "brand": {
         "title": "Brand 덱",
-        "description": "BufferLine 프로젝트 스토리를 담은 핵심 내러티브 덱입니다."
+        "description": "버퍼라인 프로젝트 스토리를 담은 핵심 내러티브 덱입니다."
       },
       "jdvp": {
         "title": "JDVP 덱",
@@ -23,7 +23,7 @@
     },
     "decks": {
       "general": {
-        "title": "BufferLine 프로젝트 덱 - General",
+        "title": "버퍼라인 프로젝트 덱 - General",
         "description": "3-4분 내러티브: 문제 인지에서 Cognitive OS 프레이밍까지."
       },
       "technical": {

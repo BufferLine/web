@@ -27,7 +27,7 @@
     "deckLinks": {
         "badge": "더 알아보기",
         "title": "더 깊이 들여다보기",
-        "description": "프레젠테이션으로 BufferLine을 살펴보세요.",
+        "description": "프레젠테이션으로 버퍼라인을 살펴보세요.",
         "cta": "덱 보기",
         "more": {
             "badge": "전체 덱",

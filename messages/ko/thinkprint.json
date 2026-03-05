@@ -15,7 +15,7 @@
                 "line2": "내 패턴은 뭘까?"
             }
         },
-        "tagline": "Thinkprint는 내가 실제로 어떻게 생각하고 결정하는지 추출한 뒤, 재미있는 프로젝트로 시험해 봅니다.",
+        "tagline": "Thinkprint(생각지문)는 내가 실제로 어떻게 생각하고 결정하는지 추출한 뒤, 재미있는 프로젝트로 시험해 봅니다.",
         "description": "대화를 넣으면, 내 의사결정 스타일이 나옵니다. 압박 상황, 데이팅, AI Elon과의 비교까지 해볼 수 있어요.",
         "status": {
             "label": "상태",
@@ -146,7 +146,7 @@
             }
         },
         "connection": {
-            "title": "BufferLine의 일부",
+            "title": "버퍼라인의 일부",
             "description": "Thinkprint가 스타일을 포착하고, JDVP가 그 변화를 추적합니다. 함께 하나의 그림을 완성합니다.",
             "jdvp": "JDVP는 변화를 추적",
             "thinkprint": "Thinkprint는 스타일을 포착",
