@@ -3,44 +3,44 @@
         "badge": "Thinkprint",
         "headlineVariants": {
             "a": {
-                "line1": "Extract your style,",
-                "line2": "then play with it."
+                "line1": "Your thinking has a style.",
+                "line2": "Let's find it."
             },
             "b": {
-                "line1": "Build your Thinkprint,",
-                "line2": "run fun projects."
+                "line1": "How do you actually decide?",
+                "line2": "Let's make it visible."
             },
             "c": {
-                "line1": "From chat signals",
-                "line2": "to playful experiments."
+                "line1": "Same situation, different choices.",
+                "line2": "What's your pattern?"
             }
         },
-        "tagline": "Thinkprint extracts your decision style and turns it into projects you can actually try.",
-        "description": "The core loop is simple: personality/thinking extraction → Thinkprint generation → 3 fun projects.",
+        "tagline": "Thinkprint extracts how you actually think and decide — then lets you test it in fun projects.",
+        "description": "Give it a conversation. Get back your decision-making style. Then see how it holds up under pressure, in dating, or against AI Elon.",
         "status": {
             "label": "Status",
             "value": "Demo in progress",
-            "note": "We prioritize playful hands-on experience over heavy explanation."
+            "note": "Hands-on experience first, heavy docs later."
         },
         "cta": {
             "github": "View on GitHub",
             "whitepaper": "Read Docs"
         },
         "whatItIs": {
-            "title": "What we are building",
+            "title": "What Thinkprint does",
             "items": {
-                "toy": "Extract decision-style clues from conversation",
-                "reflection": "Turn those clues into a visible Thinkprint profile",
-                "declaration": "Run fun projects directly with that Thinkprint"
+                "toy": "Finds your decision-making patterns from real conversations",
+                "reflection": "Turns them into a visible, shareable thinking profile",
+                "declaration": "Lets you test that profile in fun, hands-on projects"
             }
         },
         "whatItIsNot": {
-            "title": "Safety in one line",
+            "title": "What it won't do",
             "items": {
-                "profiling": "No medical diagnosis or clinical labeling",
+                "profiling": "No medical diagnosis or clinical labels",
                 "psychology": "No memory or life-story replication",
                 "alignment": "Not a hidden AI control tool",
-                "cloning": "Not a human cloning project"
+                "cloning": "Not trying to clone anyone"
             }
         },
         "pipeline": {
@@ -59,7 +59,7 @@
                 },
                 "deepen": {
                     "number": "03",
-                    "title": "AI Me Dating",
+                    "title": "Blind Think Date",
                     "description": "Check fit and friction points in dialogue first."
                 },
                 "compare": {
@@ -85,133 +85,77 @@
             }
         },
         "demo": {
-            "title": "Three fun projects",
-            "description": "No process-heavy flow here. Just three runnable demo projects.",
+            "title": "Three projects to try",
+            "description": "No reading required. Pick a project and see your thinking style in action.",
             "cards": {
                 "blindDate": {
-                    "title": "Fun Project #1 · AI Me Dating",
-                    "description": "Run many Thinkprint-to-Thinkprint virtual dates in parallel and discover your hidden personality ideal type."
+                    "title": "Fun Project #1 · Blind Think Date",
+                    "description": "Run 1,000 virtual dates with other Thinkprints and find out who you're actually compatible with."
                 },
                 "persona": {
-                    "title": "Fun Project #2 · AI Elon Comparison",
-                    "description": "For your regrets and unresolved dilemmas, compare how other Thinkprints (like AI Elon) would solve them."
+                    "title": "Fun Project #2 · Mode Playground",
+                    "description": "See how other Thinkprints — like AI Elon's — would handle your toughest decisions. Then train to think like them."
                 },
                 "difficulty": {
                     "title": "Fun Project #3 · Hard Scenarios",
-                    "description": "Throw your profile into stressful situations and pre-train for pressure interviews, dating, and difficult conversations."
+                    "description": "Throw your Thinkprint into 1,000 tough scenarios and find where you break down — before it happens for real."
                 }
             }
         },
         "interactiveDemo": {
-            "title": "Interactive demo",
-            "description": "Pick one of the 3 Fun Projects and watch live simulation output.",
-            "panelTitle": "Thinkprint Fun Lab",
-            "projectLabel": "Fun Project",
-            "briefLabel": "Project goal",
-            "signals": {
-                "user": "Your input",
-                "agent": "Live simulator"
-            },
-            "scoreboardTitle": "Scenario Scoreboard",
-            "scoreboardRoleLabel": "Role Redefined",
-            "scoreboardRole": "This board changes by project. It is not a global ranking, but a focused diagnosis for strengths and weak zones in the active project.",
-            "boards": {
-                "blindDate": {
-                    "title": "AI Me Dating Diagnosis",
-                    "items": {
-                        "1": { "label": "Real-time interaction fit" },
-                        "2": { "label": "Ideal-type match" },
-                        "3": { "label": "Conflict recovery" }
-                    }
-                },
-                "persona": {
-                    "title": "AI Elon Comparison Diagnosis",
-                    "items": {
-                        "1": { "label": "Strategy divergence" },
-                        "2": { "label": "Regret reinterpretation" },
-                        "3": { "label": "Decision-rule improvement" }
-                    }
-                },
-                "difficulty": {
-                    "title": "Hard Scenario Diagnosis",
-                    "items": {
-                        "1": { "label": "Time-pressure resilience" },
-                        "2": { "label": "Relational-stress stability" },
-                        "3": { "label": "Preemptive prep priority" }
-                    }
-                }
-            },
-            "scoreInsightLabel": "Interpretation",
-            "controls": {
-                "play": "Play",
-                "pause": "Pause",
-                "reset": "Reset"
-            },
-            "resultLabel": "Current project output",
+            "title": "Try it yourself",
+            "description": "Pick a project. See what comes back.",
+            "tryLabel": "You say",
+            "resultLabel": "You get",
             "projects": {
                 "blindDate": {
-                    "title": "Fun Project #1 · AI Me Dating",
-                    "subtitle": "Run multiple Thinkprint modes in parallel and test personality interactions.",
-                    "brief": "Launch dozens of virtual dates at once and discover a personality ideal type you did not know you had.",
-                    "user": "I want someone stable, but not boring to talk with.",
-                    "agent": "32 Thinkprint pairings simulated in parallel. Top matches keep emotional stability while retaining novelty.",
-                    "cardLabel": "Thinkprint card",
-                    "cardValue": "Ideal-type candidate: Stable Explorer",
-                    "result": "Virtual-date ranking and conflict-trigger report generated.",
-                    "scoreNote": "Use this project to discover who your style is actually compatible with."
+                    "title": "Blind Think Date",
+                    "input": "Find other Thinkprints that click with how I think.",
+                    "output": "1,000 virtual dates complete. Top matches: a calm strategist, a playful realist, and a curious builder. Want to reach out to the real people behind them?",
+                    "result": "Compatibility report with conflict triggers."
                 },
                 "persona": {
-                    "title": "Fun Project #2 · AI Elon Comparison",
-                    "subtitle": "Revisit your regrets and unresolved decisions using another Thinkprint lens.",
-                    "brief": "Take a decision you struggled with and compare your path with what AI Elon-style reasoning would do.",
-                    "user": "I still regret missing that expansion timing.",
-                    "agent": "AI Elon path detected: fast test-and-kill loop with split risk buckets. Your path prioritized stability with longer payback time.",
-                    "cardLabel": "Thinkprint card",
-                    "cardValue": "Upgrade target: split-risk experiments",
-                    "result": "My choice vs AI Elon comparison report generated.",
-                    "scoreNote": "Use this project to secure alternative solution frames, not a single 'correct' answer."
+                    "title": "Mode Playground",
+                    "input": "Am I making the right call here? How would others decide? What would Elon's Thinkprint do?",
+                    "output": "AI Elon would split the risk into small experiments and kill the losers fast. Want to train yourself to think like his Thinkprint?",
+                    "result": "Side-by-side decision comparison."
                 },
                 "difficulty": {
-                    "title": "Fun Project #3 · Hard Scenarios",
-                    "subtitle": "Stress-test your style across pressure interviews, dating, and difficult conversations.",
-                    "brief": "Throw your profile into many scenarios, find where you collapse, and prepare counter-routines in advance.",
-                    "user": "I lose pace in pressure interviews and emotionally loaded conversations.",
-                    "agent": "Scenario simulation complete: biggest drop appears in high time-pressure plus relational tension combinations.",
-                    "cardLabel": "Thinkprint card",
-                    "cardValue": "Weak zone: high-pressure face-to-face",
-                    "result": "Breakdown points and preemptive prep checklist generated.",
-                    "scoreNote": "Use this project to preempt failures before real situations happen."
+                    "title": "Hard Scenarios",
+                    "input": "My Thinkprint looks solid. Throw it into tough scenarios so I can prep for weak spots.",
+                    "output": "After 1,000 simulations: your Thinkprint tends to over-commit under time pressure, and avoids confrontation in emotional settings. Want to find ways to overcome that?",
+                    "result": "Scenario breakdown and growth plan."
                 }
             },
-            "insight": "The core is experience over explanation: run all three projects and inspect your style in action."
+            "insight": "Run all three. See your style from different angles."
         },
         "output": {
-            "title": "Technical corner",
-            "description": "Core technical foundations: model design, evidence calibration, and safety constraints.",
+            "title": "Under the hood",
+            "description": "The science, evidence standards, and safety rules behind Thinkprint.",
             "model": {
-                "title": "Psychology Model",
-                "description": "Built on Dual-Process theory, GDMS/MDMQ decision styles, and sensation-seeking constructs."
+                "title": "Psychology foundation",
+                "description": "Built on established decision-making research — how people actually choose under uncertainty."
             },
             "evidence": {
-                "title": "Evidence & Calibration",
-                "description": "Language evidence is scored with sufficiency thresholds, uncertainty bands, and calibrated methods."
+                "title": "Evidence standards",
+                "description": "Every insight comes from your actual language, with built-in uncertainty awareness."
             },
             "safety": {
-                "title": "Safety & Ethics",
-                "description": "Strict non-clinical boundary, opt-out support, and crisis short-circuit guardrails."
+                "title": "Safety guardrails",
+                "description": "Not a diagnostic tool. You can opt out anytime. The system stops if it detects distress signals."
             }
         },
         "connection": {
-            "title": "With BufferLine",
-            "description": "Thinkprint creates your style profile. JDVP measures how that style changes over time.",
-            "jdvp": "JDVP measures change",
-            "thinkprint": "Thinkprint creates style",
-            "future": "Start fun, then connect to real decision improvement"
+            "title": "Part of BufferLine",
+            "description": "Thinkprint captures your style. JDVP tracks how it changes over time. Together, they complete the picture.",
+            "jdvp": "JDVP tracks change",
+            "thinkprint": "Thinkprint captures style",
+            "future": "Start with fun projects, then connect to real decision improvement."
         },
         "deck": {
-            "badge": "Presentation Deck",
+            "badge": "Learn More",
             "title": "See the Thinkprint deck",
-            "description": "Focused on what is fun and what you can actually try, not protocol details.",
+            "description": "What you can try, not how it works — in slides.",
             "cta": "View Deck"
         }
     }
