@@ -1,13 +1,12 @@
 "use client";
 
 import { Section, Card, Button } from "@/components/ui";
-import { ArrowRight, Check, Presentation, Users, BriefcaseBusiness, TriangleAlert, X } from "lucide-react";
+import { ArrowRight, Check, Presentation, X } from "lucide-react";
 import NextLink from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import ThinkprintInteractiveDemo from "./ThinkprintInteractiveDemo";
 
 const outputKeys = ["model", "evidence", "safety"] as const;
-const demoKeys = ["blindDate", "persona", "difficulty"] as const;
 const HEADLINE_VARIANT = "a" as const;
 
 const outputIcons = {
@@ -26,12 +25,6 @@ const outputIcons = {
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3l7.5 4.5v6c0 4.5-3.1 7.8-7.5 8.9-4.4-1.1-7.5-4.4-7.5-8.9v-6L12 3z" />
     </svg>
   ),
-};
-
-const demoIcons = {
-  blindDate: <Users className="w-5 h-5" />,
-  persona: <BriefcaseBusiness className="w-5 h-5" />,
-  difficulty: <TriangleAlert className="w-5 h-5" />,
 };
 
 export default function ThinkprintPage() {
@@ -131,7 +124,7 @@ export default function ThinkprintPage() {
         </div>
       </Section>
 
-      {/* Output Structure */}
+      {/* Interactive Demo */}
       <Section id="projects" className="bg-surface-card/35">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -139,34 +132,6 @@ export default function ThinkprintPage() {
           </h2>
           <p className="text-surface-muted max-w-2xl mx-auto">
             {t("demo.description")}
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {demoKeys.map((key) => (
-            <Card key={key} variant="bordered">
-              <div className="w-10 h-10 rounded-lg bg-accent-thinkprint/10 flex items-center justify-center text-accent-thinkprint-light mb-4">
-                {demoIcons[key]}
-              </div>
-              <h3 className="text-base font-semibold text-neutral-100 mb-2">
-                {t(`demo.cards.${key}.title`)}
-              </h3>
-              <p className="text-surface-muted text-sm">
-                {t(`demo.cards.${key}.description`)}
-              </p>
-            </Card>
-          ))}
-        </div>
-      </Section>
-
-      {/* Interactive Demo */}
-      <Section>
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            {t("interactiveDemo.title")}
-          </h2>
-          <p className="text-surface-muted max-w-2xl mx-auto">
-            {t("interactiveDemo.description")}
           </p>
         </div>
 
