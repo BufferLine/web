@@ -1,25 +1,25 @@
 {
     "getStarted": {
         "title": "Get Started",
-        "description": "JDVP is an open protocol. Explore the specification, follow the tutorial, and contribute to the cognitive infrastructure.",
+        "description": "JDVP is an open protocol. Start with the concept, move to the deck, then dig into implementation.",
         "resources": {
             "documentation": {
                 "title": "Documentation",
-                "description": "Complete protocol specification and implementation guides"
+                "description": "Core concepts and protocol spec"
             },
             "tutorial": {
                 "title": "Tutorial",
-                "description": "Hands-on guide to implementing JDVP observation"
+                "description": "A practical walkthrough"
             },
             "glossary": {
                 "title": "Glossary",
-                "description": "Central terminology reference for all JDVP concepts"
+                "description": "Quick definitions for key terms"
             }
         },
         "comingSoon": "Coming soon",
         "cta": {
-            "title": "Ready to observe judgment flows?",
-            "description": "Clone the repository, explore the MVP implementation, and start building observation infrastructure for your AI systems.",
+            "title": "Ready to go deeper?",
+            "description": "Open the repo, walk through the technical deck, and see how JDVP can be attached to real conversations.",
             "clone": "Clone Repository",
             "readSpec": "Read the Spec"
         }

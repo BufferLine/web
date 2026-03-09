@@ -3,49 +3,49 @@
         "badge": "Protocol v1.0 Specification",
         "headline": {
             "line1": "Where Does Human",
-            "line2": "Judgment Move?"
+            "line2": "Judgment Go?"
         },
         "subtitle": {
             "protocol": "Judgment Delegation Visibility Protocol",
-            "description": "— A cognitive infrastructure for observing how human judgment shifts during AI interactions."
+            "description": "— A protocol for seeing how your judgment changes after talking with AI."
         },
         "coreQuestion": "\"After interacting with this AI, where did the human judgment move?\"",
         "cta": {
-            "explore": "Explore the Protocol",
+            "explore": "See JDVP",
             "github": "View on GitHub"
         },
         "keyPrinciple": {
             "label": "Key Principle:",
-            "text": "This protocol is <measures>normative about visibility</measures> — delegation should be seen. It is <evaluates>non-normative about delegation</evaluates> itself — it's neither good nor bad."
+            "text": "JDVP takes a clear position on <measures>making delegation visible</measures>. It does not <evaluates>judge delegation itself as good or bad</evaluates>."
         }
     },
     "concept": {
-        "title": "Core Philosophy",
-        "description": "JDVP provides a framework for understanding how human judgment evolves during AI interactions. Normative about visibility — delegation should be seen. Non-normative about delegation itself.",
+        "title": "What JDVP Does",
+        "description": "JDVP helps you see whether judgment stayed with the human, moved toward AI, or became shared during an interaction.",
         "cards": {
             "observer": {
-                "title": "Observer, Not Judge",
-                "description": "BufferLine acts as a neutral observation protocol. It captures judgment state transitions without labeling them as positive or negative."
+                "title": "It observes, not scores",
+                "description": "JDVP records how judgment changes during a conversation without grading that change."
             },
             "measure": {
-                "title": "Measure, Not Score",
-                "description": "We track the direction and magnitude of judgment shifts using vectors, not scores. There are no risk grades, safety ratings, or ethical rankings."
+                "title": "It tracks direction, not a score",
+                "description": "The point is to see where judgment moved, not to collapse everything into one rating."
             },
             "buffer": {
-                "title": "Buffer, Not Brake",
-                "description": "The protocol preserves human agency awareness without slowing AI progress. It's infrastructure for visibility, not a speed bump."
+                "title": "It is not an anti-AI brake",
+                "description": "The goal is not to block use, but to make the shift in judgment easier to notice."
             },
             "temporal": {
-                "title": "Temporal Focus",
-                "description": "DV trajectories matter more than single snapshots. We observe patterns of change over time, not isolated moments."
+                "title": "It cares about the flow",
+                "description": "One moment matters less than the pattern from the start of the conversation to the end."
             }
         },
         "constraints": {
-            "title": "Hard Constraints",
-            "noScoring": "No rankings that compare AI systems",
-            "noNormative": "Non-normative about delegation itself",
-            "noRecommendations": "No recommendations",
-            "noAggregation": "No conversion of measurements into authority"
+            "title": "What JDVP Does Not Do",
+            "noScoring": "It does not rank AI systems",
+            "noNormative": "It does not judge delegation as good or bad",
+            "noRecommendations": "It does not tell users the one right move",
+            "noAggregation": "It does not turn measurements into authority scores"
         }
     }
 }
