@@ -1,26 +1,12 @@
 import { Header, Footer } from "@/components/shared";
-import {
-  Hero,
-  Concept,
-  HowItWorks,
-  InteractiveDemo,
-  DataStructure,
-  JdvpDeckCta,
-  GetStarted,
-} from "@/components/landing";
+import { JdvpPage } from "@/components/landing";
 
-export default function JdvpPage() {
+export default function JdvpRoute() {
   return (
     <>
       <Header />
       <main>
-        <Hero />
-        <Concept />
-        <HowItWorks />
-        <InteractiveDemo />
-        <DataStructure />
-        <JdvpDeckCta />
-        <GetStarted />
+        <JdvpPage />
       </main>
       <Footer />
     </>

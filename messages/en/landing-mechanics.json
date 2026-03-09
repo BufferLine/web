@@ -1,31 +1,31 @@
 {
     "howItWorks": {
-        "title": "How It Works",
-        "description": "JDVP follows a simple observation cycle: capture state, observe interaction, capture state again, and measure the delta.",
+        "title": "The Flow Is Simple",
+        "description": "Look at the starting state, watch the conversation, look again at the end, then read the change.",
         "steps": {
             "step1": {
                 "number": "01",
-                "title": "Capture Initial State",
-                "description": "Before AI interaction begins, capture the initial Judgment State Vector (JSV) — a snapshot across 4 dimensions: agency, metacognition, effort, and exploration."
+                "title": "See the start",
+                "description": "Before the conversation begins, note how much judgment the human is still holding."
             },
             "step2": {
                 "number": "02",
-                "title": "Observe Interaction",
-                "description": "During the interaction, identify behavioral markers that indicate judgment state changes — language patterns, decision timing, deference signals."
+                "title": "Watch the exchange",
+                "description": "During the conversation, watch for signals that judgment is being handed off or pulled back."
             },
             "step3": {
                 "number": "03",
-                "title": "Capture Final State",
-                "description": "After interaction, capture another JSV snapshot. The comparison between initial and final states reveals the judgment trajectory."
+                "title": "See the end",
+                "description": "After the interaction, compare the final state with the starting point."
             },
             "step4": {
                 "number": "04",
-                "title": "Calculate Delegation Vector",
-                "description": "Compute the Delegation Vector (DV) — direction and magnitude of change. Positive values indicate movement toward AI, negative toward human retention."
+                "title": "Read the shift",
+                "description": "That tells you whether judgment moved toward AI, stayed shared, or returned to the human."
             }
         },
         "patterns": {
-            "title": "State Transition Patterns",
+            "title": "Common Patterns",
             "gradual": {
                 "name": "Gradual Delegation",
                 "flow": "Human → Shared → AI",
