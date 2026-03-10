@@ -1,4 +1,17 @@
 {
+    "videos": {
+        "badge": "Video Walkthrough",
+        "title": "Understand BufferLine in a few minutes",
+        "description": "A short explainer for the overall BufferLine framing and why this work matters before you dive into the protocol demos.",
+        "duration": "6 min explainer",
+        "previewCta": "Play the overview here without leaving the site.",
+        "playInline": "Play the BufferLine overview video",
+        "watchOnYoutube": "Watch on YouTube",
+        "item": {
+            "title": "BufferLine Overview",
+            "description": "A concise introduction to what BufferLine is building, the problem space it targets, and the core framing behind the project."
+        }
+    },
     "demo": {
         "badge": "Live Example",
         "title": "Watch judgment move in real time",
