@@ -13,13 +13,13 @@ const content = {
     title: "BufferLine",
     subtitle: "Think. Decide. Trust. Made visible.",
     tagline: "AI changes how you think, decide, and trust. Can you see it?",
-    badge: "Open Framework",
+    badge: "Cognitive OS",
   },
   ko: {
     title: "BufferLine",
     subtitle: "사고. 판단. 신뢰. 보이게 만들다.",
     tagline: "AI는 생각하고, 판단하고, 맡기는 방식을 바꿉니다.",
-    badge: "오픈 프레임워크",
+    badge: "Cognitive OS",
   },
 };
 
