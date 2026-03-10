@@ -1,9 +1,9 @@
 {
     "metadata": {
         "title": "BufferLine | See how AI changes the way you think, decide, and trust",
-        "description": "An open framework for understanding how AI changes the way you think, decide, and share authority. Observation, extraction, and governance — made visible.",
+        "description": "BufferLine builds cognitive infrastructure for human-AI judgment delegation. Observation, extraction, and authority architecture made visible.",
         "ogTitle": "BufferLine | AI changes how you think, decide, and trust. Can you see it?",
-        "ogDescription": "An open framework for understanding how AI reshapes human judgment. It doesn't say those changes are good or bad — it just makes them visible."
+        "ogDescription": "Cognitive infrastructure for understanding how human judgment moves in AI interaction. It does not score delegation as good or bad; it makes movement visible."
     },
     "header": {
         "nav": {
@@ -28,7 +28,7 @@
     },
     "footer": {
         "brand": {
-            "description": "An open framework for understanding how AI changes the way you think, decide, and share authority.",
+            "description": "Cognitive infrastructure for understanding how AI changes judgment, delegation, and authority flow.",
             "note": "Protocol-first today. Platform and product layers follow when evidence is strong."
         },
         "resources": {
