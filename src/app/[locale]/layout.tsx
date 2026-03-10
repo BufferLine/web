@@ -4,6 +4,7 @@ import { Inter, JetBrains_Mono, Noto_Sans_KR, Space_Grotesk } from "next/font/go
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
@@ -30,6 +31,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://bufferline.dev";
+const gaMeasurementId = "G-TYKH4LFGT4";
 
 export async function generateMetadata({
   params,
@@ -135,6 +137,18 @@ export default async function RootLayout({
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-icon" />
         <meta name="theme-color" content="#2f6e8f" />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${gaMeasurementId}');
+          `}
+        </Script>
       </head>
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} ${notoSansKr.variable} ${spaceGrotesk.variable} font-sans antialiased bg-surface-bg text-surface-fg`}
