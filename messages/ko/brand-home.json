@@ -1,12 +1,12 @@
 {
     "brandHero": {
-        "badge": "오픈 프레임워크",
+        "badge": "인지 인프라",
         "headline": {
             "line1": "AI는 생각하고, 판단하고, 맡기는 방식을 바꿉니다.",
             "line2": "그 변화가 보이시나요?"
         },
         "subtitle": "버퍼라인은 그 변화를 보이게 만듭니다.",
-        "description": "AI가 우리의 사고, 판단, 권한 공유 방식을 어떻게 바꾸는지 이해하기 위한 오픈 프레임워크입니다. 그 변화가 좋다 나쁘다 말하지 않아요 — 보이게 할 뿐입니다.",
+        "description": "BufferLine은 인간-AI 시스템에서 판단이 어떻게 이동하고 위임되며 거버넌스 가능한 상태가 되는지 이해하기 위한 Cognitive OS를 구축합니다.",
         "cta": {
             "explore": "작동 방식 보기",
             "projectDeck": "프로젝트 덱 보기",
@@ -16,7 +16,7 @@
     "system": {
         "badge": "구조",
         "title": "세 가지 도구, 하나의 목적",
-        "description": "버퍼라인은 AI 상호작용에서 인간 판단을 이해하기 위한 세 가지 독립적 접근을 연결합니다.",
+        "description": "하나의 Cognitive OS를 이루는 3개의 독립 도메인.",
         "layoutLabel": "구조",
         "coreRuleTitle": "설계 원칙",
         "coreRuleDescription": "각 도메인은 독립적으로 작동합니다. 함께 모이면 하나의 완전한 그림이 됩니다.",
