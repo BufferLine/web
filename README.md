@@ -11,7 +11,8 @@ Public web frontend for BufferLine.
 
 ## Repository Notes
 
-- This repo includes `brand-system` as a git submodule.
+- This repo includes `vendor/brand-system` as a git submodule.
+- See `ROADMAP.md` for planned follow-ups.
 - Clone with submodules enabled:
 
 ```bash
