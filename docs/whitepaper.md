@@ -19,6 +19,8 @@ It publishes company messaging, domain landing pages, and presentation decks for
 
 Its smallest standalone output is a bilingual website that presents BufferLine, JDVP, and Thinkprint without requiring any other product surface.
 
+This document is a repository whitepaper. It is not a canonical protocol whitepaper for JDVP, Thinkprint, or Meta Governance.
+
 # Problem
 
 BufferLine needs a public surface that states the company frame, domain boundaries, and current narrative in a stable format.
@@ -37,6 +39,7 @@ Out of scope:
 - JDVP measurement execution
 - Thinkprint extraction workflows
 - Meta Governance simulators
+- Canonical protocol definition for JDVP, Thinkprint, or Meta Governance
 - Auth, user accounts, data persistence, or backend APIs
 
 Current maturity: active public frontend with content and deck delivery.
@@ -100,6 +103,7 @@ Planned next:
 
 # Change Log
 
+- 2026-03-11: Reviewed the protocol-whitepaper contract and kept this document as a repo whitepaper because `web` is a public web surface, not a canonical protocol surface
 - 2026-03-11: Created the canonical web whitepaper at `docs/whitepaper.md`
 - 2026-03-11: Aligned the repository to use the `vendor/brand-system` submodule path
 - 2026-03-11: Recorded current scope as public landing pages, company pages, localization, and deck delivery only
