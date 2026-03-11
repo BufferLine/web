@@ -1,3 +1,3 @@
 [submodule "brand-system"]
-	path = brand-system
+	path = vendor/brand-system
 	url = git@github.com:BufferLine/brand-system.git
