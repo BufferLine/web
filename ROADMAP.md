@@ -2,44 +2,48 @@
 
 This document tracks near-term product/content follow-ups for the BufferLine public web frontend.
 
-## Thinkprint landing page (content)
+## Repository contract and docs
 
-- Add a "minimum trust bridge" on the Thinkprint page: a small, concrete sample of the Thinkprint output artifact (structure + uncertainty/limits), so users can build confidence *before* clicking into the deck/docs.
-- Blocker: the Thinkprint protocol / output schema is not fixed yet, so we should not ship a sample artifact until the protocol stabilizes.
-- Until then: keep the Thinkprint page lightweight and route deeper persuasion/rigor to the deck and official docs.
+Goal: keep this repository aligned with the current `brand-system` knowledge contract.
 
-## JDVP landing page (content + consistency)
+- `P0`: keep [`docs/whitepaper.md`](docs/whitepaper.md) as a repo whitepaper, not a protocol whitepaper.
+- `P0`: reflect current public-web scope only: landing pages, company pages, decks, localization, SEO, and analytics.
+- `P1`: add a short maintenance rule in README or docs that protocol definitions live in their canonical protocol repos, not in this web repo.
 
-Goal: keep JDVP persuasive without overstating maturity, and ensure the page is internally consistent with the protocol draft.
+## Copy policy alignment
 
-- **Consistency pass (P0):** ensure the JSV/DV type surfaces match each other across:
-  - in-page "code examples"
-  - field descriptions / allowed enums
-  - demo conversation instrumentation (what values can appear)
-- **CTA integrity (P0):** ensure each CTA points to what it claims (e.g., "Read spec" ≠ "Clone repo") and avoid "Coming soon" grids that dead-end without at least one working proof link.
-- **Terminology clarity (P1):** avoid unexplained English meta-terms in Korean copy (e.g., normative / non-normative) unless there is an immediate inline explanation or a linked glossary entry.
-- **Evidence & reliability framing (P1):** add a compact explanation of:
-  - what counts as "evidence" for an observation (self-report vs logs vs inference, etc.)
-  - what the "reliability" signal means and what it does *not* mean
-  - known failure modes / limitations (so the page reads as a protocol, not a vibe)
-- **Demo scope (P2):** broaden or contextualize the demo so it reads as a general observation protocol (not a finance-specific story).
+Goal: bring public copy into line with current brand voice and domain-boundary rules.
 
-Blocker / gating:
-- If the protocol draft (schema + reliability method) is still moving, keep the JDVP page opinionated but avoid hard commitments (exact enum sets, scoring semantics, etc.) until stabilized.
+- `P0`: remove hedge wording from public copy where the current text says "helps", "allows", or equivalent.
+- `P0`: remove phrasing that implies JDVP, Thinkprint, or Meta Governance require one another.
+- `P0`: keep JDVP language observational. Avoid normative framing about delegation.
+- `P1`: review Korean copy for unexplained English policy terms and replace them with direct Korean wording or a linked definition.
+- `P1`: review CTA labels so they describe the actual target surface.
 
-## Brand-system alignment (source of truth + drift prevention)
+## JDVP surface consistency
 
-Goal: treat `vendor/brand-system/` as the canonical source for protocol vocabulary and schema so the web UI cannot silently drift.
+Goal: keep JDVP landing and deck content concrete without overstating protocol maturity.
 
-- **Define canonical assets (P0):**
-  - glossary / definitions
-  - schema snippets (JSV/DV + evidence + reliability)
-  - versioning policy for these assets (e.g., semver, backwards-compat notes)
-- **Add a consistency check (P0):** a lightweight script run in CI that fails if:
-  - web copy references fields/enums that aren't in the canonical definitions
-  - UI "code examples" diverge from canonical snippets
-  - demo instrumentation emits values outside the canonical enum set
-- **Decide integration strategy (P1):**
-  - import canonical JSON/YAML directly at build time, or
-  - generate web-consumable artifacts from `vendor/brand-system/` (preferred if we want stronger guarantees)
-- **Make drift visible (P1):** add a one-line "protocol draft version" stamp in the JDVP page footer/hero (only if it can be sourced automatically).
+- `P0`: verify that JSV/DV examples, field names, and enums match the current canonical protocol material.
+- `P0`: verify that demo instrumentation does not emit values outside the current protocol draft.
+- `P1`: add a compact evidence and limitation block so the JDVP page states what the current surface shows and what it does not claim.
+- `P1`: keep demo framing general enough that the page reads as an observation protocol, not a domain-specific app.
+
+## Thinkprint surface consistency
+
+Goal: keep Thinkprint pages aligned with the current extraction-domain story.
+
+- `P0`: review Thinkprint landing copy for speculative product claims that are ahead of reviewed protocol material.
+- `P1`: keep the page lightweight until the output artifact and evaluation language are stable.
+- `P1`: verify that links to decks and protocol docs point to the intended canonical source.
+
+## Brand-system integration
+
+Goal: treat `vendor/brand-system/` as the canonical source for shared vocabulary, domain boundaries, and reusable protocol-facing snippets.
+
+- `P0`: decide which artifacts should be sourced directly from `vendor/brand-system/`.
+- `P0`: add a consistency check that catches copy or example drift against canonical definitions.
+- `P1`: choose one integration path:
+  - import canonical JSON or YAML directly at build time
+  - generate web-facing artifacts from `vendor/brand-system/`
+- `P1`: expose a visible version or revision marker only if it can be sourced automatically from canonical material.
