@@ -112,7 +112,7 @@
             "title": "커스텀 DV 필드",
             "description": "프로토콜을 확장하여 새로운 벡터 필드를 추가할 수 있습니다."
         },
-        "example": "예: 금융(risk_ownership), 교육(reasoning_engagement), 의료(diagnostic_reliance)"
+        "example": "예: 금융(risk_ownership), 교육(reasoning_autonomy), 정신건강(emotional_validation_source)"
     },
     "summary": {
         "title": "JDVP를 함께 발전시켜 갑시다",

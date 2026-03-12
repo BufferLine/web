@@ -112,7 +112,7 @@
             "title": "Custom DV Fields",
             "description": "The protocol allows for adding new vector fields to measure specific aspects."
         },
-        "example": "Examples: Financial (risk_ownership), Education (reasoning_engagement), Healthcare (diagnostic_reliance)"
+        "example": "Examples: Financial (risk_ownership), Education (reasoning_autonomy), Mental Health (emotional_validation_source)"
     },
     "summary": {
         "title": "Evolve JDVP with Us",

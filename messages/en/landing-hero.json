@@ -21,7 +21,7 @@
     },
     "concept": {
         "title": "What JDVP Does",
-        "description": "JDVP helps you see whether judgment stayed with the human, moved toward AI, or became shared during an interaction.",
+        "description": "JDVP shows whether judgment stayed with the human, moved toward AI, or became shared during an interaction.",
         "cards": {
             "observer": {
                 "title": "It observes, not scores",
