@@ -122,8 +122,8 @@ export default function AboutPage() {
           </div>
 
           <div className="space-y-10">
-            {/* Founder (temporarily hidden) */}
-            <div className="hidden" aria-hidden="true">
+            {/* Founder */}
+            <div>
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
                 {t("founder.title")}
               </h2>
