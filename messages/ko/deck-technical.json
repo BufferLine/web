@@ -55,6 +55,11 @@
     },
     "point1": {
         "title": "시스템 아키텍처",
+        "labels": {
+            "observer": "관찰기",
+            "analyzer": "분석기",
+            "reporter": "리포터"
+        },
         "observer": "대화 흐름에 연결되어 실시간 데이터를 캡처합니다.",
         "analyzer": "마커를 기반으로 대화 데이터를 처리하여 JSV와 DV를 생성합니다.",
         "reporter": "분석 결과를 시각화하거나 JSON/마크다운으로 내보냅니다.",
@@ -129,7 +134,7 @@
             "text": "마커, 스키마, 평가 케이스, 구현 피드백에 함께 기여해 주세요."
         },
         "tagline": "인간-AI 판단 흐름 측정 표준을 함께 정의하세요.",
-        "principle": "Spec first. Evidence always.",
+        "principle": "스펙 우선. 증거는 항상.",
         "cta": {
             "github": "GitHub에서 기여하기",
             "home": "사양 문서 읽기"

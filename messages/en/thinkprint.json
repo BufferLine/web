@@ -150,7 +150,8 @@
             "description": "Thinkprint captures your style. JDVP tracks how it changes over time. Together, they complete the picture.",
             "jdvp": "JDVP tracks change",
             "thinkprint": "Thinkprint captures style",
-            "future": "Start with fun projects, then connect to real decision improvement."
+            "future": "Start with fun projects, then connect to real decision improvement.",
+            "exploreJdvp": "Explore JDVP"
         },
         "deck": {
             "badge": "Learn More",

@@ -19,6 +19,12 @@
             "text": "JDVP takes a clear position on <measures>making delegation visible</measures>. It does not <evaluates>judge delegation itself as good or bad</evaluates>."
         }
     },
+    "conceptIcons": {
+        "observer": "Observe",
+        "measure": "Measure",
+        "buffer": "Buffer",
+        "temporal": "Track"
+    },
     "concept": {
         "title": "What JDVP Does",
         "description": "JDVP shows whether judgment stayed with the human, moved toward AI, or became shared during an interaction.",

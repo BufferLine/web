@@ -150,7 +150,8 @@
             "description": "Thinkprint가 스타일을 포착하고, JDVP가 그 변화를 추적합니다. 함께 하나의 그림을 완성합니다.",
             "jdvp": "JDVP는 변화를 추적",
             "thinkprint": "Thinkprint는 스타일을 포착",
-            "future": "재미있게 시작해서, 실제 의사결정 개선으로 연결합니다."
+            "future": "재미있게 시작해서, 실제 의사결정 개선으로 연결합니다.",
+            "exploreJdvp": "JDVP 살펴보기"
         },
         "deck": {
             "badge": "더 알아보기",

@@ -55,6 +55,11 @@
     },
     "point1": {
         "title": "System Architecture",
+        "labels": {
+            "observer": "Observer",
+            "analyzer": "Analyzer",
+            "reporter": "Reporter"
+        },
         "observer": "Hooks into the conversation flow to capture real-time data.",
         "analyzer": "Processes conversational data against markers to generate JSVs and DVs.",
         "reporter": "Visualizes results or exports to JSON/Markdown.",

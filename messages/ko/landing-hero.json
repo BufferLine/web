@@ -19,6 +19,12 @@
             "text": "JDVP는 <measures>위임이 보이게 만드는 데에는 분명한 입장</measures>을 갖고 있어요. 하지만 위임 자체를 <evaluates>좋다 나쁘다 평가하지는 않습니다</evaluates>."
         }
     },
+    "conceptIcons": {
+        "observer": "관찰",
+        "measure": "측정",
+        "buffer": "버퍼",
+        "temporal": "추적"
+    },
     "concept": {
         "title": "JDVP는 이런 역할을 합니다",
         "description": "JDVP는 AI가 대신 판단했는지, 함께 판단했는지, 내가 끝까지 쥐고 있었는지를 보여주는 관찰 프레임입니다.",
