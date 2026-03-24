@@ -76,7 +76,7 @@ export default function Point4Slide({ t }: Props) {
         </div>
         <CodeBlock
           icon={Terminal}
-          title="Python DV Calculation"
+          title="Python DV Calculation (Illustrative)"
           code={dvCode}
           theme="jdvp"
           variant="themed"

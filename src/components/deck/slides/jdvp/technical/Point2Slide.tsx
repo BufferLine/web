@@ -6,7 +6,7 @@ interface Props {
 }
 
 const schemaCode = `{
-  "judgment_holder": "Human" | "Shared" | "AI",
+  "judgment_holder": "Human" | "Shared" | "AI" | "Undefined",
   "delegation_awareness": "Explicit" | "Implicit" | "Absent",
   "cognitive_engagement": "Active" | "Reactive" | "Passive",
   "information_seeking": "Active" | "Passive" | "None"
@@ -42,7 +42,7 @@ export default function Point2Slide({ t }: Props) {
           />
           <CodeBlock
             icon={Terminal}
-            title="Python Usage"
+            title="Python Usage (Illustrative)"
             code={pythonCode}
             theme="jdvp"
             variant="themed"
