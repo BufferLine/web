@@ -2,34 +2,22 @@
 
 Sync note: Keep all content below this line identical between `AGENTS.md` and `CLAUDE.md` (title line may differ). Update both in the same commit.
 
-## Project
-BufferLine public web frontend.
+> **Progressive disclosure** — this file is L0 (always read).
+> Load deeper docs only when the trigger matches your task.
 
-## Stack
-- Next.js (App Router)
-- React + TypeScript
-- next-intl
-- brand-system submodule: `brand-system/`
+## L0 — Identity & Hard Rules
 
-## Local Setup
-```bash
-git submodule update --init --recursive
-npm install
-npm run dev
-```
+**BufferLine public web frontend.**
 
-## Commands
-- `npm run dev`
-- `npm run lint`
-- `npm run build`
-- `npm run start`
-
-## Contribution Rules
-- Keep this repository public-safe.
-- Never commit secrets (`.env*`, tokens, keys).
+Must-follow rules (no exceptions):
+- Keep this repository **public-safe**. Never commit secrets (`.env*`, tokens, keys).
 - Do not commit build/runtime artifacts (`.next/`, logs, coverage).
-- Prefer small, focused PRs.
 - Keep UX copy aligned with `messages/` locale structure.
 
-## Notes
-- If brand assets/components are needed, update `brand-system` first and then bump submodule pointer in this repo.
+## Docs Index
+
+| Doc | Trigger (when to read) |
+|-----|------------------------|
+| [`docs/setup.md`](docs/setup.md) | Setting up local env, changing dependencies |
+| [`docs/site-map.md`](docs/site-map.md) | Adding, modifying, or removing pages |
+| [`docs/contribution.md`](docs/contribution.md) | PR, commit, or submodule work |
