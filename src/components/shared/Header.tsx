@@ -68,6 +68,7 @@ export default function Header() {
               { href: "#system", label: t("nav.system") },
               { href: `/${locale}/jdvp`, label: t("nav.jdvp") },
               { href: `/${locale}/thinkprint`, label: t("nav.thinkprint") },
+              { href: `/${locale}/about`, label: t("nav.about") },
             ],
     [isJdvpPage, isThinkprintPage, locale, t]
   );
