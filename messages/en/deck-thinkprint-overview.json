@@ -47,6 +47,10 @@
         "point4": {
             "title": "Technical Corner",
             "subtitle": "Core technical stack and psychology basis"
+        },
+        "point5": {
+            "title": "Connections & Roadmap",
+            "subtitle": "Independence, synergy, and what comes next"
         }
     },
     "point1": {
@@ -130,6 +134,24 @@
                     "Calibrated extraction methods instead of single-pass zero-shot scoring",
                     "Non-clinical guardrails: no diagnosis claims, opt-out, crisis short-circuit"
                 ]
+            }
+        }
+    },
+    "point5": {
+        "title": "Connections & Roadmap",
+        "subtitle": "Thinkprint stands alone, but connects to something bigger.",
+        "connections": {
+            "independence": {
+                "title": "Independent by Design",
+                "description": "Thinkprint works on its own. No JDVP setup required — extract your reasoning style from any conversation."
+            },
+            "synergy": {
+                "title": "Stronger with JDVP",
+                "description": "Combine Thinkprint with JDVP to see not just how you think, but how your judgment moves over time."
+            },
+            "future": {
+                "title": "What Comes Next",
+                "description": "Deeper extraction models, more interactive projects, and community Thinkprint sharing — all on the roadmap."
             }
         }
     },

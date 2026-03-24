@@ -47,6 +47,10 @@
         "point4": {
             "title": "기술 섹션",
             "subtitle": "핵심 기술 스택과 심리학 근거"
+        },
+        "point5": {
+            "title": "연결과 로드맵",
+            "subtitle": "독립성, 시너지, 그리고 다음 단계"
         }
     },
     "point1": {
@@ -130,6 +134,24 @@
                     "단발성 제로샷 점수 대신 보정된 추출 방법 사용",
                     "비임상 가드레일: 진단 금지, 옵트아웃, 위기 신호 시 중단"
                 ]
+            }
+        }
+    },
+    "point5": {
+        "title": "연결과 로드맵",
+        "subtitle": "Thinkprint는 혼자 서지만, 더 큰 그림과 이어집니다.",
+        "connections": {
+            "independence": {
+                "title": "설계부터 독립적",
+                "description": "Thinkprint는 단독으로 작동합니다. JDVP 설정 없이도 어떤 대화에서든 내 사고방식을 추출할 수 있습니다."
+            },
+            "synergy": {
+                "title": "JDVP와 함께하면 더 강력",
+                "description": "Thinkprint와 JDVP를 함께 쓰면, 내가 어떻게 생각하는지뿐 아니라 판단이 시간에 따라 어떻게 움직이는지도 볼 수 있습니다."
+            },
+            "future": {
+                "title": "다음에 올 것들",
+                "description": "더 깊은 추출 모델, 더 다양한 인터랙티브 프로젝트, 그리고 커뮤니티 Thinkprint 공유 — 모두 로드맵에 있습니다."
             }
         }
     },

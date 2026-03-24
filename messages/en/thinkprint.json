@@ -71,16 +71,6 @@
                     "number": "05",
                     "title": "Hard scenario score",
                     "description": "See where your style struggles through scenario scores."
-                },
-                "evaluate": {
-                    "number": "05",
-                    "title": "Evaluate",
-                    "description": ""
-                },
-                "publish": {
-                    "number": "06",
-                    "title": "Publish",
-                    "description": ""
                 }
             }
         },

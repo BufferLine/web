@@ -71,16 +71,6 @@
                     "number": "05",
                     "title": "힘든 시나리오 점수",
                     "description": "내가 흔들리는 시나리오를 점수로 확인하고 보정합니다."
-                },
-                "evaluate": {
-                    "number": "05",
-                    "title": "평가",
-                    "description": ""
-                },
-                "publish": {
-                    "number": "06",
-                    "title": "공개",
-                    "description": ""
                 }
             }
         },
