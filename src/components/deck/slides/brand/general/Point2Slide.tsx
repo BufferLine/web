@@ -1,3 +1,7 @@
+"use client";
+
+import NextLink from "next/link";
+import { useLocale } from "next-intl";
 import { Slide } from "@/components/deck";
 import { Activity, ArrowRight, Brain, Shield } from "lucide-react";
 
@@ -24,6 +28,8 @@ const layers = [
 ] as const;
 
 export default function Point2Slide({ t }: Props) {
+  const locale = useLocale();
+
   return (
     <Slide className="bg-surface-bg">
       <div className="max-w-6xl w-full">
@@ -47,6 +53,14 @@ export default function Point2Slide({ t }: Props) {
                 <p className="text-sm md:text-base text-neutral-200">
                   {t(`cognitiveOs.layers.${key}.description`)}
                 </p>
+                {key === "metagov" && (
+                  <NextLink
+                    href={`/${locale}/metagovernance`}
+                    className="inline-block mt-3 text-xs font-medium text-rose-300 hover:text-rose-200 underline underline-offset-2 transition-colors"
+                  >
+                    {t("metagov.cta")}
+                  </NextLink>
+                )}
               </div>
               {idx < layers.length - 1 && (
                 <ArrowRight className="hidden md:block w-5 h-5 text-neutral-500 mx-2 shrink-0" />

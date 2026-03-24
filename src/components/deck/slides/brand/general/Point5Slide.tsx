@@ -1,3 +1,7 @@
+"use client";
+
+import NextLink from "next/link";
+import { useLocale } from "next-intl";
 import { Slide } from "@/components/deck";
 import { BadgeCheck, RefreshCcw, Shield, TriangleAlert } from "lucide-react";
 
@@ -12,6 +16,7 @@ const blocks = [
 ] as const;
 
 export default function Point5Slide({ t }: Props) {
+  const locale = useLocale();
   const title = t("metagov.title");
   const [label, ...restParts] = title.split(":");
   const rest = restParts.join(":").trim();
@@ -54,9 +59,18 @@ export default function Point5Slide({ t }: Props) {
           </div>
         </div>
 
-        <p className="text-center text-sm md:text-base text-rose-200">
+        <p className="text-center text-sm md:text-base text-rose-200 mb-5">
           {t("metagov.talkTrack")}
         </p>
+
+        <div className="flex justify-center">
+          <NextLink
+            href={`/${locale}/metagovernance`}
+            className="px-6 py-3 rounded-lg border border-rose-500/40 hover:border-rose-400 text-rose-300 hover:text-rose-200 font-medium transition-colors"
+          >
+            {t("metagov.cta")}
+          </NextLink>
+        </div>
       </div>
     </Slide>
   );
