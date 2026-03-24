@@ -6,6 +6,10 @@
         "ogDescription": "인간-AI 상호작용에서 판단이 어떻게 이동하는지 이해하기 위한 인지 인프라. 위임을 좋다/나쁘다로 점수화하지 않고 이동을 보이게 합니다."
     },
     "header": {
+        "aria": {
+            "openMenu": "메뉴 열기",
+            "closeMenu": "메뉴 닫기"
+        },
         "nav": {
             "system": "시스템",
             "jdvp": "JDVP",
@@ -25,6 +29,12 @@
         "getStarted": "시작하기",
         "viewDeck": "덱 보기",
         "exploreBrand": "작동 방식 보기"
+    },
+    "aria": {
+        "pauseDemo": "데모 일시정지",
+        "playDemo": "데모 재생",
+        "resetDemo": "데모 초기화",
+        "closeWarning": "경고 닫기"
     },
     "footer": {
         "brand": {

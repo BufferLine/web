@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { useTranslations } from "next-intl";
 import type { InteractiveDemoProps, JSVState, DVState } from "./types";
 import ConversationPanel from "./ConversationPanel";
 import JSVVisualization from "./JSVVisualization";
@@ -22,6 +23,7 @@ export default function InteractiveDemo({
   maxDVFields = 4,
   reverseRoles = false,
 }: InteractiveDemoProps) {
+  const tAria = useTranslations("aria");
   const [currentTurn, setCurrentTurn] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showWarning, setShowWarning] = useState(false);
@@ -125,6 +127,7 @@ export default function InteractiveDemo({
             title={warning.title}
             message={warning.message}
             action={warning.action}
+            closeLabel={tAria("closeWarning")}
             onClose={handleCloseWarning}
           />
         )}

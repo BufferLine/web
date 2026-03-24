@@ -6,6 +6,10 @@
         "ogDescription": "Cognitive infrastructure for understanding how human judgment moves in AI interaction. It does not score delegation as good or bad; it makes movement visible."
     },
     "header": {
+        "aria": {
+            "openMenu": "Open menu",
+            "closeMenu": "Close menu"
+        },
         "nav": {
             "system": "System",
             "jdvp": "JDVP",
@@ -25,6 +29,12 @@
         "getStarted": "Get Started",
         "viewDeck": "View Deck",
         "exploreBrand": "See How It Works"
+    },
+    "aria": {
+        "pauseDemo": "Pause demo",
+        "playDemo": "Play demo",
+        "resetDemo": "Reset demo",
+        "closeWarning": "Close warning"
     },
     "footer": {
         "brand": {

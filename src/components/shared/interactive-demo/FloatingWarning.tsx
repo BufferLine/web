@@ -7,10 +7,11 @@ interface FloatingWarningProps {
   title: string;
   message: string;
   action?: string;
+  closeLabel?: string;
   onClose: () => void;
 }
 
-export default function FloatingWarning({ show, title, message, action, onClose }: FloatingWarningProps) {
+export default function FloatingWarning({ show, title, message, action, closeLabel, onClose }: FloatingWarningProps) {
   return (
     <div
       onClick={onClose}
@@ -36,7 +37,7 @@ export default function FloatingWarning({ show, title, message, action, onClose 
               <span className="font-bold text-base sm:text-lg text-accent-thinkprint-light">{title}</span>
               <button
                 onClick={onClose}
-                aria-label="Close warning"
+                aria-label={closeLabel ?? "Close warning"}
                 className="text-accent-thinkprint hover:text-accent-thinkprint-light transition-colors duration-200 p-1"
               >
                 <X className="w-5 h-5" />

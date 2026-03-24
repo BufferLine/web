@@ -219,7 +219,7 @@ export default function Header() {
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="md:hidden p-2 text-surface-muted hover:text-neutral-100 transition-colors"
-              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              aria-label={mobileOpen ? t("aria.closeMenu") : t("aria.openMenu")}
               aria-expanded={mobileOpen}
             >
               {mobileOpen ? (

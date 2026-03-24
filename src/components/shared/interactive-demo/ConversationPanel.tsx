@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 import { Play, Pause, RotateCcw, User, Bot } from "lucide-react";
 import type { ConversationTurn } from "./types";
 import { getAccentBg, getAccentClass } from "./utils";
@@ -27,6 +28,7 @@ export default function ConversationPanel({
   onReset,
   reverseRoles = false,
 }: ConversationPanelProps) {
+  const t = useTranslations("aria");
   const messagesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -51,7 +53,7 @@ export default function ConversationPanel({
           {isPlaying ? (
             <button
               onClick={onPause}
-              aria-label="Pause demo"
+              aria-label={t("pauseDemo")}
               className={`w-9 h-9 flex items-center justify-center rounded-full ${getAccentClass(themeColor)} text-white shadow-lg transition-colors duration-200`}
             >
               <Pause className="w-4 h-4" />
@@ -59,7 +61,7 @@ export default function ConversationPanel({
           ) : (
             <button
               onClick={onPlay}
-              aria-label="Play demo"
+              aria-label={t("playDemo")}
               className={`w-9 h-9 flex items-center justify-center rounded-full ${getAccentClass(themeColor)} text-white shadow-lg transition-colors duration-200`}
             >
               <Play className="w-4 h-4 ml-0.5" />
