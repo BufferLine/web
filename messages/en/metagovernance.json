@@ -1,16 +1,72 @@
 {
     "badge": "Research Track",
-    "title": "Meta Governance",
-    "description": "Meta Governance designs authority flow and stabilization rules for human-AI systems. This domain is in active research — protocol specification is in progress.",
+    "headline": "Who earns the right to judge?",
+    "subtitle": "Not who decides — how the system decides who decides.",
+    "description": "In systems where humans and AI coexist, someone designs the authority. And someone designs the authority over that design. Meta Governance models both layers.",
     "backToHome": "Back to Home",
     "sections": {
         "what": {
             "title": "What is Meta Governance?",
             "description": "The third functional domain of the Cognitive OS. While JDVP observes judgment movement and Thinkprint extracts reasoning patterns, Meta Governance designs how decision-making authority forms, flows, and stabilizes between people and AI agents."
         },
+        "core": {
+            "title": "The Core Question",
+            "description": "When AI agents validate code, approve merges, allocate resources, or vote on decisions — the question is not just who acts. It is how the authority to act emerges in the first place, and who has the authority to redesign that structure.",
+            "cards": {
+                "formation": {
+                    "title": "Authority Formation",
+                    "description": "How does decision-making authority emerge in a human-AI system? Not assigned — formed through multi-signal qualification."
+                },
+                "flow": {
+                    "title": "Authority Flow",
+                    "description": "How does authority move between actors without crystallizing into permanent power? Design for fluidity, not hierarchy."
+                },
+                "stabilization": {
+                    "title": "Stabilization Rules",
+                    "description": "How does the system resist capture and self-correct? Economic defense, consensus design, and anti-populism mechanisms."
+                },
+                "meta": {
+                    "title": "Governance of Governance",
+                    "description": "Who has the authority to redesign the authority structure itself? This is the meta-level that makes the system self-aware and evolvable."
+                }
+            }
+        },
+        "connection": {
+            "title": "Independent, but Connected",
+            "description": "Meta Governance works on its own. Combined with JDVP and Thinkprint, it completes the Cognitive OS — observation, extraction, and authority architecture as one system.",
+            "jdvp": "JDVP provides the observation data that authority decisions are grounded in.",
+            "thinkprint": "Thinkprint surfaces the reasoning patterns that authority actors bring to the table."
+        },
         "status": {
             "title": "Current Status",
-            "description": "Meta Governance is in the research phase. We are developing the foundational protocol for authority architecture. Follow our progress on GitHub."
+            "description": "Meta Governance is research-first. We are developing foundational models for authority-flow simulation in agent systems. Protocol specification is in progress.",
+            "items": [
+                "Authority formation modeling",
+                "Power flow simulation without crystallization",
+                "Capture defense and self-correction mechanisms",
+                "Integration patterns with JDVP and Thinkprint"
+            ]
+        }
+    },
+    "vocabulary": {
+        "title": "Key Concepts",
+        "terms": {
+            "authorityArchitecture": {
+                "term": "Authority Architecture",
+                "definition": "The structural design of how decision-making power is distributed, qualified, and stabilized in a system."
+            },
+            "powerFlow": {
+                "term": "Power Flow",
+                "definition": "The movement of authority between actors over time — designed to remain fluid rather than fixed."
+            },
+            "captureDefense": {
+                "term": "Capture Defense",
+                "definition": "Mechanisms that prevent any single actor from permanently concentrating decision-making authority."
+            },
+            "selfCorrection": {
+                "term": "Self-Correction",
+                "definition": "The system's ability to detect and repair authority imbalances without external intervention."
+            }
         }
     }
 }
