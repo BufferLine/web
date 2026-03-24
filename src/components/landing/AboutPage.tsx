@@ -70,14 +70,16 @@ export default function AboutPage() {
             </Card>
           </NextLink>
 
-          <Card variant="bordered">
-            <div className="flex items-start gap-4">
-              <span className="inline-block h-2.5 w-2.5 rounded-full bg-accent-meta mt-2 flex-shrink-0" />
-              <p className="text-neutral-500 text-sm leading-relaxed">
-                {t("system.metagovernance")}
-              </p>
-            </div>
-          </Card>
+          <NextLink href={`/${locale}/metagovernance`}>
+            <Card variant="bordered" hover className="group cursor-pointer">
+              <div className="flex items-start gap-4">
+                <span className="inline-block h-2.5 w-2.5 rounded-full bg-accent-meta mt-2 flex-shrink-0" />
+                <p className="text-neutral-300 text-sm leading-relaxed group-hover:text-white transition-colors">
+                  {t("system.metagovernance")}
+                </p>
+              </div>
+            </Card>
+          </NextLink>
         </div>
       </Section>
 

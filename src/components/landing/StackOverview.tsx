@@ -30,8 +30,8 @@ const domains = [
     accentBg: "bg-accent-meta/10",
     accentBorder: "border-accent-meta/20",
     accentDot: "bg-accent-meta",
-    hoverText: "",
-    href: null,
+    hoverText: "group-hover:text-accent-meta-light",
+    href: "/metagovernance",
   },
 ] as const;
 

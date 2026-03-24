@@ -38,7 +38,8 @@
             "status": "Research Track",
             "title": "Meta Governance",
             "subtitle": "Authority design",
-            "description": "Explores how decision-making authority forms and moves between people and AI agents."
+            "description": "Explores how decision-making authority forms and moves between people and AI agents.",
+            "cta": "Explore Meta Governance"
         }
     }
 }
