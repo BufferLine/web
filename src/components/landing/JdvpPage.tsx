@@ -11,17 +11,11 @@ const stepKeys = ["step1", "step2", "step3", "step4"] as const;
 const patternKeys = ["gradual", "rapid", "oscillation", "reclamation", "collaborative"] as const;
 const resourceKeys = ["documentation", "tutorial", "glossary"] as const;
 
-const conceptIcons = {
-  observer: "Observe",
-  measure: "Measure",
-  buffer: "Buffer",
-  temporal: "Track",
-} as const;
-
 export default function JdvpPage() {
   const locale = useLocale();
   const tHero = useTranslations("hero");
   const tConcept = useTranslations("concept");
+  const tConceptIcons = useTranslations("conceptIcons");
   const tHow = useTranslations("howItWorks");
   const tCta = useTranslations("getStarted");
   const tDeckSelection = useTranslations("deck_selection");
@@ -58,10 +52,10 @@ export default function JdvpPage() {
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button size="lg" className="bg-accent-jdvp hover:bg-accent-jdvp-hover focus:ring-accent-jdvp">
-              <a href="#overview">{tHero("cta.explore")}</a>
+              <a href="#concept">{tHero("cta.explore")}</a>
             </Button>
             <Button variant="outline" size="lg">
-              <a href="https://github.com/sangwon0001/bufferline-protocol" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/BufferLine/jdvp-protocol" target="_blank" rel="noopener noreferrer">
                 {tHero("cta.github")}
               </a>
             </Button>
@@ -79,7 +73,7 @@ export default function JdvpPage() {
         </div>
       </Section>
 
-      <Section id="overview">
+      <Section id="concept">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-white mb-4 md:text-4xl">{tConcept("title")}</h2>
           <p className="mx-auto max-w-2xl text-surface-muted">{tConcept("description")}</p>
@@ -90,7 +84,7 @@ export default function JdvpPage() {
             {conceptKeys.map((key) => (
               <Card key={key} variant="bordered" className="h-full">
                 <div className="mb-3 inline-flex rounded-full border border-accent-jdvp/20 bg-accent-jdvp/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.18em] text-accent-jdvp-light">
-                  {conceptIcons[key]}
+                  {tConceptIcons(key)}
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">
                   {tConcept(`cards.${key}.title`)}
@@ -116,7 +110,7 @@ export default function JdvpPage() {
         </div>
       </Section>
 
-      <Section className="bg-surface-card/30">
+      <Section id="how-it-works" className="bg-surface-card/30">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-white mb-4 md:text-4xl">{tHow("title")}</h2>
           <p className="mx-auto max-w-2xl text-surface-muted">{tHow("description")}</p>
@@ -155,10 +149,12 @@ export default function JdvpPage() {
         </div>
       </Section>
 
-      <InteractiveDemo />
+      <div id="demo">
+        <InteractiveDemo />
+      </div>
 
-      <Section>
-        <div className="rounded-3xl border border-surface-border/70 bg-gradient-to-br from-surface-card/80 to-surface-bg/80 p-7 md:p-9">
+      <Section id="data-structures">
+        <div id="get-started" className="rounded-3xl border border-surface-border/70 bg-gradient-to-br from-surface-card/80 to-surface-bg/80 p-7 md:p-9">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full border border-accent-jdvp/20 bg-accent-jdvp/10 px-3 py-1 text-xs font-medium text-accent-jdvp-light mb-4">
@@ -171,7 +167,7 @@ export default function JdvpPage() {
               <div className="flex flex-col gap-4 sm:flex-row">
                 <Button size="lg" className="bg-accent-jdvp hover:bg-accent-jdvp-hover focus:ring-accent-jdvp">
                   <a
-                    href="https://github.com/sangwon0001/bufferline-protocol"
+                    href="https://github.com/BufferLine/jdvp-protocol"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"

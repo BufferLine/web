@@ -200,7 +200,7 @@ export default function Header() {
 
             {/* Desktop-only: GitHub + CTA */}
             <a
-              href="https://github.com/sangwon0001/bufferline-protocol"
+              href="https://github.com/BufferLine/jdvp-protocol"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:inline-flex items-center justify-center rounded-lg font-medium transition-colors duration-200 px-3 py-1.5 text-sm text-neutral-300 hover:text-neutral-100 hover:bg-surface-elevated"
@@ -270,7 +270,7 @@ export default function Header() {
 
           <div className="flex flex-col gap-3">
             <a
-              href="https://github.com/sangwon0001/bufferline-protocol"
+              href="https://github.com/BufferLine/jdvp-protocol"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-300 hover:text-neutral-100 transition-colors text-sm"

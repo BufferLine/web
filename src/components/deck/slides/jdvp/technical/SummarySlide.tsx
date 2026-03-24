@@ -18,10 +18,10 @@ export default function SummarySlide({ t }: Props) {
       buttons={[
         {
           label: t("summary.cta.github"),
-          href: "https://github.com/sangwon0001/bufferline-protocol",
+          href: "https://github.com/BufferLine/jdvp-protocol",
           variant: "primary",
         },
-        { label: t("summary.cta.home"), href: "#", variant: "secondary" },
+        { label: t("summary.cta.home"), href: "https://github.com/BufferLine/jdvp-protocol", variant: "secondary" },
       ]}
       theme="jdvp"
     />

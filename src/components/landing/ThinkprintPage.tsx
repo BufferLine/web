@@ -124,6 +124,9 @@ export default function ThinkprintPage() {
         </div>
       </Section>
 
+      {/* Flow anchor */}
+      <div id="flow" />
+
       {/* Interactive Demo */}
       <Section id="projects" className="bg-surface-card/35">
         <div className="text-center mb-12">
@@ -197,7 +200,7 @@ export default function ThinkprintPage() {
               href={`/${locale}/jdvp`}
               className="inline-flex items-center gap-2 text-sm text-accent-jdvp-light hover:text-accent-jdvp transition-colors"
             >
-              Explore JDVP
+              {t("connection.exploreJdvp")}
               <ArrowRight className="w-4 h-4" />
             </NextLink>
           </div>
