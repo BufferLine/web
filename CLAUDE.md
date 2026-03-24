@@ -21,3 +21,4 @@ Must-follow rules (no exceptions):
 | [`docs/setup.md`](docs/setup.md) | Setting up local env, changing dependencies |
 | [`docs/site-map.md`](docs/site-map.md) | Adding, modifying, or removing pages |
 | [`docs/contribution.md`](docs/contribution.md) | PR, commit, or submodule work |
+| [`docs/tone-decisions.md`](docs/tone-decisions.md) | Writing or reviewing UX copy, locale messages |
