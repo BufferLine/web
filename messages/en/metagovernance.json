@@ -1,0 +1,16 @@
+{
+    "badge": "Research Track",
+    "title": "Meta Governance",
+    "description": "Meta Governance designs authority flow and stabilization rules for human-AI systems. This domain is in active research — protocol specification is in progress.",
+    "backToHome": "Back to Home",
+    "sections": {
+        "what": {
+            "title": "What is Meta Governance?",
+            "description": "The third functional domain of the Cognitive OS. While JDVP observes judgment movement and Thinkprint extracts reasoning patterns, Meta Governance designs how decision-making authority forms, flows, and stabilizes between people and AI agents."
+        },
+        "status": {
+            "title": "Current Status",
+            "description": "Meta Governance is in the research phase. We are developing the foundational protocol for authority architecture. Follow our progress on GitHub."
+        }
+    }
+}

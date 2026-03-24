@@ -18,6 +18,7 @@
 | `/deck/general` | `deck/general/page.tsx` | General deck |
 | `/deck/overview` | `deck/overview/page.tsx` | Overview deck |
 | `/deck/technical` | `deck/technical/page.tsx` | Technical deck |
+| `/metagovernance` | `metagovernance/page.tsx` | Meta Governance (research) |
 
 ## Detail
 
