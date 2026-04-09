@@ -30,7 +30,7 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["500", "600", "700"],
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://bufferline.dev";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://bufferline.org";
 const gaMeasurementId = "G-TYKH4LFGT4";
 
 export async function generateMetadata({
